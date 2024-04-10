@@ -1,4 +1,4 @@
-module es.uah.matcomp.mp.teoria.gui.mvc.javafx.simulaciondevida {
+module es.uah.matcomp.mp.simulaciondevida.gui.mvc.javafx {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
