@@ -134,7 +134,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                es.uah.matcomp.mp.teoria.gui.mvc.javafx.simulaciondevida/es.uah.matcomp.mp.teoria.gui.mvc.javafx.simulaciondevida.HelloApplication
+                                es.uah.matcomp.mp.teoria.gui.mvc.javafx.simulaciondevida/es.uah.matcomp.mp.simulaciondevida.gui.mvc.javafx.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
