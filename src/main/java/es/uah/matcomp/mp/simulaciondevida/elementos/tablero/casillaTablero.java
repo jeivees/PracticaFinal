@@ -15,4 +15,11 @@ public class casillaTablero {
         return recursos;
     }
 
+    public void setIndividuos(ListaSimple<individuoAbstract> individuos) {
+        this.individuos = individuos;
+    }
+
+    public void setRecursos(ListaSimple<recursoAbstract> recursos) {
+        this.recursos = recursos;
+    }
 }

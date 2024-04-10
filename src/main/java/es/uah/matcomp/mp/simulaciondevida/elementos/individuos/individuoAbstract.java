@@ -1,5 +1,6 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recursoAbstract;
+import excepciones.probabilidadInvalidaException;
 
 public abstract class individuoAbstract {
     private int posicionX;
@@ -10,13 +11,31 @@ public abstract class individuoAbstract {
     private float probReproduccion;
     private float probClonacion;
     private float probMuerte;
+
     public individuoAbstract(int I, int G, int T, float PR, float PC) {
         this.id = I;
         this.generacion = G;
         this.tiempoDeVida = T;
+        if (PR < 0 || PR > 100 || PC < 0 || PC > 100) throw new probabilidadInvalidaException();
         this.probReproduccion = PR;
         this.probClonacion = PC;
         this.probMuerte = 1-PR;
+    }
+
+    public int getPosicionX() {
+        return posicionX;
+    }
+
+    public void setPosicionX(int posicionX) {
+        this.posicionX = posicionX;
+    }
+
+    public int getPosicionY() {
+        return posicionY;
+    }
+
+    public void setPosicionY(int posicionY) {
+        this.posicionY = posicionY;
     }
 
     public int[] getPosicion () {
@@ -25,6 +44,57 @@ public abstract class individuoAbstract {
         posicion[1] = posicionY;
         return posicion;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getGeneracion() {
+        return generacion;
+    }
+
+    public void setGeneracion(int generacion) {
+        this.generacion = generacion;
+    }
+
+    public int getTiempoDeVida() {
+        return tiempoDeVida;
+    }
+
+    public void setTiempoDeVida(int tiempoDeVida) {
+        this.tiempoDeVida = tiempoDeVida;
+    }
+
+    public float getProbReproduccion() {
+        return probReproduccion;
+    }
+
+    public void setProbReproduccion(float probReproduccion) {
+        if (probReproduccion < 0 || probReproduccion > 100) throw new probabilidadInvalidaException();
+        this.probReproduccion = probReproduccion;
+        this.probMuerte = 1 - probReproduccion;
+    }
+
+    public float getProbClonacion() {
+        return probClonacion;
+    }
+
+    public void setProbClonacion(float probClonacion) {
+        if (probClonacion < 0 || probClonacion > 100) throw new probabilidadInvalidaException();
+        this.probClonacion = probClonacion;
+    }
+
+    public float getProbMuerte() {
+        return probMuerte;
+    }
+
+    public String getTipo () {return null;}
+
+    public String setTipo (String tipo) {return null;}
 
     public void morir () {
 
@@ -37,4 +107,6 @@ public abstract class individuoAbstract {
     public void mover() {}
 
     public void mejorar (recursoAbstract recurso) {}
+
+
 }
