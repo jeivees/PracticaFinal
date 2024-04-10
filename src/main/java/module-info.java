@@ -1,4 +1,4 @@
-module es.uah.matcomp.mp.simulaciondevida.gui.mvc.javafx {
+module gui.mvc.javafx.practicafinal {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -11,6 +11,6 @@ module es.uah.matcomp.mp.simulaciondevida.gui.mvc.javafx {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens gui.mvc.javafx to javafx.fxml;
-    exports src.main.resources.gui.mvc.javafx;
+    opens gui.mvc.javafx.practicafinal to javafx.fxml;
+    exports gui.mvc.javafx.practicafinal;
 }

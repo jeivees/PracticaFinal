@@ -11,10 +11,10 @@ public class tablero {
     }
 
     public casillaTablero getCasilla (int n, int m) {
-
+        return null;
     }
 
     public casillaTablero getCasilla (int[] casilla) {
-
+        return null;
     }
 }
