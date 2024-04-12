@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.6" minWidth="10.0" prefWidth="278.2" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="555.9999885559082" minWidth="10.0" prefWidth="322.6000000000001" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="128.4" minHeight="4.399993801116949" prefHeight="83.99999809265137" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="262.40000619888303" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="185.39999999999998" minHeight="0.0" prefHeight="59.599999999999994" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="185.39999999999998" minHeight="0.0" prefHeight="59.599999999999994" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="185.39999999999998" minHeight="10.0" prefHeight="64.4" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="185.39999999999998" minHeight="10.0" prefHeight="60.39999999999998" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="185.39999999999998" minHeight="10.0" prefHeight="38.39999999999998" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="185.39999999999998" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="27.0" prefWidth="52.0" text="Volver" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+         <GridPane.margin>
+            <Insets right="15.0" />
+         </GridPane.margin></Button>
+       <Label prefHeight="27.0" prefWidth="193.0" text="Individuos" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font></Label>
+       <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="27.0" prefWidth="189.0" text="Entorno" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font></Label>
+      <GridPane layoutX="251.0" layoutY="92.0" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="Turnos de vida &#10;      iniciales&#10;" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Label>
+            <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="251.0" layoutY="92.0" GridPane.rowIndex="3">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="Probabilidad de&#10;  reproducción" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Label>
+            <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="10.0" layoutY="9.0" GridPane.rowIndex="5">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="Probabilidad de&#10;     clonación" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Label>
+            <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="10.0" layoutY="8.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="64.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.39999618530274" minWidth="10.0" prefWidth="117.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="126.39999999999998" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="58.0" prefWidth="63.0" text="Agua&#10;&#10;" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <GridPane GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="+ turnos de vida">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="\% de aparición" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane layoutX="113.0" layoutY="10.0" GridPane.columnIndex="2">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="109.0" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+                  <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="110.0" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane layoutX="303.0" layoutY="240.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="64.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.39999618530274" minWidth="10.0" prefWidth="117.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="126.39999999999998" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="58.0" prefWidth="63.0" text="Comida&#10;&#10;" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <GridPane GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="+ turnos de vida">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="\% de aparición" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane layoutX="113.0" layoutY="10.0" GridPane.columnIndex="2">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="109.0" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+                  <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="110.0" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane layoutX="10.0" layoutY="7.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="64.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.39999618530274" minWidth="10.0" prefWidth="117.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="126.39999999999998" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="58.0" prefWidth="63.0" text="Montaña&#10;&#10;" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <GridPane GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="- turnos de vida">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="\% de aparición" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane layoutX="113.0" layoutY="10.0" GridPane.columnIndex="2">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="109.0" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+                  <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="110.0" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane layoutX="10.0" layoutY="7.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="64.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.39999618530274" minWidth="10.0" prefWidth="117.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="126.39999999999998" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="58.0" prefWidth="63.0" text="Biblioteca&#10;&#10;" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <GridPane GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="+ % de clonación">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="\% de aparición" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane layoutX="113.0" layoutY="10.0" GridPane.columnIndex="2">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="109.0" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+                  <Slider layoutX="25.0" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="109.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane layoutX="10.0" layoutY="7.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="64.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.39999618530274" minWidth="10.0" prefWidth="117.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="126.39999999999998" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="58.0" prefWidth="63.0" text="Tesoro&#10;&#10;" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <GridPane GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="+ % de reproducción">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="\% de aparición" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Bookman Old Style" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane layoutX="113.0" layoutY="10.0" GridPane.columnIndex="2">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="109.0" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+                  <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="110.0" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Slider>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane layoutX="10.0" layoutY="7.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="64.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.39999618530274" minWidth="10.0" prefWidth="117.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="126.39999999999998" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="58.0" prefWidth="63.0" text="Pozo&#10;&#10;" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" prefHeight="98.0" prefWidth="121.0" text="\% de aparición" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Bookman Old Style" size="11.0" />
+               </font>
+            </Label>
+            <Slider maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="109.0" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Slider>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

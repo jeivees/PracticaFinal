@@ -124,7 +124,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>gui.mvc.javafx.practicafinal/gui.mvc.javafx.practicafinal.HelloApplication</mainClass>
+              <mainClass>gui.mvc.javafx.practicafinal/gui.mvc.javafx.practicafinal.menuPrincipalApplication</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
