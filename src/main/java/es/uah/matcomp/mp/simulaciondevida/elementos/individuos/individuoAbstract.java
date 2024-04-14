@@ -2,6 +2,8 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recursoAbstract;
 import excepciones.probabilidadInvalidaException;
 
+import java.util.Random;
+
 public abstract class individuoAbstract {
     private int posicionX;
     private int posicionY;
@@ -105,6 +107,20 @@ public abstract class individuoAbstract {
     }
 
     public void mover() {}
+
+    public void moverAleatorio() {
+        Random r = new Random();
+        int movimiento = r.nextInt(4);
+        if (movimiento == 1) {
+            this.setPosicionX(this.getPosicionX() - 1);
+        } else if (movimiento == 2) {
+            this.setPosicionX(this.getPosicionX() + 1);
+        } else if (movimiento == 3) {
+            this.setPosicionY(this.getPosicionY() - 1);
+        } else {
+            this.setPosicionY(this.getPosicionY() + 1);
+        }
+    }
 
     public void mejorar (recursoAbstract recurso) {}
 
