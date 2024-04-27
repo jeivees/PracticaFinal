@@ -110,7 +110,7 @@ public abstract class individuoAbstract {
 
     public void moverAleatorio() {
         Random r = new Random();
-        int movimiento = r.nextInt(4);i
+        int movimiento = r.nextInt(4);
         if (movimiento == 1) {
             this.setPosicionX(this.getPosicionX() - 1);
         } else if (movimiento == 2) {
