@@ -58,7 +58,7 @@ public class bucleDeControl {
     }
 
     public void evaluarReproduccion () {
-
+//ueueueueeue
     }
 
     public void evaluarClonacion () {
