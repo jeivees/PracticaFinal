@@ -32,8 +32,12 @@ public class menuPrincipalController implements Initializable {
     private String archivoActual;
 
     @FXML
-    protected void onNuevoButtonClick() {
-
+    protected void onNuevoButtonClick(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("Configuracion.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
