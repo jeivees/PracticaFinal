@@ -10,6 +10,7 @@ module gui.mvc.javafx.practicafinal {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires org.apache.logging.log4j;
 
     opens gui.mvc.javafx.practicafinal to javafx.fxml;
     exports gui.mvc.javafx.practicafinal;

@@ -38,13 +38,13 @@ public class ListaDE<T>{
     }
 
     public void add(T o) {
-        ElementoLDE<T> e = new ElementoLDE<T>();
+        ElementoLDE<T> e = new ElementoLDE<>();
         e.setData(o);
         add(e);
     }
 
     public void insert(T o, int posicion) {
-        ElementoLDE<T> objeto = new ElementoLDE<T>();
+        ElementoLDE<T> objeto = new ElementoLDE<>();
         objeto.setData(o);
         if (posicion == 0){
             objeto.setSiguiente(this.primero);
@@ -133,7 +133,7 @@ public class ListaDE<T>{
         return el.getSiguiente();
     }
 
-    public ElementoLDE<T> getElemento ( int posicion){
+    public ElementoLDE<T> getElemento (int posicion){
         if (isVacia()){
             System.out.println("La lista esta vacia, no contiene elementos");
             return null;
@@ -145,6 +145,15 @@ public class ListaDE<T>{
             return actual;
         }
     }
+
+    public void setElemento (int posicion, T elemento) {
+        ElementoLDE<T> elementoActual = this.primero;
+        for (int i = 0; i != posicion; i++) {
+            elementoActual = elementoActual.getSiguiente();
+        }
+        elementoActual.setData(elemento);
+    }
+
     public String toString(){
         String salida = "";
         return "["+ toStringAux(this.primero,salida)+"]";

@@ -4,6 +4,12 @@ public class ElementoLS<T> {
 
     private T data;
 
+    public ElementoLS () {}
+
+    public ElementoLS (T d) {
+        this.data = d;
+    }
+
     public T getData() {
         return this.data;
     }

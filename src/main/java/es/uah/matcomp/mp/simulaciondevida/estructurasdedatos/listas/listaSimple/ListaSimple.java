@@ -27,13 +27,13 @@ public class ListaSimple<T> {
     }
 
     public void add(T o) {
-        ElementoLS<T> e = new ElementoLS<T>();
+        ElementoLS<T> e = new ElementoLS<>();
         e.setData(o);
         add(e);
     }
 
     public void insert(T o, int posicion) {
-        ElementoLS<T> e = new ElementoLS<T>();
+        ElementoLS<T> e = new ElementoLS<>();
         e.setData(o);
         ElementoLS<T> actual = this.datos[posicion];
         for (int i = posicion; this.datos[i] != null; i++) {
@@ -86,5 +86,10 @@ public class ListaSimple<T> {
 
     public ElementoLS<T> getElemento(int posicion) {
         return this.datos[posicion];
+    }
+
+    public void setElemento(int posicion, T elemento) {
+        ElementoLS<T> e = new ElementoLS<>(elemento);
+        datos[posicion] = e;
     }
 }

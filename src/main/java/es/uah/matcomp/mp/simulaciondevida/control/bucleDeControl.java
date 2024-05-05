@@ -48,7 +48,7 @@ public class bucleDeControl {
     public void evaluarMejoras () {
         for (int i = 0; i != individuos.getNumeroElementos(); i++) {
             individuoAbstract individuoActual = individuos.getElemento(i).getData();
-            casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicion());
+            casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicionX(), individuoActual.getPosicionY());
             if (!casillaActual.getRecursos().isVacia()) {
                 for (int j = 0; j != casillaActual.getRecursos().getNumeroElementos(); j++) {
                     casillaActual.getRecursos().getElemento(j).getData().aplicarMejora(individuoActual);
@@ -58,7 +58,7 @@ public class bucleDeControl {
     }
 
     public void evaluarReproduccion () {
-//ueueueueeue
+
     }
 
     public void evaluarClonacion () {

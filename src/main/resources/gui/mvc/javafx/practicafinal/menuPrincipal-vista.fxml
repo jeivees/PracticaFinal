@@ -15,5 +15,5 @@
          <Font name="Book Antiqua Bold" size="33.0" />
       </font></Label>
   <Button onAction="#onNuevoButtonClick" prefHeight="84.0" prefWidth="239.0" text="Nuevo juego" />
-   <Button onAction="#onCargarButtonClick" prefHeight="60.0" prefWidth="194.0" text="Cargar juego" />
+   <Button onAction="#onCargarPartidaButtonClick" prefHeight="60.0" prefWidth="194.0" text="Cargar juego" />
 </VBox>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="407.0" prefWidth="518.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demojavafx.ParameterController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <Label text="Configuración" textAlignment="CENTER" textFill="RED">
+    <font>
+      <Font name="System Bold" size="18.0" />
+    </font>
+  </Label>
+  <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+    <tabs>
+      <Tab text="Tablero">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+              <VBox>
+                <children>
+                  <Label text="Velocidad" />
+                  <Slider fx:id="sliderVelocidad" majorTickUnit="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                  <Label text="Vida" />
+                  <Slider fx:id="sliderVida" blockIncrement="1.0" showTickLabels="true" showTickMarks="true" />
+                </children>
+              </VBox>
+            </children>
+          </AnchorPane>
+        </content>
+      </Tab>
+         <Tab text="Individuos">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <VBox>
+                        <children>
+                           <Label text="Nombre" />
+                           <TextField fx:id="textfieldNombre1" />
+                        </children>
+                     </VBox>
+                  </children>
+               </AnchorPane>
+            </content>
+         </Tab>
+         <Tab text="Recursos" />
+    </tabs>
+  </TabPane>
+   <GridPane>
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+   </GridPane>
+  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="3.0" style="-fx-border-width: 3px;">
+    <children>
+      <Button onAction="#onBotonGuardarClick" text="Guardar">
+        <opaqueInsets>
+          <Insets />
+        </opaqueInsets></Button>
+      <Button mnemonicParsing="false" onAction="#onBotonReiniciarClick" text="Reiniciar" />
+      <Button mnemonicParsing="false" onAction="#onBotonCerrarClick" text="Cerrar" />
+    </children>
+    <VBox.margin>
+      <Insets />
+    </VBox.margin>
+  </HBox>
+</VBox>

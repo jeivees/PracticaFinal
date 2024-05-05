@@ -5,6 +5,7 @@ public class simuladorDeVida {
 
     }
 
+
     public simuladorDeVida cargarJuego () {
         return this;
     }
