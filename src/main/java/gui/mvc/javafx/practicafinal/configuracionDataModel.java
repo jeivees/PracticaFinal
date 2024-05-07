@@ -1,6 +1,8 @@
 package gui.mvc.javafx.practicafinal;
 
 public class configuracionDataModel {
+    private int IndividuosMaximosPorCelda = 3;
+    private int RecursosMaximosPorCelda = 3;
     private int TurnosVidaIniciales;
     private int ProbReproIndividuo;
     private int ProbClonIndividuo;
@@ -165,5 +167,21 @@ public class configuracionDataModel {
 
     public void setColumnasTablero(int columnasTablero) {
         ColumnasTablero = columnasTablero;
+    }
+
+    public int getIndividuosMaximosPorCelda() {
+        return IndividuosMaximosPorCelda;
+    }
+
+    public void setIndividuosMaximosPorCelda(int individuosMaximosPorCelda) {
+        IndividuosMaximosPorCelda = individuosMaximosPorCelda;
+    }
+
+    public int getRecursosMaximosPorCelda() {
+        return RecursosMaximosPorCelda;
+    }
+
+    public void setRecursosMaximosPorCelda(int recursosMaximosPorCelda) {
+        RecursosMaximosPorCelda = recursosMaximosPorCelda;
     }
 }

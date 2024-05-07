@@ -98,6 +98,10 @@ public abstract class individuoAbstract {
 
     public String setTipo (String tipo) {return null;}
 
+    public void reproducirse (individuoAbstract pareja) {
+
+    }
+    public void clonarse () {}
     public void morir () {
 
     }

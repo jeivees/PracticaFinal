@@ -19,4 +19,12 @@ public class tablero {
     public void setCasilla (int n, int m, casillaTablero casilla) {
         casillas.getElemento(n).getData().setElemento(m, casilla);
     }
+
+    public int getNumeroCasillasN () {
+        return casillas.getNumeroElementos();
+    }
+
+    public int getNumeroCasillasM () {
+        return casillas.getPrimero().getData().getNumeroElementos();
+    }
 }
