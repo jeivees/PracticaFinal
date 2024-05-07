@@ -7,9 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Slider;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,48 +20,97 @@ public class menuConfiguracionController implements Initializable {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
     @FXML
-    private Spinner<Integer> TurnosVidaInicialSpinner;
+    TabPane tabPaneConfiguracion = new TabPane();
+    Tab tabActual = new Tab();
     @FXML
-    private Slider ProbReproIndividuoSlider;
+    private Spinner<Integer> TurnosVidaInicialesSpinner = new Spinner<>();
     @FXML
-    private Slider ProbClonIndividuoSlider;
+    private Slider ProbReproIndividuoSlider = new Slider();
+    @FXML
+    private Slider ProbClonIndividuoSlider = new Slider();
+    @FXML
+    private Slider ProbAparAguaSlider = new Slider();
+    @FXML
+    private Slider ProbAparComidaSlider = new Slider();
+    @FXML
+    private Slider ProbAparMontañaSlider = new Slider();
+    @FXML
+    private Slider ProbAparTesoroSlider = new Slider();
+    @FXML
+    private Slider ProbAparBibliotecaSlider = new Slider();
+    @FXML
+    private Slider ProbAparPozoSlider = new Slider();
+    @FXML
+    private Spinner<Integer> IncrementoTurnosAguaSpinner = new Spinner<>();
+    @FXML
+    private Spinner<Integer> IncrementoTurnosComidaSpinner = new Spinner<>();
+    @FXML
+    private Spinner<Integer> IncrementoTurnosMontañaSpinner = new Spinner<>();
+    @FXML
+    private Slider IncrementoProbReproSlider = new Slider();
+    @FXML
+    private Slider IncrementoProbClonSlider = new Slider();
 
-    private configuracionDataModel original = new configuracionDataModel(5, 50, 30);
+
+    private configuracionDataModel original = new configuracionDataModel(5, 50, 30,20,20,20,10,10,10,1,3,2,15,10);
     private configuracionDataModelProperties model = new configuracionDataModelProperties(original);
 
     @FXML
     protected void onBotonGuardarClick() {
-        model.commit();
         log.debug("Se ha guardado la configuración");
     }
 
     @FXML
     protected void onBotonReiniciarClick() {
-        model.rollback();
+        model.rollback(tabActual);
         log.debug("Los valores por defecto han sido reestablecidos");
     }
 
     protected void updateGUIwithModel() {
         ProbReproIndividuoSlider.valueProperty().bindBidirectional(model.ProbReproIndividuoProperty());
         ProbClonIndividuoSlider.valueProperty().bindBidirectional(model.ProbClonIndividuoProperty());
+        ProbAparAguaSlider.valueProperty().bindBidirectional(model.ProbAparAguaProperty());
+        ProbAparComidaSlider.valueProperty().bindBidirectional(model.ProbAparComidaProperty());
+        ProbAparMontañaSlider.valueProperty().bindBidirectional(model.ProbAparMontañaProperty());
+        ProbAparTesoroSlider.valueProperty().bindBidirectional(model.ProbAparTesoroProperty());
+        ProbAparBibliotecaSlider.valueProperty().bindBidirectional(model.ProbAparBibliotecaProperty());
+        ProbAparPozoSlider.valueProperty().bindBidirectional(model.ProbAparPozoProperty());
+        IncrementoProbReproSlider.valueProperty().bindBidirectional(model.IncrementoProbReproProperty());
+        IncrementoProbClonSlider.valueProperty().bindBidirectional(model.IncrementoProbClonProperty());
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        SpinnerValueFactory<Integer> valueFactory =
+        tabPaneConfiguracion.getSelectionModel().selectedItemProperty().addListener((_, _, newTab) -> {
+            log.debug("Se ha detectado un cambio en el tabPane");
+            if (newTab != null) tabActual = newTab;
+        });
+
+        SpinnerValueFactory<Integer> TurnosVidaInicialesVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
+        SpinnerValueFactory<Integer> IncrementoAguaVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
+        SpinnerValueFactory<Integer> IncrementoComidaVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
+        SpinnerValueFactory<Integer> IncrementoMontañaVF =
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
 
-        valueFactory.setValue(3);
-        TurnosVidaInicialSpinner.setValueFactory(valueFactory);
+        TurnosVidaInicialesSpinner.setValueFactory(TurnosVidaInicialesVF);
+        IncrementoTurnosAguaSpinner.setValueFactory(IncrementoAguaVF);
+        IncrementoTurnosComidaSpinner.setValueFactory(IncrementoComidaVF);
+        IncrementoTurnosMontañaSpinner.setValueFactory(IncrementoMontañaVF);
 
         if (model != null) {
-            TurnosVidaInicialSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosVidaInicialesProperty());
+            TurnosVidaInicialesSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosVidaInicialesProperty().asObject());
+            IncrementoTurnosAguaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosAguaProperty().asObject());
+            IncrementoTurnosComidaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosComidaProperty().asObject());
+            IncrementoTurnosMontañaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosMontañaProperty().asObject());
             this.updateGUIwithModel();
         }
     }
 
     @FXML
-    protected void onBotonVolverMenuClick (ActionEvent event) throws IOException {
+    protected void onBotonVolverClick (ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("menuPrincipal-vista.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);

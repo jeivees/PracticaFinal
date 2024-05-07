@@ -25,15 +25,13 @@ public class menuPrincipalController implements Initializable {
     private Scene scene;
     private Parent root;
     @FXML
-    private Label Titulo;
-    @FXML
     private ListView<String> listaDeFicheros;
     private File[] archivosDePartida;
     private String archivoActual;
 
     @FXML
     protected void onNuevoButtonClick(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("Configuracion.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("menuConfiguracion-vista.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
