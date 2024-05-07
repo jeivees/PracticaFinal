@@ -26,6 +26,9 @@ public class configuracionDataModelProperties {
     private IntegerProperty IncrementoTurnosMontaña = new SimpleIntegerProperty();
     private IntegerProperty IncrementoProbRepro = new SimpleIntegerProperty();
     private IntegerProperty IncrementoProbClon = new SimpleIntegerProperty();
+    private IntegerProperty FilasTablero = new SimpleIntegerProperty();
+    private IntegerProperty ColumnasTablero = new SimpleIntegerProperty();
+
 
     public configuracionDataModelProperties(configuracionDataModel original){
         setOriginal(original);
@@ -42,6 +45,7 @@ public class configuracionDataModelProperties {
             if (tabActual == null) {
                 rollbackIndividuos();
                 rollbackRecursos();
+                rollbackTablero();
             } else {
                 switch (tabActual.getText()) {
                     case "Individuos":
@@ -49,6 +53,9 @@ public class configuracionDataModelProperties {
                         break;
                     case "Recursos":
                         rollbackRecursos();
+                        break;
+                    case "Tablero":
+                        rollbackTablero();
                         break;
                     default:
                         throw new reinicioPestañaInesperadaException();
@@ -77,6 +84,11 @@ public class configuracionDataModelProperties {
         IncrementoTurnosMontaña.set(original.getIncrementoTurnosMontaña());
         IncrementoProbRepro.set(original.getIncrementoProbRepro());
         IncrementoProbClon.set(original.getIncrementoProbClon());
+    }
+
+    private void rollbackTablero () {
+        FilasTablero.set(original.getFilasTablero());
+        ColumnasTablero.set(original.getColumnasTablero());
     }
 
     public configuracionDataModel getOriginal(){
@@ -144,4 +156,12 @@ public class configuracionDataModelProperties {
     public Property<Number> IncrementoProbClonProperty() {
         return IncrementoProbClon;
     }
+    public IntegerProperty FilasTableroProperty() {
+        return FilasTablero;
+    }
+
+    public IntegerProperty ColumnasTableroProperty() {
+        return ColumnasTablero;
+    }
+
 }

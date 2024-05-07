@@ -15,9 +15,11 @@ public class configuracionDataModel {
     private int IncrementoTurnosMontaña;
     private int IncrementoProbRepro;
     private int IncrementoProbClon;
+    private int FilasTablero;
+    private int ColumnasTablero;
 
 
-    public configuracionDataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo, int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon) {
+    public configuracionDataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo, int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon, int filasTablero, int columnasTablero) {
         TurnosVidaIniciales = turnosVidaIniciales;
         ProbReproIndividuo = probReproIndividuo;
         ProbClonIndividuo = probClonIndividuo;
@@ -32,6 +34,8 @@ public class configuracionDataModel {
         IncrementoTurnosMontaña = incrementoTurnosMontaña;
         IncrementoProbRepro = incrementoProbRepro;
         IncrementoProbClon = incrementoProbClon;
+        FilasTablero = filasTablero;
+        ColumnasTablero = columnasTablero;
     }
 
 
@@ -145,5 +149,21 @@ public class configuracionDataModel {
 
     public void setIncrementoProbClon(int incrementoProbClon) {
         IncrementoProbClon = incrementoProbClon;
+    }
+
+    public int getFilasTablero() {
+        return FilasTablero;
+    }
+
+    public void setFilasTablero(int filasTablero) {
+        FilasTablero = filasTablero;
+    }
+
+    public int getColumnasTablero() {
+        return ColumnasTablero;
+    }
+
+    public void setColumnasTablero(int columnasTablero) {
+        ColumnasTablero = columnasTablero;
     }
 }

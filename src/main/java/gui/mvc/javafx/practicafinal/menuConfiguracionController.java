@@ -50,9 +50,16 @@ public class menuConfiguracionController implements Initializable {
     private Slider IncrementoProbReproSlider = new Slider();
     @FXML
     private Slider IncrementoProbClonSlider = new Slider();
+    @FXML
+    private Spinner<Integer> FilasTableroSpinner = new Spinner<>();
+    @FXML
+    private Spinner<Integer> ColumnasTableroSpinner = new Spinner<>();
 
 
-    private configuracionDataModel original = new configuracionDataModel(5, 50, 30,20,20,20,10,10,10,1,3,2,15,10);
+    private configuracionDataModel original = new configuracionDataModel(5, 50, 30,
+            20,20,20,10,10,10,
+            1,3,2,15,10,
+            10, 10);
     private configuracionDataModelProperties model = new configuracionDataModelProperties(original);
 
     @FXML
@@ -94,17 +101,25 @@ public class menuConfiguracionController implements Initializable {
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
         SpinnerValueFactory<Integer> IncrementoMontañaVF =
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
+        SpinnerValueFactory<Integer> FilasTableroVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
+        SpinnerValueFactory<Integer> ColumnasTableroVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
 
         TurnosVidaInicialesSpinner.setValueFactory(TurnosVidaInicialesVF);
         IncrementoTurnosAguaSpinner.setValueFactory(IncrementoAguaVF);
         IncrementoTurnosComidaSpinner.setValueFactory(IncrementoComidaVF);
         IncrementoTurnosMontañaSpinner.setValueFactory(IncrementoMontañaVF);
+        FilasTableroSpinner.setValueFactory(FilasTableroVF);
+        ColumnasTableroSpinner.setValueFactory(ColumnasTableroVF);
 
         if (model != null) {
             TurnosVidaInicialesSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosVidaInicialesProperty().asObject());
             IncrementoTurnosAguaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosAguaProperty().asObject());
             IncrementoTurnosComidaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosComidaProperty().asObject());
             IncrementoTurnosMontañaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosMontañaProperty().asObject());
+            FilasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.FilasTableroProperty().asObject());
+            ColumnasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.ColumnasTableroProperty().asObject());
             this.updateGUIwithModel();
         }
     }
