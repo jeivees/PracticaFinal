@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,9 +20,16 @@ import java.util.ResourceBundle;
 public class menuConfiguracionController implements Initializable {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
+    private Boolean isJuegoEnMarcha = false;
+    private tableroController tableroController = new tableroController();
+
     @FXML
     TabPane tabPaneConfiguracion = new TabPane();
     Tab tabActual = new Tab();
+
+    @FXML
+    AnchorPane panelTablero = new AnchorPane();
+
     @FXML
     private Spinner<Integer> TurnosVidaInicialesSpinner = new Spinner<>();
     @FXML
@@ -63,8 +71,22 @@ public class menuConfiguracionController implements Initializable {
     private configuracionDataModelProperties model = new configuracionDataModelProperties(original);
 
     @FXML
-    protected void onBotonGuardarClick() {
-        log.debug("Se ha guardado la configuración");
+    protected void onBotonGuardarClick(ActionEvent event) throws IOException{
+        Alert confirmacion = new Alert(Alert.AlertType.CONFIRMATION);
+        confirmacion.setTitle("Continuar al juego");
+        confirmacion.setHeaderText("Estás a punto de guardar los ajustes y continuar a la partida");
+        confirmacion.setContentText("¿Estás seguro de que quieres continuar?");
+
+        if(confirmacion.showAndWait().get() == ButtonType.OK) {
+            if (isJuegoEnMarcha) {
+                log.debug("Se ha guardado la configuración");
+            } else {
+                tableroController.empezarNuevoJuego(model);
+                Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stageActual.close();
+                log.debug("Se ha creado un nuevo juego");
+            }
+        }
     }
 
     @FXML

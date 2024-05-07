@@ -2,12 +2,8 @@ package gui.mvc.javafx.practicafinal;
 
 import excepciones.sinFicherosDePartidaException;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
+import javafx.fxml.*;
 import javafx.scene.*;
-import javafx.scene.control.Label;
-import es.uah.matcomp.mp.simulaciondevida.*;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
@@ -49,8 +45,7 @@ public class menuPrincipalController implements Initializable {
 
     @FXML
     protected void onCargarFicheroButtonClick () {
-        simuladorDeVida juegoGuardado = new simuladorDeVida();
-        juegoGuardado.cargarJuego().comenzar();
+
     }
 
     @FXML

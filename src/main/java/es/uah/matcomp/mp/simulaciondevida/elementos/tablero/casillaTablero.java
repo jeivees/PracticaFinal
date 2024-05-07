@@ -2,10 +2,11 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.tablero;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDoblementeEnlazada.ListaDE;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recursoAbstract;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAbstract;
+import javafx.scene.control.Button;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class casillaTablero {
+public class casillaTablero extends Button {
     private ListaDE<individuoAbstract> individuos;
     private ListaDE<recursoAbstract> recursos;
 

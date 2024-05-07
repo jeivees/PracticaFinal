@@ -10,7 +10,7 @@
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
 
-  <Label fx:id="Titulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="240.0" prefWidth="502.0" text="Simulador de Vida" textFill="#310cc4e0">
+  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="240.0" prefWidth="502.0" text="Simulador de Vida" textFill="#310cc4e0">
       <font>
          <Font name="Book Antiqua Bold" size="33.0" />
       </font></Label>
