@@ -1,5 +1,6 @@
 package gui.mvc.javafx.practicafinal;
 
+import es.uah.matcomp.mp.simulaciondevida.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,11 +18,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
 public class menuConfiguracionController implements Initializable {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
-    private Boolean isJuegoEnMarcha = false;
     private tableroController tableroController = new tableroController();
+    private simuladorDeVida juegoActual;
 
     @FXML
     TabPane tabPaneConfiguracion = new TabPane();
@@ -67,7 +69,7 @@ public class menuConfiguracionController implements Initializable {
     private configuracionDataModel original = new configuracionDataModel(5, 50, 30,
             20,20,20,10,10,10,
             1,3,2,15,10,
-            10, 10);
+            10, 10, 10, 10);
     private configuracionDataModelProperties model = new configuracionDataModelProperties(original);
 
     @FXML
@@ -78,15 +80,44 @@ public class menuConfiguracionController implements Initializable {
         confirmacion.setContentText("¿Estás seguro de que quieres continuar?");
 
         if(confirmacion.showAndWait().get() == ButtonType.OK) {
-            if (isJuegoEnMarcha) {
-                log.debug("Se ha guardado la configuración");
-            } else {
-                tableroController.empezarNuevoJuego(model);
-                Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                stageActual.close();
-                log.debug("Se ha creado un nuevo juego");
-            }
+            continuarJuego(event);
         }
+    }
+
+    private void continuarJuego(ActionEvent event) throws IOException {
+        if (!model.getOriginal().isPausado()) { // en caso de que sea una partida nueva
+            model.commit();
+
+            Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stageActual.close();
+
+            empezarNuevoJuego(model.getOriginal());
+            log.debug("Se ha creado un nuevo juego");
+
+            juegoActual.comenzar();
+
+        } else {
+
+            Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stageActual.close();
+
+            model.commit();
+            log.debug("Se ha guardado la configuración");
+
+        }
+    }
+
+    private void empezarNuevoJuego (configuracionDataModel model) throws IOException {
+        juegoActual = new simuladorDeVida(model);
+        tableroController.crearTablero(model);
+    }
+
+    private void mostrarMenuConfiguracion() throws IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("menuConfiguracionInicio-vista.fxml"));
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML

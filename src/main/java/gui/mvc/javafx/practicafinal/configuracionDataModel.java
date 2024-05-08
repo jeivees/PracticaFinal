@@ -1,11 +1,31 @@
 package gui.mvc.javafx.practicafinal;
 
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recursoAbstract;
+import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAbstract;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
+
 public class configuracionDataModel {
+    // listas de elementos
+    private ListaEnlazada<individuoAbstract> individuos;
+    private ListaEnlazada<recursoAbstract> recursos;
+
+    // datos generales
+    private Boolean isPausado = false;
+
+    // datos tablero
     private int IndividuosMaximosPorCelda = 3;
     private int RecursosMaximosPorCelda = 3;
+    private int FilasTablero;
+    private int ColumnasTablero;
+
+    // datos individuo
     private int TurnosVidaIniciales;
     private int ProbReproIndividuo;
     private int ProbClonIndividuo;
+    private int probMejoraToBasico;
+    private int getProbMejoraToAvanzado;
+
+    // datos recurso
     private int ProbAparAgua;
     private int ProbAparComida;
     private int ProbAparMontaña;
@@ -17,11 +37,12 @@ public class configuracionDataModel {
     private int IncrementoTurnosMontaña;
     private int IncrementoProbRepro;
     private int IncrementoProbClon;
-    private int FilasTablero;
-    private int ColumnasTablero;
 
 
-    public configuracionDataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo, int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon, int filasTablero, int columnasTablero) {
+
+    public configuracionDataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo,
+                                  int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon,
+                                  int filasTablero, int columnasTablero, int mejoraToBasico, int mejoraToAvanzado) {
         TurnosVidaIniciales = turnosVidaIniciales;
         ProbReproIndividuo = probReproIndividuo;
         ProbClonIndividuo = probClonIndividuo;
@@ -38,6 +59,8 @@ public class configuracionDataModel {
         IncrementoProbClon = incrementoProbClon;
         FilasTablero = filasTablero;
         ColumnasTablero = columnasTablero;
+        probMejoraToBasico = mejoraToBasico;
+        getProbMejoraToAvanzado = mejoraToAvanzado;
     }
 
 
@@ -183,5 +206,44 @@ public class configuracionDataModel {
 
     public void setRecursosMaximosPorCelda(int recursosMaximosPorCelda) {
         RecursosMaximosPorCelda = recursosMaximosPorCelda;
+    }
+
+    public int getProbMejoraToBasico() {
+        return probMejoraToBasico;
+    }
+
+    public void setProbMejoraToBasico(int probMejoraToBasico) {
+        this.probMejoraToBasico = probMejoraToBasico;
+    }
+
+    public int getProbMejoraToAvanzado() {
+        return getProbMejoraToAvanzado;
+    }
+
+    public void setProbMejoraToAvanzado(int getProbMejoraToAvanzado) {
+        this.getProbMejoraToAvanzado = getProbMejoraToAvanzado;
+    }
+
+    public Boolean isPausado() {
+        return isPausado;
+    }
+
+    public void setPausado(Boolean pausado) {
+        isPausado = pausado;
+    }
+    public ListaEnlazada<individuoAbstract> getIndividuos() {
+        return individuos;
+    }
+
+    public void setIndividuos(ListaEnlazada<individuoAbstract> individuos) {
+        this.individuos = individuos;
+    }
+
+    public ListaEnlazada<recursoAbstract> getRecursos() {
+        return recursos;
+    }
+
+    public void setRecursos(ListaEnlazada<recursoAbstract> recursos) {
+        this.recursos = recursos;
     }
 }

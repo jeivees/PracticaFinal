@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="407.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mvc.javafx.practicafinal.menuConfiguracionController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <Label prefHeight="24.0" prefWidth="169.0" text="Configuración" textAlignment="CENTER" textFill="#078e66">
+    <font>
+      <Font name="Baskerville Old Face" size="30.0" />
+    </font>
+      <padding>
+         <Insets bottom="10.0" />
+      </padding>
+  </Label>
+  <TabPane fx:id="tabPaneConfiguracion" prefHeight="370.0" prefWidth="478.0" tabClosingPolicy="UNAVAILABLE">
+    <tabs>
+      <Tab text="Tablero">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="246.0" prefWidth="478.0">
+                  <children>
+                     <GridPane layoutY="-1.0" prefHeight="266.0" prefWidth="478.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.99998474121094" minWidth="10.0" prefWidth="133.2" />
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.00001525878906" minWidth="10.0" prefWidth="115.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.00001525878906" minWidth="10.0" prefWidth="75.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.00001525878906" minWidth="10.0" prefWidth="115.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.00001525878906" minWidth="10.0" prefWidth="75.0" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <Label alignment="CENTER" prefHeight="18.0" prefWidth="127.0" text="Tamaño tablero:" />
+                           <Spinner fx:id="FilasTableroSpinner" editable="true" prefHeight="26.0" prefWidth="115.0" GridPane.columnIndex="1" />
+                           <Label prefHeight="18.0" prefWidth="92.0" text="Filas" GridPane.columnIndex="2">
+                              <padding>
+                                 <Insets left="10.0" />
+                              </padding>
+                           </Label>
+                           <Label prefHeight="18.0" prefWidth="101.0" text="Columnas" GridPane.columnIndex="4">
+                              <padding>
+                                 <Insets left="10.0" />
+                              </padding>
+                           </Label>
+                           <Spinner fx:id="ColumnasTableroSpinner" editable="true" GridPane.columnIndex="3" />
+                        </children>
+                     </GridPane>
+                  </children></AnchorPane>
+        </content>
+      </Tab>
+         <Tab text="Individuos">
+        <GridPane layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="257.0" prefWidth="478.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.99998474121094" minWidth="10.0" prefWidth="189.2" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.00001525878906" minWidth="10.0" prefWidth="289.2" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="239.0" text="Turnos de vida iniciales:" GridPane.hgrow="ALWAYS">
+                <font>
+                    <Font name="Bookman Old Style Italic" size="12.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="189.0" text="Probabilidad de reproducción:" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                <font>
+                    <Font name="Bookman Old Style Italic" size="12.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="193.0" text="Probabilidad de clonación:" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                <font>
+                    <Font name="Bookman Old Style Italic" size="12.0" />
+                </font>
+            </Label>
+            <Spinner fx:id="TurnosVidaInicialesSpinner" editable="true" prefHeight="26.0" prefWidth="230.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Slider fx:id="ProbReproIndividuoSlider" majorTickUnit="10.0" maxWidth="-Infinity" minorTickCount="2" prefHeight="14.0" prefWidth="230.0" showTickLabels="true" showTickMarks="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                <GridPane.margin>
+                    <Insets top="7.0" />
+                </GridPane.margin>
+            </Slider>
+            <Slider fx:id="ProbClonIndividuoSlider" majorTickUnit="10.0" maxWidth="-Infinity" minorTickCount="2" prefHeight="14.0" prefWidth="230.0" showTickLabels="true" showTickMarks="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                <GridPane.margin>
+                    <Insets top="7.0" />
+                </GridPane.margin>
+            </Slider>
+               <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="193.0" text="Probabilidad de mejora&#10;    a individuo básico:" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Bookman Old Style Italic" size="12.0" />
+                    </font>
+                </Label>
+             <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Probabilidad de mejora&#10;  a individuo avanzado" GridPane.rowIndex="4">
+                  <font>
+                     <Font name="Bookman Old Style Italic" size="12.0" />
+                  </font>
+               </Label>
+               <Slider majorTickUnit="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minorTickCount="2" prefHeight="14.0" prefWidth="230.0" showTickLabels="true" showTickMarks="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+               <Slider majorTickUnit="10.0" maxWidth="-Infinity" minorTickCount="2" prefWidth="230.0" showTickLabels="true" showTickMarks="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+               <padding>
+                  <Insets top="3.0" />
+               </padding>
+        </GridPane>
+         </Tab>
+         <Tab text="Recursos">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="247.0" prefWidth="478.0">
+                  <children>
+                      <GridPane layoutY="18.0" prefHeight="243.0" prefWidth="478.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.99998474121094" minWidth="10.0" prefWidth="77.8" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.00001525878906" minWidth="10.0" prefWidth="113.4" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.00001525878906" minWidth="10.0" prefWidth="101.39999999999998" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.00001525878906" minWidth="0.0" prefWidth="186.39999999999998" />
+                          </columnConstraints>
+                          <rowConstraints>
+                           <RowConstraints maxHeight="32.4" minHeight="5.399991416931151" prefHeight="31.20000762939453" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="69.40000858306885" minHeight="10.0" prefHeight="35.19999237060547" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="60.39999618530274" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="54.400000000000006" minHeight="10.0" prefHeight="37.60000000000001" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="46.400000000000006" minHeight="10.0" prefHeight="37.400000000000006" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="41.400000000000006" minHeight="10.0" prefHeight="34.599999999999994" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="38.400000000000006" minHeight="10.0" prefHeight="37.400000000000006" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                          <Label alignment="CENTER" prefHeight="18.0" prefWidth="210.0" text="Agua" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                             <font>
+                                 <Font name="Bookman Old Style Bold" size="13.0" />
+                             </font>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin>
+                          </Label>
+                          <Label alignment="CENTER" prefHeight="18.0" prefWidth="189.0" text="Comida" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                             <font>
+                                 <Font name="Bookman Old Style Bold" size="13.0" />
+                             </font>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin>
+                          </Label>
+                          <Label alignment="CENTER" prefHeight="18.0" prefWidth="193.0" text="Montaña" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                             <font>
+                                 <Font name="Bookman Old Style Bold" size="13.0" />
+                             </font>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin>
+                          </Label>
+                          <Slider fx:id="IncrementoProbReproSlider" majorTickUnit="10.0" maxWidth="-Infinity" minorTickCount="2" prefHeight="38.0" prefWidth="180.0" showTickLabels="true" showTickMarks="true" value="10.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                             <GridPane.margin>
+                                 <Insets top="7.0" />
+                             </GridPane.margin>
+                          </Slider>
+                          <Slider fx:id="IncrementoProbClonSlider" majorTickUnit="10.0" maxWidth="-Infinity" minorTickCount="2" prefHeight="14.0" prefWidth="180.0" showTickLabels="true" showTickMarks="true" value="10.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                             <GridPane.margin>
+                                 <Insets top="7.0" />
+                             </GridPane.margin>
+                          </Slider>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="196.0" text="Tesoro" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin></Label>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="204.0" text="Biblioteca" GridPane.rowIndex="5">
+                          <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                          </font>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin></Label>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="206.0" text="Pozo" GridPane.rowIndex="6">
+                          <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                          </font>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin></Label>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="161.0" text="+ Turnos Vida" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Bookman Old Style Italic" size="12.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="96.0" layoutY="23.0" prefHeight="18.0" prefWidth="163.0" text="+ Turnos Vida" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Bookman Old Style Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="96.0" layoutY="66.0" prefHeight="18.0" prefWidth="158.0" text="- Turnos Vida" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Bookman Old Style Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="156.0" text="+ % reproducción" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Bookman Old Style Italic" size="12.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="161.0" text="+ % clonación" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Bookman Old Style Italic" size="12.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="127.0" text="\% de aparcición" GridPane.columnIndex="1">
+                          <font>
+                              <Font name="Bookman Old Style Italic" size="12.0" />
+                          </font></Label>
+                        <Slider fx:id="ProbAparAguaSlider" minorTickCount="5" prefHeight="27.0" prefWidth="114.0" showTickLabels="true" showTickMarks="true" value="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                        <Slider fx:id="ProbAparComidaSlider" minorTickCount="5" showTickLabels="true" showTickMarks="true" value="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                        <Slider fx:id="ProbAparMontañaSlider" minorTickCount="5" showTickLabels="true" showTickMarks="true" value="20.0" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                        <Slider fx:id="ProbAparTesoroSlider" minorTickCount="5" showTickLabels="true" showTickMarks="true" value="10.0" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                        <Slider fx:id="ProbAparBibliotecaSlider" minorTickCount="5" showTickLabels="true" showTickMarks="true" value="10.0" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+                        <Slider fx:id="ProbAparPozoSlider" minorTickCount="5" showTickLabels="true" showTickMarks="true" value="10.0" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+                        <Spinner fx:id="IncrementoTurnosAguaSpinner" editable="true" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="172.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                        <Spinner fx:id="IncrementoTurnosComidaSpinner" editable="true" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="186.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Spinner fx:id="IncrementoTurnosMontañaSpinner" editable="true" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="186.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="102.0" text="Turnos Iniciales&#10;      Recurso" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Bookman Old Style" size="11.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="6.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Spinner prefHeight="26.0" prefWidth="188.0" GridPane.columnIndex="3" />
+                      </GridPane>
+                  </children>
+               </AnchorPane>
+            </content>
+         </Tab>
+    </tabs>
+  </TabPane>
+  <HBox alignment="CENTER_RIGHT" prefHeight="105.0" prefWidth="478.0" spacing="3.0" style="-fx-border-width: 3px;">
+    <children>
+      <Button onAction="#onBotonGuardarClick" text="Guardar">
+        <opaqueInsets>
+          <Insets />
+        </opaqueInsets></Button>
+      <Button mnemonicParsing="false" onAction="#onBotonReiniciarClick" text="Reiniciar" />
+      <Button mnemonicParsing="false" onAction="#onBotonVolverClick" text="Cerrar" />
+    </children>
+    <VBox.margin>
+      <Insets />
+    </VBox.margin>
+  </HBox>
+</VBox>
