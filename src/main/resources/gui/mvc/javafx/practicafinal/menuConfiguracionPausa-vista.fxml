@@ -19,40 +19,6 @@
   </Label>
   <TabPane fx:id="tabPaneConfiguracion" prefHeight="370.0" prefWidth="478.0" tabClosingPolicy="UNAVAILABLE">
     <tabs>
-      <Tab text="Tablero">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="246.0" prefWidth="478.0">
-                  <children>
-                     <GridPane layoutY="-1.0" prefHeight="266.0" prefWidth="478.0">
-                       <columnConstraints>
-                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.99998474121094" minWidth="10.0" prefWidth="133.2" />
-                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.00001525878906" minWidth="10.0" prefWidth="115.0" />
-                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.00001525878906" minWidth="10.0" prefWidth="75.0" />
-                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.00001525878906" minWidth="10.0" prefWidth="115.0" />
-                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.00001525878906" minWidth="10.0" prefWidth="75.0" />
-                       </columnConstraints>
-                       <rowConstraints>
-                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                       </rowConstraints>
-                        <children>
-                           <Label alignment="CENTER" prefHeight="18.0" prefWidth="127.0" text="Tamaño tablero:" />
-                           <Spinner fx:id="FilasTableroSpinner" editable="true" prefHeight="26.0" prefWidth="115.0" GridPane.columnIndex="1" />
-                           <Label prefHeight="18.0" prefWidth="92.0" text="Filas" GridPane.columnIndex="2">
-                              <padding>
-                                 <Insets left="10.0" />
-                              </padding>
-                           </Label>
-                           <Label prefHeight="18.0" prefWidth="101.0" text="Columnas" GridPane.columnIndex="4">
-                              <padding>
-                                 <Insets left="10.0" />
-                              </padding>
-                           </Label>
-                           <Spinner fx:id="ColumnasTableroSpinner" editable="true" GridPane.columnIndex="3" />
-                        </children>
-                     </GridPane>
-                  </children></AnchorPane>
-        </content>
-      </Tab>
          <Tab text="Individuos">
         <GridPane layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="257.0" prefWidth="478.0">
             <columnConstraints>

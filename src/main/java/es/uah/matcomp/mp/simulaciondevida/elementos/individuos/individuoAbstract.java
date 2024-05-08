@@ -21,7 +21,7 @@ public abstract class individuoAbstract {
         if (PR < 0 || PR > 100 || PC < 0 || PC > 100) throw new probabilidadInvalidaException();
         this.probReproduccion = PR;
         this.probClonacion = PC;
-        this.probMuerte = 1-PR;
+        this.probMuerte = 100-PR;
     }
 
     public int getPosicionX() {
@@ -78,7 +78,7 @@ public abstract class individuoAbstract {
     public void setProbReproduccion(float probReproduccion) {
         if (probReproduccion < 0 || probReproduccion > 100) throw new probabilidadInvalidaException();
         this.probReproduccion = probReproduccion;
-        this.probMuerte = 1 - probReproduccion;
+        this.probMuerte = 100 - probReproduccion;
     }
 
     public float getProbClonacion() {
