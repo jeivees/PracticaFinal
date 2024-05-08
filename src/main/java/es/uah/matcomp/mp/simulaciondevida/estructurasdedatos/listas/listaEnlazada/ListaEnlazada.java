@@ -1,165 +1,161 @@
 package es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada;
 
-public class ListaEnlazada {
-    private ElementoLE primero;
-
+public class ListaEnlazada<TipoDato> {
+    private ElementoLE<TipoDato> primero;
     public ListaEnlazada() {
         this.primero = null;
     }
-
     public Boolean isVacia() {
-        return this.primero == null;
+        return primero == null;
     }
-
     public void vaciar() {
         this.primero = null;
     }
-
-    protected int add(ElementoLE el) {
-        int pos = 1;
+    protected void add(ElementoLE<TipoDato> elem) {
         if (isVacia()) {
-            this.primero = el;
-            return 0;
-        } else {
-            ElementoLE actual = this.primero;
+            this.primero = elem;
+        }else{
+            ElementoLE<TipoDato> actual = this.primero;
             while (actual.getSiguiente() != null) {
                 actual = actual.getSiguiente();
-                pos += 1;
             }
-            el.insertarmeEn(actual);
-            return pos;
+            elem.insertarmeEn(actual);
         }
     }
-
-    public void add(String s) {
-        ElementoLE e = new ElementoLE();
-        e.setData(s);
-        add(e);
+    public void add(TipoDato dato) {
+        ElementoLE<TipoDato> el = new ElementoLE<>();
+        el.setData(dato);
+        add(el);
     }
-
-    public void add(Object o) {
-        ElementoLE e = new ElementoLE();
-        if (o instanceof ElementoLE) {
-            e = (ElementoLE) o;
-        } else {
-            e.setData(o);
-        }
-        add(e);
-    }
-
-    public void insert(Object o, int posicion) {
-        ElementoLE objeto = new ElementoLE();
-        objeto.setData(o);
-        if (posicion == 0){
-            objeto.setSiguiente(this.primero);
-            this.primero = objeto;
-        } else {
-            if (getElemento(posicion - 1) == null){
-                System.out.println("No existen tantos elementos en la lista");
-            } else {
-            objeto.insertarmeEn(getElemento(posicion - 1));
+    public ElementoLE<TipoDato> getElemento(int posicion) {
+        if (isVacia()) {
+            return null;
+        }else{
+            ElementoLE<TipoDato> first = this.primero;
+            for (int i=0; i != posicion; i++) {
+                first = first.getSiguiente();
             }
+            return first;
         }
     }
-
-    public void insert(String s, int posicion) {
-    ElementoLE objeto = new ElementoLE();
-        objeto.setData(s);
-        if (posicion == 0){
-        objeto.setSiguiente(this.primero);
-        this.primero = objeto;
-    } else {
-        if (getElemento(posicion - 1) == null){
-            System.out.println("No existen tantos elementos en la lista");
-        } else {
-            objeto.insertarmeEn(getElemento(posicion - 1));
-        }
-    }
-}
-
-    public int del(int posicion) {
+    public void insert(TipoDato obj, int posicion) {
+        ElementoLE<TipoDato> objeto = new ElementoLE<>();
+        objeto.setData(obj);
         if (posicion == 0) {
-            this.primero = this.primero.getSiguiente();
-            return this.getNumeroElementos();
+            objeto.setSiguiente(primero);
+            primero = objeto;
         } else {
-            ElementoLE actual = this.primero;
-            for (int i = 0; i != posicion - 1; i++) {
-                actual = actual.getSiguiente();
-                if (actual.getSiguiente().getSiguiente() == null) {
-                    actual.setSiguiente(null);
-                    return this.getNumeroElementos();
-                }
-            }
-            actual.setSiguiente(actual.getSiguiente().getSiguiente());
-            return this.getNumeroElementos();
+            objeto.insertarmeEn(getElemento(posicion-1));
         }
     }
-
     public int getNumeroElementos() {
         if (isVacia()) {
             return 0;
-        } else {
-            int elms = 0;
-            ElementoLE actual = this.primero;
-            while (actual != null) {
-                elms += 1;
-                actual = actual.getSiguiente();
+        }else{
+            int elem = 0;
+            ElementoLE<TipoDato> first = primero;
+            while (first != null) {
+                elem += 1;
+                first = first.getSiguiente();
             }
-            return elms;
+            return elem;
         }
     }
-
-    public int getPosicion(ElementoLE el) {
-        int pos = 0;
-        ElementoLE actual = this.primero;
-        while (actual != el) {
-            if (actual == null){
-                System.out.println("El elemento no pertenece a la lista");
-                return -1;
+    public int del(int pos) {
+        if (pos == 0) {
+            primero = primero.getSiguiente();
+            return this.getNumeroElementos();
+        }else{
+            ElementoLE<TipoDato> first = this.primero;
+            for (int i=0; i != pos - 1; i++) {
+                first = first.getSiguiente();
+                if (first.getSiguiente().getSiguiente() == null) {
+                    first.setSiguiente(null);
+                    return this.getNumeroElementos();
+                }
             }
-            actual = actual.getSiguiente();
+            first.setSiguiente(first.getSiguiente().getSiguiente());
+            return this.getNumeroElementos();
+        }
+    }
+    public Integer getPosicion(ElementoLE<TipoDato> el) {
+        int pos = 0;
+        ElementoLE<TipoDato> first = this.primero;
+        for (int i = 0; (pos < getNumeroElementos()) && (first.getData() != el.getData()); i++) {
+            first = first.getSiguiente();
             pos += 1;
+        }
+        if ((pos>=getNumeroElementos())&&(el.getData()!= getUltimo().getData())) {
+            return null;
         }
         return pos;
     }
-
-    public ElementoLE getPrimero() {
-        if (isVacia()){
+    public Integer getPosicion(TipoDato el) {
+        if (!this.isVacia()) {
+            int pos = 0;
+            ElementoLE<TipoDato> first = this.primero;
+            for (int i = 0; (pos < getNumeroElementos()) && (first.getData() != el); i++) {
+                first = first.getSiguiente();
+                pos += 1;
+            }
+            if ((pos >= getNumeroElementos())&&(el != this.getUltimo().getData())) {
+                return null;
+            }
+            return pos;
+        }
+        return null;
+    }
+    public ElementoLE<TipoDato> getPrimero() {
+        if (isVacia()) {
             return null;
-        } else {
+        }else{
             return this.primero;
         }
     }
-
-    public ElementoLE getUltimo() {
-        if (isVacia()){
+    public ElementoLE<TipoDato> getUltimo() {
+        if (this.isVacia()) {
             return null;
-        } else {
-            ElementoLE actual = this.primero;
-            while (actual.getSiguiente() != null) {
-                actual = actual.getSiguiente();
+        }else{
+            ElementoLE<TipoDato> first = this.primero;
+            while (first.getSiguiente() != null) {
+                first = first.getSiguiente();
             }
-            return actual;
+            return first;
         }
     }
 
-    public ElementoLE getSiguiente(ElementoLE el) {
+    public ListaEnlazada<TipoDato> reverse(ListaEnlazada<TipoDato> lista) {
+        ListaEnlazada<TipoDato> listaInvertida = new ListaEnlazada<>();
+        if (lista.getNumeroElementos() <= 1) {
+            return lista;
+        }
+        reverseRecursivo(lista, listaInvertida, 0);
+        return listaInvertida;
+    }
+
+    private void reverseRecursivo(ListaEnlazada<TipoDato> lista, ListaEnlazada<TipoDato> listaInvertida, int index) {
+        if (index == lista.getNumeroElementos() ) {
+            return;
+        }
+        reverseRecursivo(lista, listaInvertida, index + 1);
+        listaInvertida.add(lista.getElemento(index));
+    }
+
+    public ElementoLE<TipoDato> getSiguiente(ElementoLE<TipoDato> el) {
         return el.getSiguiente();
     }
-
-    public ElementoLE getElemento(int posicion) {
-        if (isVacia()){
-            System.out.println("La lista esta vacia, no contiene elementos");
-            return null;
-        } else {
-            ElementoLE actual = this.primero;
-            for (int i = 0; i != posicion; i++) {
-                if (actual.getSiguiente() == null)  {
-                    return null;
-                }
-                actual = actual.getSiguiente();
-            }
-            return actual;
+    public String toString() {
+        return "[" + toStrings(this.primero) + "]";
+    }
+    private String toStrings(ElementoLE<TipoDato> n) {
+        String ret = "";
+        if (n == null) {
+            ret = "";
+        } else if (n != this.getUltimo()) {
+            ret = n.getData() + ", " + toStrings(n.getSiguiente());
+        } else if (n == this.getUltimo()) {
+            ret = n.getData() + "";
         }
+        return ret;
     }
 }

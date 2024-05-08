@@ -12,9 +12,19 @@ public class configuracionDataModelProperties {
     //Modelo de datos original
     protected configuracionDataModel original;
 
+
+    // propiedades tablero
+    private IntegerProperty FilasTablero = new SimpleIntegerProperty();
+    private IntegerProperty ColumnasTablero = new SimpleIntegerProperty();
+    private IntegerProperty ProbMejoraToBasico = new SimpleIntegerProperty();
+    private IntegerProperty ProbMejoraToAvanzado = new SimpleIntegerProperty();
+
+    // propiedades individuos
     private IntegerProperty TurnosVidaIniciales = new SimpleIntegerProperty();
     private IntegerProperty ProbReproIndividuo = new SimpleIntegerProperty();
     private IntegerProperty ProbClonIndividuo = new SimpleIntegerProperty();
+
+    // propiedades recursos
     private IntegerProperty ProbAparAgua = new SimpleIntegerProperty();
     private IntegerProperty ProbAparComida = new SimpleIntegerProperty();
     private IntegerProperty ProbAparMontaña = new SimpleIntegerProperty();
@@ -26,8 +36,6 @@ public class configuracionDataModelProperties {
     private IntegerProperty IncrementoTurnosMontaña = new SimpleIntegerProperty();
     private IntegerProperty IncrementoProbRepro = new SimpleIntegerProperty();
     private IntegerProperty IncrementoProbClon = new SimpleIntegerProperty();
-    private IntegerProperty FilasTablero = new SimpleIntegerProperty();
-    private IntegerProperty ColumnasTablero = new SimpleIntegerProperty();
 
 
     public configuracionDataModelProperties(configuracionDataModel original){
@@ -35,9 +43,26 @@ public class configuracionDataModelProperties {
     }
 
     public void commit(){
+        original.setFilasTablero(FilasTablero.get());
+        original.setColumnasTablero(ColumnasTablero.get());
+
         original.setTurnosVidaIniciales(TurnosVidaIniciales.get());
         original.setProbReproIndividuo(ProbReproIndividuo.get());
         original.setProbClonIndividuo(ProbClonIndividuo.get());
+        original.setProbMejoraToBasico(ProbMejoraToBasico.get());
+        original.setProbMejoraToAvanzado(ProbMejoraToAvanzado.get());
+
+        original.setProbAparAgua(ProbAparAgua.get());
+        original.setProbAparComida(ProbAparComida.get());
+        original.setProbAparMontaña(ProbAparMontaña.get());
+        original.setProbAparTesoro(ProbAparTesoro.get());
+        original.setProbAparBiblioteca(ProbAparBiblioteca.get());
+        original.setProbAparPozo(ProbAparPozo.get());
+        original.setIncrementoTurnosAgua(IncrementoTurnosAgua.get());
+        original.setIncrementoTurnosComida(IncrementoTurnosComida.get());
+        original.setIncrementoTurnosMontaña(IncrementoTurnosMontaña.get());
+        original.setIncrementoProbRepro(IncrementoProbRepro.get());
+        original.setIncrementoProbClon(IncrementoProbClon.get());
     }
 
     public void rollback(Tab tabActual){
@@ -98,7 +123,6 @@ public class configuracionDataModelProperties {
     public void setOriginal(configuracionDataModel original){
         this.original = original;
         rollback(null); //Se inicializan los properties.
-
     }
 
     public IntegerProperty TurnosVidaInicialesProperty() {
@@ -156,6 +180,7 @@ public class configuracionDataModelProperties {
     public Property<Number> IncrementoProbClonProperty() {
         return IncrementoProbClon;
     }
+
     public IntegerProperty FilasTableroProperty() {
         return FilasTablero;
     }
@@ -163,5 +188,4 @@ public class configuracionDataModelProperties {
     public IntegerProperty ColumnasTableroProperty() {
         return ColumnasTablero;
     }
-
 }

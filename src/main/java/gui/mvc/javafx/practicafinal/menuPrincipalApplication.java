@@ -9,13 +9,9 @@ import java.io.IOException;
 
 public class menuPrincipalApplication extends Application {
     /**
-     * la probabilidad de que aparezca un recurso es global o para cada casilla?
-     * la reproduccion cuando hay 3 individuos se calcula entre todas las combinaciones de ellos o por parejas? en caso de parejas cual de las dos probabilidades se usa?
-     * añadir porcentaje de mejora de poblacion a configuracion individuo
-     * la probabilidad de reproduccion y clonacion es distinta para cada tipo de individuo?
-     * mutación o clonación?
+     * añadir turnos de vida de recursos y probabilidad de mejora para ambos individuos
+     *
      */
-
 
 
     @Override

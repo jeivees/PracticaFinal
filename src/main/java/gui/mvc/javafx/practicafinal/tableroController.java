@@ -1,7 +1,6 @@
 package gui.mvc.javafx.practicafinal;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.*;
-import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,8 +17,6 @@ import java.io.IOException;
 public class tableroController {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
-    private simuladorDeVida juegoActual;
-
     @FXML
     private Label Titulo;
 
@@ -28,12 +25,11 @@ public class tableroController {
         log.info("Se ha pulsado la casilla" + casilla);
     }
 
-    protected void empezarNuevoJuego (configuracionDataModelProperties model) throws IOException {
-        juegoActual = new simuladorDeVida(model);
-
-        GridPane gridTablero = this.crearGridTablero(model.FilasTableroProperty().getValue(), model.ColumnasTableroProperty().getValue());
-
+    protected void crearTablero (configuracionDataModel model) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("tablero-vista.fxml"));
+
+        GridPane gridTablero = this.crearGridTablero(model.getFilasTablero(), model.getColumnasTablero(), root);
+
         ((AnchorPane) root.getChildrenUnmodifiable().get(1)).getChildren().add(gridTablero);
         AnchorPane.setTopAnchor(gridTablero, 0.0);
         AnchorPane.setRightAnchor(gridTablero, 0.0);
@@ -46,14 +42,15 @@ public class tableroController {
         stage.show();
     }
 
-    private GridPane crearGridTablero(int casillasN, int casillasM) {
+    private GridPane crearGridTablero(int casillasN, int casillasM, Parent root) {
         GridPane gridTablero = new GridPane();
-        gridTablero.setHgap(5);
-        gridTablero.setVgap(5);
+        gridTablero.setHgap(1);
+        gridTablero.setVgap(1);
         for (int i=0; i != casillasN; i++) {
             for (int j=0; j != casillasM; j++) {
                 casillaTablero casilla = new casillaTablero();
-                casilla.setText("Casilla " + i + "," + j);
+                casilla.setPrefHeight(((AnchorPane) root.getChildrenUnmodifiable().get(1)).getPrefHeight()/casillasM);
+                casilla.setPrefWidth(((AnchorPane) root.getChildrenUnmodifiable().get(1)).getPrefWidth()/casillasN);
                 casilla.setOnAction(_ -> mostrarElementosCasilla(casilla));
                 gridTablero.add(casilla, i, j);
             }
