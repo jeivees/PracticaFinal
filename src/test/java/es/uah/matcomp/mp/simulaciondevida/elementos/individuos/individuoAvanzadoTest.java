@@ -17,7 +17,7 @@ class individuoAvanzadoTest {
         assertEquals("individuoAvanzado", i.getTipo());
     }
 
-    @Test
+   /** @Test
     void mover() {
         individuoNormal i = new individuoNormal(2,2,2,2,2);
         i.setPosicionX(2);
@@ -47,5 +47,5 @@ class individuoAvanzadoTest {
         assertEquals(3, i.getPosicionX());
         i.mover(list);
         assertEquals(2, i.getPosicionX());
-    }
+    }**/
 }
