@@ -134,8 +134,8 @@ public class bucleDeControl {
                             comida comida = new comida();
                             comida.setPosicion(posicion);
                         } else if (p <= model.getProbAparAgua() + model.getProbAparComida() + model.getProbAparMontaña()) {
-                            montaña montaña = new montaña();
-                            montaña.setPosicion(posicion);
+                            montanna montanna = new montanna();
+                            montanna.setPosicion(posicion);
                         } else if (p <= model.getProbAparAgua() + model.getProbAparComida() + model.getProbAparMontaña() + model.getProbAparBiblioteca()) {
                             biblioteca biblioteca = new biblioteca();
                             biblioteca.setPosicion(posicion);

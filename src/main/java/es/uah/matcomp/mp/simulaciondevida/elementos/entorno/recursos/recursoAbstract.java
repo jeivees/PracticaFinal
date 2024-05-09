@@ -1,11 +1,14 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAbstract;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public abstract class recursoAbstract {
     private int posicionX;
     private int posicionY;
     private int tiempoDeAparicion;
 
+    private static final Logger logger = LogManager.getLogger("es.uah");
     public recursoAbstract () {}
 
     public recursoAbstract (int T) {
@@ -18,6 +21,7 @@ public abstract class recursoAbstract {
 
     public void setPosicionX(int posicionX) {
         this.posicionX = posicionX;
+        logger.info("PosiciónX modificada");
     }
 
     public int getPosicionY() {
@@ -26,6 +30,7 @@ public abstract class recursoAbstract {
 
     public void setPosicionY(int posicionY) {
         this.posicionY = posicionY;
+        logger.info("PosiciónY modificada");
     }
 
     public int[] getPosicion () {
@@ -38,6 +43,7 @@ public abstract class recursoAbstract {
     public void setPosicion (int[] posicion) {
         posicionX = posicion[0];
         posicionY = posicion[1];
+        logger.info("Posición modificada");
     }
 
     public int getTiempoDeAparicion() {
@@ -46,6 +52,7 @@ public abstract class recursoAbstract {
 
     public void setTiempoDeAparicion(int tiempoDeAparicion) {
         this.tiempoDeAparicion = tiempoDeAparicion;
+        logger.info("Tiempo de aparición modificado");
     }
     public void eliminar() {
 
@@ -53,6 +60,7 @@ public abstract class recursoAbstract {
     public void actualizarTA () {
         tiempoDeAparicion -= 1;
         if (tiempoDeAparicion == 0) eliminar();
+        logger.info("Tiempo de aparición actualizado");
     }
 
     public void aplicarMejora (individuoAbstract individuo) {}
