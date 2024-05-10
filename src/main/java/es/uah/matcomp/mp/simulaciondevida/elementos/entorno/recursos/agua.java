@@ -1,14 +1,15 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 
-import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAbstract;
+import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import excepciones.incrementoInvalidoException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-public class agua extends recursoAbstract{
+public class agua extends recurso {
     private int incrementoTV;
-    private static final Logger logger = LogManager.getLogger("es.uah");
 
+    public agua () {}
+    public agua (int id, int T) {
+        super (id, T);
+    }
     public int getIncrementoTV() {
         return incrementoTV;
     }
@@ -16,11 +17,9 @@ public class agua extends recursoAbstract{
     public void setIncrementoTV(int incrementoTV) throws incrementoInvalidoException {
         if (incrementoTV < 0) throw new incrementoInvalidoException();
         this.incrementoTV = incrementoTV;
-        logger.info("Incremento de tiempo de vida modificado");
     }
     @Override
-    public void aplicarMejora (individuoAbstract individuo) {
+    public void aplicarMejora (individuo individuo) {
         individuo.setTiempoDeVida(individuo.getTiempoDeVida() + incrementoTV);
-        logger.info("Mejora aplicada");
     }
 }

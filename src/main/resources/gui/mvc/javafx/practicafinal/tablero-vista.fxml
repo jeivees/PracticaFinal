@@ -7,19 +7,24 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mvc.javafx.practicafinal.tableroController">
    <children>
       <Label alignment="CENTER" prefHeight="103.0" prefWidth="600.0" text="Simulador de Vida" textFill="#0777d9">
          <font>
             <Font name="Bookman Old Style" size="36.0" />
          </font>
       </Label>
-      <AnchorPane prefHeight="410.0" prefWidth="600.0" fx:id="panelTablero"/>
+      <AnchorPane prefHeight="410.0" prefWidth="600.0" />
       <HBox alignment="CENTER_RIGHT" prefHeight="48.0" prefWidth="600.0" spacing="5.0">
          <children>
+            <Label fx:id="turnoLabel" prefHeight="38.0" prefWidth="344.0" text="Turno: 0" textFill="#0a6314">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Label>
             <AnchorPane prefHeight="50.0" prefWidth="64.0">
                <children>
-                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="64.0" textFill="#078e10">
+                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBotonReanudarClick" prefHeight="48.0" prefWidth="64.0" textFill="#078e10">
                      <font>
                         <Font name="Bookman Old Style Bold" size="14.0" />
                      </font>
@@ -29,7 +34,7 @@
             </AnchorPane>
             <AnchorPane layoutX="528.0" layoutY="10.0" prefHeight="50.0" prefWidth="64.0">
                <children>
-                  <Button layoutX="3.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="64.0" textFill="#078e10">
+                  <Button layoutX="3.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBotonPausaClick" prefHeight="48.0" prefWidth="64.0" textFill="#078e10">
                      <font>
                         <Font name="Bookman Old Style Bold" size="14.0" />
                      </font>
@@ -40,7 +45,7 @@
             </AnchorPane>
             <AnchorPane layoutX="528.0" layoutY="10.0" prefHeight="50.0" prefWidth="64.0">
                <children>
-                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="64.0" textFill="#078e10">
+                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBotonConfiguracionClick" prefHeight="48.0" prefWidth="64.0" textFill="#078e10">
                      <font>
                         <Font name="Bookman Old Style Bold" size="14.0" />
                      </font>

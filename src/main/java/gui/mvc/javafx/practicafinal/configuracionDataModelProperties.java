@@ -19,12 +19,14 @@ public class configuracionDataModelProperties {
     private IntegerProperty ProbMejoraToBasico = new SimpleIntegerProperty();
     private IntegerProperty ProbMejoraToAvanzado = new SimpleIntegerProperty();
 
+
     // propiedades individuos
     private IntegerProperty TurnosVidaIniciales = new SimpleIntegerProperty();
     private IntegerProperty ProbReproIndividuo = new SimpleIntegerProperty();
     private IntegerProperty ProbClonIndividuo = new SimpleIntegerProperty();
 
     // propiedades recursos
+    private IntegerProperty TurnosInicialesRecurso = new SimpleIntegerProperty();
     private IntegerProperty ProbAparAgua = new SimpleIntegerProperty();
     private IntegerProperty ProbAparComida = new SimpleIntegerProperty();
     private IntegerProperty ProbAparMontaña = new SimpleIntegerProperty();
@@ -52,6 +54,7 @@ public class configuracionDataModelProperties {
         original.setProbMejoraToBasico(ProbMejoraToBasico.get());
         original.setProbMejoraToAvanzado(ProbMejoraToAvanzado.get());
 
+        original.setTurnosInicialesRecurso(TurnosInicialesRecurso.get());
         original.setProbAparAgua(ProbAparAgua.get());
         original.setProbAparComida(ProbAparComida.get());
         original.setProbAparMontaña(ProbAparMontaña.get());
@@ -98,6 +101,7 @@ public class configuracionDataModelProperties {
     }
 
     private void rollbackRecursos () {
+        TurnosInicialesRecurso.set(original.getTurnosInicialesRecurso());
         ProbAparAgua.set(original.getProbAparAgua());
         ProbAparComida.set(original.getProbAparComida());
         ProbAparMontaña.set(original.getProbAparMontaña());
@@ -159,6 +163,10 @@ public class configuracionDataModelProperties {
 
     public Property<Number> ProbAparPozoProperty() {
         return ProbAparPozo;
+    }
+
+    public IntegerProperty TurnosInicialesRecursoProperty() {
+        return TurnosInicialesRecurso;
     }
 
     public IntegerProperty IncrementoTurnosAguaProperty() {

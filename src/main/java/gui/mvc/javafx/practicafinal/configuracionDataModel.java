@@ -1,16 +1,20 @@
 package gui.mvc.javafx.practicafinal;
 
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recursoAbstract;
-import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAbstract;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
+import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 
 public class configuracionDataModel {
     // listas de elementos
-    private ListaEnlazada<individuoAbstract> individuos;
-    private ListaEnlazada<recursoAbstract> recursos;
+    private ListaEnlazada<individuo> individuos = new ListaEnlazada<>();
+    private ListaEnlazada<recurso> recursos = new ListaEnlazada<>();
 
     // datos generales
     private Boolean isPausado = false;
+
+    private IntegerProperty turnoProperty = new SimpleIntegerProperty();
 
     // datos tablero
     private int IndividuosMaximosPorCelda = 3;
@@ -26,6 +30,7 @@ public class configuracionDataModel {
     private int getProbMejoraToAvanzado;
 
     // datos recurso
+    private int TurnosInicialesRecurso;
     private int ProbAparAgua;
     private int ProbAparComida;
     private int ProbAparMontaña;
@@ -41,8 +46,8 @@ public class configuracionDataModel {
 
 
     public configuracionDataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo,
-                                  int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon,
-                                  int filasTablero, int columnasTablero, int mejoraToBasico, int mejoraToAvanzado) {
+                                  int turnosInicialesRecurso, int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon,
+                                  int filasTablero, int columnasTablero, int mejoraToBasico, int mejoraToAvanzado, int Turno) {
         TurnosVidaIniciales = turnosVidaIniciales;
         ProbReproIndividuo = probReproIndividuo;
         ProbClonIndividuo = probClonIndividuo;
@@ -52,6 +57,7 @@ public class configuracionDataModel {
         ProbAparTesoro = probAparTesoro;
         ProbAparBiblioteca = probAparBiblioteca;
         ProbAparPozo = probAparPozo;
+        TurnosInicialesRecurso = turnosInicialesRecurso;
         IncrementoTurnosAgua = incrementoTurnosAgua;
         IncrementoTurnosComida = incrementoTurnosComida;
         IncrementoTurnosMontaña = incrementoTurnosMontaña;
@@ -61,6 +67,8 @@ public class configuracionDataModel {
         ColumnasTablero = columnasTablero;
         probMejoraToBasico = mejoraToBasico;
         getProbMejoraToAvanzado = mejoraToAvanzado;
+        turnoProperty.set(Turno);
+        turnoProperty.set(0);
     }
 
 
@@ -231,19 +239,39 @@ public class configuracionDataModel {
     public void setPausado(Boolean pausado) {
         isPausado = pausado;
     }
-    public ListaEnlazada<individuoAbstract> getIndividuos() {
+    public ListaEnlazada<individuo> getIndividuos() {
         return individuos;
     }
 
-    public void setIndividuos(ListaEnlazada<individuoAbstract> individuos) {
+    public void setIndividuos(ListaEnlazada<individuo> individuos) {
         this.individuos = individuos;
     }
 
-    public ListaEnlazada<recursoAbstract> getRecursos() {
+    public ListaEnlazada<recurso> getRecursos() {
         return recursos;
     }
 
-    public void setRecursos(ListaEnlazada<recursoAbstract> recursos) {
+    public void setRecursos(ListaEnlazada<recurso> recursos) {
         this.recursos = recursos;
+    }
+
+    public IntegerProperty getTurnoProperty() {
+        return turnoProperty;
+    }
+
+    public int getTurno() {
+        return turnoProperty.get();
+    }
+
+    public void setTurno(int turno) {
+        turnoProperty.set(turno);
+    }
+
+    public int getTurnosInicialesRecurso() {
+        return TurnosInicialesRecurso;
+    }
+
+    public void setTurnosInicialesRecurso(int turnosInicialesRecurso) {
+        TurnosInicialesRecurso = turnosInicialesRecurso;
     }
 }
