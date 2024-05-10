@@ -1,14 +1,9 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDoblementeEnlazada.ListaDE;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaSimple.ListaSimple;
 import excepciones.probabilidadInvalidaException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDoblementeEnlazada.*;
-
-import java.util.Arrays;
 
 class individuoAbstractTest {
 

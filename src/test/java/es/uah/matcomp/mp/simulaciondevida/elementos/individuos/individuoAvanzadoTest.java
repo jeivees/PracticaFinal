@@ -1,9 +1,5 @@
-package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
+package es.uah.matcomp.mp.simulaciondevida.elementos.individuos; 
 
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.agua;
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.comida;
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recursoAbstract;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDoblementeEnlazada.ListaDE;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

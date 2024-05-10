@@ -20,7 +20,7 @@ class individuoNormalTest {
         individuoNormal i = new individuoNormal(2,2,2,2,2);
         i.setPosicionX(2);
         i.setPosicionY(2);
-        ListaDE<recursoAbstract> list = new ListaDE<>();
+        ListaDE<recurso> list = new ListaDE<>();
         assertDoesNotThrow(()->i.mover(list));
         assertTrue(0<i.getPosicionX() && 4>i.getPosicionX() && 0<i.getPosicionY() && 4>i.getPosicionY());
         assertTrue((i.getPosicionX()==1 || i.getPosicionX()==3)!=(i.getPosicionY()==1 || i.getPosicionY()==3));
@@ -41,6 +41,5 @@ class individuoNormalTest {
         c.setPosicionX(0);
         c.setPosicionY(0);
         list.add(c);
-
     }
 }
