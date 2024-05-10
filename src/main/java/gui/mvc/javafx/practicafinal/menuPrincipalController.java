@@ -26,7 +26,7 @@ public class menuPrincipalController implements Initializable {
     private String archivoActual;
 
     @FXML
-    protected void onNuevoButtonClick(ActionEvent event) throws IOException{
+    protected void onBotonNuevoClick(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("menuConfiguracionInicio-vista.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
@@ -35,7 +35,7 @@ public class menuPrincipalController implements Initializable {
     }
 
     @FXML
-    protected void onCargarPartidaButtonClick(ActionEvent event) throws IOException{
+    protected void onBotonCargarPartidaClick(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("cargarJuego-vista.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
@@ -49,7 +49,7 @@ public class menuPrincipalController implements Initializable {
     }
 
     @FXML
-    protected void onVolverMenuButtonClick (ActionEvent event) throws IOException {
+    protected void onBotonVolverMenuClick (ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("menuPrincipal-vista.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);

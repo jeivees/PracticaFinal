@@ -16,7 +16,7 @@ public class menuPrincipalApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(menuPrincipalApplication.class.getResource("menuPrincipal-vista.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(menuPrincipalApplication.class.getResource("menuConfiguracionInicio-vista.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setTitle("Simulador de Vida");
         stage.setScene(scene);
