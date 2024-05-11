@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,7 +24,7 @@ public class menuConfiguracionController implements Initializable {
 
     @FXML
     TabPane tabPaneConfiguracion = new TabPane();
-    Tab tabActual = new Tab();
+    Tab tabActual;
 
     @FXML
     private Spinner<Integer> TurnosVidaInicialesSpinner = new Spinner<>();
@@ -44,7 +45,7 @@ public class menuConfiguracionController implements Initializable {
     @FXML
     private Slider ProbAparPozoSlider = new Slider();
     @FXML
-    private Spinner<Integer> TurnosInicialesRecurso = new Spinner<>();
+    private Spinner<Integer> TurnosInicialesRecursoSpinner = new Spinner<>();
     @FXML
     private Spinner<Integer> IncrementoTurnosAguaSpinner = new Spinner<>();
     @FXML
@@ -148,15 +149,16 @@ public class menuConfiguracionController implements Initializable {
         ProbAparPozoSlider.valueProperty().bindBidirectional(model.ProbAparPozoProperty());
         IncrementoProbReproSlider.valueProperty().bindBidirectional(model.IncrementoProbReproProperty());
         IncrementoProbClonSlider.valueProperty().bindBidirectional(model.IncrementoProbClonProperty());
+        TurnosVidaInicialesSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosVidaInicialesProperty());
+        TurnosInicialesRecursoSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosInicialesRecursoProperty());
+        IncrementoTurnosAguaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosAguaProperty());
+        IncrementoTurnosComidaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosComidaProperty());
+        IncrementoTurnosMontañaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosMontañaProperty());
+        FilasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.FilasTableroProperty());
+        ColumnasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.ColumnasTableroProperty());
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        tabPaneConfiguracion.getSelectionModel().selectedItemProperty().addListener((_, _, newTab) -> {
-            log.debug("Se ha detectado un cambio en el tabPane");
-            if (newTab != null) tabActual = newTab;
-        });
-
+    protected void initializeSpinners () {
         SpinnerValueFactory<Integer> TurnosVidaInicialesVF =
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10000);
 
@@ -179,21 +181,42 @@ public class menuConfiguracionController implements Initializable {
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100);
 
         TurnosVidaInicialesSpinner.setValueFactory(TurnosVidaInicialesVF);
-        TurnosInicialesRecurso.setValueFactory(TurnosInicialesRecursoVF);
+        TurnosInicialesRecursoSpinner.setValueFactory(TurnosInicialesRecursoVF);
         IncrementoTurnosAguaSpinner.setValueFactory(IncrementoAguaVF);
         IncrementoTurnosComidaSpinner.setValueFactory(IncrementoComidaVF);
         IncrementoTurnosMontañaSpinner.setValueFactory(IncrementoMontañaVF);
         FilasTableroSpinner.setValueFactory(FilasTableroVF);
         ColumnasTableroSpinner.setValueFactory(ColumnasTableroVF);
 
+
+        añadirFiltroSpinner(TurnosVidaInicialesSpinner);
+        añadirFiltroSpinner(TurnosInicialesRecursoSpinner);
+        añadirFiltroSpinner(IncrementoTurnosAguaSpinner);
+        añadirFiltroSpinner(IncrementoTurnosComidaSpinner);
+        añadirFiltroSpinner(IncrementoTurnosMontañaSpinner);
+        añadirFiltroSpinner(TurnosVidaInicialesSpinner);
+        añadirFiltroSpinner(FilasTableroSpinner);
+        añadirFiltroSpinner(ColumnasTableroSpinner);
+    }
+
+    private void añadirFiltroSpinner (Spinner<Integer> spinner) {
+        spinner.getEditor().addEventFilter(KeyEvent.KEY_TYPED, event -> {
+            if (!event.getCharacter().matches("[0-9]")) {
+                event.consume();
+            }
+        });
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        tabPaneConfiguracion.getSelectionModel().selectedItemProperty().addListener((_, _, newTab) -> {
+            log.debug("Se ha detectado un cambio en el tabPane");
+            if (newTab != null) tabActual = newTab;
+        });
+
+        initializeSpinners();
+
         if (model != null) {
-            TurnosVidaInicialesSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosVidaInicialesProperty().asObject());
-            TurnosInicialesRecurso.getValueFactory().valueProperty().bindBidirectional(model.TurnosInicialesRecursoProperty().asObject());
-            IncrementoTurnosAguaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosAguaProperty().asObject());
-            IncrementoTurnosComidaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosComidaProperty().asObject());
-            IncrementoTurnosMontañaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosMontañaProperty().asObject());
-            FilasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.FilasTableroProperty().asObject());
-            ColumnasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.ColumnasTableroProperty().asObject());
             this.updateGUIwithModel();
         }
     }

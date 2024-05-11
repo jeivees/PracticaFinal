@@ -11,10 +11,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
@@ -22,6 +24,7 @@ import javafx.util.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -30,11 +33,14 @@ public class casillaController implements Initializable {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
     private configuracionDataModel model;
     casillaTablero casillaActual;
+
+    private Parent root;
     private boolean isListenerEnabled = true;
+
     @FXML
-    private VBox individuosVBox = new VBox();
+    private VBox individuosVBox;
     @FXML
-    private VBox recursosVBox = new VBox();
+    private VBox recursosVBox;
     @FXML
     private ChoiceBox<String> individuosAñadirBox = new ChoiceBox<>();
     private String[] tiposIndividuos = {"+ Básico", "+ Normal", "+ Avanzado"};
@@ -46,13 +52,34 @@ public class casillaController implements Initializable {
 
     public casillaController() {}
 
-    public casillaController(configuracionDataModel model, casillaTablero casillaActual) {
+    public <T extends individuo> casillaController(configuracionDataModel model, casillaTablero casillaActual) throws IOException {
         this.model = model;
         this.casillaActual = casillaActual;
+
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("casilla-vista.fxml"));
+        loader.setController(this);
+        Parent root = loader.load();
+        individuosVBox = (VBox)((GridPane) ((VBox) root).getChildren().getFirst()).getChildren().get(1);
+        recursosVBox = (VBox)((GridPane) ((VBox) root).getChildren().getFirst()).getChildren().get(3);
+        this.root = root;
+
+    if (!casillaActual.getIndividuos().isVacia()) {
+            for (int i = 0; i != casillaActual.getIndividuos().getNumeroElementos(); i++) {
+                Class<T> clase = casillaActual.getIndividuos().getElemento(i).getData().getTipo();
+                añadirIndividuoAux(casillaActual.getIndividuos().getElemento(i).getData().getTipo(), false, casillaActual.getIndividuos().getElemento(i).getData());
+            }
+        }
+        if (!casillaActual.getRecursos().isVacia()) {
+            for (int i = 0; i != casillaActual.getRecursos().getNumeroElementos(); i++) {
+                añadirRecursoAux(casillaActual.getRecursos().getElemento(i).getData().getTipo(), false,
+                        casillaActual.getRecursos().getElemento(i).getData());
+            }
+        }
     }
 
 
-    public void añadirIndividuo () {
+    public void añadirIndividuo (String individuoTipo) {
         try {
             isListenerEnabled = false;
             if (casillaActual.getIndividuos().getNumeroElementos() >= 3) {
@@ -62,15 +89,15 @@ public class casillaController implements Initializable {
                 pausa.play();
                 log.debug("Se ha intentado crear un individuo cuando ya había 3 en la casilla");
             } else {
-                switch (individuosAñadirBox.getValue()) {
+                switch (individuoTipo) {
                     case "+ Básico":
-                        añadirIndividuoAux(individuoBasico.class);
+                        añadirIndividuoAux(individuoBasico.class, true, null);
                         break;
                     case "+ Normal":
-                        añadirIndividuoAux(individuoNormal.class);
+                        añadirIndividuoAux(individuoNormal.class, true, null);
                         break;
                     case "+ Avanzado":
-                        añadirIndividuoAux(individuoAvanzado.class);
+                        añadirIndividuoAux(individuoAvanzado.class, true, null);
                         break;
                     default:
                         log.error("Se ha intentado añadir un tipo de individuo no esperado");
@@ -84,26 +111,26 @@ public class casillaController implements Initializable {
         }
     }
 
-    private <T extends individuo> void añadirIndividuoAux (Class<T> individuoClase) {
+    private <T extends individuo> void añadirIndividuoAux (Class<T> individuoClase, boolean nuevoIndividuo, T individuoToAdd) {
         try {
-            Constructor<T> constructor = individuoClase.getConstructor(int.class, int.class, int.class, float.class, float.class);
+            T individuo;
+            if (nuevoIndividuo) {
+                Constructor<T> constructor = individuoClase.getConstructor(int.class, int.class, int.class, float.class, float.class);
 
-            int id;
-            if (model.getIndividuos().isVacia()) {
-                id = 1;
+                int id;
+                if (model.getHistorialIndividuos().isVacia()) {
+                    id = 1;
+                } else {
+                    id = model.getHistorialIndividuos().getUltimo().getData().getId() + 1;
+                }
+                individuo = constructor.newInstance(
+                        id, model.getTurno(),
+                        model.getTurnosVidaIniciales(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
+
+                casillaActual.addIndividuo(individuo, true);
             } else {
-                id = model.getIndividuos().getUltimo().getData().getId() + 1;
+                individuo = individuoToAdd;
             }
-            T individuo = constructor.newInstance(
-                    id, model.getTurno(),
-                    model.getTurnosVidaIniciales(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
-
-            individuo.setPosicion(casillaActual.getPosicion());
-
-            model.getIndividuos().add(individuo);
-            model.setIndividuos(model.getIndividuos());
-
-            casillaActual.addIndividuo(individuo);
 
             HBox cajaIndividuo = FXMLLoader.load(getClass().getResource("elementoCasillaBox-vista.fxml"));
 
@@ -112,7 +139,7 @@ public class casillaController implements Initializable {
             labelIndividuo.setFont(font);
             String tipoIndividuo = individuoClase.getSimpleName().replace("individuo","");
             labelIndividuo.textProperty().bind(individuo.getTiempoDeVidaProperty().asString(
-                    tipoIndividuo + ": Vida: %d Id: " + id + " Gen: " + individuo.getGeneracion()));
+                    tipoIndividuo + ": Vida: %d Id: " + individuo.getId() + " Gen: " + individuo.getGeneracion()));
 
             Button botonQuitar = (Button) ((AnchorPane) cajaIndividuo.getChildren().get(1)).getChildren().getFirst();
 
@@ -120,23 +147,28 @@ public class casillaController implements Initializable {
 
             individuosVBox.getChildren().add(cajaIndividuo);
         } catch (Exception e) {
-            e.printStackTrace();
             log.error("No se ha podido crear una instancia del tipo de individuo pedido");
         }
     }
 
     public void eliminarIndividuo (ActionEvent event) {
-        for (int i=0; i != model.getIndividuos().getNumeroElementos(); i++) {
+        int i = 0;
+        boolean yaEliminado = false;
+        while (i != model.getIndividuos().getNumeroElementos() && !yaEliminado) {
             String labelIndividuoText = ((Label) ((HBox) ((Button) event.getSource()).getParent().getParent()).getChildren().getFirst()).getText();
             int indexOfId = labelIndividuoText.indexOf("Id:") + 4;
-            if (model.getIndividuos().getElemento(i).getData().getId() == (int) labelIndividuoText.charAt(indexOfId)) {
-                model.getIndividuos().del(i);
+            int idIndividuo = model.getIndividuos().getElemento(i).getData().getId();
+            int id = (int) labelIndividuoText.charAt(indexOfId) - '0';
+            if (idIndividuo == id) {
+                casillaActual.delIndividuo(model.getIndividuos().getElemento(i).getData());
+                individuosVBox.getChildren().remove(((Button) event.getSource()).getParent().getParent());
+                yaEliminado = true;
             }
+            i++;
         }
-        individuosVBox.getChildren().remove(((Button) event.getSource()).getParent().getParent());
     }
 
-    public void añadirRecurso () {
+    public void añadirRecurso (String recursoTipo) {
         try {
             isListenerEnabled = false;
             if (casillaActual.getRecursos().getNumeroElementos() >= 3) {
@@ -146,24 +178,24 @@ public class casillaController implements Initializable {
                 pausa.play();
                 log.debug("Se ha intentado crear un recurso cuando ya había 3 en la casilla");
             } else {
-                switch (recursosAñadirBox.getValue()) {
+                switch (recursoTipo) {
                     case "+ Agua":
-                        añadirRecursoAux(agua.class);
+                        añadirRecursoAux(agua.class, true, null);
                         break;
                     case "+ Comida":
-                        añadirRecursoAux(comida.class);
+                        añadirRecursoAux(comida.class, true, null);
                         break;
                     case "+ Montaña":
-                        añadirRecursoAux(montaña.class);
+                        añadirRecursoAux(montaña.class, true, null);
                         break;
                     case "+ Tesoro":
-                        añadirRecursoAux(tesoro.class);
+                        añadirRecursoAux(tesoro.class, true, null);
                         break;
                     case "+ Biblioteca":
-                        añadirRecursoAux(biblioteca.class);
+                        añadirRecursoAux(biblioteca.class, true, null);
                         break;
                     case "+ Pozo":
-                        añadirRecursoAux(pozo.class);
+                        añadirRecursoAux(pozo.class, true, null);
                         break;
                     default:
                         log.error("Se ha detectado una excepcion inesperada al añadir un individuo");
@@ -177,33 +209,33 @@ public class casillaController implements Initializable {
         }
     }
 
-    private <T extends recurso> void añadirRecursoAux (Class<T> recursoClase) {
+    private <T extends recurso> void añadirRecursoAux (Class<T> recursoClase, boolean nuevoRecurso, T recursoToAdd) {
         try {
-            Constructor<T> constructor = recursoClase.getConstructor(int.class, int.class);
+            T recurso;
+            if (nuevoRecurso) {
+                Constructor<T> constructor = recursoClase.getConstructor(int.class, int.class);
 
-            int id;
-            if (model.getRecursos().isVacia()) {
-                id = 1;
+                int id;
+                if (model.getHistorialRecursos().isVacia()) {
+                    id = 1;
+                } else {
+                    id = model.getHistorialRecursos().getUltimo().getData().getId() + 1;
+                }
+                recurso = constructor.newInstance(id, model.getTurnosInicialesRecurso());
+
+                casillaActual.addRecurso(recurso, true);
             } else {
-                id = model.getRecursos().getUltimo().getData().getId() + 1;
+                recurso = recursoToAdd;
             }
-            T recurso = constructor.newInstance(id, model.getTurnosInicialesRecurso());
-
-            recurso.setPosicion(casillaActual.getPosicion());
-
-            model.getRecursos().add(recurso);
-            model.setRecursos(model.getRecursos());
-
-            casillaActual.addRecurso(recurso);
 
             HBox cajaRecurso = FXMLLoader.load(getClass().getResource("elementoCasillaBox-vista.fxml"));
 
             Label labelRecurso = (Label) cajaRecurso.getChildren().getFirst();
             Font font = new Font("Bookman Old Style",12);
             labelRecurso.setFont(font);
-            String tipoRecurso = Character.toUpperCase(recurso.getClass().getSimpleName().charAt(0)) + recurso.getClass().getSimpleName().substring(1);
+            String tipoRecurso = Character.toUpperCase(recursoClase.getSimpleName().charAt(0)) + recursoClase.getSimpleName().substring(1);
             labelRecurso.textProperty().bind(recurso.getTiempoDeAparicionProperty().asString(
-                    tipoRecurso + ": Turnos restantes: %d Id: " + id));
+                    tipoRecurso + ": Vida: %d Id: " + recurso.getId()));
 
             Button botonQuitar = (Button) ((AnchorPane) cajaRecurso.getChildren().get(1)).getChildren().getFirst();
 
@@ -211,20 +243,29 @@ public class casillaController implements Initializable {
 
             recursosVBox.getChildren().add(cajaRecurso);
         } catch (Exception e) {
-            e.printStackTrace();
             log.error("No se ha podido crear una instancia del tipo de recurso pedido");
         }
     }
 
     public void eliminarRecurso (ActionEvent event) {
-        for (int i=0; i != model.getRecursos().getNumeroElementos(); i++) {
-            String labelRecursoText = ((Label) ((HBox) ((Button) event.getSource()).getParent().getParent()).getChildren().getFirst()).getText();
-            int indexOfId = labelRecursoText.indexOf("Id:") + 4;
-            if (model.getRecursos().getElemento(i).getData().getId() == (int) labelRecursoText.charAt(indexOfId)) {
-                model.getRecursos().del(i);
+        String labelRecursoText = ((Label) ((HBox) ((Button) event.getSource()).getParent().getParent()).getChildren().getFirst()).getText();
+        int indexOfId = labelRecursoText.indexOf("Id:") + 4;
+        int id = labelRecursoText.charAt(indexOfId) - '0';
+        int i = 0;
+        boolean yaEliminado = false;
+        while (i != model.getRecursos().getNumeroElementos() && !yaEliminado) {
+            int idRecurso = model.getRecursos().getElemento(i).getData().getId();
+            if (idRecurso == id) {
+                casillaActual.delRecurso(model.getRecursos().getElemento(i).getData());
+                recursosVBox.getChildren().remove(((Button) event.getSource()).getParent().getParent());
+                yaEliminado = true;
             }
+            i++;
         }
-        recursosVBox.getChildren().remove(((Button) event.getSource()).getParent().getParent());
+    }
+
+    public Parent getRoot () {
+        return root;
     }
 
     @Override
@@ -239,14 +280,14 @@ public class casillaController implements Initializable {
             individuosAñadirBox.setValue("Individuo");
             recursosAñadirBox.setValue("Recurso");
 
-            individuosAñadirBox.valueProperty().addListener((_, _, _) -> {
+            individuosAñadirBox.valueProperty().addListener((_, _, newValue) -> {
                 if (isListenerEnabled) {
-                    this.añadirIndividuo();
+                    this.añadirIndividuo(newValue);
                 }
             });
-            recursosAñadirBox.valueProperty().addListener((_, _, _) -> {
+            recursosAñadirBox.valueProperty().addListener((_, _, newValue) -> {
                 if (isListenerEnabled) {
-                    this.añadirRecurso();
+                    this.añadirRecurso(newValue);
                 }
             });
 

@@ -18,15 +18,11 @@
           <RowConstraints maxHeight="65.4" minHeight="10.0" prefHeight="33.400000000000006" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="3">
-               <children>
-                  <ChoiceBox fx:id="individuosAñadirBox" prefWidth="150.0" />
-                  <ChoiceBox fx:id="recursosAñadirBox" prefWidth="150.0" />
-               </children>
-               <padding>
-                  <Insets left="5.0" right="5.0" />
-               </padding>
-            </HBox>
+            <Label fx:id="alertaCasillaLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" textFill="#0e6b09" GridPane.hgrow="ALWAYS">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font>
+            </Label>
             <VBox fx:id="individuosVBox" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
                <children>
                   <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" text="Individuos:" textFill="#0600bf">
@@ -38,6 +34,15 @@
                      </VBox.margin>
                   </Label>
                </children></VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="3">
+               <children>
+                  <ChoiceBox fx:id="individuosAñadirBox" prefWidth="150.0" />
+                  <ChoiceBox fx:id="recursosAñadirBox" prefWidth="150.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
             <VBox fx:id="recursosVBox" prefHeight="79.0" prefWidth="167.0" GridPane.rowIndex="2">
                <children>
                   <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" text="Recursos:" textFill="#0600bf">
@@ -49,11 +54,6 @@
                      </VBox.margin>
                   </Label>
                </children></VBox>
-            <Label fx:id="alertaCasillaLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" textFill="#0e6b09" GridPane.hgrow="ALWAYS">
-               <font>
-                  <Font name="Bookman Old Style" size="16.0" />
-               </font>
-            </Label>
          </children>
       </GridPane>
    </children>

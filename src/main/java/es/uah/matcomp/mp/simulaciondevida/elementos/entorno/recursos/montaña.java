@@ -3,12 +3,15 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import excepciones.incrementoInvalidoException;
 
-public class montaña extends recurso {
+public class montaña extends recurso<montaña> {
     private int incrementoTV;
 
     public montaña () {}
     public montaña (int id, int T) {
         super (id, T);
+    }
+    public montaña (int id, int PX, int PY, int T) {
+        super (id, PX, PY, T);
     }
 
     public int getIncrementoTV() {
@@ -23,5 +26,10 @@ public class montaña extends recurso {
     @Override
     public void aplicarMejora (individuo individuo) {
         individuo.setTiempoDeVida(individuo.getTiempoDeVida() + incrementoTV);
+    }
+
+    @Override
+    public Class<montaña> getTipo () {
+        return montaña.class;
     }
 }

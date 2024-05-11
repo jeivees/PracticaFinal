@@ -1,15 +1,20 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
+import excepciones.arrayTamañoInvalidoException;
 import excepciones.probabilidadInvalidaException;
+import gui.mvc.javafx.practicafinal.configuracionDataModel;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-public abstract class individuo {
+public abstract class individuo<T extends individuo<T>> {
     private int posicionX;
     private int posicionY;
     private int id;
@@ -29,6 +34,17 @@ public abstract class individuo {
         this.probReproduccion = PR;
         this.probClonacion = PC;
         this.probMuerte = 1-PR;
+    }
+
+    public individuo( int id, int posicionX, int posicionY, int generacion, int tiempoDeVida, float probReproduccion, float probClonacion) {
+        this.id = id;
+        this.posicionX = posicionX;
+        this.posicionY = posicionY;
+        this.generacion = generacion;
+        TiempoDeVidaProperty.set(tiempoDeVida);
+        this.probReproduccion = probReproduccion;
+        this.probClonacion = probClonacion;
+        this.probMuerte = 1-probReproduccion;
     }
 
     public int getPosicionX() {
@@ -54,9 +70,14 @@ public abstract class individuo {
         return posicion;
     }
 
-    public void setPosicion (int[] pos) {
-        posicionX = pos[0];
-        posicionY = pos[1];
+    public void setPosicion (int[] posicion) {
+        try {
+            if (posicion.length != 2) throw new arrayTamañoInvalidoException();
+            posicionX = posicion[0];
+            posicionY = posicion[1];
+        } catch (arrayTamañoInvalidoException e) {
+            log.error("Se ha intentado establecer la posición de un individuo con un array que no contiene 2 elementos");
+        }
     }
 
     public int getId() {
@@ -115,7 +136,7 @@ public abstract class individuo {
         return probMuerte;
     }
 
-    public String getTipo () {return null;}
+    public abstract Class<T> getTipo () ;
 
     public String setTipo (String tipo) {return null;}
 
@@ -123,12 +144,29 @@ public abstract class individuo {
 
     }
     public void clonarse () {}
-    public void morir () {
 
+    public void añadir(configuracionDataModel model, casillaTablero casillaActual) {
+        try {
+            model.getIndividuos().add(this);
+            casillaActual.getIndividuos().add(this);
+            this.setPosicion(casillaActual.getPosicion());
+
+            Constructor<? extends individuo> constructor = getClass().getConstructor(
+                    int.class, int.class, int.class, int.class, int.class, float.class, float.class);
+            model.getHistorialIndividuos().add(constructor.newInstance(
+                    id, posicionX, posicionY, generacion, TiempoDeVidaProperty.get(), probReproduccion, probClonacion));
+        } catch (NoSuchMethodException | InvocationTargetException | InstantiationException | IllegalAccessException e) {
+            log.error("No se ha podido crear una nueva instancia de individuo para el historial de individuos");
+        }
     }
-    public void actualizarTV () {
+    public void morir(configuracionDataModel model, casillaTablero casillaActual) {
+        casillaActual.getIndividuos().del(this);
+        model.getIndividuos().del(this);
+    }
+
+    public void actualizarTV (configuracionDataModel model, casillaTablero casillaActual) {
         TiempoDeVidaProperty.set(TiempoDeVidaProperty.get()-1);
-        if (TiempoDeVidaProperty.get() == 0) morir();
+        if (TiempoDeVidaProperty.get() == 0) morir(model, casillaActual);
         log.info("Tiempo de vida actualizado");
     }
 

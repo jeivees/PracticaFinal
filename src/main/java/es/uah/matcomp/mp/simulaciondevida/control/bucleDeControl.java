@@ -4,7 +4,6 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.*;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDoblementeEnlazada.ListaDE;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 import gui.mvc.javafx.practicafinal.configuracionDataModel;
 import gui.mvc.javafx.practicafinal.menuPrincipalController;
@@ -46,7 +45,7 @@ public class bucleDeControl {
     private void actualizarTVIndividuos() {
         if (individuos != null) {
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
-                individuos.getElemento(i).getData().actualizarTV();
+                individuos.getElemento(i).getData().actualizarTV(model, tablero.getCasilla(individuos.getElemento(i).getData().getPosicion()));
             }
         }
     }
@@ -54,7 +53,7 @@ public class bucleDeControl {
     private void actualizarTARecursos() {
         if (recursos != null) {
             for (int i = 0; i != recursos.getNumeroElementos(); i++) {
-                recursos.getElemento(i).getData().actualizarTA();
+                recursos.getElemento(i).getData().actualizarTA(model, tablero.getCasilla(recursos.getElemento(i).getData().getPosicion()));
             }
         }
     }
@@ -85,7 +84,7 @@ public class bucleDeControl {
         if (individuos != null) {
             for (int i = 0; i != tablero.getNumeroCasillasN(); i++) {
                 for (int j = 0; j != tablero.getNumeroCasillasM(); j++) {
-                    ListaDE<individuo> individuos = tablero.getCasilla(i, j).getIndividuos();
+                    ListaEnlazada<individuo> individuos = tablero.getCasilla(i, j).getIndividuos();
                     if (!individuos.isVacia()) {
                         for (int k = 1; k < individuos.getNumeroElementos(); k += 2) {
                             individuo individuoActual = individuos.getElemento(k - 1).getData();
@@ -95,8 +94,8 @@ public class bucleDeControl {
                             if (p <= individuoActual.getProbReproduccion()) {
                                 individuoActual.reproducirse(pareja);
                             } else {
-                                individuoActual.morir();
-                                pareja.morir();
+                                individuoActual.morir(model, tablero.getCasilla(individuoActual.getPosicion()));
+                                pareja.morir(model, tablero.getCasilla(pareja.getPosicion()));
                             }
                         }
                     }
@@ -129,7 +128,7 @@ public class bucleDeControl {
                             individuo individuoActual = casillaActual.getIndividuos().getElemento(l).getData();
                             if (casillaActual.getIndividuos().getNumeroElementos() > model.getIndividuosMaximosPorCelda() &&
                                     individuoActual.getTiempoDeVida() == k) {
-                                individuoActual.morir();
+                                individuoActual.morir(model, tablero.getCasilla(individuoActual.getPosicion()));
                             }
                         }
                         k += 1;

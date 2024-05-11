@@ -10,6 +10,8 @@ public class configuracionDataModel {
     // listas de elementos
     private ListaEnlazada<individuo> individuos = new ListaEnlazada<>();
     private ListaEnlazada<recurso> recursos = new ListaEnlazada<>();
+    private ListaEnlazada<individuo> HistorialIndividuos = new ListaEnlazada<>();
+    private ListaEnlazada<recurso> HistorialRecursos = new ListaEnlazada<>();
 
     // datos generales
     private Boolean isPausado = false;
@@ -273,5 +275,21 @@ public class configuracionDataModel {
 
     public void setTurnosInicialesRecurso(int turnosInicialesRecurso) {
         TurnosInicialesRecurso = turnosInicialesRecurso;
+    }
+
+    public ListaEnlazada<individuo> getHistorialIndividuos() {
+        return HistorialIndividuos;
+    }
+
+    public void setHistorialIndividuos(ListaEnlazada<individuo> historialIndividuos) {
+        HistorialIndividuos = historialIndividuos;
+    }
+
+    public ListaEnlazada<recurso> getHistorialRecursos() {
+        return HistorialRecursos;
+    }
+
+    public void setHistorialRecursos(ListaEnlazada<recurso> historialRecursos) {
+        HistorialRecursos = historialRecursos;
     }
 }

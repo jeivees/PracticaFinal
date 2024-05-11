@@ -227,7 +227,7 @@
                               <Insets left="6.0" />
                            </GridPane.margin>
                         </Label>
-                        <Spinner prefHeight="26.0" prefWidth="188.0" GridPane.columnIndex="3" />
+                        <Spinner fx:id="TurnosInicialesRecursoSpinner" editable="true" prefHeight="26.0" prefWidth="188.0" GridPane.columnIndex="3" />
                       </GridPane>
                   </children>
                </AnchorPane>

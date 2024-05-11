@@ -2,11 +2,15 @@ package gui.mvc.javafx.practicafinal;
 
 import excepciones.reinicioPestañaInesperadaException;
 import javafx.beans.property.*;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Tab;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class configuracionDataModelProperties {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class configuracionDataModelProperties implements Initializable {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
     //Modelo de datos original
@@ -14,28 +18,29 @@ public class configuracionDataModelProperties {
 
 
     // propiedades tablero
-    private IntegerProperty FilasTablero = new SimpleIntegerProperty();
-    private IntegerProperty ColumnasTablero = new SimpleIntegerProperty();
-    private IntegerProperty ProbMejoraToBasico = new SimpleIntegerProperty();
-    private IntegerProperty ProbMejoraToAvanzado = new SimpleIntegerProperty();
+    private ObjectProperty<Integer> FilasTablero = new SimpleIntegerProperty().asObject();
+    private ObjectProperty<Integer> ColumnasTablero = new SimpleIntegerProperty().asObject();
+
 
 
     // propiedades individuos
-    private IntegerProperty TurnosVidaIniciales = new SimpleIntegerProperty();
+    private ObjectProperty<Integer> TurnosVidaIniciales = new SimpleIntegerProperty().asObject();
     private IntegerProperty ProbReproIndividuo = new SimpleIntegerProperty();
     private IntegerProperty ProbClonIndividuo = new SimpleIntegerProperty();
+    private IntegerProperty ProbMejoraToBasico = new SimpleIntegerProperty();
+    private IntegerProperty ProbMejoraToAvanzado = new SimpleIntegerProperty();
 
     // propiedades recursos
-    private IntegerProperty TurnosInicialesRecurso = new SimpleIntegerProperty();
+    private ObjectProperty<Integer> TurnosInicialesRecurso = new SimpleIntegerProperty().asObject();
     private IntegerProperty ProbAparAgua = new SimpleIntegerProperty();
     private IntegerProperty ProbAparComida = new SimpleIntegerProperty();
     private IntegerProperty ProbAparMontaña = new SimpleIntegerProperty();
     private IntegerProperty ProbAparTesoro = new SimpleIntegerProperty();
     private IntegerProperty ProbAparBiblioteca = new SimpleIntegerProperty();
     private IntegerProperty ProbAparPozo = new SimpleIntegerProperty();
-    private IntegerProperty IncrementoTurnosAgua = new SimpleIntegerProperty();
-    private IntegerProperty IncrementoTurnosComida = new SimpleIntegerProperty();
-    private IntegerProperty IncrementoTurnosMontaña = new SimpleIntegerProperty();
+    private ObjectProperty<Integer> IncrementoTurnosAgua = new SimpleIntegerProperty().asObject();
+    private ObjectProperty<Integer> IncrementoTurnosComida = new SimpleIntegerProperty().asObject();
+    private ObjectProperty<Integer> IncrementoTurnosMontaña = new SimpleIntegerProperty().asObject();
     private IntegerProperty IncrementoProbRepro = new SimpleIntegerProperty();
     private IntegerProperty IncrementoProbClon = new SimpleIntegerProperty();
 
@@ -129,7 +134,7 @@ public class configuracionDataModelProperties {
         rollback(null); //Se inicializan los properties.
     }
 
-    public IntegerProperty TurnosVidaInicialesProperty() {
+    public ObjectProperty<Integer> TurnosVidaInicialesProperty() {
         return TurnosVidaIniciales;
     }
 
@@ -165,19 +170,19 @@ public class configuracionDataModelProperties {
         return ProbAparPozo;
     }
 
-    public IntegerProperty TurnosInicialesRecursoProperty() {
+    public ObjectProperty<Integer> TurnosInicialesRecursoProperty() {
         return TurnosInicialesRecurso;
     }
 
-    public IntegerProperty IncrementoTurnosAguaProperty() {
+    public ObjectProperty<Integer> IncrementoTurnosAguaProperty() {
         return IncrementoTurnosAgua;
     }
 
-    public IntegerProperty IncrementoTurnosComidaProperty() {
+    public ObjectProperty<Integer> IncrementoTurnosComidaProperty() {
         return IncrementoTurnosComida;
     }
 
-    public IntegerProperty IncrementoTurnosMontañaProperty() {
+    public ObjectProperty<Integer> IncrementoTurnosMontañaProperty() {
         return IncrementoTurnosMontaña;
     }
 
@@ -189,11 +194,18 @@ public class configuracionDataModelProperties {
         return IncrementoProbClon;
     }
 
-    public IntegerProperty FilasTableroProperty() {
+    public ObjectProperty<Integer> FilasTableroProperty() {
         return FilasTablero;
     }
 
-    public IntegerProperty ColumnasTableroProperty() {
+    public ObjectProperty<Integer> ColumnasTableroProperty() {
         return ColumnasTablero;
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        IncrementoTurnosAguaProperty().addListener((_,_,_) -> {
+
+        });
     }
 }

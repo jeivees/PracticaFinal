@@ -1,7 +1,11 @@
 package es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDoblementeEnlazada;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class ListaDE<T>{
+    private static final Logger log = LogManager.getLogger();
     private ElementoLDE<T> primero;
     private ElementoLDE<T> ultimo;
 
@@ -83,6 +87,20 @@ public class ListaDE<T>{
             actual.getAnterior().setSiguiente(actual.getSiguiente());
         }
         return this.getNumeroElementos();
+    }
+
+    public void del (T elemento) {
+        Integer indiceAEliminar = null;
+        for (int i=0; i != getNumeroElementos(); i++) {
+            if (getElemento(i).getData() == elemento) {
+                indiceAEliminar = i;
+            }
+        }
+        if (indiceAEliminar == null) {
+            log.warn("Se ha tratado de eliminar un elemento que no pertenece a la lista");
+        } else {
+            del(indiceAEliminar);
+        }
     }
 
     public int getNumeroElementos() {

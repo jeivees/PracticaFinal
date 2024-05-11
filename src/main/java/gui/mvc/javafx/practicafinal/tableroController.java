@@ -5,13 +5,19 @@ import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Bounds;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -47,26 +53,60 @@ public class tableroController {
     }
 
     @FXML
-    protected void onBotonConfiguracionClick (ActionEvent event) throws IOException{
+    protected void onBotonConfiguracionClick () throws IOException{
         menuConfiguracionController configC = new menuConfiguracionController(model);
         model.setPausado(true);
         configC.mostrarMenuConfiguracion();
     }
 
+    @FXML
+    protected void onBotonCerrarClick () {
+        ((Stage) Window.getWindows().getFirst()).close();
+    }
+
     protected void mostrarElementosCasilla (casillaTablero casilla) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("elementosCasilla-vista.fxml"));
+
             casillaController casillaController = new casillaController(model, casilla);
-            loader.setController(casillaController);
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
+
+            Scene scene = new Scene(casillaController.getRoot());
             Stage stage = new Stage();
+            stage.setResizable(false);
             stage.setScene(scene);
+
+            int numeroVentanasAbiertas = 0;
+            for (Window window : Window.getWindows()) {
+                numeroVentanasAbiertas ++;
+            }
+            if (numeroVentanasAbiertas > 1) {
+                Stage ventanaPreviaCasilla = ((Stage) Window.getWindows().get(1));
+                String textoLabelVentana = ((Label) ((GridPane) ((VBox) ventanaPreviaCasilla.getScene().getRoot()).getChildren().getFirst()).getChildren().getFirst()).getText();
+                log.debug("Se ha cerrado la ventana de la casilla " + textoLabelVentana.charAt(8) + ", " + textoLabelVentana.charAt(11));
+                ventanaPreviaCasilla.close();
+            }
+
+
+            Bounds limitesCasilla = casilla.getBoundsInLocal();
+            Bounds limitesEscenaCasilla = casilla.localToScene(limitesCasilla);
+            Screen pantalla = Screen.getPrimary();
+            Rectangle2D limitesPantalla = pantalla.getBounds();
+
+
+            if (limitesEscenaCasilla.getMinX() < limitesPantalla.getWidth()/2) {
+                stage.setX(limitesEscenaCasilla.getMinX());
+            } else {
+                stage.setX(limitesEscenaCasilla.getMinX() - 220 - casilla.getPrefWidth());
+            }
+            if (limitesEscenaCasilla.getMinY() < limitesPantalla.getHeight()/2) {
+                stage.setY(limitesEscenaCasilla.getMinY() - 20);
+            } else {
+                stage.setY(limitesEscenaCasilla.getMinY() - 240);
+            }
+
             stage.show();
-            log.info("Se ha pulsado la casilla" + casilla);
+            log.debug("Se ha pulsado la casilla" + casilla);
         } catch (IOException e) {
             log.error("No se ha encontrado la vista de elementosCasilla");
-            e.printStackTrace();
         }
     }
 
@@ -83,6 +123,7 @@ public class tableroController {
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
@@ -92,11 +133,10 @@ public class tableroController {
         gridTablero.setVgap(1);
         for (int i=0; i != casillasN; i++) {
             for (int j=0; j != casillasM; j++) {
-                casillaTablero casilla = new casillaTablero(i,j);
+                casillaTablero casilla = new casillaTablero(i, j, model);
                 casilla.setPrefHeight(((AnchorPane) root.getChildrenUnmodifiable().get(1)).getPrefHeight()/casillasM);
                 casilla.setPrefWidth(((AnchorPane) root.getChildrenUnmodifiable().get(1)).getPrefWidth()/casillasN);
-                casilla.setOnAction(_ ->this.mostrarElementosCasilla(casilla));
-                if (i == 0 && j == 0) casilla.setModel(model);
+                ((Button) casilla.getChildren().getFirst()).setOnAction(_ ->this.mostrarElementosCasilla(casilla));
                 gridTablero.add(casilla, i, j);
             }
         }

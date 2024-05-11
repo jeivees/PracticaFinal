@@ -1,114 +1,39 @@
-2024-05-09 18:55:17.438 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 18:55:17.465 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:05:35.930 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:05:35.935 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:06:36.904 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:06:36.912 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:07:24.941 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:07:24.950 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:10:08.188 - WARN  - es.uah - Probabilidad inválida
-2024-05-09 19:10:08.203 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:10:08.206 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:10:08.246 - WARN  - es.uah - Probabilidad inválida
-2024-05-09 19:11:09.616 - WARN  - es.uah - Probabilidad inválida
-2024-05-09 19:11:09.638 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:11:09.638 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:11:09.669 - WARN  - es.uah - Probabilidad inválida
-2024-05-09 19:20:55.392 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:20:55.450 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:20:55.451 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.481 - INFO  - es.uah - Probabilidad de reproducción modificada
-2024-05-09 19:20:55.496 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:20:55.498 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.499 - INFO  - es.uah - Inicio del movimiento aleatorio
-2024-05-09 19:20:55.500 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.500 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-09 19:20:55.510 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:20:55.518 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.530 - INFO  - es.uah - Probabilidad de reproducción modificada
-2024-05-09 19:20:55.586 - INFO  - es.uah - Id modificado
-2024-05-09 19:20:55.593 - INFO  - es.uah - Generación modificada
-2024-05-09 19:20:55.629 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-09 19:20:55.632 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:20:55.639 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.648 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 19:23:25.073 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:23:25.116 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:23:25.116 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.126 - INFO  - es.uah - Probabilidad de reproducción modificada
-2024-05-09 19:23:25.135 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:23:25.136 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.136 - INFO  - es.uah - Inicio del movimiento aleatorio
-2024-05-09 19:23:25.137 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.137 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-09 19:23:25.143 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:23:25.168 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.184 - INFO  - es.uah - Probabilidad de reproducción modificada
-2024-05-09 19:23:25.275 - INFO  - es.uah - Id modificado
-2024-05-09 19:23:25.279 - INFO  - es.uah - Generación modificada
-2024-05-09 19:23:25.319 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-09 19:23:25.322 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:23:25.332 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.350 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 19:31:07.701 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:31:07.711 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:31:07.720 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:31:07.720 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:31:07.728 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:31:07.743 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:31:07.798 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:31:07.805 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.308 - INFO  - es.uah - Tiempo de aparición modificado
-2024-05-09 19:34:41.332 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.333 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:34:41.342 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.342 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:34:41.356 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:34:41.366 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.388 - INFO  - es.uah - Tiempo de aparición modificado
-2024-05-09 19:34:41.390 - INFO  - es.uah - Tiempo de aparición actualizado
-2024-05-09 19:34:41.396 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:34:41.404 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.413 - INFO  - es.uah - Tiempo de aparición modificado
-2024-05-09 19:38:20.207 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:38:20.222 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:38:20.223 - INFO  - es.uah - Mejora aplicada
-2024-05-09 19:38:20.255 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:38:20.262 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:46:56.271 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:46:56.289 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:46:56.289 - INFO  - es.uah - Mejora aplicada
-2024-05-09 19:46:56.391 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:46:56.406 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:47:14.907 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:47:14.923 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:47:14.923 - INFO  - es.uah - Mejora aplicada
-2024-05-09 19:47:14.951 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:47:14.960 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:54:17.042 - INFO  - es.uah - Incremento modificado
-2024-05-09 19:54:17.056 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:54:17.056 - INFO  - es.uah - Mejora aplicada
-2024-05-09 19:54:17.083 - INFO  - es.uah - Incremento modificado
-2024-05-09 19:54:17.095 - INFO  - es.uah - Incremento modificado
-2024-05-09 20:06:55.082 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:06:55.100 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:06:55.101 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:06:55.102 - INFO  - es.uah - Mejora de tipo de individuo
-2024-05-09 20:06:55.154 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:06:55.168 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:07:59.609 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:07:59.629 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:07:59.630 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:07:59.633 - INFO  - es.uah - Mejora de tipo de individuo
-2024-05-09 20:09:16.705 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:09:16.720 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:09:16.720 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:09:16.721 - INFO  - es.uah - Mejora de tipo de individuo
-2024-05-09 20:11:53.284 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:11:53.300 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:11:53.300 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:11:53.301 - INFO  - es.uah - Mejora de tipo de individuo
-2024-05-09 20:13:10.037 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:13:10.053 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:13:10.054 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:13:10.054 - INFO  - es.uah - Mejora de tipo de individuo
+2024-05-11 13:26:24.215 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 13:28:35.872 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 13:28:58.765 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 13:29:19.445 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 13:54:25.177 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-11 14:28:53.318 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 14:29:01.818 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 14:29:08.106 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-11 16:10:08.050 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 16:39:40.424 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:06:39.067 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-11 17:06:44.388 - ERROR - es.uah - No se ha podido crear una nueva instancia de recurso para el historial de recursos
+2024-05-11 17:10:44.901 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-11 17:14:04.029 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:14:04.536 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:14:04.826 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:14:08.672 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:14:09.076 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:14:09.458 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:17:23.852 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:18:34.295 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:18:37.901 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:20:31.859 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:20:34.264 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:20:46.311 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:20:49.341 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:22:00.486 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:22:27.575 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:22:28.261 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:22:31.020 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:22:31.892 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:22:41.490 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:22:47.225 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 17:22:50.006 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 18:09:05.020 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 18:10:59.652 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 18:11:19.296 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 18:11:24.695 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-11 18:11:33.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
