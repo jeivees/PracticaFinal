@@ -1,114 +1,21 @@
-2024-05-09 18:55:17.438 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 18:55:17.465 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:05:35.930 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:05:35.935 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:06:36.904 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:06:36.912 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:07:24.941 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:07:24.950 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:10:08.188 - WARN  - es.uah - Probabilidad inválida
-2024-05-09 19:10:08.203 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:10:08.206 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:10:08.246 - WARN  - es.uah - Probabilidad inválida
-2024-05-09 19:11:09.616 - WARN  - es.uah - Probabilidad inválida
-2024-05-09 19:11:09.638 - INFO  - es.uah - Inicio del movimiento
-2024-05-09 19:11:09.638 - INFO  - es.uah - Fin del movimiento
-2024-05-09 19:11:09.669 - WARN  - es.uah - Probabilidad inválida
-2024-05-09 19:20:55.392 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:20:55.450 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:20:55.451 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.481 - INFO  - es.uah - Probabilidad de reproducción modificada
-2024-05-09 19:20:55.496 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:20:55.498 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.499 - INFO  - es.uah - Inicio del movimiento aleatorio
-2024-05-09 19:20:55.500 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.500 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-09 19:20:55.510 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:20:55.518 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.530 - INFO  - es.uah - Probabilidad de reproducción modificada
-2024-05-09 19:20:55.586 - INFO  - es.uah - Id modificado
-2024-05-09 19:20:55.593 - INFO  - es.uah - Generación modificada
-2024-05-09 19:20:55.629 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-09 19:20:55.632 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:20:55.639 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:20:55.648 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 19:23:25.073 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:23:25.116 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:23:25.116 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.126 - INFO  - es.uah - Probabilidad de reproducción modificada
-2024-05-09 19:23:25.135 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:23:25.136 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.136 - INFO  - es.uah - Inicio del movimiento aleatorio
-2024-05-09 19:23:25.137 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.137 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-09 19:23:25.143 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:23:25.168 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.184 - INFO  - es.uah - Probabilidad de reproducción modificada
-2024-05-09 19:23:25.275 - INFO  - es.uah - Id modificado
-2024-05-09 19:23:25.279 - INFO  - es.uah - Generación modificada
-2024-05-09 19:23:25.319 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-09 19:23:25.322 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:23:25.332 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:23:25.350 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 19:31:07.701 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:31:07.711 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:31:07.720 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:31:07.720 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:31:07.728 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:31:07.743 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:31:07.798 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:31:07.805 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.308 - INFO  - es.uah - Tiempo de aparición modificado
-2024-05-09 19:34:41.332 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.333 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:34:41.342 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.342 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:34:41.356 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:34:41.366 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.388 - INFO  - es.uah - Tiempo de aparición modificado
-2024-05-09 19:34:41.390 - INFO  - es.uah - Tiempo de aparición actualizado
-2024-05-09 19:34:41.396 - INFO  - es.uah - PosiciónX modificada
-2024-05-09 19:34:41.404 - INFO  - es.uah - PosiciónY modificada
-2024-05-09 19:34:41.413 - INFO  - es.uah - Tiempo de aparición modificado
-2024-05-09 19:38:20.207 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:38:20.222 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:38:20.223 - INFO  - es.uah - Mejora aplicada
-2024-05-09 19:38:20.255 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:38:20.262 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:46:56.271 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:46:56.289 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:46:56.289 - INFO  - es.uah - Mejora aplicada
-2024-05-09 19:46:56.391 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:46:56.406 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:47:14.907 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:47:14.923 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:47:14.923 - INFO  - es.uah - Mejora aplicada
-2024-05-09 19:47:14.951 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:47:14.960 - INFO  - es.uah - Incremento de tiempo de vida modificado
-2024-05-09 19:54:17.042 - INFO  - es.uah - Incremento modificado
-2024-05-09 19:54:17.056 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-09 19:54:17.056 - INFO  - es.uah - Mejora aplicada
-2024-05-09 19:54:17.083 - INFO  - es.uah - Incremento modificado
-2024-05-09 19:54:17.095 - INFO  - es.uah - Incremento modificado
-2024-05-09 20:06:55.082 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:06:55.100 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:06:55.101 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:06:55.102 - INFO  - es.uah - Mejora de tipo de individuo
-2024-05-09 20:06:55.154 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:06:55.168 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:07:59.609 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:07:59.629 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:07:59.630 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:07:59.633 - INFO  - es.uah - Mejora de tipo de individuo
-2024-05-09 20:09:16.705 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:09:16.720 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:09:16.720 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:09:16.721 - INFO  - es.uah - Mejora de tipo de individuo
-2024-05-09 20:11:53.284 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:11:53.300 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:11:53.300 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:11:53.301 - INFO  - es.uah - Mejora de tipo de individuo
-2024-05-09 20:13:10.037 - INFO  - es.uah - Incremento de probabilidad de clonación modificado
-2024-05-09 20:13:10.053 - INFO  - es.uah - Probabilidad de clonación modificada
-2024-05-09 20:13:10.054 - INFO  - es.uah - Mejora aplicada
-2024-05-09 20:13:10.054 - INFO  - es.uah - Mejora de tipo de individuo
+2024-05-11 17:46:48.729 - INFO  - es.uah - Incremento de probabilidad de reproducción modificado
+2024-05-11 17:46:48.766 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-11 17:46:48.766 - INFO  - es.uah - Mejora aplicada
+2024-05-11 17:46:48.770 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-11 17:46:48.771 - INFO  - es.uah - Mejora aplicada
+2024-05-11 17:46:48.800 - INFO  - es.uah - Incremento de probabilidad de reproducción modificado
+2024-05-11 17:46:48.825 - INFO  - es.uah - Incremento de probabilidad de reproducción modificado
+2024-05-11 17:47:20.527 - INFO  - es.uah - Incremento de probabilidad de reproducción modificado
+2024-05-11 17:47:20.550 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-11 17:47:20.550 - INFO  - es.uah - Mejora aplicada
+2024-05-11 17:47:20.553 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-11 17:47:20.554 - INFO  - es.uah - Mejora aplicada
+2024-05-11 17:47:20.584 - INFO  - es.uah - Incremento de probabilidad de reproducción modificado
+2024-05-11 17:47:20.594 - INFO  - es.uah - Incremento de probabilidad de reproducción modificado
+2024-05-11 17:48:25.979 - INFO  - es.uah - Incremento de probabilidad de reproducción modificado
+2024-05-11 17:48:25.991 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-11 17:48:25.991 - INFO  - es.uah - Mejora aplicada
+2024-05-11 17:48:25.993 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-11 17:48:25.994 - INFO  - es.uah - Mejora aplicada
+2024-05-11 17:48:26.019 - INFO  - es.uah - Incremento de probabilidad de reproducción modificado
+2024-05-11 17:48:26.029 - INFO  - es.uah - Incremento de probabilidad de reproducción modificado

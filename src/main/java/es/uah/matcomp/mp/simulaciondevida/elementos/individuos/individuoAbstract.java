@@ -113,7 +113,8 @@ public abstract class individuoAbstract {
     public void reproducirse (individuoAbstract pareja) {
 
     }
-    public void clonarse () {}
+    public void clonarse () {
+    }
     public void morir () {
 
     }
