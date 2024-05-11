@@ -15,7 +15,7 @@ public class simuladorDeVida {
     }
 
     public void comenzar () {
-        bucle.ejecutarBucle();
+            bucle.ejecutarBucle();
     }
 
     public simuladorDeVida cargarJuego () {

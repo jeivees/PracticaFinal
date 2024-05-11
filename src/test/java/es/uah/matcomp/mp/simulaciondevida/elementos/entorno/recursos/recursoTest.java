@@ -1,10 +1,13 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
+import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import gui.mvc.javafx.practicafinal.configuracionDataModelProperties;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class recursoAbstractTest {
+class recursoTest {
 
     @Test
     void getPosicionX() {
@@ -80,9 +83,14 @@ class recursoAbstractTest {
 
     @Test
     void actualizarTA() {
+        configuracionDataModel model = new configuracionDataModel(5, 50, 30,
+                10,20,20,20,10,10,10,
+                1,3,2,15,10,
+                10, 10, 10, 10, 0);
+        casillaTablero casilla = new casillaTablero(0,0, model);
         agua a = new agua ();
         a.setTiempoDeAparicion(3);
-        assertDoesNotThrow(()->a.actualizarTA());
+        assertDoesNotThrow(()->a.actualizarTA(model, casilla));
         assertEquals(2, a.getTiempoDeAparicion(), "Tiempo incorrecto");
     }
 

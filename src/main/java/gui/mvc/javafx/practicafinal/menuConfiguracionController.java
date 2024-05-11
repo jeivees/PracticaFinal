@@ -9,7 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,15 +22,9 @@ import java.util.ResourceBundle;
 public class menuConfiguracionController implements Initializable {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
-    private tableroController tableroController = new tableroController();
-    private simuladorDeVida juegoActual;
-
     @FXML
     TabPane tabPaneConfiguracion = new TabPane();
-    Tab tabActual = new Tab();
-
-    @FXML
-    AnchorPane panelTablero = new AnchorPane();
+    Tab tabActual;
 
     @FXML
     private Spinner<Integer> TurnosVidaInicialesSpinner = new Spinner<>();
@@ -51,6 +45,8 @@ public class menuConfiguracionController implements Initializable {
     @FXML
     private Slider ProbAparPozoSlider = new Slider();
     @FXML
+    private Spinner<Integer> TurnosInicialesRecursoSpinner = new Spinner<>();
+    @FXML
     private Spinner<Integer> IncrementoTurnosAguaSpinner = new Spinner<>();
     @FXML
     private Spinner<Integer> IncrementoTurnosComidaSpinner = new Spinner<>();
@@ -67,11 +63,19 @@ public class menuConfiguracionController implements Initializable {
 
 
     private configuracionDataModel original = new configuracionDataModel(5, 50, 30,
-            20,20,20,10,10,10,
+            10,20,20,20,10,10,10,
             1,3,2,15,10,
-            10, 10, 10, 10);
+            10, 10, 10, 10, 0);
     private configuracionDataModelProperties model = new configuracionDataModelProperties(original);
 
+    private simuladorDeVida juegoActual;
+    private tableroController tableroController;
+
+    public menuConfiguracionController () {}
+    public menuConfiguracionController (configuracionDataModel original) {
+        this.original = original;
+        this.model = new configuracionDataModelProperties(original);
+    }
     @FXML
     protected void onBotonGuardarClick(ActionEvent event) throws IOException{
         Alert confirmacion = new Alert(Alert.AlertType.CONFIRMATION);
@@ -85,17 +89,14 @@ public class menuConfiguracionController implements Initializable {
     }
 
     private void continuarJuego(ActionEvent event) throws IOException {
-        if (!model.getOriginal().isPausado()) { // en caso de que sea una partida nueva
+        if (!original.isPausado()) { // en caso de que sea una partida nueva
             model.commit();
 
             Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stageActual.close();
 
-            empezarNuevoJuego(model.getOriginal());
+            empezarNuevoJuego();
             log.debug("Se ha creado un nuevo juego");
-
-            juegoActual.comenzar();
-
         } else {
 
             Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -107,13 +108,24 @@ public class menuConfiguracionController implements Initializable {
         }
     }
 
-    private void empezarNuevoJuego (configuracionDataModel model) throws IOException {
-        juegoActual = new simuladorDeVida(model);
-        tableroController.crearTablero(model);
+    private void empezarNuevoJuego () throws IOException {
+        original.setTurno(0);
+        juegoActual = new simuladorDeVida(original);
+        tableroController = new tableroController();
+        tableroController.setModel(original);
+        tableroController.setJuegoActual(juegoActual);
+        tableroController.crearTablero();
     }
 
-    private void mostrarMenuConfiguracion() throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("menuConfiguracionInicio-vista.fxml"));
+
+
+    public void mostrarMenuConfiguracion() throws IOException{
+        Parent root;
+        if (!original.isPausado()) {
+            root = FXMLLoader.load(getClass().getResource("menuConfiguracionInicio-vista.fxml"));
+        } else {
+            root = FXMLLoader.load(getClass().getResource("menuConfiguracionPausa-vista.fxml"));
+        }
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -137,6 +149,62 @@ public class menuConfiguracionController implements Initializable {
         ProbAparPozoSlider.valueProperty().bindBidirectional(model.ProbAparPozoProperty());
         IncrementoProbReproSlider.valueProperty().bindBidirectional(model.IncrementoProbReproProperty());
         IncrementoProbClonSlider.valueProperty().bindBidirectional(model.IncrementoProbClonProperty());
+        TurnosVidaInicialesSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosVidaInicialesProperty());
+        TurnosInicialesRecursoSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosInicialesRecursoProperty());
+        IncrementoTurnosAguaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosAguaProperty());
+        IncrementoTurnosComidaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosComidaProperty());
+        IncrementoTurnosMontañaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosMontañaProperty());
+        FilasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.FilasTableroProperty());
+        ColumnasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.ColumnasTableroProperty());
+    }
+
+    protected void initializeSpinners () {
+        SpinnerValueFactory<Integer> TurnosVidaInicialesVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10000);
+
+        SpinnerValueFactory<Integer> TurnosInicialesRecursoVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10000);
+
+        SpinnerValueFactory<Integer> IncrementoAguaVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 1000);
+
+        SpinnerValueFactory<Integer> IncrementoComidaVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 1000);
+
+        SpinnerValueFactory<Integer> IncrementoMontañaVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 1000);
+
+        SpinnerValueFactory<Integer> FilasTableroVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100);
+
+        SpinnerValueFactory<Integer> ColumnasTableroVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100);
+
+        TurnosVidaInicialesSpinner.setValueFactory(TurnosVidaInicialesVF);
+        TurnosInicialesRecursoSpinner.setValueFactory(TurnosInicialesRecursoVF);
+        IncrementoTurnosAguaSpinner.setValueFactory(IncrementoAguaVF);
+        IncrementoTurnosComidaSpinner.setValueFactory(IncrementoComidaVF);
+        IncrementoTurnosMontañaSpinner.setValueFactory(IncrementoMontañaVF);
+        FilasTableroSpinner.setValueFactory(FilasTableroVF);
+        ColumnasTableroSpinner.setValueFactory(ColumnasTableroVF);
+
+
+        añadirFiltroSpinner(TurnosVidaInicialesSpinner);
+        añadirFiltroSpinner(TurnosInicialesRecursoSpinner);
+        añadirFiltroSpinner(IncrementoTurnosAguaSpinner);
+        añadirFiltroSpinner(IncrementoTurnosComidaSpinner);
+        añadirFiltroSpinner(IncrementoTurnosMontañaSpinner);
+        añadirFiltroSpinner(TurnosVidaInicialesSpinner);
+        añadirFiltroSpinner(FilasTableroSpinner);
+        añadirFiltroSpinner(ColumnasTableroSpinner);
+    }
+
+    private void añadirFiltroSpinner (Spinner<Integer> spinner) {
+        spinner.getEditor().addEventFilter(KeyEvent.KEY_TYPED, event -> {
+            if (!event.getCharacter().matches("[0-9]")) {
+                event.consume();
+            }
+        });
     }
 
     @Override
@@ -146,33 +214,9 @@ public class menuConfiguracionController implements Initializable {
             if (newTab != null) tabActual = newTab;
         });
 
-        SpinnerValueFactory<Integer> TurnosVidaInicialesVF =
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
-        SpinnerValueFactory<Integer> IncrementoAguaVF =
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
-        SpinnerValueFactory<Integer> IncrementoComidaVF =
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
-        SpinnerValueFactory<Integer> IncrementoMontañaVF =
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
-        SpinnerValueFactory<Integer> FilasTableroVF =
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
-        SpinnerValueFactory<Integer> ColumnasTableroVF =
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Integer.MAX_VALUE);
-
-        TurnosVidaInicialesSpinner.setValueFactory(TurnosVidaInicialesVF);
-        IncrementoTurnosAguaSpinner.setValueFactory(IncrementoAguaVF);
-        IncrementoTurnosComidaSpinner.setValueFactory(IncrementoComidaVF);
-        IncrementoTurnosMontañaSpinner.setValueFactory(IncrementoMontañaVF);
-        FilasTableroSpinner.setValueFactory(FilasTableroVF);
-        ColumnasTableroSpinner.setValueFactory(ColumnasTableroVF);
+        initializeSpinners();
 
         if (model != null) {
-            TurnosVidaInicialesSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosVidaInicialesProperty().asObject());
-            IncrementoTurnosAguaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosAguaProperty().asObject());
-            IncrementoTurnosComidaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosComidaProperty().asObject());
-            IncrementoTurnosMontañaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosMontañaProperty().asObject());
-            FilasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.FilasTableroProperty().asObject());
-            ColumnasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.ColumnasTableroProperty().asObject());
             this.updateGUIwithModel();
         }
     }

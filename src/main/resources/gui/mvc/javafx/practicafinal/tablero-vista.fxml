@@ -7,45 +7,61 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mvc.javafx.practicafinal.tableroController">
    <children>
-      <Label alignment="CENTER" prefHeight="103.0" prefWidth="600.0" text="Simulador de Vida" textFill="#0777d9">
-         <font>
-            <Font name="Bookman Old Style" size="36.0" />
-         </font>
-      </Label>
-      <AnchorPane prefHeight="410.0" prefWidth="600.0" fx:id="panelTablero"/>
-      <HBox alignment="CENTER_RIGHT" prefHeight="48.0" prefWidth="600.0" spacing="5.0">
+      <StackPane prefHeight="150.0" prefWidth="200.0">
          <children>
-            <AnchorPane prefHeight="50.0" prefWidth="64.0">
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="103.0" prefWidth="600.0" text="Simulador de Vida" textFill="#0777d9">
+               <font>
+                  <Font name="Bookman Old Style" size="75.0" />
+               </font>
+            </Label>
+            <StackPane alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="60.0" StackPane.alignment="TOP_RIGHT">
                <children>
-                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="64.0" textFill="#078e10">
+                  <Button mnemonicParsing="false" onAction="#onBotonCerrarClick" prefHeight="60.0" prefWidth="60.0" StackPane.alignment="TOP_RIGHT" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="40.0" StackPane.alignment="CENTER" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="17.0" layoutY="39.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="40.0" StackPane.alignment="CENTER" />
+               </children>
+            </StackPane>
+         </children>
+      </StackPane>
+      <AnchorPane prefHeight="845.0" prefWidth="1920.0" />
+      <HBox alignment="CENTER_RIGHT" prefHeight="118.0" prefWidth="1920.0" spacing="35.0">
+         <children>
+            <Label fx:id="turnoLabel" prefHeight="122.0" prefWidth="1570.0" text="Turno: 0" textFill="#0a6314">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="67.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="118.0" prefWidth="189.0">
+               <children>
+                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBotonReanudarClick" prefHeight="110.0" prefWidth="180.0" textFill="#078e10">
                      <font>
                         <Font name="Bookman Old Style Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Polygon layoutX="47.0" layoutY="53.0" points="-21.200000762939453, -40.9999885559082, -21.200000762939453, -14.999988555908203, 1.7999992370605469, -27.999988555908203" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Polygon layoutX="113.0" layoutY="83.0" points="-21.200000762939453, -40.9999885559082, -21.200000762939453, -14.999988555908203, 1.7999992370605469, -27.999988555908203" scaleX="2.75" scaleY="2.75" scaleZ="2.75" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="528.0" layoutY="10.0" prefHeight="50.0" prefWidth="64.0">
                <children>
-                  <Button layoutX="3.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="64.0" textFill="#078e10">
+                  <Button layoutX="3.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBotonPausaClick" prefHeight="110.0" prefWidth="180.0" textFill="#078e10">
                      <font>
                         <Font name="Bookman Old Style Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="23.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" width="9.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="38.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" width="9.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="66.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="102.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="528.0" layoutY="10.0" prefHeight="50.0" prefWidth="64.0">
                <children>
-                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="64.0" textFill="#078e10">
+                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBotonConfiguracionClick" prefHeight="110.0" prefWidth="180.0" textFill="#078e10">
                      <font>
                         <Font name="Bookman Old Style Bold" size="14.0" />
                      </font>
                   </Button>
-                  <ImageView fitHeight="54.0" fitWidth="64.0" layoutX="7.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="134.0" fitWidth="137.0" layoutX="25.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/Gear-icon.png" />
                      </image>

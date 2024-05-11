@@ -1,7 +1,11 @@
 package es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada;
 
-public class ListaEnlazada<TipoDato> {
-    private ElementoLE<TipoDato> primero;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class ListaEnlazada<T> {
+    private static final Logger log = LogManager.getLogger();
+    private ElementoLE<T> primero;
     public ListaEnlazada() {
         this.primero = null;
     }
@@ -11,35 +15,35 @@ public class ListaEnlazada<TipoDato> {
     public void vaciar() {
         this.primero = null;
     }
-    protected void add(ElementoLE<TipoDato> elem) {
+    protected void add(ElementoLE<T> elem) {
         if (isVacia()) {
             this.primero = elem;
         }else{
-            ElementoLE<TipoDato> actual = this.primero;
+            ElementoLE<T> actual = this.primero;
             while (actual.getSiguiente() != null) {
                 actual = actual.getSiguiente();
             }
             elem.insertarmeEn(actual);
         }
     }
-    public void add(TipoDato dato) {
-        ElementoLE<TipoDato> el = new ElementoLE<>();
+    public void add(T dato) {
+        ElementoLE<T> el = new ElementoLE<>();
         el.setData(dato);
         add(el);
     }
-    public ElementoLE<TipoDato> getElemento(int posicion) {
+    public ElementoLE<T> getElemento(int posicion) {
         if (isVacia()) {
             return null;
         }else{
-            ElementoLE<TipoDato> first = this.primero;
+            ElementoLE<T> first = this.primero;
             for (int i=0; i != posicion; i++) {
                 first = first.getSiguiente();
             }
             return first;
         }
     }
-    public void insert(TipoDato obj, int posicion) {
-        ElementoLE<TipoDato> objeto = new ElementoLE<>();
+    public void insert(T obj, int posicion) {
+        ElementoLE<T> objeto = new ElementoLE<>();
         objeto.setData(obj);
         if (posicion == 0) {
             objeto.setSiguiente(primero);
@@ -53,7 +57,7 @@ public class ListaEnlazada<TipoDato> {
             return 0;
         }else{
             int elem = 0;
-            ElementoLE<TipoDato> first = primero;
+            ElementoLE<T> first = primero;
             while (first != null) {
                 elem += 1;
                 first = first.getSiguiente();
@@ -66,21 +70,36 @@ public class ListaEnlazada<TipoDato> {
             primero = primero.getSiguiente();
             return this.getNumeroElementos();
         }else{
-            ElementoLE<TipoDato> first = this.primero;
-            for (int i=0; i != pos - 1; i++) {
-                first = first.getSiguiente();
+            ElementoLE<T> first = this.primero;
+            for (int i=0; i != pos; i++) {
                 if (first.getSiguiente().getSiguiente() == null) {
                     first.setSiguiente(null);
                     return this.getNumeroElementos();
                 }
+                first = first.getSiguiente();
             }
             first.setSiguiente(first.getSiguiente().getSiguiente());
             return this.getNumeroElementos();
         }
     }
-    public Integer getPosicion(ElementoLE<TipoDato> el) {
+    
+    public void del (T el) {
+        Integer indiceAEliminar = null;
+        for (int i=0; i != getNumeroElementos(); i++) {
+            if (getElemento(i).getData() == el) {
+                indiceAEliminar = i;
+            }
+        }
+        if (indiceAEliminar == null) {
+            log.warn("Se ha tratado de eliminar un elemento que no pertenece a la lista");
+        } else {
+            del(indiceAEliminar);
+        }
+    }
+
+    public Integer getPosicion(ElementoLE<T> el) {
         int pos = 0;
-        ElementoLE<TipoDato> first = this.primero;
+        ElementoLE<T> first = this.primero;
         for (int i = 0; (pos < getNumeroElementos()) && (first.getData() != el.getData()); i++) {
             first = first.getSiguiente();
             pos += 1;
@@ -90,10 +109,10 @@ public class ListaEnlazada<TipoDato> {
         }
         return pos;
     }
-    public Integer getPosicion(TipoDato el) {
+    public Integer getPosicion(T el) {
         if (!this.isVacia()) {
             int pos = 0;
-            ElementoLE<TipoDato> first = this.primero;
+            ElementoLE<T> first = this.primero;
             for (int i = 0; (pos < getNumeroElementos()) && (first.getData() != el); i++) {
                 first = first.getSiguiente();
                 pos += 1;
@@ -105,18 +124,18 @@ public class ListaEnlazada<TipoDato> {
         }
         return null;
     }
-    public ElementoLE<TipoDato> getPrimero() {
+    public ElementoLE<T> getPrimero() {
         if (isVacia()) {
             return null;
         }else{
             return this.primero;
         }
     }
-    public ElementoLE<TipoDato> getUltimo() {
+    public ElementoLE<T> getUltimo() {
         if (this.isVacia()) {
             return null;
         }else{
-            ElementoLE<TipoDato> first = this.primero;
+            ElementoLE<T> first = this.primero;
             while (first.getSiguiente() != null) {
                 first = first.getSiguiente();
             }
@@ -124,8 +143,8 @@ public class ListaEnlazada<TipoDato> {
         }
     }
 
-    public ListaEnlazada<TipoDato> reverse(ListaEnlazada<TipoDato> lista) {
-        ListaEnlazada<TipoDato> listaInvertida = new ListaEnlazada<>();
+    public ListaEnlazada<T> reverse(ListaEnlazada<T> lista) {
+        ListaEnlazada<T> listaInvertida = new ListaEnlazada<>();
         if (lista.getNumeroElementos() <= 1) {
             return lista;
         }
@@ -133,7 +152,7 @@ public class ListaEnlazada<TipoDato> {
         return listaInvertida;
     }
 
-    private void reverseRecursivo(ListaEnlazada<TipoDato> lista, ListaEnlazada<TipoDato> listaInvertida, int index) {
+    private void reverseRecursivo(ListaEnlazada<T> lista, ListaEnlazada<T> listaInvertida, int index) {
         if (index == lista.getNumeroElementos() ) {
             return;
         }
@@ -141,13 +160,13 @@ public class ListaEnlazada<TipoDato> {
         listaInvertida.add(lista.getElemento(index));
     }
 
-    public ElementoLE<TipoDato> getSiguiente(ElementoLE<TipoDato> el) {
+    public ElementoLE<T> getSiguiente(ElementoLE<T> el) {
         return el.getSiguiente();
     }
     public String toString() {
         return "[" + toStrings(this.primero) + "]";
     }
-    private String toStrings(ElementoLE<TipoDato> n) {
+    private String toStrings(ElementoLE<T> n) {
         String ret = "";
         if (n == null) {
             ret = "";
