@@ -2,6 +2,7 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.tablero;
 
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaSimple.*;
 import excepciones.arrayTamañoInvalidoException;
+import gui.mvc.javafx.practicafinal.configuracionDataModel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -9,10 +10,13 @@ public class tablero {
     private static final Logger log = LogManager.getLogger("es.uah");
     private ListaSimple<ListaSimple<casillaTablero>> casillas;
 
-    public tablero (int n, int m) {
+    public tablero (int n, int m, configuracionDataModel model) {
         casillas = new ListaSimple<>(n);
         for (int i=0; i != n; i++){
             casillas.insert(new ListaSimple<>(m), i);
+            for (int j=0; j != m; j++) {
+                casillas.getElemento(i).getData().insert(new casillaTablero(i, j, model, this), j);
+            }
         }
     }
 

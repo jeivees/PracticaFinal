@@ -1,7 +1,9 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
+import gui.mvc.javafx.practicafinal.configuracionDataModel;
 
 import java.util.Random;
 
@@ -17,26 +19,29 @@ public class individuoNormal extends individuo<individuoNormal> {
         return individuoNormal.class;
     }
 
-    public void mover(ListaEnlazada<recurso> recursos) {
-        if (!recursos.isVacia()) {
+    public void mover(configuracionDataModel model, tablero tablero) {
+        if (model.getRecursos().isVacia()) {
+            moverAleatorio(tablero);
+        } else {
             Random r = new Random();
-            int recursoRandom = r.nextInt(recursos.getNumeroElementos());
-            int[] posicionRecurso = recursos.getElemento(recursoRandom).getData().getPosicion();
-            if (Math.abs(posicionRecurso[0] - this.getPosicionX()) > Math.abs(posicionRecurso[1] - this.getPosicionY())) {
-                if (posicionRecurso[0] - this.getPosicionX() < 0) {
-                    this.setPosicionX(this.getPosicionX() - 1);
+            int numAleatorio = r.nextInt(model.getRecursos().getNumeroElementos());
+            recurso recursoObjetivo = model.getRecursos().getElemento(numAleatorio).getData();
+
+            if (Math.abs(recursoObjetivo.getPosicionX() - getPosicionX()) >
+                    Math.abs(recursoObjetivo.getPosicionY() - getPosicionY()))
+            {
+                if (recursoObjetivo.getPosicionX() - getPosicionX() < 0) {
+                    cambiarPosicion(getPosicionX() - 1, getPosicionY(), tablero);
                 } else {
-                    this.setPosicionX(this.getPosicionX() + 1);
+                    cambiarPosicion(getPosicionX() + 1, getPosicionY(), tablero);
                 }
             } else {
-                if (posicionRecurso[1] - this.getPosicionY() < 0) {
-                    this.setPosicionY(this.getPosicionY() - 1);
+                if (recursoObjetivo.getPosicionY() - getPosicionY() < 0) {
+                    cambiarPosicion(getPosicionX(), getPosicionY() - 1, tablero);
                 } else {
-                    this.setPosicionY(this.getPosicionY() + 1);
+                    cambiarPosicion(getPosicionX(), getPosicionY() + 1, tablero);
                 }
             }
-        } else {
-            this.moverAleatorio();
         }
     }
 }

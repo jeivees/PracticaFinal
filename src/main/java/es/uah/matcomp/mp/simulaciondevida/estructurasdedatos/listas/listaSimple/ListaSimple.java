@@ -58,6 +58,7 @@ public class ListaSimple<T> {
         int elms = 0;
         for (int i = 0; this.datos[i] != null; i++) {
             elms += 1;
+            if (i + 1 == maximo) return elms;
         }
         return elms;
     }

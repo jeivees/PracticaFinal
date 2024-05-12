@@ -1,5 +1,11 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
+import gui.mvc.javafx.practicafinal.configuracionDataModel;
+
 public class individuoBasico extends individuo<individuoBasico> {
     public individuoBasico(int I, int G, int T, float PR, float PC) {
         super(I, G, T, PR, PC);
@@ -13,7 +19,7 @@ public class individuoBasico extends individuo<individuoBasico> {
     }
 
     @Override
-    public void mover() {
-        this.moverAleatorio();
+    public void mover(configuracionDataModel model, tablero tablero) {
+        this.moverAleatorio(tablero);
     }
 }

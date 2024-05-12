@@ -38,6 +38,7 @@ public class bucleDeControl {
                 evaluarAparicionDeRecursos();
                 log.debug("Ha pasado el turno " + model.getTurno());
         } catch (Exception e) {
+            e.printStackTrace();
             log.error("El bucle ha sido interrumpido mientras esperaba");
         }
     }
@@ -45,7 +46,9 @@ public class bucleDeControl {
     private void actualizarTVIndividuos() {
         if (individuos != null) {
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
-                individuos.getElemento(i).getData().actualizarTV(model, tablero.getCasilla(individuos.getElemento(i).getData().getPosicion()));
+                individuo individuoActual = individuos.getElemento(i).getData();
+                casillaTablero casilla = tablero.getCasilla(individuoActual.getPosicion());
+                individuoActual.actualizarTV(model, casilla);
             }
         }
     }
@@ -61,7 +64,7 @@ public class bucleDeControl {
     private void moverIndividuos() {
         if (individuos != null) {
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
-                individuos.getElemento(i).getData().mover();
+                individuos.getElemento(i).getData().mover(model, tablero);
             }
         }
     }

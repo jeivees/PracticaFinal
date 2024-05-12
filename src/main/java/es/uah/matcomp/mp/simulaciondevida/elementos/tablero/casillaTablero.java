@@ -18,6 +18,7 @@ public class casillaTablero extends AnchorPane {
     private int posicionX;
     private int posicionY;
     private configuracionDataModel model;
+     private tablero tablero;
     private ListaEnlazada<individuo> individuos = new ListaEnlazada<>();
     private ListaEnlazada<recurso> recursos = new ListaEnlazada<>();
 
@@ -26,10 +27,11 @@ public class casillaTablero extends AnchorPane {
 
     private static final Logger log = LogManager.getLogger(casillaTablero.class);
 
-    public casillaTablero (int x, int y, configuracionDataModel model) {
+    public casillaTablero (int x, int y, configuracionDataModel model, tablero tablero) {
         posicionX = x;
         posicionY = y;
         this.model = model;
+        this.tablero = tablero;
         botonCasilla.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
         AnchorPane.setTopAnchor(botonCasilla, 0.0);
         AnchorPane.setRightAnchor(botonCasilla, 0.0);
@@ -180,7 +182,7 @@ public class casillaTablero extends AnchorPane {
         log.debug("Se ha tratado de eliminar un recurso de una casilla en la que no está contenido");
     }
 
-    private void resetVisual () {
+    public void resetVisual () {
         gridElementos.getChildren().clear();
         gridElementos.getColumnConstraints().clear();
         gridElementos.getRowConstraints().clear();
@@ -219,4 +221,13 @@ public class casillaTablero extends AnchorPane {
     public GridPane getGridElementos() {
         return gridElementos;
     }
+    public tablero getTablero() {
+        return tablero;
+    }
+
+    public void setTablero(tablero tablero) {
+        this.tablero = tablero;
+    }
+
+
 }

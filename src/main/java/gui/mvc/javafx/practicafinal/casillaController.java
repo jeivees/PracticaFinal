@@ -30,7 +30,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class casillaController implements Initializable {
-    private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
+    private static final Logger log = LogManager.getLogger();
     private configuracionDataModel model;
     casillaTablero casillaActual;
 
@@ -156,10 +156,12 @@ public class casillaController implements Initializable {
         boolean yaEliminado = false;
         while (i != model.getIndividuos().getNumeroElementos() && !yaEliminado) {
             String labelIndividuoText = ((Label) ((HBox) ((Button) event.getSource()).getParent().getParent()).getChildren().getFirst()).getText();
-            int indexOfId = labelIndividuoText.indexOf("Id:") + 4;
+            int indexOfIdLabel = labelIndividuoText.indexOf("Id:") + 4;
+            int idLabel = (int) labelIndividuoText.charAt(indexOfIdLabel) - '0';
+
             int idIndividuo = model.getIndividuos().getElemento(i).getData().getId();
-            int id = (int) labelIndividuoText.charAt(indexOfId) - '0';
-            if (idIndividuo == id) {
+
+            if (idIndividuo == idLabel) {
                 casillaActual.delIndividuo(model.getIndividuos().getElemento(i).getData());
                 individuosVBox.getChildren().remove(((Button) event.getSource()).getParent().getParent());
                 yaEliminado = true;

@@ -1,39 +1,46 @@
-2024-05-11 13:26:24.215 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 13:28:35.872 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 13:28:58.765 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 13:29:19.445 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 13:54:25.177 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
-2024-05-11 14:28:53.318 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 14:29:01.818 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 14:29:08.106 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
-2024-05-11 16:10:08.050 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 16:39:40.424 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:06:39.067 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
-2024-05-11 17:06:44.388 - ERROR - es.uah - No se ha podido crear una nueva instancia de recurso para el historial de recursos
-2024-05-11 17:10:44.901 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
-2024-05-11 17:14:04.029 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:14:04.536 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:14:04.826 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:14:08.672 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:14:09.076 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:14:09.458 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:17:23.852 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:18:34.295 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:18:37.901 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:20:31.859 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:20:34.264 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:20:46.311 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:20:49.341 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:22:00.486 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:22:27.575 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:22:28.261 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:22:31.020 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:22:31.892 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:22:41.490 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:22:47.225 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 17:22:50.006 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 18:09:05.020 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 18:10:59.652 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 18:11:19.296 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 18:11:24.695 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-11 18:11:33.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-12 11:37:53.948 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 11:38:02.490 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 11:41:04.534 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 11:42:15.378 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 11:43:29.297 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 11:43:29.298 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 13:34:54.460 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 13:34:54.461 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 13:34:54.461 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 13:34:54.476 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-12 13:46:35.697 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 13:46:35.698 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 13:46:35.699 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 13:46:35.748 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-12 14:04:44.320 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:03.537 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:03.539 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-12 15:17:03.556 - INFO  - es.uah - Fin del movimiento aleatorio
+2024-05-12 15:17:05.336 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:05.336 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-12 15:17:05.346 - INFO  - es.uah - Fin del movimiento aleatorio
+2024-05-12 15:17:05.756 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:05.756 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-12 15:17:05.769 - INFO  - es.uah - Fin del movimiento aleatorio
+2024-05-12 15:17:06.154 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:06.154 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-12 15:17:06.163 - INFO  - es.uah - Fin del movimiento aleatorio
+2024-05-12 15:17:06.550 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:21.476 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:21.477 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-12 15:17:21.486 - INFO  - es.uah - Fin del movimiento aleatorio
+2024-05-12 15:17:22.324 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:22.325 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-12 15:17:22.334 - INFO  - es.uah - Fin del movimiento aleatorio
+2024-05-12 15:17:25.421 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:25.857 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:26.201 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:33.642 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:34.789 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:35.532 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:35.532 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-12 15:17:35.542 - INFO  - es.uah - Fin del movimiento aleatorio
+2024-05-12 15:17:37.137 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-12 15:17:37.137 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-12 15:17:37.146 - INFO  - es.uah - Fin del movimiento aleatorio
+2024-05-12 15:17:38.037 - INFO  - es.uah - Tiempo de vida actualizado

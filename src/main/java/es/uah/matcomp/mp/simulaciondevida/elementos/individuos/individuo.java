@@ -1,11 +1,15 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 import excepciones.arrayTamañoInvalidoException;
 import excepciones.probabilidadInvalidaException;
 import gui.mvc.javafx.practicafinal.configuracionDataModel;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -170,24 +174,56 @@ public abstract class individuo<T extends individuo<T>> {
         log.info("Tiempo de vida actualizado");
     }
 
-    public void mover() {}
+    public abstract void mover(configuracionDataModel model, tablero tablero);
 
-    public void moverAleatorio() {
-        log.info("Inicio del movimiento aleatorio");
+    protected void moverAleatorio(tablero tablero) {
+        log.info("Inicio de movimiento aleatorio");
         Random r = new Random();
-        int movimiento = r.nextInt(4);
-        if (movimiento == 1) {
-            this.setPosicionX(this.getPosicionX() - 1);
-        } else if (movimiento == 2) {
-            this.setPosicionX(this.getPosicionX() + 1);
-        } else if (movimiento == 3) {
-            this.setPosicionY(this.getPosicionY() - 1);
-        } else {
-            this.setPosicionY(this.getPosicionY() + 1);
-        } log.info("Fin del movimiento aleatorio");
+        int movimiento = r.nextInt(1,8);
+
+        switch (movimiento) {
+            case 1:
+                cambiarPosicion(getPosicionX() + 1, getPosicionY(), tablero);
+                break;
+            case 2:
+                cambiarPosicion(getPosicionX() + 1, getPosicionY() - 1, tablero);
+                break;
+            case 3:
+                cambiarPosicion(getPosicionX(), getPosicionY() - 1, tablero);
+                break;
+            case 4:
+                cambiarPosicion(getPosicionX() - 1, getPosicionY() - 1, tablero);
+                break;
+            case 5:
+                cambiarPosicion(getPosicionX() - 1, getPosicionY(), tablero);
+                break;
+            case 6:
+                cambiarPosicion(getPosicionX() - 1, getPosicionY() + 1, tablero);
+                break;
+            case 7:
+                cambiarPosicion(getPosicionX(), getPosicionY() + 1, tablero);
+                break;
+            case 8:
+                cambiarPosicion(getPosicionX() + 1, getPosicionY() + 1, tablero);
+                break;
+            default:
+                log.error("Se ha intentado hacer un movimiento aleatorio inválido (numero generado < 1 o > 8)");
+        }
+        log.info("Fin del movimiento aleatorio");
+    }
+
+    protected void cambiarPosicion (int nuevaPosicionX, int nuevaPosicionY, tablero tablero) {
+        casillaTablero casillaActual = tablero.getCasilla(getPosicion());
+        casillaActual.getIndividuos().del(this);
+        casillaActual.resetVisual();
+
+        setPosicionX(nuevaPosicionX);
+        setPosicionY(nuevaPosicionY);
+
+        casillaTablero nuevaCasilla = tablero.getCasilla(nuevaPosicionX, nuevaPosicionY);
+        nuevaCasilla.getIndividuos().add(this);
+        nuevaCasilla.resetVisual();
     }
 
     public void mejorar (recurso recurso) {}
-
-
 }
