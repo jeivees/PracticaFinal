@@ -20,7 +20,8 @@ public class simuladorDeVida {
     }
 
     public void comenzar () {
-            bucle.ejecutarBucle();
+        Thread threadBucle = new Thread(bucle);
+        threadBucle.start();
     }
 
     public simuladorDeVida cargarJuego () {

@@ -67,6 +67,16 @@ public class tableroController {
         ((Stage) Window.getWindows().getFirst()).close();
     }
 
+    @FXML
+    protected void onBotonPantallaCompletaClick () {
+        Stage pantalla = ((Stage) Window.getWindows().getFirst());
+        if (pantalla.isFullScreen()) {
+            pantalla.setFullScreen(false);
+        } else {
+            pantalla.setFullScreen(true);
+        }
+    }
+
     protected void mostrarElementosCasilla (casillaTablero casilla) {
         try {
             casillaController casillaController = new casillaController(model, casilla);
@@ -126,6 +136,7 @@ public class tableroController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);
+        stage.setFullScreen(true);
         stage.show();
     }
 

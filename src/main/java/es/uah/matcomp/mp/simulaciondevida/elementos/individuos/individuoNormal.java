@@ -2,7 +2,6 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 import gui.mvc.javafx.practicafinal.configuracionDataModel;
 
 import java.util.Random;
@@ -13,6 +12,9 @@ public class individuoNormal extends individuo<individuoNormal> {
     }
     public individuoNormal(int I, int PX, int PY, int G, int TV, float PR, float PC) {
         super(I, PX, PY, G, TV, PR, PC);
+    }
+    public individuoNormal(individuo individuo) {
+        super(individuo);
     }
     @Override
     public Class<individuoNormal> getTipo () {

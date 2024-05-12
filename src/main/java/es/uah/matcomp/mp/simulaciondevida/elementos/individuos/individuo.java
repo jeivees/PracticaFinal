@@ -37,10 +37,10 @@ public abstract class individuo<T extends individuo<T>> {
         if (PR < 0 || PR > 100 || PC < 0 || PC > 100) throw new probabilidadInvalidaException();
         this.probReproduccion = PR;
         this.probClonacion = PC;
-        this.probMuerte = 1-PR;
+        this.probMuerte = 1 - PR;
     }
 
-    public individuo( int id, int posicionX, int posicionY, int generacion, int tiempoDeVida, float probReproduccion, float probClonacion) {
+    public individuo(int id, int posicionX, int posicionY, int generacion, int tiempoDeVida, float probReproduccion, float probClonacion) {
         this.id = id;
         this.posicionX = posicionX;
         this.posicionY = posicionY;
@@ -48,7 +48,18 @@ public abstract class individuo<T extends individuo<T>> {
         TiempoDeVidaProperty.set(tiempoDeVida);
         this.probReproduccion = probReproduccion;
         this.probClonacion = probClonacion;
-        this.probMuerte = 1-probReproduccion;
+        this.probMuerte = 1 - probReproduccion;
+    }
+
+    public individuo(individuo individuo) {
+        this.id = individuo.getId();
+        this.posicionX = individuo.getPosicionX();
+        this.posicionY = getPosicionY();
+        this.generacion = getGeneracion();
+        TiempoDeVidaProperty.set(individuo.getTiempoDeVida());
+        this.probReproduccion = individuo.getProbReproduccion();
+        this.probClonacion = individuo.getProbClonacion();
+        this.probMuerte = 1 - probReproduccion;
     }
 
     public int getPosicionX() {
@@ -67,14 +78,14 @@ public abstract class individuo<T extends individuo<T>> {
         this.posicionY = posicionY;
     }
 
-    public int[] getPosicion () {
+    public int[] getPosicion() {
         int[] posicion = new int[2];
         posicion[0] = posicionX;
         posicion[1] = posicionY;
         return posicion;
     }
 
-    public void setPosicion (int[] posicion) {
+    public void setPosicion(int[] posicion) {
         try {
             if (posicion.length != 2) throw new arrayTamañoInvalidoException();
             posicionX = posicion[0];
@@ -140,14 +151,96 @@ public abstract class individuo<T extends individuo<T>> {
         return probMuerte;
     }
 
-    public abstract Class<T> getTipo () ;
+    public abstract Class<T> getTipo();
 
-    public String setTipo (String tipo) {return null;}
-
-    public void reproducirse (individuo pareja) {
-
+    public int getGradoTipo() {
+        int grado = -1;
+        switch (this.getClass().getSimpleName()) {
+            case "individuoBasico":
+                grado = 0;
+                break;
+            case "individuoNormal":
+                grado = 1;
+                break;
+            case "individuoAvanzado":
+                grado = 2;
+                break;
+            default:
+                log.error("El grado del tipo es != 0,1,2");
+        }
+        return grado;
     }
-    public void clonarse () {}
+
+    public <T extends individuo<T>> void reproducirse (individuo pareja, configuracionDataModel model, casillaTablero casillaActual) {
+        int gradoThis = getGradoTipo();
+        int gradoPareja = pareja.getGradoTipo();
+
+        Random r = new Random();
+        int p = r.nextInt(1, 100);
+
+        if (p <= probReproduccion) {
+            int probMejora;
+            individuo individuoSuperior = this;
+            individuo individuoInferior =  pareja;
+
+            if (gradoThis > gradoPareja) {
+                probMejora = getProbMejora(this, model);
+            } else if (gradoThis < gradoPareja) {
+                probMejora = getProbMejora(pareja, model);
+                individuoSuperior = pareja;
+                individuoInferior = this;
+            } else {
+                probMejora = 100;
+            }
+
+            Random s = new Random();
+            int q = s.nextInt(1, 100);
+
+            Class<T> hijoTipo = individuoSuperior.getTipo();
+            if (q <= probMejora) {
+                hijoTipo = individuoSuperior.getTipo();
+            } else {
+                hijoTipo = individuoInferior.getTipo();
+            }
+            try {
+                Constructor<T> constructor = hijoTipo.getConstructor(int.class, int.class, int.class, float.class, float.class);
+                int id = model.getHistorialIndividuos().getUltimo().getData().getId() + 1;
+                T hijo = constructor.newInstance(id, getPosicionX(), getPosicionY(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
+                hijo.añadir(model, casillaActual);
+            } catch (Exception e) {
+                log.error("No se ha podido crear una instancia para el individuo hijo");
+                e.printStackTrace();
+            }
+        } else {
+            pareja.morir(model, casillaActual);
+            this.morir(model, casillaActual);
+        }
+    }
+
+    private int getProbMejora (individuo individuoSuperior, configuracionDataModel model) {
+        int probMejora = -1;
+        switch (individuoSuperior.getClass().getSimpleName()) {
+            case "individuoNormal":
+                probMejora = model.getProbMejoraToNormal();
+                break;
+            case "individuoAvanzado":
+                probMejora = model.getProbMejoraToAvanzado();
+                break;
+            default:
+                log.error("El nombre de la clase del individuo superior no es válido");
+        }
+        return probMejora;
+    }
+
+    public void clonarse (configuracionDataModel model, casillaTablero casillaActual) {
+        try {
+            Constructor<? extends individuo> constructor = getClass().getConstructor(this.getTipo());
+            individuo copia = constructor.newInstance(this);
+            copia.añadir(model, casillaActual);
+        } catch (Exception e) {
+            log.error("No se ha podido crear una copia del individuo");
+        }
+    }
 
     public void añadir(configuracionDataModel model, casillaTablero casillaActual) {
         try {
@@ -155,10 +248,9 @@ public abstract class individuo<T extends individuo<T>> {
             casillaActual.getIndividuos().add(this);
             this.setPosicion(casillaActual.getPosicion());
 
-            Constructor<? extends individuo> constructor = getClass().getConstructor(
-                    int.class, int.class, int.class, int.class, int.class, float.class, float.class);
-            model.getHistorialIndividuos().add(constructor.newInstance(
-                    id, posicionX, posicionY, generacion, TiempoDeVidaProperty.get(), probReproduccion, probClonacion));
+            Constructor<? extends individuo> constructor = getClass().getConstructor(this.getTipo());
+            model.getHistorialIndividuos().add(constructor.newInstance(this));
+
         } catch (NoSuchMethodException | InvocationTargetException | InstantiationException | IllegalAccessException e) {
             log.error("No se ha podido crear una nueva instancia de individuo para el historial de individuos");
         }
@@ -180,39 +272,43 @@ public abstract class individuo<T extends individuo<T>> {
         log.info("Inicio de movimiento aleatorio");
         Random r = new Random();
         int movimiento = r.nextInt(1,8);
-
-        switch (movimiento) {
-            case 1:
-                cambiarPosicion(getPosicionX() + 1, getPosicionY(), tablero);
-                break;
-            case 2:
-                cambiarPosicion(getPosicionX() + 1, getPosicionY() - 1, tablero);
-                break;
-            case 3:
-                cambiarPosicion(getPosicionX(), getPosicionY() - 1, tablero);
-                break;
-            case 4:
-                cambiarPosicion(getPosicionX() - 1, getPosicionY() - 1, tablero);
-                break;
-            case 5:
-                cambiarPosicion(getPosicionX() - 1, getPosicionY(), tablero);
-                break;
-            case 6:
-                cambiarPosicion(getPosicionX() - 1, getPosicionY() + 1, tablero);
-                break;
-            case 7:
-                cambiarPosicion(getPosicionX(), getPosicionY() + 1, tablero);
-                break;
-            case 8:
-                cambiarPosicion(getPosicionX() + 1, getPosicionY() + 1, tablero);
-                break;
-            default:
-                log.error("Se ha intentado hacer un movimiento aleatorio inválido (numero generado < 1 o > 8)");
+        try {
+            switch (movimiento) {
+                case 1:
+                    cambiarPosicion(getPosicionX() + 1, getPosicionY(), tablero);
+                    break;
+                case 2:
+                    cambiarPosicion(getPosicionX() + 1, getPosicionY() - 1, tablero);
+                    break;
+                case 3:
+                    cambiarPosicion(getPosicionX(), getPosicionY() - 1, tablero);
+                    break;
+                case 4:
+                    cambiarPosicion(getPosicionX() - 1, getPosicionY() - 1, tablero);
+                    break;
+                case 5:
+                    cambiarPosicion(getPosicionX() - 1, getPosicionY(), tablero);
+                    break;
+                case 6:
+                    cambiarPosicion(getPosicionX() - 1, getPosicionY() + 1, tablero);
+                    break;
+                case 7:
+                    cambiarPosicion(getPosicionX(), getPosicionY() + 1, tablero);
+                    break;
+                case 8:
+                    cambiarPosicion(getPosicionX() + 1, getPosicionY() + 1, tablero);
+                    break;
+                default:
+                    log.error("Se ha intentado hacer un movimiento aleatorio inválido (numero generado < 1 o > 8)");
+            }
+        } catch (IndexOutOfBoundsException e) {
+            moverAleatorio(tablero);
         }
-        log.info("Fin del movimiento aleatorio");
     }
 
     protected void cambiarPosicion (int nuevaPosicionX, int nuevaPosicionY, tablero tablero) {
+        casillaTablero nuevaCasilla = tablero.getCasilla(nuevaPosicionX, nuevaPosicionY);
+
         casillaTablero casillaActual = tablero.getCasilla(getPosicion());
         casillaActual.getIndividuos().del(this);
         casillaActual.resetVisual();
@@ -220,10 +316,7 @@ public abstract class individuo<T extends individuo<T>> {
         setPosicionX(nuevaPosicionX);
         setPosicionY(nuevaPosicionY);
 
-        casillaTablero nuevaCasilla = tablero.getCasilla(nuevaPosicionX, nuevaPosicionY);
         nuevaCasilla.getIndividuos().add(this);
         nuevaCasilla.resetVisual();
     }
-
-    public void mejorar (recurso recurso) {}
 }

@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class configuracionDataModelProperties implements Initializable {
+public class configuracionDataModelProperties {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
     //Modelo de datos original
@@ -27,10 +27,11 @@ public class configuracionDataModelProperties implements Initializable {
     private ObjectProperty<Integer> TurnosVidaIniciales = new SimpleIntegerProperty().asObject();
     private IntegerProperty ProbReproIndividuo = new SimpleIntegerProperty();
     private IntegerProperty ProbClonIndividuo = new SimpleIntegerProperty();
-    private IntegerProperty ProbMejoraToBasico = new SimpleIntegerProperty();
+    private IntegerProperty ProbMejoraToNormal = new SimpleIntegerProperty();
     private IntegerProperty ProbMejoraToAvanzado = new SimpleIntegerProperty();
 
     // propiedades recursos
+    private IntegerProperty ProbAparRecurso = new SimpleIntegerProperty();
     private ObjectProperty<Integer> TurnosInicialesRecurso = new SimpleIntegerProperty().asObject();
     private IntegerProperty ProbAparAgua = new SimpleIntegerProperty();
     private IntegerProperty ProbAparComida = new SimpleIntegerProperty();
@@ -56,9 +57,10 @@ public class configuracionDataModelProperties implements Initializable {
         original.setTurnosVidaIniciales(TurnosVidaIniciales.get());
         original.setProbReproIndividuo(ProbReproIndividuo.get());
         original.setProbClonIndividuo(ProbClonIndividuo.get());
-        original.setProbMejoraToBasico(ProbMejoraToBasico.get());
+        original.setProbMejoraToNormal(ProbMejoraToNormal.get());
         original.setProbMejoraToAvanzado(ProbMejoraToAvanzado.get());
 
+        original.setProbAparRecurso(ProbAparRecurso.get());
         original.setTurnosInicialesRecurso(TurnosInicialesRecurso.get());
         original.setProbAparAgua(ProbAparAgua.get());
         original.setProbAparComida(ProbAparComida.get());
@@ -103,9 +105,12 @@ public class configuracionDataModelProperties implements Initializable {
         TurnosVidaIniciales.set(original.getTurnosVidaIniciales());
         ProbReproIndividuo.set(original.getProbReproIndividuo());
         ProbClonIndividuo.set(original.getProbClonIndividuo());
+        ProbMejoraToNormal.set(original.getProbMejoraToNormal());
+        ProbMejoraToAvanzado.set(original.getProbMejoraToAvanzado());
     }
 
     private void rollbackRecursos () {
+        ProbAparRecurso.set(original.getProbAparRecurso());
         TurnosInicialesRecurso.set(original.getTurnosInicialesRecurso());
         ProbAparAgua.set(original.getProbAparAgua());
         ProbAparComida.set(original.getProbAparComida());
@@ -144,6 +149,14 @@ public class configuracionDataModelProperties implements Initializable {
 
     public Property<Number> ProbClonIndividuoProperty() {
         return ProbClonIndividuo;
+    }
+
+    public Property<Number> ProbMejoraToNormalProperty() { return ProbMejoraToNormal; }
+
+    public Property<Number> ProbMejoraToAvanzadoProperty() { return ProbMejoraToAvanzado; }
+
+    public Property<Number> ProbAparRecursoProperty() {
+        return ProbAparRecurso;
     }
 
     public Property<Number> ProbAparAguaProperty() {
@@ -200,12 +213,5 @@ public class configuracionDataModelProperties implements Initializable {
 
     public ObjectProperty<Integer> ColumnasTableroProperty() {
         return ColumnasTablero;
-    }
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        IncrementoTurnosAguaProperty().addListener((_,_,_) -> {
-
-        });
     }
 }

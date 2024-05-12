@@ -1,6 +1,7 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.incrementoInvalidoException;
 
 public class comida extends recurso<comida> {
@@ -23,7 +24,7 @@ public class comida extends recurso<comida> {
         this.incrementoTV = incrementoTV;
     }
     @Override
-    public void aplicarMejora (individuo individuo) {
+    public void aplicarMejora (individuo individuo, casillaTablero casillaActual) {
         individuo.setTiempoDeVida(individuo.getTiempoDeVida() + incrementoTV);
     }
 

@@ -1,7 +1,12 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
+import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado;
+import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoBasico;
+import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.probabilidadInvalidaException;
+import gui.mvc.javafx.practicafinal.configuracionDataModel;
 
 public class biblioteca extends recurso<biblioteca> {
     private float incrementoProbClonacion;
@@ -24,16 +29,18 @@ public class biblioteca extends recurso<biblioteca> {
     }
 
     @Override
-    public void aplicarMejora (individuo individuo) {
+    public void aplicarMejora (individuo individuo, casillaTablero casillaActual) {
         if (individuo.getProbClonacion() + incrementoProbClonacion > 100) {
             individuo.setProbClonacion(100);
         } else {
             individuo.setProbClonacion(individuo.getProbClonacion() + incrementoProbClonacion);
         }
-        if (individuo.getTipo().getSimpleName().equals("individuoBasico")) {
-            individuo.setTipo("individuoNormal");
-        } else if (individuo.getTipo().getSimpleName().equals("individuoNormal")) {
-            individuo.setTipo("individuoAvanzado");
+        if (individuo.getTipo() == individuoBasico.class) {
+            casillaActual.addIndividuo(new individuoNormal(individuo), true);
+            casillaActual.delIndividuo(individuo);
+        } else if (individuo.getTipo() == individuoNormal.class) {
+            casillaActual.addIndividuo(new individuoAvanzado(individuo), true);
+            casillaActual.delIndividuo(individuo);
         }
     }
 

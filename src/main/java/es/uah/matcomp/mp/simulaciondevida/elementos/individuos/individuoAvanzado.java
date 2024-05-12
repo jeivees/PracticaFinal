@@ -1,5 +1,7 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.montaña;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.pozo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
@@ -19,6 +21,9 @@ public class individuoAvanzado extends individuo<individuoAvanzado> {
     public individuoAvanzado(int I, int PX, int PY, int G, int TV, float PR, float PC) {
         super(I, PX, PY, G, TV, PR, PC);
     }
+    public individuoAvanzado(individuo individuo) {
+        super(individuo);
+    }
     @Override
     public Class<individuoAvanzado> getTipo () {
         return individuoAvanzado.class;
@@ -26,15 +31,23 @@ public class individuoAvanzado extends individuo<individuoAvanzado> {
 
     @Override
     public void mover (configuracionDataModel model, tablero tablero) {
-        if (model.getRecursos().isVacia()) {
+        ListaDE<recurso> recursosDeseables = new ListaDE<>();
+        for (int k = 0; k != model.getRecursos().getNumeroElementos(); k++) {
+            recurso recursoAComprobar = model.getRecursos().getElemento(k).getData();
+            if (recursoAComprobar.getTipo() != montaña.class && recursoAComprobar.getTipo() != pozo.class) {
+                recursosDeseables.add(recursoAComprobar);
+            }
+        }
+
+        if (recursosDeseables.isVacia()) {
             this.moverAleatorio(tablero);
         } else {
             Grafo<casillaTablero> grafoTablero = getGrafoTablero(model, tablero);
 
             Camino<casillaTablero> caminoMinimo = new Camino<>(new ListaDE<>(), Integer.MAX_VALUE);
-            for (int i = 0; i != model.getRecursos().getNumeroElementos(); i++) {
+            for (int i = 0; i != recursosDeseables.getNumeroElementos(); i++) {
                 Nodo<casillaTablero> nodoCasillaActual = grafoTablero.getNodo(tablero.getCasilla(getPosicion()));
-                Nodo<casillaTablero> nodoRecursoObjetivo = grafoTablero.getNodo(tablero.getCasilla(model.getRecursos().getElemento(i).getData().getPosicion()));
+                Nodo<casillaTablero> nodoRecursoObjetivo = grafoTablero.getNodo(tablero.getCasilla(recursosDeseables.getElemento(i).getData().getPosicion()));
                 Camino<casillaTablero> caminoARecurso = grafoTablero.getCaminoMinimo(nodoCasillaActual, nodoRecursoObjetivo);
 
                 if (caminoARecurso.getCoste() <= caminoMinimo.getCoste()) {

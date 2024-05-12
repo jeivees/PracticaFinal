@@ -9,8 +9,7 @@ import java.io.IOException;
 
 public class menuPrincipalApplication extends Application {
     /**
-     * añadir turnos de vida de recursos y probabilidad de mejora para ambos individuos
-     *
+     * verificar que la suma de las probabilidades de los recursos no sea mayor que 100
      */
 
 

@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mvc.javafx.practicafinal.tableroController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mvc.javafx.practicafinal.tableroController">
    <children>
       <StackPane prefHeight="150.0" prefWidth="200.0">
          <children>
@@ -23,6 +23,13 @@
                   <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="17.0" layoutY="39.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="40.0" StackPane.alignment="CENTER" />
                </children>
             </StackPane>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onBotonPantallaCompletaClick" prefHeight="86.0" prefWidth="239.0" text="Cambiar pantalla&#10;      completa" StackPane.alignment="CENTER_LEFT">
+               <StackPane.margin>
+                  <Insets left="10.0" />
+               </StackPane.margin>
+               <font>
+                  <Font name="Bookman Old Style" size="24.0" />
+               </font></Button>
          </children>
       </StackPane>
       <AnchorPane prefHeight="845.0" prefWidth="1920.0" />

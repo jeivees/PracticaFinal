@@ -13,8 +13,9 @@ public class pozo extends recurso<pozo> {
         super (id, PX, PY, T);
     }
 
-    public void aplicarMejora (individuo individuo, configuracionDataModel model, casillaTablero casillaActual) {
-        individuo.morir(model, casillaActual);
+    @Override
+    public void aplicarMejora (individuo individuo, casillaTablero casillaActual) {
+        casillaActual.delIndividuo(individuo);
     }
 
     @Override
