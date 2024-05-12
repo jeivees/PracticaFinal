@@ -12,11 +12,11 @@ public class ElementoLDE<T> {
             this.siguiente.anterior = this;
     }
 
-    protected ElementoLDE<T> getSiguiente() {
+    public ElementoLDE<T> getSiguiente() {
         return siguiente;
     }
 
-    protected ElementoLDE<T> getAnterior() {
+    public ElementoLDE<T> getAnterior() {
         return anterior;
     }
 

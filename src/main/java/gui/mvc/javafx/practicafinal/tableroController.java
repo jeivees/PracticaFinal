@@ -34,7 +34,8 @@ public class tableroController {
     private Label turnoLabel = new Label();
 
     public tableroController () {}
-    public tableroController (configuracionDataModel model) {
+    public tableroController (configuracionDataModel model, simuladorDeVida juegoActual) {
+        this.juegoActual = juegoActual;
         this.model = model;
     }
     @FXML
@@ -45,9 +46,11 @@ public class tableroController {
 
     @FXML
     protected void onBotonReanudarClick (ActionEvent event) {
-        model = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst()).getModel();
+        casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
+        model = casilla00.getModel();
         model.setPausado(false);
-        juegoActual = new simuladorDeVida(model);
+        tablero tableroActual = casilla00.getTablero();
+        simuladorDeVida juegoActual = new simuladorDeVida(model, tableroActual);
         turnoLabel.textProperty().bind(model.getTurnoProperty().asString("Turno: %d"));
         juegoActual.comenzar();
     }
@@ -64,9 +67,18 @@ public class tableroController {
         ((Stage) Window.getWindows().getFirst()).close();
     }
 
+    @FXML
+    protected void onBotonPantallaCompletaClick () {
+        Stage pantalla = ((Stage) Window.getWindows().getFirst());
+        if (pantalla.isFullScreen()) {
+            pantalla.setFullScreen(false);
+        } else {
+            pantalla.setFullScreen(true);
+        }
+    }
+
     protected void mostrarElementosCasilla (casillaTablero casilla) {
         try {
-
             casillaController casillaController = new casillaController(model, casilla);
 
             Scene scene = new Scene(casillaController.getRoot());
@@ -110,9 +122,9 @@ public class tableroController {
         }
     }
 
-    protected void crearTablero () throws IOException {
+    protected void crearTablero (tablero tablero) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("tablero-vista.fxml"));
-        GridPane gridTablero = this.crearGridTablero(model.getFilasTablero(), model.getColumnasTablero(), root);
+        GridPane gridTablero = this.crearGridTablero(tablero, root);
 
         ((AnchorPane) root.getChildrenUnmodifiable().get(1)).getChildren().add(gridTablero);
         AnchorPane.setTopAnchor(gridTablero, 0.0);
@@ -124,16 +136,19 @@ public class tableroController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);
+        stage.setFullScreen(true);
         stage.show();
     }
 
-    private GridPane crearGridTablero(int casillasN, int casillasM, Parent root) {
+    private GridPane crearGridTablero(tablero tablero, Parent root) {
+        int casillasN = tablero.getNumeroCasillasN();
+        int casillasM = tablero.getNumeroCasillasM();
         GridPane gridTablero = new GridPane();
         gridTablero.setHgap(1);
         gridTablero.setVgap(1);
         for (int i=0; i != casillasN; i++) {
             for (int j=0; j != casillasM; j++) {
-                casillaTablero casilla = new casillaTablero(i, j, model);
+                casillaTablero casilla = tablero.getCasilla(i, j);
                 casilla.setPrefHeight(((AnchorPane) root.getChildrenUnmodifiable().get(1)).getPrefHeight()/casillasM);
                 casilla.setPrefWidth(((AnchorPane) root.getChildrenUnmodifiable().get(1)).getPrefWidth()/casillasN);
                 ((Button) casilla.getChildren().getFirst()).setOnAction(_ ->this.mostrarElementosCasilla(casilla));

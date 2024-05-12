@@ -1,6 +1,7 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.probabilidadInvalidaException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,7 +29,7 @@ public class tesoro extends recurso<tesoro> {
     }
 
     @Override
-    public void aplicarMejora (individuo individuo) {
+    public void aplicarMejora (individuo individuo, casillaTablero casillaActual) {
         if (individuo.getProbReproduccion() + incrementoProbReproduccion > 100) {
             individuo.setProbReproduccion(100);
         } else {

@@ -7,11 +7,12 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 import gui.mvc.javafx.practicafinal.configuracionDataModel;
 import gui.mvc.javafx.practicafinal.menuPrincipalController;
+import javafx.application.Platform;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Random;
-public class bucleDeControl {
+public class bucleDeControl implements Runnable{
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
     private tablero tablero;
     private ListaEnlazada<individuo> individuos;
@@ -25,8 +26,10 @@ public class bucleDeControl {
         this.model = model;
     }
 
-    public void ejecutarBucle() {
+    @Override
+    public void run() {
         try {
+            Platform.runLater(() -> {
                 model.setTurno(model.getTurno() + 1);
                 actualizarTVIndividuos();
                 actualizarTARecursos();
@@ -37,7 +40,9 @@ public class bucleDeControl {
                 evaluarDesaparicionIndividuos();
                 evaluarAparicionDeRecursos();
                 log.debug("Ha pasado el turno " + model.getTurno());
+            });
         } catch (Exception e) {
+            e.printStackTrace();
             log.error("El bucle ha sido interrumpido mientras esperaba");
         }
     }
@@ -45,7 +50,9 @@ public class bucleDeControl {
     private void actualizarTVIndividuos() {
         if (individuos != null) {
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
-                individuos.getElemento(i).getData().actualizarTV(model, tablero.getCasilla(individuos.getElemento(i).getData().getPosicion()));
+                individuo individuoActual = individuos.getElemento(i).getData();
+                casillaTablero casilla = tablero.getCasilla(individuoActual.getPosicion());
+                individuoActual.actualizarTV(model, casilla);
             }
         }
     }
@@ -61,7 +68,7 @@ public class bucleDeControl {
     private void moverIndividuos() {
         if (individuos != null) {
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
-                individuos.getElemento(i).getData().mover();
+                individuos.getElemento(i).getData().mover(model, tablero);
             }
         }
     }
@@ -70,10 +77,12 @@ public class bucleDeControl {
         if (individuos != null && recursos != null) {
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
                 individuo individuoActual = individuos.getElemento(i).getData();
-                casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicionX(), individuoActual.getPosicionY());
+                casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicion());
                 if (!casillaActual.getRecursos().isVacia()) {
                     for (int j = 0; j != casillaActual.getRecursos().getNumeroElementos(); j++) {
-                        casillaActual.getRecursos().getElemento(j).getData().aplicarMejora(individuoActual);
+                        recurso recursoActual = casillaActual.getRecursos().getElemento(j).getData();
+                        recursoActual.aplicarMejora(individuoActual, casillaActual);
+                        casillaActual.delRecurso(recursoActual);
                     }
                 }
             }
@@ -84,19 +93,14 @@ public class bucleDeControl {
         if (individuos != null) {
             for (int i = 0; i != tablero.getNumeroCasillasN(); i++) {
                 for (int j = 0; j != tablero.getNumeroCasillasM(); j++) {
-                    ListaEnlazada<individuo> individuos = tablero.getCasilla(i, j).getIndividuos();
-                    if (!individuos.isVacia()) {
+                    casillaTablero casillaActual = tablero.getCasilla(i, j);
+                    ListaEnlazada<individuo> individuos = casillaActual.getIndividuos();
+                    if (individuos.getNumeroElementos() >= 2 ) {
                         for (int k = 1; k < individuos.getNumeroElementos(); k += 2) {
                             individuo individuoActual = individuos.getElemento(k - 1).getData();
                             individuo pareja = individuos.getElemento(k).getData();
-                            Random r = new Random();
-                            int p = r.nextInt(1, 100);
-                            if (p <= individuoActual.getProbReproduccion()) {
-                                individuoActual.reproducirse(pareja);
-                            } else {
-                                individuoActual.morir(model, tablero.getCasilla(individuoActual.getPosicion()));
-                                pareja.morir(model, tablero.getCasilla(pareja.getPosicion()));
-                            }
+
+                            individuoActual.reproducirse(pareja, model, casillaActual);
                         }
                     }
                 }
@@ -110,8 +114,9 @@ public class bucleDeControl {
                 individuo individuoActual = individuos.getElemento(i).getData();
                 Random r = new Random();
                 int p = r.nextInt(1, 100);
+
                 if (p <= individuoActual.getProbClonacion()) {
-                    individuoActual.clonarse();
+                    individuoActual.clonarse(model, tablero.getCasilla(individuoActual.getPosicion()));
                 }
             }
         }
@@ -119,16 +124,19 @@ public class bucleDeControl {
 
     private void evaluarDesaparicionIndividuos() {
         if (individuos != null) {
-            for (int i = 0; i != tablero.getNumeroCasillasN(); i++) {
-                for (int j = 0; j != tablero.getNumeroCasillasM(); j++) {
-                    casillaTablero casillaActual = tablero.getCasilla(i, j);
+            for (int i = 0; i != individuos.getNumeroElementos(); i++) {
+                individuo individuoActual = individuos.getElemento(i).getData();
+                casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicion());
+                if (individuoActual.getTiempoDeVida() <= 0) {
+                    casillaActual.delIndividuo(individuoActual);
+                } else {
                     int k = 1;
                     while (casillaActual.getIndividuos().getNumeroElementos() > model.getIndividuosMaximosPorCelda()) {
                         for (int l = 0; l != casillaActual.getIndividuos().getNumeroElementos(); l++) {
-                            individuo individuoActual = casillaActual.getIndividuos().getElemento(l).getData();
+                            individuo individuoSobrante = casillaActual.getIndividuos().getElemento(l).getData();
                             if (casillaActual.getIndividuos().getNumeroElementos() > model.getIndividuosMaximosPorCelda() &&
-                                    individuoActual.getTiempoDeVida() == k) {
-                                individuoActual.morir(model, tablero.getCasilla(individuoActual.getPosicion()));
+                                    individuoSobrante.getTiempoDeVida() == k) {
+                                casillaActual.delIndividuo(individuoSobrante);
                             }
                         }
                         k += 1;
@@ -139,37 +147,39 @@ public class bucleDeControl {
     }
 
     private void evaluarAparicionDeRecursos() {
-        if (recursos != null) {
-            for (int i = 0; i != model.getFilasTablero(); i++) {
-                for (int j = 0; j != model.getColumnasTablero(); j++) {
-                    casillaTablero casillaMejorable = tablero.getCasilla(i, j);
-                    if (casillaMejorable.getRecursos().getNumeroElementos() < 3) {
-                        int[] posicion = {i, j};
-                        if (casillaMejorable.getRecursos().getNumeroElementos() < model.getRecursosMaximosPorCelda()) {
-                            Random r = new Random();
-                            int p = r.nextInt(1, 100);
-                            if (p <= model.getProbAparAgua()) {
-                                agua agua = new agua();
-                                agua.setPosicion(posicion);
-                            } else if (p <= model.getProbAparAgua() + model.getProbAparComida()) {
-                                comida comida = new comida();
-                                comida.setPosicion(posicion);
-                            } else if (p <= model.getProbAparAgua() + model.getProbAparComida() + model.getProbAparMontaña()) {
-                                montaña montaña = new montaña();
-                                montaña.setPosicion(posicion);
-                            } else if (p <= model.getProbAparAgua() + model.getProbAparComida() + model.getProbAparMontaña() + model.getProbAparBiblioteca()) {
-                                biblioteca biblioteca = new biblioteca();
-                                biblioteca.setPosicion(posicion);
-                            } else if (p <= model.getProbAparAgua() + model.getProbAparComida() + model.getProbAparMontaña() + model.getProbAparBiblioteca() + model.getProbAparTesoro()) {
-                                tesoro tesoro = new tesoro();
-                                tesoro.setPosicion(posicion);
-                            } else {
-                                pozo pozo = new pozo();
-                                pozo.setPosicion(posicion);
-                            }
+        for (int i = 0; i != model.getFilasTablero(); i++) {
+            for (int j = 0; j != model.getColumnasTablero(); j++) {
+                casillaTablero casillaMejorable = tablero.getCasilla(i, j);
+
+                if (casillaMejorable.getRecursos().getNumeroElementos() < model.getRecursosMaximosPorCelda()) {
+                    Random r = new Random();
+                    int q = r.nextInt(1,100);
+
+                    if (q <= model.getProbAparRecurso()) {
+                        int idNuevoRecurso = model.getHistorialRecursos().getUltimo().getData().getId() + 1;
+
+                        Random s = new Random();
+                        int p = s.nextInt(1, 100);
+
+                        if (p <= model.getProbAparAgua()) {
+                           casillaMejorable.addRecurso(new agua(idNuevoRecurso, model.getTurnosInicialesRecurso()), true);
+
+                        } else if (p <= model.getProbAparAgua() + model.getProbAparComida()) {
+                            casillaMejorable.addRecurso(new comida(idNuevoRecurso, model.getTurnosInicialesRecurso()), true);
+
+                        } else if (p <= model.getProbAparAgua() + model.getProbAparComida() + model.getProbAparMontaña()) {
+                            casillaMejorable.addRecurso(new montaña(idNuevoRecurso, model.getTurnosInicialesRecurso()), true);
+
+                        } else if (p <= model.getProbAparAgua() + model.getProbAparComida() + model.getProbAparMontaña() + model.getProbAparBiblioteca()) {
+                            casillaMejorable.addRecurso(new biblioteca(idNuevoRecurso, model.getTurnosInicialesRecurso()), true);
+
+                        } else if (p <= model.getProbAparAgua() + model.getProbAparComida() + model.getProbAparMontaña() + model.getProbAparBiblioteca() + model.getProbAparTesoro()) {
+                            casillaMejorable.addRecurso(new tesoro(idNuevoRecurso, model.getTurnosInicialesRecurso()), true);
+
+                        } else {
+                            casillaMejorable.addRecurso(new pozo(idNuevoRecurso, model.getTurnosInicialesRecurso()), true);
                         }
                     }
-
                 }
             }
         }

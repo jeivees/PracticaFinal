@@ -33,6 +33,14 @@ public class menuConfiguracionController implements Initializable {
     @FXML
     private Slider ProbClonIndividuoSlider = new Slider();
     @FXML
+    private Slider ProbMejoraNormalSlider = new Slider();
+
+    @FXML
+    private Slider ProbMejoraAvanzadoSlider = new Slider();
+
+    @FXML
+    private Slider ProbAparRecursoSlider = new Slider();
+    @FXML
     private Slider ProbAparAguaSlider = new Slider();
     @FXML
     private Slider ProbAparComidaSlider = new Slider();
@@ -62,10 +70,11 @@ public class menuConfiguracionController implements Initializable {
     private Spinner<Integer> ColumnasTableroSpinner = new Spinner<>();
 
 
-    private configuracionDataModel original = new configuracionDataModel(5, 50, 30,
-            10,20,20,20,10,10,10,
-            1,3,2,15,10,
-            10, 10, 10, 10, 0);
+    private configuracionDataModel original = new configuracionDataModel(
+            10, 50, 10, 50,25,
+            5,15,20,20,20,
+            10,10,10,3,5,
+            7, 25, 10, 10, 10, 0);
     private configuracionDataModelProperties model = new configuracionDataModelProperties(original);
 
     private simuladorDeVida juegoActual;
@@ -111,10 +120,8 @@ public class menuConfiguracionController implements Initializable {
     private void empezarNuevoJuego () throws IOException {
         original.setTurno(0);
         juegoActual = new simuladorDeVida(original);
-        tableroController = new tableroController();
-        tableroController.setModel(original);
-        tableroController.setJuegoActual(juegoActual);
-        tableroController.crearTablero();
+        tableroController = new tableroController(original, juegoActual);
+        tableroController.crearTablero(juegoActual.getTablero());
     }
 
 
@@ -141,6 +148,10 @@ public class menuConfiguracionController implements Initializable {
     protected void updateGUIwithModel() {
         ProbReproIndividuoSlider.valueProperty().bindBidirectional(model.ProbReproIndividuoProperty());
         ProbClonIndividuoSlider.valueProperty().bindBidirectional(model.ProbClonIndividuoProperty());
+        ProbMejoraNormalSlider.valueProperty().bindBidirectional(model.ProbMejoraToNormalProperty());
+        ProbMejoraAvanzadoSlider.valueProperty().bindBidirectional(model.ProbMejoraToAvanzadoProperty());
+
+        ProbAparRecursoSlider.valueProperty().bindBidirectional(model.ProbAparRecursoProperty());
         ProbAparAguaSlider.valueProperty().bindBidirectional(model.ProbAparAguaProperty());
         ProbAparComidaSlider.valueProperty().bindBidirectional(model.ProbAparComidaProperty());
         ProbAparMontañaSlider.valueProperty().bindBidirectional(model.ProbAparMontañaProperty());
@@ -149,11 +160,14 @@ public class menuConfiguracionController implements Initializable {
         ProbAparPozoSlider.valueProperty().bindBidirectional(model.ProbAparPozoProperty());
         IncrementoProbReproSlider.valueProperty().bindBidirectional(model.IncrementoProbReproProperty());
         IncrementoProbClonSlider.valueProperty().bindBidirectional(model.IncrementoProbClonProperty());
+
         TurnosVidaInicialesSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosVidaInicialesProperty());
+
         TurnosInicialesRecursoSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosInicialesRecursoProperty());
         IncrementoTurnosAguaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosAguaProperty());
         IncrementoTurnosComidaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosComidaProperty());
         IncrementoTurnosMontañaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosMontañaProperty());
+
         FilasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.FilasTableroProperty());
         ColumnasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.ColumnasTableroProperty());
     }

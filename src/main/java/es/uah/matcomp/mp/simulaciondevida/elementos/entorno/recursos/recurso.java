@@ -105,7 +105,7 @@ public abstract class recurso <T extends recurso<T>>{
         if (TiempoDeAparicionProperty.get() == 0) eliminar(model, casillaActual);
     }
 
-    public void aplicarMejora (individuo individuo) {}
+    public abstract void aplicarMejora (individuo individuo, casillaTablero casillaActual);
 
     public int getId() {
         return id;

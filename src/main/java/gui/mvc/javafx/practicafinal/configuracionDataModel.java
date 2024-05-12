@@ -28,10 +28,11 @@ public class configuracionDataModel {
     private int TurnosVidaIniciales;
     private int ProbReproIndividuo;
     private int ProbClonIndividuo;
-    private int probMejoraToBasico;
-    private int getProbMejoraToAvanzado;
+    private int ProbMejoraToNormal;
+    private int ProbMejoraToAvanzado;
 
     // datos recurso
+    private int ProbAparRecurso;
     private int TurnosInicialesRecurso;
     private int ProbAparAgua;
     private int ProbAparComida;
@@ -47,12 +48,16 @@ public class configuracionDataModel {
 
 
 
-    public configuracionDataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo,
-                                  int turnosInicialesRecurso, int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon,
-                                  int filasTablero, int columnasTablero, int mejoraToBasico, int mejoraToAvanzado, int Turno) {
+    public configuracionDataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo, int probMejoraTonormal, int probMejoraToAvanzado,
+                                  int probAparRecurso, int turnosInicialesRecurso, int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon,
+                                  int filasTablero, int columnasTablero, int Turno) {
         TurnosVidaIniciales = turnosVidaIniciales;
         ProbReproIndividuo = probReproIndividuo;
         ProbClonIndividuo = probClonIndividuo;
+        ProbMejoraToNormal = probMejoraTonormal;
+        ProbMejoraToAvanzado = probMejoraToAvanzado;
+
+        ProbAparRecurso = probAparRecurso;
         ProbAparAgua = probAparAgua;
         ProbAparComida = probAparComida;
         ProbAparMontaña = probAparMontaña;
@@ -65,10 +70,9 @@ public class configuracionDataModel {
         IncrementoTurnosMontaña = incrementoTurnosMontaña;
         IncrementoProbRepro = incrementoProbRepro;
         IncrementoProbClon = incrementoProbClon;
+
         FilasTablero = filasTablero;
         ColumnasTablero = columnasTablero;
-        probMejoraToBasico = mejoraToBasico;
-        getProbMejoraToAvanzado = mejoraToAvanzado;
         turnoProperty.set(Turno);
         turnoProperty.set(0);
     }
@@ -218,20 +222,20 @@ public class configuracionDataModel {
         RecursosMaximosPorCelda = recursosMaximosPorCelda;
     }
 
-    public int getProbMejoraToBasico() {
-        return probMejoraToBasico;
+    public int getProbMejoraToNormal() {
+        return ProbMejoraToNormal;
     }
 
-    public void setProbMejoraToBasico(int probMejoraToBasico) {
-        this.probMejoraToBasico = probMejoraToBasico;
+    public void setProbMejoraToNormal(int ProbMejoraToNormal) {
+        this.ProbMejoraToNormal = ProbMejoraToNormal;
     }
 
     public int getProbMejoraToAvanzado() {
-        return getProbMejoraToAvanzado;
+        return ProbMejoraToAvanzado;
     }
 
-    public void setProbMejoraToAvanzado(int getProbMejoraToAvanzado) {
-        this.getProbMejoraToAvanzado = getProbMejoraToAvanzado;
+    public void setProbMejoraToAvanzado(int ProbMejoraToAvanzado) {
+        this.ProbMejoraToAvanzado = ProbMejoraToAvanzado;
     }
 
     public Boolean isPausado() {
@@ -291,5 +295,12 @@ public class configuracionDataModel {
 
     public void setHistorialRecursos(ListaEnlazada<recurso> historialRecursos) {
         HistorialRecursos = historialRecursos;
+    }
+    public int getProbAparRecurso() {
+        return ProbAparRecurso;
+    }
+
+    public void setProbAparRecurso(int probAparRecurso) {
+        ProbAparRecurso = probAparRecurso;
     }
 }

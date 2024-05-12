@@ -30,7 +30,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class casillaController implements Initializable {
-    private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
+    private static final Logger log = LogManager.getLogger();
     private configuracionDataModel model;
     casillaTablero casillaActual;
 
@@ -78,8 +78,23 @@ public class casillaController implements Initializable {
         }
     }
 
-
     public void añadirIndividuo (String individuoTipo) {
+        switch (individuoTipo) {
+            case "+ Básico":
+                añadirIndividuo(individuoBasico.class);
+                break;
+            case "+ Normal":
+                añadirIndividuo(individuoNormal.class);
+                break;
+            case "+ Avanzado":
+                añadirIndividuo(individuoAvanzado.class);
+                break;
+            default:
+                log.error("Se ha intentado añadir un tipo de individuo no esperado");
+        }
+    }
+
+    public <T extends individuo<T>> void añadirIndividuo (Class<T> individuoTipo) {
         try {
             isListenerEnabled = false;
             if (casillaActual.getIndividuos().getNumeroElementos() >= 3) {
@@ -89,18 +104,10 @@ public class casillaController implements Initializable {
                 pausa.play();
                 log.debug("Se ha intentado crear un individuo cuando ya había 3 en la casilla");
             } else {
-                switch (individuoTipo) {
-                    case "+ Básico":
-                        añadirIndividuoAux(individuoBasico.class, true, null);
-                        break;
-                    case "+ Normal":
-                        añadirIndividuoAux(individuoNormal.class, true, null);
-                        break;
-                    case "+ Avanzado":
-                        añadirIndividuoAux(individuoAvanzado.class, true, null);
-                        break;
-                    default:
-                        log.error("Se ha intentado añadir un tipo de individuo no esperado");
+                try {
+                añadirIndividuoAux(individuoTipo, true, null);
+                } catch (Exception e) {
+                    log.error("El tipo de individuo es invalido");
                 }
             }
             individuosAñadirBox.setValue("Individuo");
@@ -111,7 +118,7 @@ public class casillaController implements Initializable {
         }
     }
 
-    private <T extends individuo> void añadirIndividuoAux (Class<T> individuoClase, boolean nuevoIndividuo, T individuoToAdd) {
+    public <T extends individuo<T>> void añadirIndividuoAux (Class<T> individuoClase, boolean nuevoIndividuo, T individuoToAdd) {
         try {
             T individuo;
             if (nuevoIndividuo) {
@@ -156,10 +163,12 @@ public class casillaController implements Initializable {
         boolean yaEliminado = false;
         while (i != model.getIndividuos().getNumeroElementos() && !yaEliminado) {
             String labelIndividuoText = ((Label) ((HBox) ((Button) event.getSource()).getParent().getParent()).getChildren().getFirst()).getText();
-            int indexOfId = labelIndividuoText.indexOf("Id:") + 4;
+            int indexOfIdLabel = labelIndividuoText.indexOf("Id:") + 4;
+            int idLabel = (int) labelIndividuoText.charAt(indexOfIdLabel) - '0';
+
             int idIndividuo = model.getIndividuos().getElemento(i).getData().getId();
-            int id = (int) labelIndividuoText.charAt(indexOfId) - '0';
-            if (idIndividuo == id) {
+
+            if (idIndividuo == idLabel) {
                 casillaActual.delIndividuo(model.getIndividuos().getElemento(i).getData());
                 individuosVBox.getChildren().remove(((Button) event.getSource()).getParent().getParent());
                 yaEliminado = true;
@@ -209,7 +218,7 @@ public class casillaController implements Initializable {
         }
     }
 
-    private <T extends recurso> void añadirRecursoAux (Class<T> recursoClase, boolean nuevoRecurso, T recursoToAdd) {
+    private <T extends recurso<T>> void añadirRecursoAux (Class<T> recursoClase, boolean nuevoRecurso, T recursoToAdd) {
         try {
             T recurso;
             if (nuevoRecurso) {

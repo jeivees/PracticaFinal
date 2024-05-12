@@ -8,14 +8,20 @@ public class simuladorDeVida {
     private tablero tablero;
     private bucleDeControl bucle;
     private configuracionDataModel model;
+
     public simuladorDeVida (configuracionDataModel model) {
         this.model = model;
-        tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero());
+        tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
+        bucle = new bucleDeControl(tablero, model);
+    }
+    public simuladorDeVida (configuracionDataModel model, tablero tablero) {
+        this.model = model;
         bucle = new bucleDeControl(tablero, model);
     }
 
     public void comenzar () {
-            bucle.ejecutarBucle();
+        Thread threadBucle = new Thread(bucle);
+        threadBucle.start();
     }
 
     public simuladorDeVida cargarJuego () {
