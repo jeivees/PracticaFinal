@@ -10,7 +10,7 @@ class individuoBasicoTest {
     void getTipo() {
         individuoBasico i = new individuoBasico(2,2,2,2,2);
         assertDoesNotThrow(()->i.getTipo());
-        assertEquals("individuoBasico", i.getTipo());
+        assertEquals(i.getClass(), i.getTipo());
     }
 
     @Test

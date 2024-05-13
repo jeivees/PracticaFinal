@@ -1,0 +1,70 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+abstract class individuo{
+    - posicionX: int
+    - posicionY: int
+    - id: int
+    - generacion: int
+    - TiempoDeVidaProperty: IntegerProperty
+    - probReproduccion: int
+    - probClonacion: int
+    - probMuerte: int
+    --
+    + individuo(I:int, G:int, T:int,PR:float,PC:float)
+    + individuo(id:int, posicionX:int, posicionY:int, generacion:int, tiempoDeVida:int,probReproduccion:float,probClonacion:float)
+    + individuo(individuo:individuo)
+    + getPosicionX(): int
+    + setPosicionX(posicion: int):
+    + getPosicionY(): int
+    + setPosicionY(posicion: int)
+    + getPosicion():int[]
+    + setPosicion(posicion: int[])
+    + getId():int
+    + setId(Id: int)
+    + getGeneracion():int
+    + setGeneracion(generacion:int)
+    + getTiempoDeVida(): IntegerProperty
+    + setTiempoDeVida(tiempoDeVida:int)
+    + getProbReproduccion(): float
+    + setProbReproduccion(probReproduccion: float)
+    + getProbClonacion(): float
+    + setProbClonacion(probClonacion: float)
+    + getProbMuerte(): float
+    + {abstract} getTipo(): abstract Class<T>
+    + getGradoTipo(): int
+    + reproducirse(pareja:individuo,model:configuracionDataModel,casillaActual:casillaTablero)
+    - getProbMejora(individuoSuperior:individuo, model:configuracionDataModel)
+    + clonarse(model:configuracionDataModel,casillaActual: casillaTablero)
+    + añadir(model:configuracionDataModel,casillaActual:casillaTablero)
+    + morir(model:configuracionDataModel, casillaActual:casillaTablero)
+    + actualizarTV(model:configuracionDataModel,tablero:tablero)
+    + {abstract} mover(model: configuracionDataModel, tablero: tablero)
+    # moverAleatorio(tablero: tablero)
+    # cambiarPosicion(nuevaPosicionX: int,nuevaPosicionY: int,(tablero: tablero)
+}
+class individuoBasico extends individuo{
+    --
+    + individuoBasico(I:int,G:int, T:int, PR:float, PC:float)
+    + individuoBasico(I:int, PX:int, PY:int, G:int, TV:int, PR:float, PC:float)
+    + individuoBasico(individuo:individuo)
+    + getTipo():Class<individuoBasico>
+    + mover(model:configuracionDataModel, (tablero: tablero))
+    }
+class individuoNormal extends individuo{
+    --
+    + individuoNormal(I:int,G:int, T:int, PR:float, PC:float)
+    + individuoNormal(I:int, PX:int, PY:int, G:int, TV:int, PR:float, PC:float)
+    + individuoNormal(individuo:individuo)
+    + getTipo():Class<individuoNormal>
+    + mover(model:configuracionDataModel, (tablero: tablero))
+    }
+class individuoAvanzado extends individuo{
+    --
+    + individuoAvanzado(I:int,G:int, T:int, PR:float, PC:float)
+    + individuoAvanzado(I:int, PX:int, PY:int, G:int, TV:int, PR:float, PC:float)
+    + individuoAvanzado(individuo:individuo)
+    + getTipo():Class<individuoNormal>
+    + mover(model:configuracionDataModel, (tablero: tablero))
+    }
+@enduml
