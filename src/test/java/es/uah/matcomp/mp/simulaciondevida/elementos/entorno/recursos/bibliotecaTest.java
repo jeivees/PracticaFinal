@@ -1,5 +1,6 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 
+import excepciones.probabilidadInvalidaException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,6 +21,8 @@ class bibliotecaTest {
         biblioteca b = new biblioteca();
         assertDoesNotThrow(()->b.setIncrementoProbClonacion(3));
         assertEquals(3, b.getIncrementoProbClonacion(), "El incremento no es correcto");
+        assertThrows(probabilidadInvalidaException.class, ()->b.setIncrementoProbClonacion(-1));
+        assertThrows(probabilidadInvalidaException.class, ()->b.setIncrementoProbClonacion(101));
     }
 
     @Test

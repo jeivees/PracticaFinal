@@ -4,9 +4,12 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.probabilidadInvalidaException;
 import gui.mvc.javafx.practicafinal.DataModel;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class tesoro extends recurso<tesoro> {
     private float incrementoProbReproduccion;
+    private static final Logger logger = LogManager.getLogger();
 
     public tesoro () {}
     public tesoro (int id, DataModel model) {
@@ -25,6 +28,7 @@ public class tesoro extends recurso<tesoro> {
     public void setIncrementoProbReproduccion(float incrementoProbReproduccion) throws probabilidadInvalidaException{
         if (incrementoProbReproduccion < 0 || incrementoProbReproduccion > 100) throw new probabilidadInvalidaException();
         this.incrementoProbReproduccion = incrementoProbReproduccion;
+        logger.info("Incremento de probabilidad de reproducción modificado");
     }
 
     @Override
@@ -34,6 +38,7 @@ public class tesoro extends recurso<tesoro> {
         } else {
             individuo.setProbReproduccion(individuo.getProbReproduccion() + incrementoProbReproduccion);
         }
+        logger.info("Mejora aplicada");
     }
 
     @Override
