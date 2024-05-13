@@ -67,4 +67,92 @@ class individuoAvanzado extends individuo{
     + getTipo():Class<individuoNormal>
     + mover(model:configuracionDataModel, (tablero: tablero))
     }
+abstract class recurso{
+    - id:int
+    - posicionX: int
+    - posicionY: int
+    - tiempoDeAparicion: IntegerProperty
+    --
+    + recurso()
+    + recurso(id:int, T:int)
+    + recurso(id:int, posicionX: int, posicionY:int, tiempoDeAparicion:int)
+    + getPosicionX(): int
+    + setPosicionX(posicionX:int)
+    + getPosicionY(): int
+    + setPosicionY(posicionY: int)
+    + getPosicion(): int[]
+    + setPosicion(posicion: int[])
+    + getTiempoDeAparicion(): int
+    + setTiempoDeAparcicion(tiempo int)
+    + {abstract} getTipo(): Class<T>
+    + añadir(model:configuracionDataModel, casillaActual:casillaTablero)
+    + eliminar(model:configuracionDataModel, casillaActual:casillaTablero)
+    + actualizarTA(model:configuracionDataModel, casillaActual:casillaTablero)
+    + {abstract} aplicarMejora(individuo:individuo, casillaActual:casillaTablero)
+    + getId(): int
+    + setId(id: int)
+    }
+class agua extends recurso{
+    - incrementoTV: int
+    --
+    + agua()
+    + agua(id:int,T:int)
+    + agua(id:int,PX:int,PY:int,T:int)
+    + getIncrementoTV():int
+    + setIncrementoTV(incrementoTV:int)
+    + aplicarMejora(individuo:individuo, casillaTablero:casillaActual)
+    + getTipo(): Class<agua>
+    }
+class comida extends recurso{
+    - incrementoTV: int
+    --
+    + comida()
+    + comida(id:int,T:int)
+    + comida(id:int,PX:int,PY:int,T:int)
+    + getIncrementoTV():int
+    + setIncrementoTV(incrementoTV:int)
+    + aplicarMejora(individuo:individuo, casillaTablero:casillaActual)
+    + getTipo(): Class<comida>
+    }
+class montaña extends recurso{
+    - incrementoTV: int
+    --
+    + montaña()
+    + montaña(id:int,T:int)
+    + montaña(id:int,PX:int,PY:int,T:int)
+    + getIncrementoTV():int
+    + setIncrementoTV(incrementoTV:int)
+    + aplicarMejora(individuo:individuo, casillaTablero:casillaActual)
+    + getTipo(): Class<montaña>
+    }
+class pozo extends recurso{
+    --
+    + pozo()
+    + pozo(id:int,T:int)
+    + pozo(id:int,PX:int,PY:int,T:int)
+    + aplicarMejora(individuo:individuo, casillaTablero:casillaActual)
+    + getTipo(): Class<pozo>
+    }
+class biblioteca extends recurso{
+    - incrementoProbClonacion: float
+    --
+    + biblioteca()
+    + biblioteca(id:int,T:int)
+    + biblioteca(id:int,PX:int,PY:int,T:int)
+    + getIncrementoProbClonacion():float
+    + setIncrementoProbClonacion(incrementoProbClonacion:float)
+    + aplicarMejora(individuo:individuo, casillaTablero:casillaActual)
+    + getTipo(): Class<biblioteca>
+    }
+class tesoro extends recurso{
+    - incremento: int
+    --
+    + tesoro()
+    + tesoro(id:int,T:int)
+    + tesoro(id:int,PX:int,PY:int,T:int)
+    + getIncrementoProbReproduccion():int
+    + setIncrementoProbReprocuccion(incrementoProbReproduccion:int)
+    + aplicarMejora(individuo:individuo, casillaTablero:casillaActual)
+    + getTipo(): Class<tesoro>
+    }
 @enduml
