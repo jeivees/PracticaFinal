@@ -1,15 +1,11 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 import excepciones.arrayTamañoInvalidoException;
 import excepciones.probabilidadInvalidaException;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import gui.mvc.javafx.practicafinal.DataModel;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -27,6 +23,8 @@ public abstract class individuo<T extends individuo<T>> {
     private float probReproduccion;
     private float probClonacion;
     private float probMuerte;
+
+    private boolean isVivo = true;
 
     private static final Logger log = LogManager.getLogger("es.uah");
 
@@ -171,7 +169,7 @@ public abstract class individuo<T extends individuo<T>> {
         return grado;
     }
 
-    public <T extends individuo<T>> void reproducirse (individuo pareja, configuracionDataModel model, casillaTablero casillaActual) {
+    public <T extends individuo<T>> boolean reproducirse (individuo pareja, DataModel model, casillaTablero casillaActual) {
         int gradoThis = getGradoTipo();
         int gradoPareja = pareja.getGradoTipo();
 
@@ -207,17 +205,18 @@ public abstract class individuo<T extends individuo<T>> {
                 int id = model.getHistorialIndividuos().getUltimo().getData().getId() + 1;
                 T hijo = constructor.newInstance(id, getPosicionX(), getPosicionY(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
                 hijo.añadir(model, casillaActual);
+                return false; // mueren?
             } catch (Exception e) {
                 log.error("No se ha podido crear una instancia para el individuo hijo");
                 e.printStackTrace();
+                return false; // mueren?
             }
         } else {
-            pareja.morir(model, casillaActual);
-            this.morir(model, casillaActual);
+            return true; // mueren?
         }
     }
 
-    private int getProbMejora (individuo individuoSuperior, configuracionDataModel model) {
+    private int getProbMejora (individuo individuoSuperior, DataModel model) {
         int probMejora = -1;
         switch (individuoSuperior.getClass().getSimpleName()) {
             case "individuoNormal":
@@ -232,9 +231,9 @@ public abstract class individuo<T extends individuo<T>> {
         return probMejora;
     }
 
-    public void clonarse (configuracionDataModel model, casillaTablero casillaActual) {
+    public void clonarse (DataModel model, casillaTablero casillaActual) {
         try {
-            Constructor<? extends individuo> constructor = getClass().getConstructor(this.getTipo());
+            Constructor<? extends individuo> constructor = getClass().getConstructor(individuo.class);
             individuo copia = constructor.newInstance(this);
             copia.añadir(model, casillaActual);
         } catch (Exception e) {
@@ -242,31 +241,37 @@ public abstract class individuo<T extends individuo<T>> {
         }
     }
 
-    public void añadir(configuracionDataModel model, casillaTablero casillaActual) {
+    public void añadir(DataModel model, casillaTablero casillaActual) {
         try {
             model.getIndividuos().add(this);
             casillaActual.getIndividuos().add(this);
             this.setPosicion(casillaActual.getPosicion());
 
-            Constructor<? extends individuo> constructor = getClass().getConstructor(this.getTipo());
+            Class<? extends individuo> claseIndividuo = this.getTipo();
+            Constructor<? extends individuo> constructor = getClass().getConstructor(individuo.class);
             model.getHistorialIndividuos().add(constructor.newInstance(this));
 
         } catch (NoSuchMethodException | InvocationTargetException | InstantiationException | IllegalAccessException e) {
             log.error("No se ha podido crear una nueva instancia de individuo para el historial de individuos");
         }
     }
-    public void morir(configuracionDataModel model, casillaTablero casillaActual) {
+    public void morir(DataModel model, casillaTablero casillaActual) {
         casillaActual.getIndividuos().del(this);
         model.getIndividuos().del(this);
+        isVivo = false;
     }
 
-    public void actualizarTV (configuracionDataModel model, casillaTablero casillaActual) {
+    public boolean isVivo () {
+        return isVivo;
+    }
+
+    public void actualizarTV (DataModel model, casillaTablero casillaActual) {
         TiempoDeVidaProperty.set(TiempoDeVidaProperty.get()-1);
         if (TiempoDeVidaProperty.get() == 0) morir(model, casillaActual);
         log.info("Tiempo de vida actualizado");
     }
 
-    public abstract void mover(configuracionDataModel model, tablero tablero);
+    public abstract void mover(DataModel model, tablero tablero);
 
     protected void moverAleatorio(tablero tablero) {
         log.info("Inicio de movimiento aleatorio");

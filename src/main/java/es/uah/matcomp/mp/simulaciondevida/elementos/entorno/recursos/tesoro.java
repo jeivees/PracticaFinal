@@ -3,16 +3,19 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.probabilidadInvalidaException;
+import gui.mvc.javafx.practicafinal.DataModel;
 
 public class tesoro extends recurso<tesoro> {
     private float incrementoProbReproduccion;
 
     public tesoro () {}
-    public tesoro (int id, int T) {
-        super (id, T);
+    public tesoro (int id, DataModel model) {
+        super (id, model);
+        incrementoProbReproduccion = model.getIncrementoProbRepro();
     }
-    public tesoro (int id, int PX, int PY, int T) {
-        super (id, PX, PY, T);
+    public tesoro (int id, int PX, int PY, DataModel model) {
+        super (id, PX, PY, model);
+        incrementoProbReproduccion = model.getIncrementoProbRepro();
     }
 
     public float getIncrementoProbReproduccion() {

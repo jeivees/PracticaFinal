@@ -5,7 +5,7 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazad
 import excepciones.individuoNoExistenteException;
 import excepciones.recursoNoExistenteException;
 import gui.mvc.javafx.practicafinal.casillaController;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import gui.mvc.javafx.practicafinal.DataModel;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
@@ -17,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 public class casillaTablero extends AnchorPane {
     private int posicionX;
     private int posicionY;
-    private configuracionDataModel model;
+    private DataModel model;
      private tablero tablero;
     private ListaEnlazada<individuo> individuos = new ListaEnlazada<>();
     private ListaEnlazada<recurso> recursos = new ListaEnlazada<>();
@@ -27,7 +27,7 @@ public class casillaTablero extends AnchorPane {
 
     private static final Logger log = LogManager.getLogger(casillaTablero.class);
 
-    public casillaTablero (int x, int y, configuracionDataModel model, tablero tablero) {
+    public casillaTablero (int x, int y, DataModel model, tablero tablero) {
         posicionX = x;
         posicionY = y;
         this.model = model;
@@ -74,11 +74,11 @@ public class casillaTablero extends AnchorPane {
     public void setRecursos(ListaEnlazada<recurso> recursos) {
         this.recursos = recursos;
     }
-    public configuracionDataModel getModel() {
+    public DataModel getModel() {
         return model;
     }
 
-    public void setModel(configuracionDataModel model) {
+    public void setModel(DataModel model) {
         this.model = model;
     }
 
@@ -176,7 +176,7 @@ public class casillaTablero extends AnchorPane {
             if (recurso == recursos.getElemento(i).getData()) {
                 recurso.eliminar(model, this);
                 resetVisual();
-                break;
+                return;
             }
         }
         log.debug("Se ha tratado de eliminar un recurso de una casilla en la que no está contenido");

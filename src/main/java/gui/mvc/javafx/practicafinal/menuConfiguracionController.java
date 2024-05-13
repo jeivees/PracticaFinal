@@ -1,6 +1,7 @@
 package gui.mvc.javafx.practicafinal;
 
 import es.uah.matcomp.mp.simulaciondevida.*;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +11,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -39,7 +43,7 @@ public class menuConfiguracionController implements Initializable {
     private Slider ProbMejoraAvanzadoSlider = new Slider();
 
     @FXML
-    private Slider ProbAparRecursoSlider = new Slider();
+    private Spinner<Integer> ProbAparRecursoSpinner = new Spinner<>();
     @FXML
     private Slider ProbAparAguaSlider = new Slider();
     @FXML
@@ -69,112 +73,56 @@ public class menuConfiguracionController implements Initializable {
     @FXML
     private Spinner<Integer> ColumnasTableroSpinner = new Spinner<>();
 
-
-    private configuracionDataModel original = new configuracionDataModel(
+    private DataModel model = new DataModel(
             10, 50, 10, 50,25,
             5,15,20,20,20,
             10,10,10,3,5,
             7, 25, 10, 10, 10, 0);
-    private configuracionDataModelProperties model = new configuracionDataModelProperties(original);
+    private DataModelProperties properties = new DataModelProperties(model);
 
     private simuladorDeVida juegoActual;
     private tableroController tableroController;
 
     public menuConfiguracionController () {}
-    public menuConfiguracionController (configuracionDataModel original) {
-        this.original = original;
-        this.model = new configuracionDataModelProperties(original);
-    }
-    @FXML
-    protected void onBotonGuardarClick(ActionEvent event) throws IOException{
-        Alert confirmacion = new Alert(Alert.AlertType.CONFIRMATION);
-        confirmacion.setTitle("Continuar al juego");
-        confirmacion.setHeaderText("Estás a punto de guardar los ajustes y continuar a la partida");
-        confirmacion.setContentText("¿Estás seguro de que quieres continuar?");
-
-        if(confirmacion.showAndWait().get() == ButtonType.OK) {
-            continuarJuego(event);
-        }
-    }
-
-    private void continuarJuego(ActionEvent event) throws IOException {
-        if (!original.isPausado()) { // en caso de que sea una partida nueva
-            model.commit();
-
-            Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stageActual.close();
-
-            empezarNuevoJuego();
-            log.debug("Se ha creado un nuevo juego");
-        } else {
-
-            Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stageActual.close();
-
-            model.commit();
-            log.debug("Se ha guardado la configuración");
-
-        }
-    }
-
-    private void empezarNuevoJuego () throws IOException {
-        original.setTurno(0);
-        juegoActual = new simuladorDeVida(original);
-        tableroController = new tableroController(original, juegoActual);
-        tableroController.crearTablero(juegoActual.getTablero());
-    }
-
-
-
-    public void mostrarMenuConfiguracion() throws IOException{
-        Parent root;
-        if (!original.isPausado()) {
-            root = FXMLLoader.load(getClass().getResource("menuConfiguracionInicio-vista.fxml"));
-        } else {
-            root = FXMLLoader.load(getClass().getResource("menuConfiguracionPausa-vista.fxml"));
-        }
-        Stage stage = new Stage();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    @FXML
-    protected void onBotonReiniciarClick() {
-        model.rollback(tabActual);
-        log.debug("Los valores por defecto han sido reestablecidos");
+    public menuConfiguracionController (DataModel original) {
+        this.model = original;
+        this.properties = new DataModelProperties(original);
+        initializeController();
     }
 
     protected void updateGUIwithModel() {
-        ProbReproIndividuoSlider.valueProperty().bindBidirectional(model.ProbReproIndividuoProperty());
-        ProbClonIndividuoSlider.valueProperty().bindBidirectional(model.ProbClonIndividuoProperty());
-        ProbMejoraNormalSlider.valueProperty().bindBidirectional(model.ProbMejoraToNormalProperty());
-        ProbMejoraAvanzadoSlider.valueProperty().bindBidirectional(model.ProbMejoraToAvanzadoProperty());
+        ProbReproIndividuoSlider.valueProperty().bindBidirectional(properties.ProbReproIndividuoProperty());
+        ProbClonIndividuoSlider.valueProperty().bindBidirectional(properties.ProbClonIndividuoProperty());
+        ProbMejoraNormalSlider.valueProperty().bindBidirectional(properties.ProbMejoraToNormalProperty());
+        ProbMejoraAvanzadoSlider.valueProperty().bindBidirectional(properties.ProbMejoraToAvanzadoProperty());
 
-        ProbAparRecursoSlider.valueProperty().bindBidirectional(model.ProbAparRecursoProperty());
-        ProbAparAguaSlider.valueProperty().bindBidirectional(model.ProbAparAguaProperty());
-        ProbAparComidaSlider.valueProperty().bindBidirectional(model.ProbAparComidaProperty());
-        ProbAparMontañaSlider.valueProperty().bindBidirectional(model.ProbAparMontañaProperty());
-        ProbAparTesoroSlider.valueProperty().bindBidirectional(model.ProbAparTesoroProperty());
-        ProbAparBibliotecaSlider.valueProperty().bindBidirectional(model.ProbAparBibliotecaProperty());
-        ProbAparPozoSlider.valueProperty().bindBidirectional(model.ProbAparPozoProperty());
-        IncrementoProbReproSlider.valueProperty().bindBidirectional(model.IncrementoProbReproProperty());
-        IncrementoProbClonSlider.valueProperty().bindBidirectional(model.IncrementoProbClonProperty());
+        ProbAparAguaSlider.valueProperty().bindBidirectional(properties.ProbAparAguaProperty());
+        ProbAparComidaSlider.valueProperty().bindBidirectional(properties.ProbAparComidaProperty());
+        ProbAparMontañaSlider.valueProperty().bindBidirectional(properties.ProbAparMontañaProperty());
+        ProbAparTesoroSlider.valueProperty().bindBidirectional(properties.ProbAparTesoroProperty());
+        ProbAparBibliotecaSlider.valueProperty().bindBidirectional(properties.ProbAparBibliotecaProperty());
+        ProbAparPozoSlider.valueProperty().bindBidirectional(properties.ProbAparPozoProperty());
+        IncrementoProbReproSlider.valueProperty().bindBidirectional(properties.IncrementoProbReproProperty());
+        IncrementoProbClonSlider.valueProperty().bindBidirectional(properties.IncrementoProbClonProperty());
 
-        TurnosVidaInicialesSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosVidaInicialesProperty());
+        TurnosVidaInicialesSpinner.getValueFactory().valueProperty().bindBidirectional(properties.TurnosVidaInicialesProperty());
 
-        TurnosInicialesRecursoSpinner.getValueFactory().valueProperty().bindBidirectional(model.TurnosInicialesRecursoProperty());
-        IncrementoTurnosAguaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosAguaProperty());
-        IncrementoTurnosComidaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosComidaProperty());
-        IncrementoTurnosMontañaSpinner.getValueFactory().valueProperty().bindBidirectional(model.IncrementoTurnosMontañaProperty());
+        ProbAparRecursoSpinner.getValueFactory().valueProperty().bindBidirectional(properties.ProbAparRecursoProperty());
+        TurnosInicialesRecursoSpinner.getValueFactory().valueProperty().bindBidirectional(properties.TurnosInicialesRecursoProperty());
+        IncrementoTurnosAguaSpinner.getValueFactory().valueProperty().bindBidirectional(properties.IncrementoTurnosAguaProperty());
+        IncrementoTurnosComidaSpinner.getValueFactory().valueProperty().bindBidirectional(properties.IncrementoTurnosComidaProperty());
+        IncrementoTurnosMontañaSpinner.getValueFactory().valueProperty().bindBidirectional(properties.IncrementoTurnosMontañaProperty());
 
-        FilasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.FilasTableroProperty());
-        ColumnasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(model.ColumnasTableroProperty());
+        FilasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(properties.FilasTableroProperty());
+        ColumnasTableroSpinner.getValueFactory().valueProperty().bindBidirectional(properties.ColumnasTableroProperty());
     }
 
     protected void initializeSpinners () {
         SpinnerValueFactory<Integer> TurnosVidaInicialesVF =
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10000);
+
+        SpinnerValueFactory<Integer> ProbAparRecursoVF =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
 
         SpinnerValueFactory<Integer> TurnosInicialesRecursoVF =
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10000);
@@ -195,6 +143,7 @@ public class menuConfiguracionController implements Initializable {
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100);
 
         TurnosVidaInicialesSpinner.setValueFactory(TurnosVidaInicialesVF);
+        ProbAparRecursoSpinner.setValueFactory(ProbAparRecursoVF);
         TurnosInicialesRecursoSpinner.setValueFactory(TurnosInicialesRecursoVF);
         IncrementoTurnosAguaSpinner.setValueFactory(IncrementoAguaVF);
         IncrementoTurnosComidaSpinner.setValueFactory(IncrementoComidaVF);
@@ -204,6 +153,7 @@ public class menuConfiguracionController implements Initializable {
 
 
         añadirFiltroSpinner(TurnosVidaInicialesSpinner);
+        añadirFiltroSpinner(ProbAparRecursoSpinner);
         añadirFiltroSpinner(TurnosInicialesRecursoSpinner);
         añadirFiltroSpinner(IncrementoTurnosAguaSpinner);
         añadirFiltroSpinner(IncrementoTurnosComidaSpinner);
@@ -221,18 +171,91 @@ public class menuConfiguracionController implements Initializable {
         });
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        tabPaneConfiguracion.getSelectionModel().selectedItemProperty().addListener((_, _, newTab) -> {
-            log.debug("Se ha detectado un cambio en el tabPane");
-            if (newTab != null) tabActual = newTab;
-        });
 
-        initializeSpinners();
-
-        if (model != null) {
-            this.updateGUIwithModel();
+    public void mostrarMenuConfiguracion() throws IOException{
+        FXMLLoader loader;
+        Parent root;
+        if (!model.isPausado()) {
+            loader = FXMLLoader.load(getClass().getResource("menuConfiguracionInicio-vista.fxml"));
+            root = loader.load();
+        } else {
+            loader = new FXMLLoader(getClass().getResource("menuConfiguracionPausa-vista.fxml"));
+            root = loader.load();
+            menuConfiguracionController controller = this;
+            loader.setController(controller);
         }
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+
+        if (Window.getWindows().size() > 1) {
+            Stage ventanaCasilla = ((Stage) Window.getWindows().get(1));
+            ventanaCasilla.close();
+        }
+
+        Stage ventanaTablero = ((Stage) Window.getWindows().getFirst());
+        stage.initOwner(ventanaTablero);
+
+        stage.show();
+    }
+
+    @FXML
+    protected void onBotonGuardarClick(ActionEvent event) throws IOException{
+        if (Window.getWindows().getFirst() != ((Node) event.getSource()).getScene().getWindow()) { // si la ventana principal es la de configuracion o es otra (el tablero)
+            Stage ventanaTablero = (Stage) Window.getWindows().getFirst();
+            casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ventanaTablero.getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
+            model = casilla00.getModel();
+            properties.setModel(model);
+        }
+        Alert confirmacion = new Alert(Alert.AlertType.CONFIRMATION);
+        if (!model.isPausado()) {
+            confirmacion.initOwner(Stage.getWindows().getFirst());
+            confirmacion.setTitle("Crear nueva partida");
+            confirmacion.setHeaderText("Estás a punto de guardar los ajustes y crear una nueva partida");
+            confirmacion.setContentText("¿Estás seguro de que quieres continuar?");
+        } else {
+            confirmacion.initOwner(Stage.getWindows().get(1));
+            confirmacion.setTitle("Continuar con el juego");
+            confirmacion.setHeaderText("Estás a punto de guardar los ajustes para continuar la partida");
+            confirmacion.setContentText("¿Estás seguro de que quieres continuar?");
+        }
+
+        if(confirmacion.showAndWait().get() == ButtonType.OK) {
+            continuarJuego(event);
+        }
+    }
+
+    private void continuarJuego(ActionEvent event) throws IOException {
+        if (!model.isPausado()) { // en caso de que sea una partida nueva
+            properties.commit();
+
+            Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stageActual.close();
+
+            empezarNuevoJuego();
+            log.debug("Se ha creado un nuevo juego");
+        } else {
+            properties.commit();
+
+            Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stageActual.close();
+
+            log.debug("Se ha guardado la configuración");
+        }
+    }
+
+    private void empezarNuevoJuego () throws IOException {
+        model.setTurno(0);
+        juegoActual = new simuladorDeVida(model);
+        tableroController = new tableroController(model, juegoActual);
+        tableroController.crearTablero(juegoActual.getTablero());
+        model.setPausado(true);
+    }
+
+    @FXML
+    protected void onBotonReiniciarClick() {
+        properties.rollback(tabActual);
+        log.debug("Los valores por defecto han sido reestablecidos");
     }
 
     @FXML
@@ -242,5 +265,36 @@ public class menuConfiguracionController implements Initializable {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+    public DataModel getModel() {
+        return model;
+    }
+
+    public void setModel(DataModel original) {
+        this.model = original;
+    }
+
+    public DataModelProperties getProperties() {
+        return properties;
+    }
+
+    public void setProperties(DataModelProperties properties) {
+        this.properties = properties;
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        tabPaneConfiguracion.getSelectionModel().selectedItemProperty().addListener((_, _, newTab) -> {
+            log.debug("Se ha detectado un cambio en el tabPane");
+            if (newTab != null) tabActual = newTab;
+        });
+
+        initializeController();
+    }
+    private void initializeController () {
+        initializeSpinners();
+        if (properties != null) {
+            this.updateGUIwithModel();
+        }
     }
 }

@@ -31,7 +31,7 @@ import java.util.ResourceBundle;
 
 public class casillaController implements Initializable {
     private static final Logger log = LogManager.getLogger();
-    private configuracionDataModel model;
+    private DataModel model;
     casillaTablero casillaActual;
 
     private Parent root;
@@ -52,7 +52,7 @@ public class casillaController implements Initializable {
 
     public casillaController() {}
 
-    public <T extends individuo> casillaController(configuracionDataModel model, casillaTablero casillaActual) throws IOException {
+    public <T extends individuo> casillaController(DataModel model, casillaTablero casillaActual) throws IOException {
         this.model = model;
         this.casillaActual = casillaActual;
 
@@ -222,7 +222,7 @@ public class casillaController implements Initializable {
         try {
             T recurso;
             if (nuevoRecurso) {
-                Constructor<T> constructor = recursoClase.getConstructor(int.class, int.class);
+                Constructor<T> constructor = recursoClase.getConstructor(int.class, DataModel.class);
 
                 int id;
                 if (model.getHistorialRecursos().isVacia()) {
@@ -230,7 +230,7 @@ public class casillaController implements Initializable {
                 } else {
                     id = model.getHistorialRecursos().getUltimo().getData().getId() + 1;
                 }
-                recurso = constructor.newInstance(id, model.getTurnosInicialesRecurso());
+                recurso = constructor.newInstance(id, model);
 
                 casillaActual.addRecurso(recurso, true);
             } else {

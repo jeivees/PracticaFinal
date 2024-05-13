@@ -1,7 +1,7 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import gui.mvc.javafx.practicafinal.DataModel;
 
 public class individuoBasico extends individuo<individuoBasico> {
     public individuoBasico(int I, int G, int T, float PR, float PC) {
@@ -21,7 +21,7 @@ public class individuoBasico extends individuo<individuoBasico> {
     }
 
     @Override
-    public void mover(configuracionDataModel model, tablero tablero) {
+    public void mover(DataModel model, tablero tablero) {
         this.moverAleatorio(tablero);
     }
 }

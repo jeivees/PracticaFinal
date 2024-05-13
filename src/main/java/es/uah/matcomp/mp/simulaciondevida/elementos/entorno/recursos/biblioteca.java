@@ -6,17 +6,19 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoBasico;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.probabilidadInvalidaException;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import gui.mvc.javafx.practicafinal.DataModel;
 
 public class biblioteca extends recurso<biblioteca> {
     private float incrementoProbClonacion;
 
     public biblioteca () {}
-    public biblioteca (int id, int T) {
-        super (id, T);
+    public biblioteca (int id, DataModel model) {
+        super (id, model);
+        incrementoProbClonacion = model.getIncrementoProbClon();
     }
-    public biblioteca (int id, int PX, int PY, int T) {
-        super (id, PX, PY, T);
+    public biblioteca (int id, int PX, int PY, DataModel model) {
+        super (id, PX, PY, model);
+        incrementoProbClonacion = model.getIncrementoProbClon();
     }
 
     public float getIncrementoProbClonacion() {

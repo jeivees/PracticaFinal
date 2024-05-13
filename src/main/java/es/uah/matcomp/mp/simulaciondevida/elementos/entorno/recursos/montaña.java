@@ -3,17 +3,19 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.incrementoInvalidoException;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import gui.mvc.javafx.practicafinal.DataModel;
 
 public class montaña extends recurso<montaña> {
     private int incrementoTV;
 
     public montaña () {}
-    public montaña (int id, int T) {
-        super (id, T);
+    public montaña (int id, DataModel model) {
+        super (id, model);
+        incrementoTV = model.getIncrementoTurnosMontaña();
     }
-    public montaña (int id, int PX, int PY, int T) {
-        super (id, PX, PY, T);
+    public montaña (int id, int PX, int PY, DataModel model) {
+        super (id, PX, PY, model);
+        incrementoTV = model.getIncrementoTurnosMontaña();
     }
 
     public int getIncrementoTV() {
