@@ -3,16 +3,19 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.incrementoInvalidoException;
+import gui.mvc.javafx.practicafinal.DataModel;
 
 public class agua extends recurso<agua> {
     private int incrementoTV;
 
     public agua () {}
-    public agua (int id, int T) {
-        super (id, T);
+    public agua (int id, DataModel model) {
+        super (id, model);
+        incrementoTV = model.getIncrementoTurnosAgua();
     }
-    public agua (int id, int PX, int PY, int T) {
-        super (id, PX, PY, T);
+    public agua (int id, int PX, int PY, DataModel model) {
+        super (id, PX, PY, model);
+        incrementoTV = model.getIncrementoTurnosAgua();
     }
 
     public int getIncrementoTV() {

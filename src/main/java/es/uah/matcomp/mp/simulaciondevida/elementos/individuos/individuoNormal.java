@@ -1,12 +1,17 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import excepciones.recursosNoConsumidosException;
+import gui.mvc.javafx.practicafinal.DataModel;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Random;
 
 public class individuoNormal extends individuo<individuoNormal> {
+    private static final Logger log = LogManager.getLogger();
     public individuoNormal(int I, int G, int T, float PR, float PC) {
         super(I, G, T, PR, PC);
     }
@@ -21,7 +26,7 @@ public class individuoNormal extends individuo<individuoNormal> {
         return individuoNormal.class;
     }
 
-    public void mover(configuracionDataModel model, tablero tablero) {
+    public void mover(DataModel model, tablero tablero) throws recursosNoConsumidosException{
         if (model.getRecursos().isVacia()) {
             moverAleatorio(tablero);
         } else {
@@ -29,21 +34,24 @@ public class individuoNormal extends individuo<individuoNormal> {
             int numAleatorio = r.nextInt(model.getRecursos().getNumeroElementos());
             recurso recursoObjetivo = model.getRecursos().getElemento(numAleatorio).getData();
 
-            if (Math.abs(recursoObjetivo.getPosicionX() - getPosicionX()) >
-                    Math.abs(recursoObjetivo.getPosicionY() - getPosicionY()))
-            {
-                if (recursoObjetivo.getPosicionX() - getPosicionX() < 0) {
-                    cambiarPosicion(getPosicionX() - 1, getPosicionY(), tablero);
-                } else {
-                    cambiarPosicion(getPosicionX() + 1, getPosicionY(), tablero);
-                }
-            } else {
-                if (recursoObjetivo.getPosicionY() - getPosicionY() < 0) {
-                    cambiarPosicion(getPosicionX(), getPosicionY() - 1, tablero);
-                } else {
-                    cambiarPosicion(getPosicionX(), getPosicionY() + 1, tablero);
-                }
+            int distanciaEnX = recursoObjetivo.getPosicionX() - getPosicionX();
+            int distanciaEnY = recursoObjetivo.getPosicionY() - getPosicionY();
+            int coordenadaXDestino = getPosicionX();
+            int coordenadaYDestino = getPosicionY();
+
+            if (distanciaEnX == 0 && distanciaEnY == 0) throw new recursosNoConsumidosException(this);
+
+            if (distanciaEnX < 0) {
+                coordenadaXDestino -= 1;
+            } else if (distanciaEnX > 0) {
+                coordenadaXDestino += 1;
             }
+            if (distanciaEnY < 0) {
+                coordenadaYDestino -= 1;
+            } else if (distanciaEnY > 0) {
+                coordenadaYDestino += 1;
+            }
+            cambiarPosicion(coordenadaXDestino, coordenadaYDestino, tablero);
         }
     }
 }

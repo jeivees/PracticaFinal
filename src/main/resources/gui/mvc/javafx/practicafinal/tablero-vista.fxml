@@ -42,12 +42,15 @@
             </Label>
             <AnchorPane prefHeight="118.0" prefWidth="189.0">
                <children>
-                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBotonReanudarClick" prefHeight="110.0" prefWidth="180.0" textFill="#078e10">
-                     <font>
-                        <Font name="Bookman Old Style Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Polygon layoutX="113.0" layoutY="83.0" points="-21.200000762939453, -40.9999885559082, -21.200000762939453, -14.999988555908203, 1.7999992370605469, -27.999988555908203" scaleX="2.75" scaleY="2.75" scaleZ="2.75" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBotonReanudarClick" prefHeight="110.0" prefWidth="180.0" textFill="#078e10" />
+                  <Polygon fx:id="trianguloPlay2" layoutX="92.0" layoutY="83.0" points="-21.200000762939453, -40.9999885559082, -21.200000762939453, -14.999988555908203, 1.7999992370605469, -27.999988555908203" scaleX="2.75" scaleY="2.75" scaleZ="2.75" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Polygon fx:id="trianguloPlay3" layoutX="124.0" layoutY="83.0" points="-21.200000762939453, -40.9999885559082, -21.200000762939453, -14.999988555908203, 1.7999992370605469, -27.999988555908203" scaleX="2.75" scaleY="2.75" scaleZ="2.75" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="118.0" prefWidth="189.0">
+               <children>
+                  <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBotonPasarTurnoClick" prefHeight="110.0" prefWidth="180.0" textFill="#078e10" />
+                  <Polygon fx:id="trianguloPlay1" layoutX="103.0" layoutY="83.0" points="-21.200000762939453, -40.9999885559082, -21.200000762939453, -14.999988555908203, 1.7999992370605469, -27.999988555908203" scaleX="2.75" scaleY="2.75" scaleZ="2.75" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="528.0" layoutY="10.0" prefHeight="50.0" prefWidth="64.0">
@@ -57,8 +60,8 @@
                         <Font name="Bookman Old Style Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="66.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="102.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+                  <Rectangle fx:id="rectanguloPausa1" arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="66.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+                  <Rectangle fx:id="rectanguloPausa2" arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="102.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="528.0" layoutY="10.0" prefHeight="50.0" prefWidth="64.0">
@@ -68,7 +71,7 @@
                         <Font name="Bookman Old Style Bold" size="14.0" />
                      </font>
                   </Button>
-                  <ImageView fitHeight="134.0" fitWidth="137.0" layoutX="25.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="iconoConfiguracion" fitHeight="134.0" fitWidth="137.0" layoutX="25.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/Gear-icon.png" />
                      </image>

@@ -2,13 +2,12 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.arrayTamañoInvalidoException;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import gui.mvc.javafx.practicafinal.DataModel;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.lang.module.Configuration;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
@@ -21,16 +20,16 @@ public abstract class recurso <T extends recurso<T>>{
 
     public recurso() {}
 
-    public recurso(int id, int T) {
+    public recurso(int id, DataModel model) {
         this.id = id;
-        TiempoDeAparicionProperty.set(T);
+        TiempoDeAparicionProperty.set(model.getTurnosInicialesRecurso());
     }
 
-    public recurso(int id, int posicionX, int posicionY, int tiempoDeAparicion) {
+    public recurso(int id, int posicionX, int posicionY, DataModel model) {
         this.id = id;
         this.posicionX = posicionX;
         this.posicionY = posicionY;
-        TiempoDeAparicionProperty.set(tiempoDeAparicion);
+        TiempoDeAparicionProperty.set(model.getTurnosInicialesRecurso());
     }
 
 
@@ -81,26 +80,26 @@ public abstract class recurso <T extends recurso<T>>{
 
     public abstract Class<T> getTipo ();
 
-    public void añadir(configuracionDataModel model, casillaTablero casillaActual) {
+    public void añadir(DataModel model, casillaTablero casillaActual) {
         try {
             model.getRecursos().add(this);
             casillaActual.getRecursos().add(this);
             this.setPosicion(casillaActual.getPosicion());
 
             Constructor<? extends recurso> constructor = getClass().getConstructor(
-                    int.class, int.class, int.class, int.class);
+                    int.class, int.class, int.class, DataModel.class);
             model.getHistorialRecursos().add(constructor.newInstance(
-                    id, posicionX, posicionY, TiempoDeAparicionProperty.get()));
+                    id, posicionX, posicionY, model));
         } catch (NoSuchMethodException | InvocationTargetException | InstantiationException | IllegalAccessException e) {
             log.error("No se ha podido crear una nueva instancia de recurso para el historial de recursos");
         }
     }
-    public void eliminar(configuracionDataModel model, casillaTablero casillaActual) {
+    public void eliminar(DataModel model, casillaTablero casillaActual) {
         model.getRecursos().del(this);
         casillaActual.getRecursos().del(this);
     }
 
-    public void actualizarTA (configuracionDataModel model, casillaTablero casillaActual) {
+    public void actualizarTA (DataModel model, casillaTablero casillaActual) {
         TiempoDeAparicionProperty.set(TiempoDeAparicionProperty.get()-1);
         if (TiempoDeAparicionProperty.get() == 0) eliminar(model, casillaActual);
     }

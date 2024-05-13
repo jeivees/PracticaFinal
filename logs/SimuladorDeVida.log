@@ -1,311 +1,1346 @@
-2024-05-12 11:37:53.948 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 11:38:02.490 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 11:41:04.534 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 11:42:15.378 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 11:43:29.297 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 11:43:29.298 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 13:34:54.460 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 13:34:54.461 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 13:34:54.461 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 13:34:54.476 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 13:46:35.697 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 13:46:35.698 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 13:46:35.699 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 13:46:35.748 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 14:04:44.320 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:03.537 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:03.539 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:17:03.556 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:17:05.336 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:05.336 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:17:05.346 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:17:05.756 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:05.756 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:17:05.769 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:17:06.154 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:06.154 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:17:06.163 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:17:06.550 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:21.476 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:21.477 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:17:21.486 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:17:22.324 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:22.325 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:17:22.334 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:17:25.421 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:25.857 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:26.201 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:33.642 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:34.789 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:35.532 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:35.532 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:17:35.542 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:17:37.137 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:17:37.137 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:17:37.146 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:17:38.037 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:20:43.755 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:21:00.389 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:21:13.714 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:23:20.092 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:23:23.316 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:23:45.756 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:24:01.656 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:24:03.562 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:29:27.500 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:29:27.502 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:29:34.880 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:29:43.161 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:29:45.800 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 15:30:00.173 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:30:00.809 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:30:01.933 - INFO  - es.uah - Fin del movimiento aleatorio
-2024-05-12 15:33:09.886 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-12 15:33:26.241 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-12 15:45:47.320 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:45:47.322 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:46:19.337 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:46:19.338 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:46:25.946 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 15:49:32.671 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:51:37.449 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 15:52:48.307 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 16:05:39.568 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:10:02.846 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:10:43.189 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:11:09.987 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:11:19.696 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-12 17:11:34.257 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:11:34.534 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@5876ea53 (casillaTablero@a89f198) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@5876ea53 (casillaTablero@a89f198)
-2024-05-12 17:11:50.938 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:11:50.939 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:11:52.033 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 17:11:52.277 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 17:11:53.055 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-12 17:11:53.055 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-12 17:41:04.095 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:41:16.801 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:41:24.405 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:41:31.523 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:41:36.211 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:43:17.382 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:43:26.756 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:43:30.724 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:43:38.119 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:45:07.469 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:47:11.674 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:47:14.270 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-12 17:47:17.251 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 17:47:34.150 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@3a97d211 (casillaTablero@309d5c23) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@3a97d211 (casillaTablero@309d5c23)
-2024-05-12 17:50:22.361 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:48:08.528 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-12 18:49:07.691 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:07.693 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:07.693 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:07.693 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:07.693 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:07.694 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:07.694 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:07.760 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:07.813 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:07.830 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:07.876 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:07.876 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:07.926 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:07.927 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:07.968 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:07.969 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:08.020 - ERROR - es.uah - No se ha podido crear una instancia del tipo de individuo solicitado
-2024-05-12 18:49:08.033 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 18:49:17.154 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:17.155 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:17.155 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:17.155 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:17.203 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:17.203 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:17.204 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 18:49:17.221 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:17.221 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 18:49:17.238 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:17.239 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 18:49:21.647 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:21.647 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:21.648 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:21.648 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:21.702 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:21.720 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:21.729 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:21.762 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-12 18:49:21.780 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-12 18:49:25.090 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:25.090 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:25.090 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:25.091 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:25.091 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:25.108 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:25.118 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:25.118 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:25.118 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:25.118 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:25.127 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:25.127 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:26.192 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:49:26.192 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:49:26.575 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:05.186 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:05.187 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:05.187 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:05.187 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:05.188 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:05.188 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:05.188 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:58.699 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:58.700 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:58.701 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:58.701 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:58.701 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:58.701 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:50:58.702 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:51:19.395 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:51:21.092 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:51:22.025 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:51:22.026 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:51:22.027 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:51:22.028 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:51:22.999 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:51:25.435 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:51:26.405 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:52:08.943 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-12 18:52:11.117 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-12 18:52:26.942 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:52:26.943 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:52:26.944 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:52:26.944 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:52:26.945 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:52:26.946 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:52:26.946 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 18:52:29.101 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:52:29.447 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:52:31.944 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:52:34.463 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:52:36.413 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:52:38.333 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 18:52:39.836 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:26:42.179 - ERROR - es.uah - No se ha podido crear una instancia del tipo de individuo solicitado
-2024-05-12 20:39:47.114 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:39:47.115 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:39:47.116 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:39:47.116 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:39:47.116 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:39:47.116 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:39:47.117 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:39:52.665 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:39:52.666 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:33.818 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.819 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.819 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.819 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.820 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.820 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.820 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.820 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.821 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.821 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.821 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.821 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.822 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.822 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.822 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:41:33.822 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:33.831 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 20:41:33.929 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.028 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.074 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.093 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.102 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.140 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.159 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.187 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.205 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.215 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:34.244 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:41:43.490 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-12 20:41:43.500 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-12 20:42:02.604 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.604 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.605 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.605 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.605 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.605 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.605 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.605 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.606 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.606 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.606 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.606 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.606 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.607 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.607 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:42:02.607 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.607 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.678 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.749 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.765 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.773 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.781 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.790 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.798 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.806 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.814 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.823 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:42:02.831 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:47:02.664 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.665 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.665 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.665 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.665 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.665 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.665 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.666 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.666 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.666 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.666 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.666 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.666 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.667 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:02.667 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.184 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.185 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.185 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.185 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.185 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.186 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.186 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.186 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.186 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.187 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.187 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.187 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 20:47:05.323 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 20:47:05.331 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:47:05.340 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:47:05.348 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:47:05.356 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:47:05.365 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:47:05.373 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:47:05.382 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:47:05.391 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 20:47:05.443 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
-2024-05-12 20:47:07.347 - INFO  - es.uah - Tiempo de vida modificado
-2024-05-12 20:47:07.365 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
-2024-05-12 21:39:56.953 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
-2024-05-12 21:39:58.369 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
-2024-05-12 21:40:09.130 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
-2024-05-12 21:40:12.065 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
-2024-05-12 21:40:16.487 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 21:40:16.487 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 21:40:16.488 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 21:40:16.488 - INFO  - es.uah - Tiempo de vida actualizado
-2024-05-12 21:40:16.645 - INFO  - es.uah - Inicio de movimiento aleatorio
-2024-05-12 21:42:30.640 - ERROR - es.uah - El nombre de la clase del individuo superior no es válido
-2024-05-12 21:44:01.822 - ERROR - es.uah - No se ha podido crear una instancia para el individuo hijo
+2024-05-13 09:05:22.286 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:05:23.477 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:05:56.249 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:06:05.259 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:06:05.259 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:06:05.259 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:06:05.305 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 09:06:55.949 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:06:56.982 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:07:03.986 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:07:03.986 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:13:04.397 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:13:05.363 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:13:10.639 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:13:10.640 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:16:47.946 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:16:48.915 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:16:54.721 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:16:54.721 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:17:38.119 - ERROR - es.uah - No se ha podido crear una instancia para el individuo hijo
+2024-05-13 09:21:33.742 - ERROR - es.uah - No se ha podido crear una instancia para el individuo hijo
+2024-05-13 09:21:52.841 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:22:13.726 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:23:51.010 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:24:28.766 - ERROR - es.uah - No se ha podido crear una nueva instancia de individuo para el historial de individuos
+2024-05-13 09:25:28.480 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:25:28.481 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:25:50.375 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 09:28:56.457 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 09:30:18.701 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:30:18.701 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:30:23.370 - ERROR - es.uah - No se ha podido crear una copia del individuo
+2024-05-13 09:30:42.439 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:30:42.439 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:30:42.440 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:32:38.086 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 09:32:38.281 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 09:32:50.694 - ERROR - es.uah - No se ha podido crear una copia del individuo
+2024-05-13 09:33:48.946 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:33:48.946 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:33:48.946 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:33:48.946 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:34:06.415 - INFO  - es.uah - Probabilidad de clonación modificada
+2024-05-13 09:34:09.211 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-13 09:36:50.177 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:50.177 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:50.178 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:50.178 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:53.267 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@263059ee (casillaTablero@5143f18d) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@263059ee (casillaTablero@5143f18d)
+2024-05-13 09:36:55.512 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:55.513 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:55.513 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:55.513 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:56.871 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:56.871 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:36:56.872 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:37:00.059 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@64b9de7c (casillaTablero@5143f18d) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@64b9de7c (casillaTablero@5143f18d)
+2024-05-13 09:37:53.823 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:37:53.823 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:37:53.823 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:38:14.299 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:38:25.771 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 09:52:39.021 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-13 09:55:32.611 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:55:32.612 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:55:32.612 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:56:29.527 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 09:56:30.109 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-13 09:56:43.243 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:56:43.243 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:56:43.243 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:59:58.679 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 09:59:58.679 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:00:04.220 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 10:01:21.416 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:01:21.416 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:01:32.871 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 10:01:47.931 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-13 10:02:39.712 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:02:39.713 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:02:45.501 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 10:02:47.142 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-13 10:03:32.503 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:03:32.503 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:03:49.823 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 10:03:53.656 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un recurso de una casilla en la que no está contenido
+2024-05-13 10:04:51.870 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:04:51.871 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:05:01.623 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 10:08:39.227 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 10:08:39.594 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 10:09:39.227 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:09:39.228 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:09:44.764 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 10:09:58.760 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 10:09:59.771 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 10:15:01.434 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:15:01.435 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:15:10.331 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 10:16:40.744 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:16:40.745 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:17:30.462 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:17:43.534 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:17:43.534 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:23:56.206 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:24:37.742 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:24:43.216 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:24:45.085 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 10:25:10.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:25:12.042 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 10:46:17.899 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:46:17.900 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:46:53.547 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:46:53.547 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:48:35.686 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:48:35.687 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:59:38.952 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 10:59:38.952 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:08:00.902 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:08:00.903 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.494 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.494 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.495 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.496 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.497 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.497 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.497 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.497 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.497 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.497 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:04.497 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:04.520 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:04.538 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:04.553 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:04.578 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:04.603 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:07.913 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:07.937 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:07.952 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:07.973 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:07.991 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:07.995 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.010 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.036 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.043 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.057 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.074 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.089 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.115 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.130 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.145 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.162 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.170 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.177 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.198 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:08.223 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:12.200 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 11:13:21.578 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.578 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.578 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.579 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.580 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.580 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.580 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.580 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.580 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.580 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:21.580 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.595 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.603 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.603 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:21.628 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:21.642 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.642 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:21.657 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.657 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:21.675 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.682 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.682 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:21.697 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.708 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.726 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.750 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.758 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.762 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.762 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:21.776 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.780 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.795 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.810 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.830 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.878 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.889 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:21.909 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 11:13:26.861 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:28.636 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.636 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.636 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.636 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.636 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.636 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.636 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.637 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.638 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:28.638 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:28.638 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.619 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.619 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.619 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.619 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.619 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:13:29.620 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.639 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.642 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.642 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.661 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.677 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.690 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.694 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.706 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.707 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.719 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.723 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.739 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.755 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.758 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.758 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.765 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.781 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.781 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.793 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.803 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.816 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.825 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.834 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:13:29.835 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.838 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.854 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.873 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.883 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.889 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.893 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.899 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.903 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:13:29.916 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:04.726 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.728 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.729 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.729 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.729 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.729 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:04.729 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.751 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.770 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.770 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:04.779 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.779 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:04.795 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.795 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:04.802 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.809 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.830 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.840 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.840 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.840 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.840 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.844 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.844 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:04.854 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.861 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.865 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.896 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:04.905 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.915 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.928 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.928 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:04.946 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.956 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.956 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:04.966 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:04.970 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:05.099 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:05.115 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:05.128 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:05.139 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:05.149 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:05.162 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-13 11:14:05.196 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:05.207 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:05.220 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:05.244 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 11:14:28.795 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.795 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.795 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.797 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.797 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.797 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.797 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.797 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.797 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:28.797 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.805 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.816 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.816 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.816 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.816 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.816 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.828 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.835 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.850 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.860 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.872 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.876 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.888 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.888 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:28.901 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.901 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:28.920 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.933 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.936 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.936 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:28.955 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.965 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.981 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:28.981 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:29.001 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.001 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:29.013 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.035 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.042 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.056 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.063 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.069 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.095 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.102 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.102 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:29.115 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.124 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.124 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:29.140 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.149 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.159 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.171 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.171 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:29.187 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:29.187 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:29.206 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:29.237 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:29.250 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:29.250 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:37.862 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.862 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.862 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.863 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.864 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.864 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.864 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.864 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.864 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.864 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.864 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:37.864 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.770 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:38.771 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.256 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.661 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:14:39.663 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.663 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.667 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.667 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.678 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.678 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.707 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.731 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.731 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.758 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.771 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.774 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.774 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.804 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.829 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.829 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.845 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.845 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.851 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.851 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.854 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.888 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.888 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.891 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.891 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.898 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.904 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.904 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.910 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.910 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.929 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.929 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.938 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.938 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.938 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.957 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.957 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.957 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:39.957 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:39.970 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:40.001 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:14:40.001 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.028 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.035 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.042 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.052 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.059 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.076 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.080 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.104 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.150 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 11:14:40.166 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 11:14:40.184 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 11:14:40.184 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.190 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:14:40.193 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:32.914 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.916 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.916 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.916 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.916 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.916 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.916 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.916 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.916 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.916 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:32.928 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:32.928 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:32.949 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:32.973 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:32.973 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:32.995 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.010 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.021 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.032 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.050 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.072 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.080 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.097 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.105 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.119 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.131 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.142 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.158 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.184 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.192 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.305 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.330 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.367 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:33.421 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:37.661 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.662 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.663 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:37.700 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.714 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.717 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.721 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.738 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.782 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.788 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.792 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.817 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.824 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.848 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.862 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.873 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.873 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:37.884 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.888 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.913 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:37.974 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:37.989 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:38.010 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:38.010 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:38.032 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:38.049 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:38.060 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:38.064 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:38.064 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:38.078 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:38.107 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:38.118 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:38.126 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:38.149 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:55.977 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.977 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.977 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.978 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.979 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.979 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.979 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.979 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.979 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:16:55.994 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.010 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.014 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.014 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:56.020 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.020 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:56.030 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.033 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.046 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.049 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.059 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.059 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:56.072 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.087 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.091 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.127 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.144 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.154 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.154 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:56.171 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.171 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:56.182 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.193 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.203 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.216 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.230 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.244 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:16:56.244 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:59.775 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 11:16:59.815 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:59.826 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:16:59.844 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:19:53.531 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.532 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.532 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.533 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.533 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.533 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.533 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.534 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.534 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.534 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.535 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.535 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.535 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.536 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.536 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.536 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.536 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.537 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.537 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.537 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.538 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.538 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.538 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.539 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 11:19:53.539 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:53.965 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:53.965 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:19:54.586 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:54.587 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:55.408 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:56.246 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:56.671 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:57.093 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:57.934 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:57.934 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:19:58.786 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:58.787 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:19:59.211 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:19:59.211 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:20:00.064 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:00.065 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:20:01.144 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:01.144 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:20:01.803 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:02.909 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:02.910 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 11:20:03.798 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:04.236 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:04.675 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:04.675 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:05.114 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:05.115 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 11:20:05.115 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:02:37.035 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:02:37.036 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:02:37.036 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:02:38.528 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:02:38.528 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:02:38.529 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:02:38.647 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 12:04:04.324 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:04:04.341 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-13 12:04:07.232 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:04:14.058 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 12:04:15.910 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:47.187 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:47.188 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:47.188 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:05:47.202 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:05:48.199 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:48.200 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:48.200 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:05:48.784 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:48.785 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:48.785 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:05:49.436 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:49.437 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:49.437 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:05:49.523 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 12:05:50.726 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:50.726 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:05:50.726 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:05:50.727 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:05:50.792 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@54ea4ea9 (casillaTablero@49d5e352) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@54ea4ea9 (casillaTablero@49d5e352)
+2024-05-13 12:06:23.629 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:06:23.629 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:06:23.629 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:06:23.630 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:06:23.630 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:06:23.630 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:06:23.630 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:06:23.630 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:06:56.089 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@26ef3fcf (casillaTablero@49d5e352) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@26ef3fcf (casillaTablero@49d5e352)
+2024-05-13 12:12:24.116 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:13:44.677 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:13:44.741 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 12:19:21.318 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:19:27.057 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 12:19:30.590 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 12:26:46.352 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:26:46.353 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:26:46.353 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:26:51.334 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 12:27:06.317 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:27:06.317 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:27:06.317 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:27:06.317 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:27:06.326 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 12:41:06.970 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:55:43.010 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 12:55:43.011 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 13:02:20.750 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 13:02:20.756 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 13:03:15.066 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 13:03:15.067 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:46:00.126 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:46:00.142 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:46:00.142 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:46:00.161 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:46:25.219 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:46:25.219 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:46:25.220 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:48:53.930 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:48:53.932 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:48:53.933 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:48:54.003 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:49:11.183 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:49:11.184 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:49:11.184 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:49:11.219 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:49:11.228 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 16:52:04.328 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:52:04.329 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:53:26.306 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:53:26.308 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:53:26.319 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:54:29.819 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:54:29.820 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:54:29.831 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:54:59.796 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:01.513 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:03.272 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:04.725 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:04.725 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:06.993 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:06.993 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:07.987 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:07.988 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:11.450 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 16:55:11.510 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:11.511 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:12.950 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:12.951 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:12.982 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 16:55:18.805 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 16:55:18.821 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:55:18.848 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-13 16:55:32.299 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 16:57:49.065 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:57:49.066 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:57:49.067 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:57:49.067 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:57:50.565 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:57:50.566 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:57:50.566 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 16:57:50.566 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 16:57:50.734 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@33d4240f (casillaTablero@21695541) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@33d4240f (casillaTablero@21695541)
+2024-05-13 17:06:54.318 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:06:54.321 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:06:54.322 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:06:54.322 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:07:17.784 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:17.786 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:19.285 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:19.286 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:19.669 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-13 17:07:20.788 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:20.788 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:20.788 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:20.897 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@57e3ae7 (casillaTablero@568f7cd7) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@57e3ae7 (casillaTablero@568f7cd7)
+2024-05-13 17:07:20.991 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@736960c0 (casillaTablero@568f7cd7) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@736960c0 (casillaTablero@568f7cd7)
+2024-05-13 17:07:22.288 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:22.289 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:22.289 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:22.290 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:07:22.393 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@491b2d56 (casillaTablero@568f7cd7) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@491b2d56 (casillaTablero@568f7cd7)
+2024-05-13 17:07:22.485 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@71e5d28f (casillaTablero@568f7cd7) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@71e5d28f (casillaTablero@568f7cd7)
+2024-05-13 17:07:22.584 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@43b3dc64 (casillaTablero@568f7cd7) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@43b3dc64 (casillaTablero@568f7cd7)
+2024-05-13 17:07:22.611 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 17:09:10.594 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:10.595 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:10.596 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:09:10.615 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:09:12.095 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:12.095 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:13.597 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:13.598 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:15.097 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:15.098 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:16.599 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:18.099 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:18.997 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:09:19.016 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:09:19.600 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:20.368 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@2bbd331d (casillaTablero@10862546) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@2bbd331d (casillaTablero@10862546)
+2024-05-13 17:09:21.100 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:09:21.818 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@c0312e7 (casillaTablero@10862546) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@c0312e7 (casillaTablero@10862546)
+2024-05-13 17:09:22.602 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:13.896 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:13.897 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:13.908 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:10:15.397 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:15.397 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:15.407 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:10:16.899 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:16.899 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:16.899 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:16.925 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:10:16.953 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:10:16.962 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:10:18.399 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:18.400 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:18.400 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:18.427 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:10:18.446 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 17:10:18.464 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:10:18.481 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:10:18.491 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:10:18.500 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 17:10:19.900 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:19.901 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:19.901 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:10:19.920 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:10:19.920 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 17:42:51.981 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:51.982 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:51.982 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:51.983 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:42:52.000 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:42:52.009 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:42:53.481 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:53.482 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:53.482 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:53.482 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:54.981 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:54.982 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:54.982 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:54.983 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:42:54.983 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:04.094 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:43:06.971 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:06.971 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:06.971 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:07.409 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 17:43:07.424 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 17:43:15.059 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:43:25.185 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:25.185 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:25.529 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@7c858004 (casillaTablero@75f3b6bb) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@7c858004 (casillaTablero@75f3b6bb)
+2024-05-13 17:43:25.530 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 17:43:25.581 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:25.582 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:25.928 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@4405adca (casillaTablero@75f3b6bb) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@4405adca (casillaTablero@75f3b6bb)
+2024-05-13 17:43:25.928 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 17:43:25.932 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:25.932 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:26.272 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@4a3743e2 (casillaTablero@75f3b6bb) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@4a3743e2 (casillaTablero@75f3b6bb)
+2024-05-13 17:43:26.272 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 17:43:26.327 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:26.327 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:26.668 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@25176754 (casillaTablero@75f3b6bb) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@25176754 (casillaTablero@75f3b6bb)
+2024-05-13 17:43:26.669 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 17:43:26.737 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:26.737 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:27.083 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@4cbe5cf2 (casillaTablero@75f3b6bb) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@4cbe5cf2 (casillaTablero@75f3b6bb)
+2024-05-13 17:43:27.084 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 17:43:27.126 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:27.126 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:27.472 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@50e52413 (casillaTablero@75f3b6bb) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@50e52413 (casillaTablero@75f3b6bb)
+2024-05-13 17:43:27.473 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 17:43:27.483 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:27.483 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:27.835 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@435d6c48 (casillaTablero@75f3b6bb) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@435d6c48 (casillaTablero@75f3b6bb)
+2024-05-13 17:43:27.835 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 17:43:28.109 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:28.109 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:28.483 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@69b1072 (casillaTablero@75f3b6bb) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@69b1072 (casillaTablero@75f3b6bb)
+2024-05-13 17:43:28.484 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 17:43:29.610 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:43:29.611 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 17:43:37.114 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 17:44:46.498 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:44:46.499 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:44:46.499 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:44:46.499 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:44:46.513 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:44:46.539 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 17:44:50.499 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:44:50.500 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:44:50.500 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:44:54.500 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:44:54.501 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:44:55.901 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 17:45:39.397 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:45:39.397 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:45:39.728 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@3c6b515c (casillaTablero@60130a6c) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@3c6b515c (casillaTablero@60130a6c)
+2024-05-13 17:45:53.434 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:46:11.340 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:46:11.341 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:46:45.921 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@22aa436 (casillaTablero@60130a6c) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@22aa436 (casillaTablero@60130a6c)
+2024-05-13 17:46:57.140 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:46:59.325 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 17:47:04.079 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:47:04.080 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 17:47:04.471 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@2ded95da (casillaTablero@60130a6c) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@2ded95da (casillaTablero@60130a6c)
+2024-05-13 18:12:04.342 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:12:04.343 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:12:04.343 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:12:04.353 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:12:05.494 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:12:05.494 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:12:05.503 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:14:05.695 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:05.696 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:05.696 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:14:05.711 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:14:31.919 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:31.920 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:31.921 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:14:31.932 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:14:33.419 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:33.420 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:33.420 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:33.598 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:14:34.921 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:34.922 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:34.922 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:35.114 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:14:35.318 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:14:35.342 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:14:36.422 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:36.423 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:36.423 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:36.423 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:36.722 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:14:37.403 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:14:37.922 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:37.922 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:37.922 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:37.923 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:38.075 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@8d7526a (casillaTablero@7d838584) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@8d7526a (casillaTablero@7d838584)
+2024-05-13 18:14:38.076 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:14:38.099 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:14:40.158 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:40.158 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:40.158 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:40.296 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@17181ad7 (casillaTablero@7d838584) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@17181ad7 (casillaTablero@7d838584)
+2024-05-13 18:14:49.345 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:49.345 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:49.345 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:49.485 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@56607266 (casillaTablero@7d838584) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@56607266 (casillaTablero@7d838584)
+2024-05-13 18:14:55.533 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:55.533 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:55.533 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:14:55.534 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:56.500 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:56.500 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:56.642 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@525c2323 (casillaTablero@7d838584) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@525c2323 (casillaTablero@7d838584)
+2024-05-13 18:14:57.595 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:57.595 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:14:57.595 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:58.069 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:58.086 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:14:58.810 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:59.147 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:59.591 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:59.965 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:14:59.966 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:00.558 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:00.584 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-13 18:15:00.602 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:15:01.142 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:01.159 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:15:01.727 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:02.184 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:02.185 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:02.185 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:02.732 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:02.732 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:03.160 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:03.160 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:03.160 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:03.564 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:04.021 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:04.472 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:04.473 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:04.915 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:05.379 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:05.396 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:15:05.845 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:05.845 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:06.257 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:06.258 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:06.258 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:06.924 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:06.924 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:06.925 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:06.949 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:07.008 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:15:07.024 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:15:07.025 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:07.067 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:07.076 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:07.540 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:07.540 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:07.564 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:15:08.395 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:08.395 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:08.395 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:08.434 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:15:09.032 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:09.032 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:09.521 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:09.521 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:10.007 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:10.007 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:10.040 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:10.067 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-13 18:15:10.094 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:15:10.540 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:11.027 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:11.028 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:15:11.057 - INFO  - es.uah - Probabilidad de clonación modificada
+2024-05-13 18:15:11.469 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:12.960 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@5a556453 (casillaTablero@1343f67b) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@5a556453 (casillaTablero@1343f67b)
+2024-05-13 18:15:13.211 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:15:14.740 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@6b4e61e0 (casillaTablero@1343f67b) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@6b4e61e0 (casillaTablero@1343f67b)
+2024-05-13 18:17:08.514 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:17:08.515 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:17:08.516 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:17:08.531 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:17:10.015 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:17:10.015 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:17:16.520 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:17:16.521 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:17:16.805 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:17:18.021 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:17:18.022 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:17:18.274 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@480d454e (casillaTablero@48f99e60) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@480d454e (casillaTablero@48f99e60)
+2024-05-13 18:17:19.522 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:17:19.744 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@3a0140ad (casillaTablero@48f99e60) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@3a0140ad (casillaTablero@48f99e60)
+2024-05-13 18:18:16.339 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:18:16.340 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:18:16.340 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:18:16.361 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:18:17.839 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:18:17.840 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:18:23.954 - INFO  - es.uah - Probabilidad de clonación modificada
+2024-05-13 18:18:31.393 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:18:31.394 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:18:54.361 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:18:54.671 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:18:54.671 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:18:55.035 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:18:55.036 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:02.564 - INFO  - es.uah - Probabilidad de reproducción modificada
+2024-05-13 18:19:08.340 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:08.341 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:08.531 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@4946e32d (casillaTablero@67077d06) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@4946e32d (casillaTablero@67077d06)
+2024-05-13 18:19:08.617 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:08.618 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:08.821 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@7a780778 (casillaTablero@67077d06) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@7a780778 (casillaTablero@67077d06)
+2024-05-13 18:19:10.931 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:19:49.027 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:49.028 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:49.029 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:49.029 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:19:49.057 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:19:49.075 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:19:50.528 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:50.528 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:50.529 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:50.529 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:19:54.997 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:20:00.157 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:00.158 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:00.158 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:00.158 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:14.035 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:20:28.464 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:20:31.156 - INFO  - es.uah - Tiempo de vida modificado
+2024-05-13 18:20:52.403 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.403 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.403 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.503 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@66f11175 (casillaTablero@5b025e32) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@66f11175 (casillaTablero@5b025e32)
+2024-05-13 18:20:52.545 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.545 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.545 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.641 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@1dabf344 (casillaTablero@5b025e32) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@1dabf344 (casillaTablero@5b025e32)
+2024-05-13 18:20:52.673 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.674 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.674 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.773 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@79cd15ff (casillaTablero@5b025e32) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@79cd15ff (casillaTablero@5b025e32)
+2024-05-13 18:20:52.845 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.845 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.845 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:52.941 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@46415cd5 (casillaTablero@5b025e32) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@46415cd5 (casillaTablero@5b025e32)
+2024-05-13 18:20:53.004 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.004 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.005 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.105 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@5e03b728 (casillaTablero@5b025e32) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@5e03b728 (casillaTablero@5b025e32)
+2024-05-13 18:20:53.167 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.167 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.167 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.268 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@22d2047f (casillaTablero@5b025e32) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@22d2047f (casillaTablero@5b025e32)
+2024-05-13 18:20:53.313 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.313 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.314 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:20:53.314 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.410 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@39f100a9 (casillaTablero@5b025e32) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@39f100a9 (casillaTablero@5b025e32)
+2024-05-13 18:20:53.410 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:20:53.428 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:20:53.436 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero - Se ha tratado de eliminar un individuo de una casilla en la que no está contenido
+2024-05-13 18:20:53.470 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.470 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.470 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.470 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.470 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:20:53.568 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@6639e909 (casillaTablero@5b025e32) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@6639e909 (casillaTablero@5b025e32)
+2024-05-13 18:21:26.573 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:26.574 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:26.585 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:21:26.596 - INFO  - es.uah - Inicio de movimiento aleatorio
+2024-05-13 18:21:27.695 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:27.695 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:27.696 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:36.342 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:36.342 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:36.343 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:36.343 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:49.722 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:49.722 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:49.722 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:50.123 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:21:50.147 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada - Se ha tratado de eliminar un elemento que no pertenece a la lista
+2024-05-13 18:21:53.450 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:53.450 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:53.450 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:55.047 - INFO  - es.uah - Tiempo de vida actualizado
+2024-05-13 18:21:55.048 - INFO  - es.uah - Tiempo de vida actualizado

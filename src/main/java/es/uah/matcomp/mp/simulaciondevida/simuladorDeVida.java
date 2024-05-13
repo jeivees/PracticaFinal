@@ -2,24 +2,29 @@ package es.uah.matcomp.mp.simulaciondevida;
 
 import es.uah.matcomp.mp.simulaciondevida.control.bucleDeControl;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import gui.mvc.javafx.practicafinal.DataModel;
 
 public class simuladorDeVida {
     private tablero tablero;
     private bucleDeControl bucle;
-    private configuracionDataModel model;
+    private DataModel model;
 
-    public simuladorDeVida (configuracionDataModel model) {
+    public simuladorDeVida (DataModel model) {
         this.model = model;
         tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
         bucle = new bucleDeControl(tablero, model);
     }
-    public simuladorDeVida (configuracionDataModel model, tablero tablero) {
+    public simuladorDeVida (DataModel model, tablero tablero) {
         this.model = model;
         bucle = new bucleDeControl(tablero, model);
     }
 
-    public void comenzar () {
+    public void comenzar (boolean unTurno) {
+        if (unTurno) {
+            bucle.setUnTurno(true);
+        } else {
+            bucle.setUnTurno(false);
+        }
         Thread threadBucle = new Thread(bucle);
         threadBucle.start();
     }
@@ -43,11 +48,11 @@ public class simuladorDeVida {
         this.bucle = bucle;
     }
 
-    public configuracionDataModel getModel() {
+    public DataModel getModel() {
         return model;
     }
 
-    public void setModel(configuracionDataModel model) {
+    public void setModel(DataModel model) {
         this.model = model;
     }
 }

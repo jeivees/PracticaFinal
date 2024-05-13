@@ -2,15 +2,15 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import gui.mvc.javafx.practicafinal.DataModel;
 
 public class pozo extends recurso<pozo> {
     public pozo () {}
-    public pozo (int id, int T) {
-        super (id, T);
+    public pozo (int id,  DataModel model) {
+        super (id, model);
     }
-    public pozo (int id, int PX, int PY, int T) {
-        super (id, PX, PY, T);
+    public pozo (int id, int PX, int PY, DataModel model) {
+        super (id, PX, PY, model);
     }
 
     @Override

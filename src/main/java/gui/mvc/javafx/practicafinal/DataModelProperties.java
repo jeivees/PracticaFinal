@@ -2,19 +2,15 @@ package gui.mvc.javafx.practicafinal;
 
 import excepciones.reinicioPestañaInesperadaException;
 import javafx.beans.property.*;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Tab;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-public class configuracionDataModelProperties {
+public class DataModelProperties {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
     //Modelo de datos original
-    protected configuracionDataModel original;
+    protected DataModel model;
 
 
     // propiedades tablero
@@ -31,7 +27,7 @@ public class configuracionDataModelProperties {
     private IntegerProperty ProbMejoraToAvanzado = new SimpleIntegerProperty();
 
     // propiedades recursos
-    private IntegerProperty ProbAparRecurso = new SimpleIntegerProperty();
+    private ObjectProperty<Integer> ProbAparRecurso = new SimpleIntegerProperty().asObject();
     private ObjectProperty<Integer> TurnosInicialesRecurso = new SimpleIntegerProperty().asObject();
     private IntegerProperty ProbAparAgua = new SimpleIntegerProperty();
     private IntegerProperty ProbAparComida = new SimpleIntegerProperty();
@@ -46,33 +42,33 @@ public class configuracionDataModelProperties {
     private IntegerProperty IncrementoProbClon = new SimpleIntegerProperty();
 
 
-    public configuracionDataModelProperties(configuracionDataModel original){
-        setOriginal(original);
+    public DataModelProperties(DataModel model){
+        setModelInitialize(model);
     }
 
     public void commit(){
-        original.setFilasTablero(FilasTablero.get());
-        original.setColumnasTablero(ColumnasTablero.get());
+        model.setFilasTablero(FilasTablero.get());
+        model.setColumnasTablero(ColumnasTablero.get());
 
-        original.setTurnosVidaIniciales(TurnosVidaIniciales.get());
-        original.setProbReproIndividuo(ProbReproIndividuo.get());
-        original.setProbClonIndividuo(ProbClonIndividuo.get());
-        original.setProbMejoraToNormal(ProbMejoraToNormal.get());
-        original.setProbMejoraToAvanzado(ProbMejoraToAvanzado.get());
+        model.setTurnosVidaIniciales(TurnosVidaIniciales.get());
+        model.setProbReproIndividuo(ProbReproIndividuo.get());
+        model.setProbClonIndividuo(ProbClonIndividuo.get());
+        model.setProbMejoraToNormal(ProbMejoraToNormal.get());
+        model.setProbMejoraToAvanzado(ProbMejoraToAvanzado.get());
 
-        original.setProbAparRecurso(ProbAparRecurso.get());
-        original.setTurnosInicialesRecurso(TurnosInicialesRecurso.get());
-        original.setProbAparAgua(ProbAparAgua.get());
-        original.setProbAparComida(ProbAparComida.get());
-        original.setProbAparMontaña(ProbAparMontaña.get());
-        original.setProbAparTesoro(ProbAparTesoro.get());
-        original.setProbAparBiblioteca(ProbAparBiblioteca.get());
-        original.setProbAparPozo(ProbAparPozo.get());
-        original.setIncrementoTurnosAgua(IncrementoTurnosAgua.get());
-        original.setIncrementoTurnosComida(IncrementoTurnosComida.get());
-        original.setIncrementoTurnosMontaña(IncrementoTurnosMontaña.get());
-        original.setIncrementoProbRepro(IncrementoProbRepro.get());
-        original.setIncrementoProbClon(IncrementoProbClon.get());
+        model.setProbAparRecurso(ProbAparRecurso.get());
+        model.setTurnosInicialesRecurso(TurnosInicialesRecurso.get());
+        model.setProbAparAgua(ProbAparAgua.get());
+        model.setProbAparComida(ProbAparComida.get());
+        model.setProbAparMontaña(ProbAparMontaña.get());
+        model.setProbAparTesoro(ProbAparTesoro.get());
+        model.setProbAparBiblioteca(ProbAparBiblioteca.get());
+        model.setProbAparPozo(ProbAparPozo.get());
+        model.setIncrementoTurnosAgua(IncrementoTurnosAgua.get());
+        model.setIncrementoTurnosComida(IncrementoTurnosComida.get());
+        model.setIncrementoTurnosMontaña(IncrementoTurnosMontaña.get());
+        model.setIncrementoProbRepro(IncrementoProbRepro.get());
+        model.setIncrementoProbClon(IncrementoProbClon.get());
     }
 
     public void rollback(Tab tabActual){
@@ -102,40 +98,44 @@ public class configuracionDataModelProperties {
     }
 
     private void rollbackIndividuos () {
-        TurnosVidaIniciales.set(original.getTurnosVidaIniciales());
-        ProbReproIndividuo.set(original.getProbReproIndividuo());
-        ProbClonIndividuo.set(original.getProbClonIndividuo());
-        ProbMejoraToNormal.set(original.getProbMejoraToNormal());
-        ProbMejoraToAvanzado.set(original.getProbMejoraToAvanzado());
+        TurnosVidaIniciales.set(model.getTurnosVidaIniciales());
+        ProbReproIndividuo.set(model.getProbReproIndividuo());
+        ProbClonIndividuo.set(model.getProbClonIndividuo());
+        ProbMejoraToNormal.set(model.getProbMejoraToNormal());
+        ProbMejoraToAvanzado.set(model.getProbMejoraToAvanzado());
     }
 
     private void rollbackRecursos () {
-        ProbAparRecurso.set(original.getProbAparRecurso());
-        TurnosInicialesRecurso.set(original.getTurnosInicialesRecurso());
-        ProbAparAgua.set(original.getProbAparAgua());
-        ProbAparComida.set(original.getProbAparComida());
-        ProbAparMontaña.set(original.getProbAparMontaña());
-        ProbAparTesoro.set(original.getProbAparTesoro());
-        ProbAparBiblioteca.set(original.getProbAparBiblioteca());
-        ProbAparPozo.set(original.getProbAparPozo());
-        IncrementoTurnosAgua.set(original.getIncrementoTurnosAgua());
-        IncrementoTurnosComida.set(original.getIncrementoTurnosComida());
-        IncrementoTurnosMontaña.set(original.getIncrementoTurnosMontaña());
-        IncrementoProbRepro.set(original.getIncrementoProbRepro());
-        IncrementoProbClon.set(original.getIncrementoProbClon());
+        ProbAparRecurso.set(model.getProbAparRecurso());
+        TurnosInicialesRecurso.set(model.getTurnosInicialesRecurso());
+        ProbAparAgua.set(model.getProbAparAgua());
+        ProbAparComida.set(model.getProbAparComida());
+        ProbAparMontaña.set(model.getProbAparMontaña());
+        ProbAparTesoro.set(model.getProbAparTesoro());
+        ProbAparBiblioteca.set(model.getProbAparBiblioteca());
+        ProbAparPozo.set(model.getProbAparPozo());
+        IncrementoTurnosAgua.set(model.getIncrementoTurnosAgua());
+        IncrementoTurnosComida.set(model.getIncrementoTurnosComida());
+        IncrementoTurnosMontaña.set(model.getIncrementoTurnosMontaña());
+        IncrementoProbRepro.set(model.getIncrementoProbRepro());
+        IncrementoProbClon.set(model.getIncrementoProbClon());
     }
 
     private void rollbackTablero () {
-        FilasTablero.set(original.getFilasTablero());
-        ColumnasTablero.set(original.getColumnasTablero());
+        FilasTablero.set(model.getFilasTablero());
+        ColumnasTablero.set(model.getColumnasTablero());
     }
 
-    public configuracionDataModel getOriginal(){
-        return original;
+    public DataModel getModel(){
+        return model;
     }
 
-    public void setOriginal(configuracionDataModel original){
-        this.original = original;
+    public void setModel (DataModel model) {
+        this.model = model;
+    }
+
+    public void setModelInitialize(DataModel model){
+        this.model = model;
         rollback(null); //Se inicializan los properties.
     }
 
@@ -155,7 +155,7 @@ public class configuracionDataModelProperties {
 
     public Property<Number> ProbMejoraToAvanzadoProperty() { return ProbMejoraToAvanzado; }
 
-    public Property<Number> ProbAparRecursoProperty() {
+    public ObjectProperty<Integer> ProbAparRecursoProperty() {
         return ProbAparRecurso;
     }
 

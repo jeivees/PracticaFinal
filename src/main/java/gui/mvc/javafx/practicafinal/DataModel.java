@@ -6,7 +6,7 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazad
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
-public class configuracionDataModel {
+public class DataModel {
     // listas de elementos
     private ListaEnlazada<individuo> individuos = new ListaEnlazada<>();
     private ListaEnlazada<recurso> recursos = new ListaEnlazada<>();
@@ -48,9 +48,9 @@ public class configuracionDataModel {
 
 
 
-    public configuracionDataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo, int probMejoraTonormal, int probMejoraToAvanzado,
-                                  int probAparRecurso, int turnosInicialesRecurso, int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon,
-                                  int filasTablero, int columnasTablero, int Turno) {
+    public DataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo, int probMejoraTonormal, int probMejoraToAvanzado,
+                     int probAparRecurso, int turnosInicialesRecurso, int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon,
+                     int filasTablero, int columnasTablero, int Turno) {
         TurnosVidaIniciales = turnosVidaIniciales;
         ProbReproIndividuo = probReproIndividuo;
         ProbClonIndividuo = probClonIndividuo;

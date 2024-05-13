@@ -1,8 +1,8 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
-import gui.mvc.javafx.practicafinal.configuracionDataModelProperties;
+import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
+import gui.mvc.javafx.practicafinal.DataModel;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -83,11 +83,13 @@ class recursoTest {
 
     @Test
     void actualizarTA() {
-        configuracionDataModel model = new configuracionDataModel(5, 50, 30,
-                10,20,20,20,10,10,10,
-                1,3,2,15,10,
-                10, 10, 10, 10, 0);
-        casillaTablero casilla = new casillaTablero(0,0, model);
+        DataModel model = new DataModel(
+                10, 50, 10, 50,25,
+                5,15,20,20,20,
+                10,10,10,3,5,
+                7, 25, 10, 10, 10, 0);
+        tablero tablero = new tablero(10, 10, model);
+        casillaTablero casilla = new casillaTablero(0,0, model, tablero);
         agua a = new agua ();
         a.setTiempoDeAparicion(3);
         assertDoesNotThrow(()->a.actualizarTA(model, casilla));

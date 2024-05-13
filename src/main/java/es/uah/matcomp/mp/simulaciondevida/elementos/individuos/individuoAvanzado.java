@@ -6,15 +6,15 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDoblementeEnlazada.ListaDE;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.*;
-import gui.mvc.javafx.practicafinal.configuracionDataModel;
+import excepciones.recursosNoConsumidosException;
+import gui.mvc.javafx.practicafinal.DataModel;
 import gui.mvc.javafx.practicafinal.menuPrincipalController;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class individuoAvanzado extends individuo<individuoAvanzado> {
-    private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
+    private static final Logger log = LogManager.getLogger();
     public individuoAvanzado(int I, int G, int TV, float PR, float PC) {
         super(I, G, TV, PR, PC);
     }
@@ -30,7 +30,7 @@ public class individuoAvanzado extends individuo<individuoAvanzado> {
     }
 
     @Override
-    public void mover (configuracionDataModel model, tablero tablero) {
+    public void mover (DataModel model, tablero tablero) throws recursosNoConsumidosException{
         ListaDE<recurso> recursosDeseables = new ListaDE<>();
         for (int k = 0; k != model.getRecursos().getNumeroElementos(); k++) {
             recurso recursoAComprobar = model.getRecursos().getElemento(k).getData();
@@ -50,6 +50,10 @@ public class individuoAvanzado extends individuo<individuoAvanzado> {
                 Nodo<casillaTablero> nodoRecursoObjetivo = grafoTablero.getNodo(tablero.getCasilla(recursosDeseables.getElemento(i).getData().getPosicion()));
                 Camino<casillaTablero> caminoARecurso = grafoTablero.getCaminoMinimo(nodoCasillaActual, nodoRecursoObjetivo);
 
+                if (caminoARecurso == null) { // si es nulo hay recursos que no se han consumido correctamente
+                    throw new recursosNoConsumidosException(this);
+                }
+
                 if (caminoARecurso.getCoste() <= caminoMinimo.getCoste()) {
                     caminoMinimo = caminoARecurso;
                 }
@@ -60,7 +64,7 @@ public class individuoAvanzado extends individuo<individuoAvanzado> {
         }
     }
 
-    private Grafo<casillaTablero> getGrafoTablero (configuracionDataModel model, tablero tablero) {
+    private Grafo<casillaTablero> getGrafoTablero (DataModel model, tablero tablero) {
         Grafo<casillaTablero> grafoTablero = new Grafo<>(false);
         int retrasoMontaña = model.getIncrementoTurnosMontaña();
 
@@ -78,6 +82,18 @@ public class individuoAvanzado extends individuo<individuoAvanzado> {
                 }
                 if (j > 0) {
                     casillaTablero verticeOpuesto = tablero.getCasilla(i, j - 1);
+                    int pesoArco = calcularPesoArco(casillaActual, verticeOpuesto, retrasoMontaña);
+
+                    grafoTablero.addArco(pesoArco, casillaActual, verticeOpuesto);
+                }
+                if (i > 0 && j > 0) {
+                    casillaTablero verticeOpuesto = tablero.getCasilla(i - 1, j - 1);
+                    int pesoArco = calcularPesoArco(casillaActual, verticeOpuesto, retrasoMontaña);
+
+                    grafoTablero.addArco(pesoArco, casillaActual, verticeOpuesto);
+                }
+                if (i > 0 && j < tablero.getNumeroCasillasM() - 1) {
+                    casillaTablero verticeOpuesto = tablero.getCasilla(i - 1, j + 1);
                     int pesoArco = calcularPesoArco(casillaActual, verticeOpuesto, retrasoMontaña);
 
                     grafoTablero.addArco(pesoArco, casillaActual, verticeOpuesto);
@@ -106,7 +122,7 @@ public class individuoAvanzado extends individuo<individuoAvanzado> {
                     peso = Integer.MAX_VALUE;
                     break;
                 default:
-                    log.error("Se ha intentado añadir peso por un recurso que no supone un obstáculo");
+                    log.trace("El recurso supone un peso de 1");
             }
         }
         return peso;
