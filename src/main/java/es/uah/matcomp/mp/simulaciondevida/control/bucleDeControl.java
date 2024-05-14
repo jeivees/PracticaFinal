@@ -66,43 +66,46 @@ public class bucleDeControl implements Runnable{
     }
 
     private void actualizarTVIndividuos() {
-        if (individuos != null) {
+        if (!individuos.isVacia()) {
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
                 individuo individuoActual = individuos.getElemento(i).getData();
                 casillaTablero casilla = tablero.getCasilla(individuoActual.getPosicion());
-                individuoActual.actualizarTV(model, casilla);
+                boolean muere = individuoActual.actualizarTV(casilla);
+                if (muere) {
+                    log.info("El individuo " + individuoActual + " ha muerto");
+                    i -= 1;
+                }
             }
         }
     }
 
     private void actualizarTARecursos() {
-        if (recursos != null) {
+        if (!recursos.isVacia()) {
             for (int i = 0; i != recursos.getNumeroElementos(); i++) {
-                recursos.getElemento(i).getData().actualizarTA(model, tablero.getCasilla(recursos.getElemento(i).getData().getPosicion()));
+                recurso recursoActual = recursos.getElemento(i).getData();
+                boolean desaparece = recursoActual.actualizarTA(model, tablero.getCasilla(recursos.getElemento(i).getData().getPosicion()));
+                if (desaparece) {
+                    log.info("El recurso " + recursoActual + " ha desaparecido");
+                    i -= 1;
+                }
             }
         }
     }
 
     private void moverIndividuos() {
         try {
-            if (individuos != null) {
+            if (!individuos.isVacia()) {
                 for (int i = 0; i != individuos.getNumeroElementos(); i++) {
                     individuos.getElemento(i).getData().mover(model, tablero);
                 }
             }
         } catch (recursosNoConsumidosException e) {
             log.error("Se ha detectado un camino nulo, hay recursos que no se han consumido correctamente después de que un individuo llegase a la casilla");
-            /**casillaTablero casillaActual = tablero.getCasilla(e.getIndividuoSensor().getPosicion());
-            int numeroElementosRecursos = casillaActual.getRecursos().getNumeroElementos();
-            for (int j = 0; j != numeroElementosRecursos; j++) {
-                recurso recursoActual = casillaActual.getRecursos().getPrimero().getData();
-                casillaActual.delRecurso(recursoActual);
-            }*/
         }
     }
 
     private void evaluarMejoras() {
-        if (individuos != null && recursos != null) {
+        if (!individuos.isVacia() && !recursos.isVacia()) {
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
                 individuo individuoActual = individuos.getElemento(i).getData();
                 casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicion());
@@ -112,6 +115,7 @@ public class bucleDeControl implements Runnable{
                         recurso recursoActual = casillaActual.getRecursos().getPrimero().getData();
                         if (individuoActual.isVivo()) {
                             recursoActual.aplicarMejora(individuoActual, casillaActual);
+                            if (!individuoActual.isVivo()) i -= 1;
                         }
                         casillaActual.delRecurso(recursoActual);
                     }
@@ -121,7 +125,7 @@ public class bucleDeControl implements Runnable{
     }
 
     private void evaluarReproduccion() {
-        if (individuos != null) {
+        if (!individuos.isVacia()) {
             for (int i = 0; i != tablero.getNumeroCasillasN(); i++) {
                 for (int j = 0; j != tablero.getNumeroCasillasM(); j++) {
                     casillaTablero casillaActual = tablero.getCasilla(i, j);
@@ -147,7 +151,7 @@ public class bucleDeControl implements Runnable{
     }
 
     private void evaluarClonacion() {
-        if (individuos != null) {
+        if (!individuos.isVacia()) {
             int numeroIndividuos = individuos.getNumeroElementos();
             for (int i = 0; i != numeroIndividuos; i++) {
                 individuo individuoActual = individuos.getElemento(i).getData();
@@ -162,26 +166,22 @@ public class bucleDeControl implements Runnable{
     }
 
     private void evaluarDesaparicionIndividuos() {
-        if (individuos != null) {
+        if (!individuos.isVacia()) {
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
                 individuo individuoActual = individuos.getElemento(i).getData();
                 casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicion());
-                if (individuoActual.getTiempoDeVida() <= 0) {
-                    casillaActual.delIndividuo(individuoActual);
-                } else {
-                    int k = 1;
-                    while (casillaActual.getIndividuos().getNumeroElementos() > model.getIndividuosMaximosPorCelda()) {
-                        int numeroIndividuosCasilla = casillaActual.getIndividuos().getNumeroElementos();
-                        for (int l = 0; l != numeroIndividuosCasilla; l++) {
-                            individuo individuoSobrante = casillaActual.getIndividuos().getElemento(l).getData();
-                            if (casillaActual.getIndividuos().getNumeroElementos() > model.getIndividuosMaximosPorCelda() &&
-                                    individuoSobrante.getTiempoDeVida() == k) {
-                                casillaActual.delIndividuo(individuoSobrante);
-                                l -= 1;
-                            }
+                int k = 1;
+                while (casillaActual.getIndividuos().getNumeroElementos() > model.getIndividuosMaximosPorCelda()) {
+                    int numeroIndividuosCasilla = casillaActual.getIndividuos().getNumeroElementos();
+                    for (int l = 0; l != numeroIndividuosCasilla; l++) {
+                        individuo individuoSobrante = casillaActual.getIndividuos().getElemento(l).getData();
+                        if (casillaActual.getIndividuos().getNumeroElementos() > model.getIndividuosMaximosPorCelda() &&
+                                individuoSobrante.getTiempoDeVida() == k) {
+                            casillaActual.delIndividuo(individuoSobrante);
+                            l -= 1;
                         }
-                        k += 1;
                     }
+                    k += 1;
                 }
             }
         }

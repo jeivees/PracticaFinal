@@ -205,14 +205,14 @@ public abstract class individuo<T extends individuo<T>> {
                 int id = model.getHistorialIndividuos().getUltimo().getData().getId() + 1;
                 T hijo = constructor.newInstance(id, getPosicionX(), getPosicionY(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
                 hijo.añadir(model, casillaActual);
-                return false; // mueren?
+                return false; // mueren? no
             } catch (Exception e) {
                 log.error("No se ha podido crear una instancia para el individuo hijo");
                 e.printStackTrace();
-                return false; // mueren?
+                return false; // mueren? no
             }
         } else {
-            return true; // mueren?
+            return true; // mueren? si
         }
     }
 
@@ -265,10 +265,14 @@ public abstract class individuo<T extends individuo<T>> {
         return isVivo;
     }
 
-    public void actualizarTV (DataModel model, casillaTablero casillaActual) {
+    public boolean actualizarTV (casillaTablero casillaActual) {
         TiempoDeVidaProperty.set(TiempoDeVidaProperty.get()-1);
-        if (TiempoDeVidaProperty.get() == 0) morir(model, casillaActual);
         log.info("Tiempo de vida actualizado");
+        if (TiempoDeVidaProperty.get() <= 0) {
+            casillaActual.delIndividuo(this);
+            return true;
+        }
+        return false;
     }
 
     public abstract void mover(DataModel model, tablero tablero);

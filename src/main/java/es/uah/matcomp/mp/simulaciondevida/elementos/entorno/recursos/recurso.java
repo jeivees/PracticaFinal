@@ -7,6 +7,7 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -95,13 +96,18 @@ public abstract class recurso <T extends recurso<T>>{
         }
     }
     public void eliminar(DataModel model, casillaTablero casillaActual) {
-        model.getRecursos().del(this);
+        ListaEnlazada<recurso> listaRecursos = model.getRecursos();
+        listaRecursos.del(this);
         casillaActual.getRecursos().del(this);
     }
 
-    public void actualizarTA (DataModel model, casillaTablero casillaActual) {
+    public boolean actualizarTA (DataModel model, casillaTablero casillaActual) {
         TiempoDeAparicionProperty.set(TiempoDeAparicionProperty.get()-1);
-        if (TiempoDeAparicionProperty.get() == 0) eliminar(model, casillaActual);
+        if (TiempoDeAparicionProperty.get() == 0) {
+            eliminar(model, casillaActual);
+            return true;
+        }
+        return false;
     }
 
     public abstract void aplicarMejora (individuo individuo, casillaTablero casillaActual);
