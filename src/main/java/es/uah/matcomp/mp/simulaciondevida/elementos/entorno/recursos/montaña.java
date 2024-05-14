@@ -30,7 +30,7 @@ public class montaña extends recurso<montaña> {
     @Override
     public void aplicarMejora (individuo individuo, casillaTablero casillaActual) {
         individuo.setTiempoDeVida(individuo.getTiempoDeVida() - incrementoTV);
-        if (individuo.getTiempoDeVida() < 0) {
+        if (individuo.getTiempoDeVida() <= 0) {
             casillaActual.delIndividuo(individuo);
         }
     }

@@ -34,7 +34,7 @@ public class individuoAvanzado extends individuo<individuoAvanzado> {
         ListaDE<recurso> recursosDeseables = new ListaDE<>();
         for (int k = 0; k != model.getRecursos().getNumeroElementos(); k++) {
             recurso recursoAComprobar = model.getRecursos().getElemento(k).getData();
-            if (recursoAComprobar.getTipo() != montaña.class && recursoAComprobar.getTipo() != pozo.class) {
+            if (recursoAComprobar.getTipo() != montaña.class && recursoAComprobar.getTipo() != pozo.class && recursoAComprobar.getPosicion() != getPosicion()) {
                 recursosDeseables.add(recursoAComprobar);
             }
         }
@@ -114,12 +114,12 @@ public class individuoAvanzado extends individuo<individuoAvanzado> {
         for (int k = 0; k != vertice.getRecursos().getNumeroElementos(); k++) {
             switch (vertice.getRecursos().getElemento(k).getData().getTipo().getSimpleName()) {
                 case "montaña":
-                    if (peso < Integer.MAX_VALUE - retrasoMontaña) {
+                    if (peso < Integer.MAX_VALUE / 2) {
                         peso += retrasoMontaña;
                     }
                     break;
                 case "pozo":
-                    peso = Integer.MAX_VALUE;
+                    peso = Integer.MAX_VALUE / 2;
                     break;
                 default:
                     log.trace("El recurso supone un peso de 1");
