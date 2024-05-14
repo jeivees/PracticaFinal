@@ -6,6 +6,7 @@ import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +22,7 @@ public class menuPrincipalController implements Initializable {
     private Scene scene;
     private Parent root;
     @FXML
-    private ListView<String> listaDeFicheros;
+    private ListView<String> listaDeFicheros = new ListView<>();
     private File[] archivosDePartida;
     private String archivoActual;
 
@@ -45,8 +46,23 @@ public class menuPrincipalController implements Initializable {
     }
 
     @FXML
-    protected void onCargarFicheroButtonClick () {
+    protected void onBotonCargarFicheroClick () {
+        try {
+            String archivo = listaDeFicheros.getSelectionModel().getSelectedItem();
+            DataModel model = DataModel.cargar(archivo);
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("menuConfiguracionInicio-vista.fxml"));
+            Parent root = loader.load();
+            menuConfiguracionController controller = loader.getController();
+            controller.setControllerValues(model);
 
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+
+            stage.show();
+        } catch (IOException e){
+            log.error("No se ha podido cargar el archivo, no se encuentra la ruta especificada");
+        }
     }
 
     @FXML
@@ -74,12 +90,11 @@ public class menuPrincipalController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
-            if (listaDeFicheros != null) {
-                listaDeFicheros.getItems().addAll(getNombreFicheros());
+            listaDeFicheros.getItems().addAll(getNombreFicheros());
 
-                listaDeFicheros.getSelectionModel().selectedItemProperty().addListener((_, _, _) ->
-                        archivoActual = listaDeFicheros.getSelectionModel().getSelectedItem());
-            }
+            listaDeFicheros.getSelectionModel().selectedItemProperty().addListener((_, _, _) ->
+                    archivoActual = listaDeFicheros.getSelectionModel().getSelectedItem());
+
         } catch (sinFicherosDePartidaException e) {
             log.info("No se han encontrado ficheros de partida para cargar.");
         }

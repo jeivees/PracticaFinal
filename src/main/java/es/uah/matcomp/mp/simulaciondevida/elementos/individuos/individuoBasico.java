@@ -1,9 +1,12 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
+import com.google.gson.annotations.Expose;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import gui.mvc.javafx.practicafinal.DataModel;
 
 public class individuoBasico extends individuo<individuoBasico> {
+    @Expose
+    private final String nombreClase = "individuoBasico";
     public individuoBasico(int I, int G, int T, float PR, float PC) {
         super(I, G, T, PR, PC);
     }

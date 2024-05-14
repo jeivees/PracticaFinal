@@ -1,8 +1,9 @@
-package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
+package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import gui.mvc.javafx.practicafinal.DataModel;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,7 +14,7 @@ class recursoTest {
     void getPosicionX() {
         agua a = new agua ();
         a.setPosicionX(2);
-        assertDoesNotThrow(()->a.getPosicionX());
+        Assertions.assertDoesNotThrow(()->a.getPosicionX());
         assertEquals(2, a.getPosicionX(), "Posición incorrecta");
     }
 
@@ -28,7 +29,7 @@ class recursoTest {
     void getPosicionY() {
         agua a = new agua ();
         a.setPosicionY(2);
-        assertDoesNotThrow(()->a.getPosicionY());
+        Assertions.assertDoesNotThrow(()->a.getPosicionY());
         assertEquals(2, a.getPosicionY(), "Posición incorrecta");
     }
 
@@ -47,7 +48,7 @@ class recursoTest {
         int [] array= new int[2];
         array[0] = 4;
         array[1] = 5;
-        assertDoesNotThrow(()->a.getPosicion());
+        Assertions.assertDoesNotThrow(()->a.getPosicion());
         assertArrayEquals(array, a.getPosicion(), "La posición no es correcta");
     }
 
@@ -66,7 +67,7 @@ class recursoTest {
     void getTiempoDeAparicion() {
         agua a = new agua ();
         a.setTiempoDeAparicion(3);
-        assertDoesNotThrow(()->a.getTiempoDeAparicion());
+        Assertions.assertDoesNotThrow(()->a.getTiempoDeAparicion());
         assertEquals(3, a.getTiempoDeAparicion(), "Tiempo incorrecto");
     }
 
@@ -92,7 +93,7 @@ class recursoTest {
         casillaTablero casilla = new casillaTablero(0,0, model, tablero);
         agua a = new agua ();
         a.setTiempoDeAparicion(3);
-        assertDoesNotThrow(()->a.actualizarTA(model, casilla));
+        Assertions.assertDoesNotThrow(()->a.actualizarTA(model, casilla));
         assertEquals(2, a.getTiempoDeAparicion(), "Tiempo incorrecto");
     }
 

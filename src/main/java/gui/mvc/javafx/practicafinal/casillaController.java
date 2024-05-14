@@ -1,6 +1,6 @@
 package gui.mvc.javafx.practicafinal;
 
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.*;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.*;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoBasico;

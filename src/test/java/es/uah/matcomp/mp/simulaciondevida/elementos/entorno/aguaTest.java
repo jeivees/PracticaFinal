@@ -1,9 +1,9 @@
-package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
+package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.*;
+
 class aguaTest {
 
     @Test

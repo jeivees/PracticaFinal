@@ -1,19 +1,21 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.montaña;
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.pozo;
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
+import com.google.gson.annotations.Expose;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.montaña;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.pozo;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDoblementeEnlazada.ListaDE;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.*;
 import excepciones.recursosNoConsumidosException;
 import gui.mvc.javafx.practicafinal.DataModel;
-import gui.mvc.javafx.practicafinal.menuPrincipalController;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class individuoAvanzado extends individuo<individuoAvanzado> {
+    @Expose
+    private final String nombreClase = "individuoAvanzado";
     private static final Logger log = LogManager.getLogger();
     public individuoAvanzado(int I, int G, int TV, float PR, float PC) {
         super(I, G, TV, PR, PC);

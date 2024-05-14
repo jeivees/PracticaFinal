@@ -1,4 +1,6 @@
-package es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos;
+package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.arrayTamañoInvalidoException;
@@ -13,24 +15,34 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 public abstract class recurso <T extends recurso<T>>{
-    private static final Logger log = LogManager.getLogger("es.uah");
+    private static final Logger log = LogManager.getLogger();
+    @SerializedName("Clase:") @Expose
+    private String nombreClase;
+    @Expose
     private int id;
+    @Expose
     private int posicionX;
+    @Expose
     private int posicionY;
+    @Expose
+    private int tiempoDeAparicion;
+    @Expose (serialize = false)
     private IntegerProperty TiempoDeAparicionProperty = new SimpleIntegerProperty();
 
     public recurso() {}
 
     public recurso(int id, DataModel model) {
         this.id = id;
-        TiempoDeAparicionProperty.set(model.getTurnosInicialesRecurso());
+        this.tiempoDeAparicion = model.getTurnosInicialesRecurso();
+        updateTiempoDeAparicionProperty();
     }
 
     public recurso(int id, int posicionX, int posicionY, DataModel model) {
         this.id = id;
         this.posicionX = posicionX;
         this.posicionY = posicionY;
-        TiempoDeAparicionProperty.set(model.getTurnosInicialesRecurso());
+        this.tiempoDeAparicion = model.getTurnosInicialesRecurso();
+        updateTiempoDeAparicionProperty();
     }
 
 
@@ -68,14 +80,19 @@ public abstract class recurso <T extends recurso<T>>{
     }
 
     public int getTiempoDeAparicion() {
-        return TiempoDeAparicionProperty.get();
+        return tiempoDeAparicion;
+    }
+
+    public void setTiempoDeAparicion(int tiempoDeAparicion) {
+        this.tiempoDeAparicion = tiempoDeAparicion;
+        updateTiempoDeAparicionProperty();
     }
 
     public IntegerProperty getTiempoDeAparicionProperty () {
         return TiempoDeAparicionProperty;
     }
 
-    public void setTiempoDeAparicion(int tiempoDeAparicion) {
+    public void updateTiempoDeAparicionProperty () {
         TiempoDeAparicionProperty.set(tiempoDeAparicion);
     }
 
@@ -102,8 +119,9 @@ public abstract class recurso <T extends recurso<T>>{
     }
 
     public boolean actualizarTA (DataModel model, casillaTablero casillaActual) {
-        TiempoDeAparicionProperty.set(TiempoDeAparicionProperty.get()-1);
-        if (TiempoDeAparicionProperty.get() == 0) {
+        tiempoDeAparicion -= 1;
+        updateTiempoDeAparicionProperty();
+        if (tiempoDeAparicion == 0) {
             eliminar(model, casillaActual);
             return true;
         }

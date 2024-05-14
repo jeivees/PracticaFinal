@@ -84,11 +84,6 @@ public class menuConfiguracionController implements Initializable {
     private tableroController tableroController;
 
     public menuConfiguracionController () {}
-    public menuConfiguracionController (DataModel original) {
-        this.model = original;
-        this.properties = new DataModelProperties(original);
-        initializeController();
-    }
 
     protected void updateGUIwithModel() {
         ProbReproIndividuoSlider.valueProperty().bindBidirectional(properties.ProbReproIndividuoProperty());
@@ -282,6 +277,11 @@ public class menuConfiguracionController implements Initializable {
         this.properties = properties;
     }
 
+    public void setControllerValues (DataModel model) {
+        this.model = model;
+        this.properties = new DataModelProperties(model);
+        initializeController();
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         tabPaneConfiguracion.getSelectionModel().selectedItemProperty().addListener((_, _, newTab) -> {

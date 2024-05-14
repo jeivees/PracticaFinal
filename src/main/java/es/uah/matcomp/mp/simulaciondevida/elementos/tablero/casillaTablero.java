@@ -1,5 +1,5 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.tablero;
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.*;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.*;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 import excepciones.individuoNoExistenteException;

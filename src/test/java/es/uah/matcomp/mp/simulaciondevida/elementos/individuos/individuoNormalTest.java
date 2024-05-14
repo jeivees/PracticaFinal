@@ -4,7 +4,7 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazad
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.*;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.*;
 
 class individuoNormalTest {
 

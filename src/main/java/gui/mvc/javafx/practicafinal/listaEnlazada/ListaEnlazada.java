@@ -1,12 +1,10 @@
-package es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada;
+package gui.mvc.javafx.practicafinal.listaEnlazada;
 
-import com.google.gson.annotations.Expose;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ListaEnlazada<T> {
     private static final Logger log = LogManager.getLogger();
-    @Expose
     private ElementoLE<T> primero;
     public ListaEnlazada() {
         this.primero = null;

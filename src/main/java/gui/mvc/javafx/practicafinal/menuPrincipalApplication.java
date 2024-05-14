@@ -19,6 +19,7 @@ public class menuPrincipalApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setTitle("Simulador de Vida");
         stage.setScene(scene);
+        stage.centerOnScreen();
         stage.show();
     }
 

@@ -3,6 +3,11 @@ package es.uah.matcomp.mp.simulaciondevida;
 import es.uah.matcomp.mp.simulaciondevida.control.bucleDeControl;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import gui.mvc.javafx.practicafinal.DataModel;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.Property;
+import javafx.beans.property.SimpleIntegerProperty;
+
+import java.util.Properties;
 
 public class simuladorDeVida {
     private tablero tablero;

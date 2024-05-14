@@ -1,27 +1,31 @@
 package es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada;
 
-public class ElementoLE<TipoDato> {
-    private TipoDato data;
-    private ElementoLE<TipoDato> siguiente;
+import com.google.gson.annotations.Expose;
+
+public class ElementoLE<T> {
+    @Expose
+    private T data;
+    @Expose
+    private ElementoLE<T> siguiente;
 
 
-    protected void insertarmeEn(ElementoLE<TipoDato> el) {
+    protected void insertarmeEn(ElementoLE<T> el) {
         this.siguiente = el.siguiente;
         el.siguiente = this;
     }
 
-    public ElementoLE<TipoDato> getSiguiente() {
+    public ElementoLE<T> getSiguiente() {
         return this.siguiente;
     }
 
-    protected void setSiguiente(ElementoLE<TipoDato> el) {
+    protected void setSiguiente(ElementoLE<T> el) {
         this.siguiente = el;
     }
 
-    public TipoDato getData() {
+    public T getData() {
         return this.data;
     }
-    public void setData(TipoDato newData) {
+    public void setData(T newData) {
         this.data = newData;
     }
 }

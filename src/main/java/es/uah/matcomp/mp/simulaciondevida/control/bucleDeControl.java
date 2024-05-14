@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.simulaciondevida.control;
 
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.*;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.*;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
@@ -8,9 +8,9 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazad
 import excepciones.recursosNoConsumidosException;
 import gui.mvc.javafx.practicafinal.DataModel;
 import gui.mvc.javafx.practicafinal.menuPrincipalController;
-import javafx.animation.PauseTransition;
 import javafx.application.Platform;
-import javafx.util.Duration;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,7 +24,8 @@ public class bucleDeControl implements Runnable{
     private ListaEnlazada<individuo> individuos;
     private ListaEnlazada<recurso> recursos;
     private DataModel model;
-     private boolean unTurno;
+    private IntegerProperty turnoProperty = new SimpleIntegerProperty();
+    private boolean unTurno;
 
     public bucleDeControl(tablero tablero, DataModel model) {
         this.tablero = tablero;
@@ -52,6 +53,7 @@ public class bucleDeControl implements Runnable{
 
     private void ejecutarBucle() {
         Platform.runLater(() -> {
+            turnoProperty.set(turnoProperty.get() + 1);
             model.setTurno(model.getTurno() + 1);
             actualizarTVIndividuos();
             actualizarTARecursos();
@@ -61,7 +63,7 @@ public class bucleDeControl implements Runnable{
             evaluarClonacion();
             evaluarDesaparicionIndividuos();
             evaluarAparicionDeRecursos();
-            log.debug("Ha pasado el turno " + model.getTurno());
+            log.debug("Ha pasado el turno " + turnoProperty.get());
         });
     }
 
@@ -236,5 +238,13 @@ public class bucleDeControl implements Runnable{
 
     public void setUnTurno(boolean unTurno) {
         this.unTurno = unTurno;
+    }
+
+    public IntegerProperty getTurnoProperty() {
+        return turnoProperty;
+    }
+
+    public void setTurnoProperty(Integer turnoProperty) {
+        this.turnoProperty.set(turnoProperty);
     }
 }
