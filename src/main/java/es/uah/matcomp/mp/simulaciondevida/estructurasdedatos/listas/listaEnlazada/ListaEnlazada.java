@@ -71,7 +71,7 @@ public class ListaEnlazada<T> {
             return this.getNumeroElementos();
         }else{
             ElementoLE<T> first = this.primero;
-            for (int i=0; i != pos; i++) {
+            for (int i=0; i != pos - 1; i++) {
                 if (first.getSiguiente().getSiguiente() == null) {
                     first.setSiguiente(null);
                     return this.getNumeroElementos();
