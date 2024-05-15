@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import excepciones.arrayTamañoInvalidoException;
@@ -15,7 +14,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-public abstract class individuo<T extends individuo<T>> {
+public abstract class individuo {
     @Expose
     private int posicionX;
     @Expose
@@ -39,6 +38,7 @@ public abstract class individuo<T extends individuo<T>> {
 
     private static final Logger log = LogManager.getLogger();
 
+    public individuo () {}
     public individuo(int I, int G, int T, float PR, float PC) {
         this.id = I;
         this.generacion = G;
@@ -72,6 +72,7 @@ public abstract class individuo<T extends individuo<T>> {
         this.probReproduccion = individuo.getProbReproduccion();
         this.probClonacion = individuo.getProbClonacion();
         this.probMuerte = 1 - probReproduccion;
+        this.isVivo = individuo.isVivo();
     }
 
     public int getPosicionX() {
@@ -167,7 +168,7 @@ public abstract class individuo<T extends individuo<T>> {
         return probMuerte;
     }
 
-    public abstract Class<T> getTipo();
+    public abstract Class<?> getTipo();
 
     public int getGradoTipo() {
         int grado = -1;
@@ -187,7 +188,7 @@ public abstract class individuo<T extends individuo<T>> {
         return grado;
     }
 
-    public <T extends individuo<T>> boolean reproducirse (individuo pareja, DataModel model, casillaTablero casillaActual) {
+    public <T extends individuo> boolean reproducirse (individuo pareja, DataModel model, casillaTablero casillaActual) {
         int gradoThis = getGradoTipo();
         int gradoPareja = pareja.getGradoTipo();
 
@@ -212,21 +213,20 @@ public abstract class individuo<T extends individuo<T>> {
             Random s = new Random();
             int q = s.nextInt(1, 100);
 
-            Class<T> hijoTipo = individuoSuperior.getTipo();
+            Class<?> hijoTipo;
             if (q <= probMejora) {
                 hijoTipo = individuoSuperior.getTipo();
             } else {
                 hijoTipo = individuoInferior.getTipo();
             }
             try {
-                Constructor<T> constructor = hijoTipo.getConstructor(int.class, int.class, int.class, float.class, float.class);
+                Constructor<?> constructor = hijoTipo.getConstructor(int.class, int.class, int.class, float.class, float.class);
                 int id = model.getHistorialIndividuos().getUltimo().getData().getId() + 1;
-                T hijo = constructor.newInstance(id, getPosicionX(), getPosicionY(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
+                T hijo = (T) constructor.newInstance(id, getPosicionX(), getPosicionY(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
                 hijo.añadir(model, casillaActual);
                 return false; // mueren? no
             } catch (Exception e) {
                 log.error("No se ha podido crear una instancia para el individuo hijo");
-                e.printStackTrace();
                 return false; // mueren? no
             }
         } else {
@@ -265,7 +265,6 @@ public abstract class individuo<T extends individuo<T>> {
             casillaActual.getIndividuos().add(this);
             this.setPosicion(casillaActual.getPosicion());
 
-            Class<? extends individuo> claseIndividuo = this.getTipo();
             Constructor<? extends individuo> constructor = getClass().getConstructor(individuo.class);
             model.getHistorialIndividuos().add(constructor.newInstance(this));
 

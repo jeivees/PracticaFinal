@@ -1,13 +1,10 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 
-import com.google.gson.annotations.Expose;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import gui.mvc.javafx.practicafinal.DataModel;
 
-public class pozo extends recurso<pozo> {
-    @Expose
-    private final String nombreClase = "pozo";
+public class pozo extends recurso {
     public pozo () {}
     public pozo (int id,  DataModel model) {
         super (id, model);

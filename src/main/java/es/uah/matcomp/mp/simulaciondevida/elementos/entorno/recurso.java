@@ -14,10 +14,8 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazad
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-public abstract class recurso <T extends recurso<T>>{
+public abstract class recurso {
     private static final Logger log = LogManager.getLogger();
-    @SerializedName("Clase:") @Expose
-    private String nombreClase;
     @Expose
     private int id;
     @Expose
@@ -96,7 +94,7 @@ public abstract class recurso <T extends recurso<T>>{
         TiempoDeAparicionProperty.set(tiempoDeAparicion);
     }
 
-    public abstract Class<T> getTipo ();
+    public abstract Class<?> getTipo ();
 
     public void añadir(DataModel model, casillaTablero casillaActual) {
         try {

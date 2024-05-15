@@ -20,11 +20,11 @@ import static java.lang.Thread.sleep;
 
 public class bucleDeControl implements Runnable{
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
-    private tablero tablero;
-    private ListaEnlazada<individuo> individuos;
-    private ListaEnlazada<recurso> recursos;
-    private DataModel model;
-    private IntegerProperty turnoProperty = new SimpleIntegerProperty();
+    private final tablero tablero;
+    private final ListaEnlazada<individuo> individuos;
+    private final ListaEnlazada<recurso> recursos;
+    private final DataModel model;
+    private final IntegerProperty turnoProperty = new SimpleIntegerProperty();
     private boolean unTurno;
 
     public bucleDeControl(tablero tablero, DataModel model) {
@@ -46,7 +46,6 @@ public class bucleDeControl implements Runnable{
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
             log.error("El bucle ha sido interrumpido mientras esperaba");
         }
     }
@@ -232,6 +231,11 @@ public class bucleDeControl implements Runnable{
             }
         }
     }
+
+    public void updateTurnoProperty () {
+        setTurnoProperty(model.getTurno());
+    }
+
     public boolean isUnTurno() {
         return unTurno;
     }

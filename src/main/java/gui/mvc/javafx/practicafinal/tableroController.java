@@ -1,5 +1,6 @@
 package gui.mvc.javafx.practicafinal;
 
+import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.*;
 import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
 import javafx.event.ActionEvent;
@@ -52,8 +53,10 @@ public class tableroController {
     protected void onBotonReanudarClick (ActionEvent event) {
         casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
         model = casilla00.getModel();
-        model.setPausado(false);
-        avanzarJuego(event, false, casilla00);
+        if (getModel().isPausado()) {
+            model.setPausado(false);
+            avanzarJuego(false, casilla00);
+        }
     }
 
     @FXML
@@ -61,11 +64,11 @@ public class tableroController {
         casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
         model = casilla00.getModel();
         if (model.isPausado()) {
-            avanzarJuego(event, true, casilla00);
+            avanzarJuego(true, casilla00);
         }
     }
 
-    private void avanzarJuego (ActionEvent event, boolean unTurno, casillaTablero casilla00) {
+    private void avanzarJuego (boolean unTurno, casillaTablero casilla00) {
         if (Window.getWindows().size() < 3) {
             if (Window.getWindows().size() > 1) {
                 Stage ventanaCasilla = (Stage) Window.getWindows().get(1);
@@ -74,7 +77,7 @@ public class tableroController {
             tablero tableroActual = casilla00.getTablero();
             simuladorDeVida juegoActual = new simuladorDeVida(model, tableroActual);
             turnoLabel.textProperty().bind(juegoActual.getBucle().getTurnoProperty().asString("Turno: %d"));
-            juegoActual.getBucle().setTurnoProperty(model.getTurno());
+            juegoActual.getBucle().updateTurnoProperty();
             juegoActual.comenzar(unTurno);
         }
     }
@@ -114,11 +117,7 @@ public class tableroController {
     @FXML
     protected void onBotonPantallaCompletaClick () {
         Stage pantalla = ((Stage) Window.getWindows().getFirst());
-        if (pantalla.isFullScreen()) {
-            pantalla.setFullScreen(false);
-        } else {
-            pantalla.setFullScreen(true);
-        }
+        pantalla.setFullScreen(!pantalla.isFullScreen());
     }
 
     @FXML
@@ -135,7 +134,7 @@ public class tableroController {
             confirmacion.initOwner(Stage.getWindows().getFirst());
             confirmacion.setTitle("Volver al menú principal");
             confirmacion.setHeaderText("Estás a punto de volver al menú principal, perderás el progreso");
-            confirmacion.setContentText("¿Quieres guardar la partida antes de continuar?");
+            confirmacion.setContentText("¿Quieres guardar la partida antes de salir?");
 
             ButtonType botonGuardar = new ButtonType("Guardar");
             ButtonType botonNoGuardar = new ButtonType("No guardar");
@@ -283,6 +282,10 @@ public class tableroController {
         AnchorPane.setBottomAnchor(gridTablero, 0.0);
         AnchorPane.setLeftAnchor(gridTablero, 0.0);
 
+        turnoLabel = (Label) ((HBox) root.getChildrenUnmodifiable().get(2)).getChildren().getFirst();
+        juegoActual.getBucle().updateTurnoProperty();
+        turnoLabel.textProperty().bind(juegoActual.getBucle().getTurnoProperty().asString("Turno: %d"));
+
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -290,6 +293,15 @@ public class tableroController {
         stage.setFullScreen(true);
         stage.setAlwaysOnTop(true);
         stage.show();
+
+        model.setPausado(true);
+        int numeroIndividuos = model.getIndividuos().getNumeroElementos();
+        for (int k=0; k != numeroIndividuos; k++) {
+            individuo individuoActual = model.getIndividuos().getElemento(k).getData();
+            casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicion());
+            casillaActual.addIndividuo(individuoActual, false);
+            casillaActual.getIndividuos().add(individuoActual);
+        }
     }
 
     private GridPane crearGridTablero(tablero tablero, Parent root) {
@@ -307,6 +319,7 @@ public class tableroController {
                 gridTablero.add(casilla, i, j);
             }
         }
+
         return gridTablero;
     }
 

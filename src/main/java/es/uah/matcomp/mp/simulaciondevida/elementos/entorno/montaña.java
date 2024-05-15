@@ -1,14 +1,11 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 
-import com.google.gson.annotations.Expose;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.incrementoInvalidoException;
 import gui.mvc.javafx.practicafinal.DataModel;
 
-public class montaña extends recurso<montaña> {
-    @Expose
-    private final String nombreClase = "montaña";
+public class montaña extends recurso {
     private int incrementoTV;
 
     public montaña () {}

@@ -2,7 +2,9 @@ package gui.mvc.javafx.practicafinal;
 
 import com.google.gson.GsonBuilder;
 import com.google.gson.annotations.Expose;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recurso;
+import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.gsonAdapterIndividuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 
@@ -90,7 +92,6 @@ public class DataModel {
     private int IncrementoProbClon;
 
 
-
     public DataModel(int turnosVidaIniciales, int probReproIndividuo, int probClonIndividuo, int probMejoraTonormal, int probMejoraToAvanzado,
                      int probAparRecurso, int turnosInicialesRecurso, int probAparAgua, int probAparComida, int probAparMontaña, int probAparTesoro, int probAparBiblioteca, int probAparPozo, int incrementoTurnosAgua, int incrementoTurnosComida, int incrementoTurnosMontaña, int incrementoProbRepro, int incrementoProbClon,
                      int filasTablero, int columnasTablero, int turno) {
@@ -121,12 +122,14 @@ public class DataModel {
 
     public void guardar (String nombreArchivo) {
         Gson gson = new GsonBuilder()
-                .excludeFieldsWithModifiers(Modifier.STATIC)
+                .registerTypeAdapter(individuo.class, new gsonAdapterIndividuo())
+                .registerTypeAdapter(recurso.class, new gsonAdapterRecurso())
                 .excludeFieldsWithoutExposeAnnotation()
+                .excludeFieldsWithModifiers(Modifier.STATIC)
                 .setPrettyPrinting()
                 .create();
-        try (FileWriter writer = new FileWriter("archivosDePartida/" + nombreArchivo + ".json")) {
-            setGuardado(true);
+        try (FileWriter writer = new FileWriter(STR."archivosDePartida/\{nombreArchivo}.json")) {
+            this.setGuardado(true);
             gson.toJson(this, writer);
         } catch (IOException e) {
             log.error("La ruta para guardar el archivo no existe");
@@ -134,8 +137,14 @@ public class DataModel {
     }
 
     public static DataModel cargar (String nombreArchivo) {
-        Gson gson = new Gson();
-        try (FileReader reader = new FileReader("archivosDePartida/" + nombreArchivo)) {
+        Gson gson = new GsonBuilder()
+                .registerTypeAdapter(individuo.class, new gsonAdapterIndividuo())
+                .registerTypeAdapter(recurso.class, new gsonAdapterRecurso())
+                .excludeFieldsWithoutExposeAnnotation()
+                .excludeFieldsWithModifiers(Modifier.STATIC)
+                .setPrettyPrinting()
+                .create();
+        try (FileReader reader = new FileReader(STR."archivosDePartida/\{nombreArchivo}")) {
             return gson.fromJson(reader, DataModel.class);
         } catch (IOException e) {
             log.error("La ruta para cargar el archivo no existe");

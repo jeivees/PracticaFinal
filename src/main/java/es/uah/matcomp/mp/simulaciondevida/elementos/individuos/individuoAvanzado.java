@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
-import com.google.gson.annotations.Expose;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.montaña;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.pozo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recurso;
@@ -13,10 +12,11 @@ import gui.mvc.javafx.practicafinal.DataModel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class individuoAvanzado extends individuo<individuoAvanzado> {
-    @Expose
-    private final String nombreClase = "individuoAvanzado";
+public class individuoAvanzado extends individuo {
     private static final Logger log = LogManager.getLogger();
+    public individuoAvanzado () {
+        super();
+    }
     public individuoAvanzado(int I, int G, int TV, float PR, float PC) {
         super(I, G, TV, PR, PC);
     }

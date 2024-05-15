@@ -1,12 +1,12 @@
 package gui.mvc.javafx.practicafinal;
 
+import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
 import excepciones.sinFicherosDePartidaException;
 import javafx.event.ActionEvent;
 import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,13 +18,8 @@ import java.util.ResourceBundle;
 public class menuPrincipalController implements Initializable {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
     @FXML
     private ListView<String> listaDeFicheros = new ListView<>();
-    private File[] archivosDePartida;
-    private String archivoActual;
 
     @FXML
     protected void onBotonNuevoClick(ActionEvent event) throws IOException{
@@ -46,22 +41,19 @@ public class menuPrincipalController implements Initializable {
     }
 
     @FXML
-    protected void onBotonCargarFicheroClick () {
+    protected void onBotonCargarFicheroClick (ActionEvent event) {
         try {
-            String archivo = listaDeFicheros.getSelectionModel().getSelectedItem();
-            DataModel model = DataModel.cargar(archivo);
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("menuConfiguracionInicio-vista.fxml"));
-            Parent root = loader.load();
-            menuConfiguracionController controller = loader.getController();
-            controller.setControllerValues(model);
-
-            Stage stage = new Stage();
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-
-            stage.show();
+            if (!listaDeFicheros.getSelectionModel().isEmpty()) {
+                Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stageActual.close();
+                String archivo = listaDeFicheros.getSelectionModel().getSelectedItem();
+                DataModel model = DataModel.cargar(archivo);
+                simuladorDeVida juegoActual = new simuladorDeVida(model);
+                tableroController controladorTablero = new tableroController(model, juegoActual);
+                controladorTablero.crearTablero(juegoActual.getTablero());
+            }
         } catch (IOException e){
-            log.error("No se ha podido cargar el archivo, no se encuentra la ruta especificada");
+            log.error("No se ha encontrado la ruta especificada para cargar el archivo");
         }
     }
 
@@ -91,10 +83,6 @@ public class menuPrincipalController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
             listaDeFicheros.getItems().addAll(getNombreFicheros());
-
-            listaDeFicheros.getSelectionModel().selectedItemProperty().addListener((_, _, _) ->
-                    archivoActual = listaDeFicheros.getSelectionModel().getSelectedItem());
-
         } catch (sinFicherosDePartidaException e) {
             log.info("No se han encontrado ficheros de partida para cargar.");
         }

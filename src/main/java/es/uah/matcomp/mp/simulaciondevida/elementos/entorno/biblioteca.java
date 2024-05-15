@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 
-import com.google.gson.annotations.Expose;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoBasico;
@@ -9,9 +8,7 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.probabilidadInvalidaException;
 import gui.mvc.javafx.practicafinal.DataModel;
 
-public class biblioteca extends recurso<biblioteca> {
-    @Expose
-    private final String nombreClase = "biblioteca";
+public class biblioteca extends recurso {
     private float incrementoProbClonacion;
 
     public biblioteca () {}

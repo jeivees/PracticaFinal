@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 
-import com.google.gson.annotations.Expose;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.probabilidadInvalidaException;
@@ -8,9 +7,7 @@ import gui.mvc.javafx.practicafinal.DataModel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class tesoro extends recurso<tesoro> {
-    @Expose
-    private final String nombreClase = "tesoro";
+public class tesoro extends recurso {
     private float incrementoProbReproduccion;
     private static final Logger logger = LogManager.getLogger();
 

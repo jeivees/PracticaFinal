@@ -1,15 +1,11 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 
-import com.google.gson.annotations.Expose;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.incrementoInvalidoException;
 import gui.mvc.javafx.practicafinal.DataModel;
 
-public class agua extends recurso<agua> {
-    @Expose
-    private final String nombreClase = "agua";
-
+public class agua extends recurso {
     private int incrementoTV;
 
     public agua () {}
