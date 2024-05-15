@@ -80,15 +80,7 @@ public class menuConfiguracionController implements Initializable {
             7, 25, 10, 10, 10, 0);
     private DataModelProperties properties = new DataModelProperties(model);
 
-    private simuladorDeVida juegoActual;
-    private tableroController tableroController;
-
     public menuConfiguracionController () {}
-    public menuConfiguracionController (DataModel original) {
-        this.model = original;
-        this.properties = new DataModelProperties(original);
-        initializeController();
-    }
 
     protected void updateGUIwithModel() {
         ProbReproIndividuoSlider.valueProperty().bindBidirectional(properties.ProbReproIndividuoProperty());
@@ -171,34 +163,6 @@ public class menuConfiguracionController implements Initializable {
         });
     }
 
-
-    public void mostrarMenuConfiguracion() throws IOException{
-        FXMLLoader loader;
-        Parent root;
-        if (!model.isPausado()) {
-            loader = FXMLLoader.load(getClass().getResource("menuConfiguracionInicio-vista.fxml"));
-            root = loader.load();
-        } else {
-            loader = new FXMLLoader(getClass().getResource("menuConfiguracionPausa-vista.fxml"));
-            root = loader.load();
-            menuConfiguracionController controller = this;
-            loader.setController(controller);
-        }
-        Stage stage = new Stage();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-
-        if (Window.getWindows().size() > 1) {
-            Stage ventanaCasilla = ((Stage) Window.getWindows().get(1));
-            ventanaCasilla.close();
-        }
-
-        Stage ventanaTablero = ((Stage) Window.getWindows().getFirst());
-        stage.initOwner(ventanaTablero);
-
-        stage.show();
-    }
-
     @FXML
     protected void onBotonGuardarClick(ActionEvent event) throws IOException{
         if (Window.getWindows().getFirst() != ((Node) event.getSource()).getScene().getWindow()) { // si la ventana principal es la de configuracion o es otra (el tablero)
@@ -246,9 +210,9 @@ public class menuConfiguracionController implements Initializable {
 
     private void empezarNuevoJuego () throws IOException {
         model.setTurno(0);
-        juegoActual = new simuladorDeVida(model);
-        tableroController = new tableroController(model, juegoActual);
-        tableroController.crearTablero(juegoActual.getTablero());
+        simuladorDeVida juegoActual = new simuladorDeVida(model);
+        tableroController controladorTablero = new tableroController(model, juegoActual);
+        controladorTablero.crearTablero(juegoActual.getTablero());
         model.setPausado(true);
     }
 
@@ -274,14 +238,11 @@ public class menuConfiguracionController implements Initializable {
         this.model = original;
     }
 
-    public DataModelProperties getProperties() {
-        return properties;
+    public void setControllerValues (DataModel model) {
+        this.model = model;
+        this.properties = new DataModelProperties(model);
+        initializeController();
     }
-
-    public void setProperties(DataModelProperties properties) {
-        this.properties = properties;
-    }
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         tabPaneConfiguracion.getSelectionModel().selectedItemProperty().addListener((_, _, newTab) -> {

@@ -10,6 +10,9 @@ import java.io.IOException;
 public class menuPrincipalApplication extends Application {
     /**
      * verificar que la suma de las probabilidades de los recursos no sea mayor que 100
+     * añadir boton salir del juego menú principal
+     * en las alertas, confirmaciones setoncloserequest y en todas las pantallas setoncloserequest
+     * añadir boton eliminar partida
      */
 
 
@@ -19,6 +22,7 @@ public class menuPrincipalApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setTitle("Simulador de Vida");
         stage.setScene(scene);
+        stage.centerOnScreen();
         stage.show();
     }
 

@@ -1,7 +1,6 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
-import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recursos.recurso;
-import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import excepciones.recursosNoConsumidosException;
 import gui.mvc.javafx.practicafinal.DataModel;
@@ -10,8 +9,11 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Random;
 
-public class individuoNormal extends individuo<individuoNormal> {
+public class individuoNormal extends individuo {
     private static final Logger log = LogManager.getLogger();
+    public individuoNormal () {
+        super();
+    }
     public individuoNormal(int I, int G, int T, float PR, float PC) {
         super(I, G, T, PR, PC);
     }

@@ -3,7 +3,10 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import gui.mvc.javafx.practicafinal.DataModel;
 
-public class individuoBasico extends individuo<individuoBasico> {
+public class individuoBasico extends individuo {
+    public individuoBasico(){
+        super();
+    }
     public individuoBasico(int I, int G, int T, float PR, float PC) {
         super(I, G, T, PR, PC);
     }

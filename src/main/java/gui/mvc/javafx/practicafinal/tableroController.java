@@ -1,24 +1,21 @@
 package gui.mvc.javafx.practicafinal;
 
+import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.*;
 import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.geometry.Bounds;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.shape.Polygon;
-import javafx.scene.shape.Rectangle;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.Window;
@@ -26,33 +23,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
+import java.io.File;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class tableroController implements Initializable {
-    private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
+public class tableroController {
+    private static final Logger log = LogManager.getLogger();
 
     private DataModel model;
     private simuladorDeVida juegoActual;
 
     @FXML
     private Label turnoLabel = new Label();
-
-    @FXML
-    ImageView iconoConfiguracion = new ImageView();
-    @FXML
-    Polygon trianguloPlay1 = new Polygon();
-    @FXML
-    Polygon trianguloPlay2 = new Polygon();
-
-    @FXML
-    Polygon trianguloPlay3 = new Polygon();
-
-    @FXML
-    Rectangle rectanguloPausa1 = new Rectangle();
-    @FXML
-    Rectangle rectanguloPausa2 = new Rectangle();
 
 
 
@@ -72,8 +53,10 @@ public class tableroController implements Initializable {
     protected void onBotonReanudarClick (ActionEvent event) {
         casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
         model = casilla00.getModel();
-        model.setPausado(false);
-        avanzarJuego(event, false, casilla00);
+        if (getModel().isPausado()) {
+            model.setPausado(false);
+            avanzarJuego(false, casilla00);
+        }
     }
 
     @FXML
@@ -81,11 +64,11 @@ public class tableroController implements Initializable {
         casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
         model = casilla00.getModel();
         if (model.isPausado()) {
-            avanzarJuego(event, true, casilla00);
+            avanzarJuego(true, casilla00);
         }
     }
 
-    private void avanzarJuego (ActionEvent event, boolean unTurno, casillaTablero casilla00) {
+    private void avanzarJuego (boolean unTurno, casillaTablero casilla00) {
         if (Window.getWindows().size() < 3) {
             if (Window.getWindows().size() > 1) {
                 Stage ventanaCasilla = (Stage) Window.getWindows().get(1);
@@ -93,7 +76,8 @@ public class tableroController implements Initializable {
             }
             tablero tableroActual = casilla00.getTablero();
             simuladorDeVida juegoActual = new simuladorDeVida(model, tableroActual);
-            turnoLabel.textProperty().bind(model.getTurnoProperty().asString("Turno: %d"));
+            turnoLabel.textProperty().bind(juegoActual.getBucle().getTurnoProperty().asString("Turno: %d"));
+            juegoActual.getBucle().updateTurnoProperty();
             juegoActual.comenzar(unTurno);
         }
     }
@@ -106,7 +90,8 @@ public class tableroController implements Initializable {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("menuConfiguracionPausa-vista.fxml"));
         Parent root = loader.load();
-        loader.setController(new menuConfiguracionController(model));
+        menuConfiguracionController controller = loader.getController();
+        controller.setControllerValues(model);
 
         Stage stage = new Stage();
 
@@ -132,11 +117,108 @@ public class tableroController implements Initializable {
     @FXML
     protected void onBotonPantallaCompletaClick () {
         Stage pantalla = ((Stage) Window.getWindows().getFirst());
-        if (pantalla.isFullScreen()) {
-            pantalla.setFullScreen(false);
+        pantalla.setFullScreen(!pantalla.isFullScreen());
+    }
+
+    @FXML
+    protected void onBotonMinimizarClick () {
+        ((Stage) Window.getWindows().getFirst()).setIconified(true);
+    }
+
+    @FXML
+    protected void onBotonMenuPrincipalClick (ActionEvent event) {
+        casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
+        model = casilla00.getModel();
+        if (!getModel().isGuardado()) {
+            Alert confirmacion = new Alert(Alert.AlertType.CONFIRMATION);
+            confirmacion.initOwner(Stage.getWindows().getFirst());
+            confirmacion.setTitle("Volver al menú principal");
+            confirmacion.setHeaderText("Estás a punto de volver al menú principal, perderás el progreso");
+            confirmacion.setContentText("¿Quieres guardar la partida antes de salir?");
+
+            ButtonType botonGuardar = new ButtonType("Guardar");
+            ButtonType botonNoGuardar = new ButtonType("No guardar");
+            ButtonType botonCancelar = new ButtonType("Cancelar");
+            confirmacion.getButtonTypes().setAll(botonGuardar, botonNoGuardar, botonCancelar);
+
+            confirmacion.showAndWait().ifPresent(respuesta -> {
+                if (respuesta == botonGuardar) {
+                    guardarPartida(event);
+                    volverAlMenuPrincipal(event);
+                } else if (respuesta == botonNoGuardar) {
+                    volverAlMenuPrincipal(event);
+                } else {
+                    confirmacion.close();
+                }
+            });
         } else {
-            pantalla.setFullScreen(true);
+            volverAlMenuPrincipal(event);
         }
+    }
+
+    private void volverAlMenuPrincipal (ActionEvent event) {
+        try {
+        FXMLLoader fxmlLoader = new FXMLLoader(menuPrincipalApplication.class.getResource("menuPrincipal-vista.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Simulador de Vida");
+        stage.setScene(scene);
+        stage.centerOnScreen();
+        stage.show();
+        } catch (IOException e) {
+            log.error("No se ha encontrado la vista del menú principal");
+        }
+    }
+
+    @FXML
+    protected void onBotonGuardarPartidaClick (ActionEvent event) {
+        casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
+        model = casilla00.getModel();
+        guardarPartida(event);
+    }
+
+    @FXML
+    protected void onBotonGuardarComoClick (ActionEvent event) {
+        casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
+        model = casilla00.getModel();
+        guardarComo(event);
+    }
+
+    protected void guardarPartida (ActionEvent event) {
+        if (model.isPausado()) {
+            if (model.getNombreArchivo() == null) {
+                guardarComo(event);
+            } else {
+                model.guardar(model.getNombreArchivo());
+            }
+        }
+    }
+
+    protected void guardarComo (ActionEvent event) {
+        TextInputDialog getArchivoNombre = new TextInputDialog();
+        getArchivoNombre.initOwner(Stage.getWindows().getFirst());
+        getArchivoNombre.setTitle("Guardar partida");
+        getArchivoNombre.setHeaderText("¿Cómo quieres llamar a tu partida?");
+        getArchivoNombre.setContentText("Guardar como:");
+
+        ButtonType botonGuardar = new ButtonType("Guardar", ButtonBar.ButtonData.OK_DONE);
+        ButtonType botonCancelar = new ButtonType("Cancelar", ButtonBar.ButtonData.CANCEL_CLOSE);
+        getArchivoNombre.getDialogPane().getButtonTypes().setAll(botonGuardar, botonCancelar);
+
+        String nombreArchivo = getArchivoNombre.showAndWait().get();
+
+        Label labelTurno = (Label) ((HBox) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(2)).getChildren().getFirst();
+        String labelString = labelTurno.getText();
+        int turnoActual = Integer.parseInt(labelString.replace("Turno: ", ""));
+        model.setTurno(turnoActual);
+
+        if (model.getNombreArchivo() != null) {
+            File archivoAntiguo = new File("archivosDePartida/" + model.getNombreArchivo() + ".json");
+            archivoAntiguo.delete();
+        }
+
+        model.setNombreArchivo(nombreArchivo);
+        model.guardar(nombreArchivo);
     }
 
     protected void mostrarElementosCasilla (casillaTablero casilla) {
@@ -200,6 +282,10 @@ public class tableroController implements Initializable {
         AnchorPane.setBottomAnchor(gridTablero, 0.0);
         AnchorPane.setLeftAnchor(gridTablero, 0.0);
 
+        turnoLabel = (Label) ((HBox) root.getChildrenUnmodifiable().get(2)).getChildren().getFirst();
+        juegoActual.getBucle().updateTurnoProperty();
+        turnoLabel.textProperty().bind(juegoActual.getBucle().getTurnoProperty().asString("Turno: %d"));
+
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -207,6 +293,15 @@ public class tableroController implements Initializable {
         stage.setFullScreen(true);
         stage.setAlwaysOnTop(true);
         stage.show();
+
+        model.setPausado(true);
+        int numeroIndividuos = model.getIndividuos().getNumeroElementos();
+        for (int k=0; k != numeroIndividuos; k++) {
+            individuo individuoActual = model.getIndividuos().getElemento(k).getData();
+            casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicion());
+            casillaActual.addIndividuo(individuoActual, false);
+            casillaActual.getIndividuos().add(individuoActual);
+        }
     }
 
     private GridPane crearGridTablero(tablero tablero, Parent root) {
@@ -224,6 +319,7 @@ public class tableroController implements Initializable {
                 gridTablero.add(casilla, i, j);
             }
         }
+
         return gridTablero;
     }
 
@@ -241,15 +337,5 @@ public class tableroController implements Initializable {
 
     public void setJuegoActual(simuladorDeVida juegoActual) {
         this.juegoActual = juegoActual;
-    }
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        iconoConfiguracion.setMouseTransparent(true);
-        trianguloPlay1.setMouseTransparent(true);
-        trianguloPlay2.setMouseTransparent(true);
-        trianguloPlay3.setMouseTransparent(true);
-        rectanguloPausa1.setMouseTransparent(true);
-        rectanguloPausa2.setMouseTransparent(true);
     }
 }

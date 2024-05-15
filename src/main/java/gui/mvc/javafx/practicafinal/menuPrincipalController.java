@@ -1,5 +1,6 @@
 package gui.mvc.javafx.practicafinal;
 
+import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
 import excepciones.sinFicherosDePartidaException;
 import javafx.event.ActionEvent;
 import javafx.fxml.*;
@@ -17,13 +18,8 @@ import java.util.ResourceBundle;
 public class menuPrincipalController implements Initializable {
     private static final Logger log = LogManager.getLogger(menuPrincipalController.class);
 
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
     @FXML
-    private ListView<String> listaDeFicheros;
-    private File[] archivosDePartida;
-    private String archivoActual;
+    private ListView<String> listaDeFicheros = new ListView<>();
 
     @FXML
     protected void onBotonNuevoClick(ActionEvent event) throws IOException{
@@ -45,8 +41,20 @@ public class menuPrincipalController implements Initializable {
     }
 
     @FXML
-    protected void onCargarFicheroButtonClick () {
-
+    protected void onBotonCargarFicheroClick (ActionEvent event) {
+        try {
+            if (!listaDeFicheros.getSelectionModel().isEmpty()) {
+                Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stageActual.close();
+                String archivo = listaDeFicheros.getSelectionModel().getSelectedItem();
+                DataModel model = DataModel.cargar(archivo);
+                simuladorDeVida juegoActual = new simuladorDeVida(model);
+                tableroController controladorTablero = new tableroController(model, juegoActual);
+                controladorTablero.crearTablero(juegoActual.getTablero());
+            }
+        } catch (IOException e){
+            log.error("No se ha encontrado la ruta especificada para cargar el archivo");
+        }
     }
 
     @FXML
@@ -74,12 +82,7 @@ public class menuPrincipalController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
-            if (listaDeFicheros != null) {
-                listaDeFicheros.getItems().addAll(getNombreFicheros());
-
-                listaDeFicheros.getSelectionModel().selectedItemProperty().addListener((_, _, _) ->
-                        archivoActual = listaDeFicheros.getSelectionModel().getSelectedItem());
-            }
+            listaDeFicheros.getItems().addAll(getNombreFicheros());
         } catch (sinFicherosDePartidaException e) {
             log.info("No se han encontrado ficheros de partida para cargar.");
         }

@@ -1,4 +1,5 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
+import com.google.gson.annotations.Expose;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import excepciones.arrayTamañoInvalidoException;
@@ -9,29 +10,40 @@ import javafx.beans.property.SimpleIntegerProperty;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-public abstract class individuo<T extends individuo<T>> {
+public abstract class individuo {
+    @Expose
     private int posicionX;
+    @Expose
     private int posicionY;
+    @Expose
     private int id;
+    @Expose
     private int generacion;
-    private IntegerProperty TiempoDeVidaProperty = new SimpleIntegerProperty();
+    @Expose
+    private int tiempoDeVida;
+    @Expose (serialize = false)
+    private IntegerProperty tiempoDeVidaProperty = new SimpleIntegerProperty();
+    @Expose
     private float probReproduccion;
+    @Expose
     private float probClonacion;
+    @Expose
     private float probMuerte;
-
+    @Expose
     private boolean isVivo = true;
 
-    private static final Logger log = LogManager.getLogger("es.uah");
+    private static final Logger log = LogManager.getLogger();
 
+    public individuo () {}
     public individuo(int I, int G, int T, float PR, float PC) {
         this.id = I;
         this.generacion = G;
-        this.TiempoDeVidaProperty.set(T);
+        this.tiempoDeVida = T;
+        updateTiempoDeVidaProperty();
         if (PR < 0 || PR > 100 || PC < 0 || PC > 100) throw new probabilidadInvalidaException();
         this.probReproduccion = PR;
         this.probClonacion = PC;
@@ -43,7 +55,8 @@ public abstract class individuo<T extends individuo<T>> {
         this.posicionX = posicionX;
         this.posicionY = posicionY;
         this.generacion = generacion;
-        TiempoDeVidaProperty.set(tiempoDeVida);
+        this.tiempoDeVida = tiempoDeVida;
+        updateTiempoDeVidaProperty();
         this.probReproduccion = probReproduccion;
         this.probClonacion = probClonacion;
         this.probMuerte = 1 - probReproduccion;
@@ -54,10 +67,12 @@ public abstract class individuo<T extends individuo<T>> {
         this.posicionX = individuo.getPosicionX();
         this.posicionY = getPosicionY();
         this.generacion = getGeneracion();
-        TiempoDeVidaProperty.set(individuo.getTiempoDeVida());
+        this.tiempoDeVida = individuo.getTiempoDeVida();
+        updateTiempoDeVidaProperty();
         this.probReproduccion = individuo.getProbReproduccion();
         this.probClonacion = individuo.getProbClonacion();
         this.probMuerte = 1 - probReproduccion;
+        this.isVivo = individuo.isVivo();
     }
 
     public int getPosicionX() {
@@ -111,19 +126,23 @@ public abstract class individuo<T extends individuo<T>> {
         log.info("Generación modificada");
     }
 
-    public IntegerProperty getTiempoDeVidaProperty() {
-        return TiempoDeVidaProperty;
-    }
-
     public int getTiempoDeVida() {
-        return TiempoDeVidaProperty.get();
+        return tiempoDeVida;
     }
 
     public void setTiempoDeVida(int tiempoDeVida) {
-        TiempoDeVidaProperty.set(tiempoDeVida);
+        this.tiempoDeVida = tiempoDeVida;
+        updateTiempoDeVidaProperty();
         log.info("Tiempo de vida modificado");
     }
 
+    public void updateTiempoDeVidaProperty () {
+        tiempoDeVidaProperty.set(tiempoDeVida);
+    }
+
+    public IntegerProperty getTiempoDeVidaProperty () {
+        return tiempoDeVidaProperty;
+    }
     public float getProbReproduccion() {
         return probReproduccion;
     }
@@ -149,7 +168,7 @@ public abstract class individuo<T extends individuo<T>> {
         return probMuerte;
     }
 
-    public abstract Class<T> getTipo();
+    public abstract Class<?> getTipo();
 
     public int getGradoTipo() {
         int grado = -1;
@@ -169,7 +188,7 @@ public abstract class individuo<T extends individuo<T>> {
         return grado;
     }
 
-    public <T extends individuo<T>> boolean reproducirse (individuo pareja, DataModel model, casillaTablero casillaActual) {
+    public <T extends individuo> boolean reproducirse (individuo pareja, DataModel model, casillaTablero casillaActual) {
         int gradoThis = getGradoTipo();
         int gradoPareja = pareja.getGradoTipo();
 
@@ -194,21 +213,20 @@ public abstract class individuo<T extends individuo<T>> {
             Random s = new Random();
             int q = s.nextInt(1, 100);
 
-            Class<T> hijoTipo = individuoSuperior.getTipo();
+            Class<?> hijoTipo;
             if (q <= probMejora) {
                 hijoTipo = individuoSuperior.getTipo();
             } else {
                 hijoTipo = individuoInferior.getTipo();
             }
             try {
-                Constructor<T> constructor = hijoTipo.getConstructor(int.class, int.class, int.class, float.class, float.class);
+                Constructor<?> constructor = hijoTipo.getConstructor(int.class, int.class, int.class, float.class, float.class);
                 int id = model.getHistorialIndividuos().getUltimo().getData().getId() + 1;
-                T hijo = constructor.newInstance(id, getPosicionX(), getPosicionY(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
+                T hijo = (T) constructor.newInstance(id, getPosicionX(), getPosicionY(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
                 hijo.añadir(model, casillaActual);
                 return false; // mueren? no
             } catch (Exception e) {
                 log.error("No se ha podido crear una instancia para el individuo hijo");
-                e.printStackTrace();
                 return false; // mueren? no
             }
         } else {
@@ -247,7 +265,6 @@ public abstract class individuo<T extends individuo<T>> {
             casillaActual.getIndividuos().add(this);
             this.setPosicion(casillaActual.getPosicion());
 
-            Class<? extends individuo> claseIndividuo = this.getTipo();
             Constructor<? extends individuo> constructor = getClass().getConstructor(individuo.class);
             model.getHistorialIndividuos().add(constructor.newInstance(this));
 
@@ -266,9 +283,10 @@ public abstract class individuo<T extends individuo<T>> {
     }
 
     public boolean actualizarTV (casillaTablero casillaActual) {
-        TiempoDeVidaProperty.set(TiempoDeVidaProperty.get()-1);
+        tiempoDeVida -= 1;
+        updateTiempoDeVidaProperty();
         log.info("Tiempo de vida actualizado");
-        if (TiempoDeVidaProperty.get() <= 0) {
+        if (tiempoDeVida <= 0) {
             casillaActual.delIndividuo(this);
             return true;
         }
