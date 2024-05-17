@@ -1,0 +1,57 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class menuPrincipalApplication {}
+class menuPrincipalController {}
+class DataModel{}
+class DataProperties {}
+class menuPrincipalvista{}
+class simuladorDeVida{}
+class menuConfiguracionController{}
+class menuConfiguracionInicioVista{}
+class menuConfiguracionPausaVista{}
+class tableroController{}
+class tableroVista{}
+class casillaController{}
+class casillaVista{}
+class simuladorDeVida{}
+class tablero{}
+class bucleDeControl{}
+class casillaTablero{}
+class individuos{}
+class recursos{}
+menuPrincipalApplication ---> DataModel
+menuPrincipalController ---> DataModel
+DataProperties ---> DataModel
+menuPrincipalController ---> menuPrincipalvista
+menuPrincipalvista--->menuPrincipalController
+DataModel --> menuPrincipalvista
+menuConfiguracionController-->DataModel
+menuConfiguracionInicioVista---> menuConfiguracionController
+menuConfiguracionController-->menuConfiguracionInicioVista
+menuConfiguracionController-->menuConfiguracionPausaVista
+menuConfiguracionPausaVista--->menuConfiguracionController
+DataModel-->menuConfiguracionPausaVista
+DataModel--->menuConfiguracionInicioVista
+tableroController--->simuladorDeVida
+tableroController--->DataModel
+tableroVista--->tableroController
+tableroController-->tableroVista
+DataModel-->tableroVista
+casillaController-->casillaVista
+casillaVista-->casillaController
+DataModel--->casillaVista
+casillaController-->DataModel
+simuladorDeVida-->tablero
+simuladorDeVida-->DataModel
+simuladorDeVida-->bucleDeControl
+bucleDeControl-->tablero
+bucleDeControl--->DataModel
+tablero-->casillaTablero
+casillaTablero-->tablero
+casillaTablero--->individuos
+casillaTablero-->recursos
+DataModel-->individuos
+DataModel-->recursos
+casillaTablero-->model
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+abstract class casillaTablero {
+    - posicionX: int
+    - posicionY: int
+    - model: DataModel
+    - tablero:tablero
+    - individuos:ListaEnlazada<individuo>
+    - recursos: ListaEnlazada<recurso>
+    - botonCasilla:Button
+    - GridPane:GridPane
+    --
+    + casillaTablero(x:int, y:int,model:DataModel,tablero:tablero)
+    - columnaConPorcentajes(porcentaje:double): ColumnConstrains
+    - filaConPorcentajes(porcentaje:double): RowConstrains
+    + addIndividuo(individuo:individuo,nuevoIndividuo:boolean)
+    - addIconoIndividuo(vistaIcono:ImageView)
+    + delIndividuo(individuo:individuo)
+    + addRecurso(recurso:recurso,nuevoRecurso:boolean)
+    - addIconoRecurso(vistaIcono:ImageView)
+    + delRecurso(recurso:recurso)
+    + resetVisual()
+}
+abstract class tablero implements casillaTablero{
+    - casillas: ListaSimple<ListaSimple<casillaTablero>>
+    --
+    + tablero(n:int, m:int, model:DataModel)
+    + getCasilla(n:int, m:int):casillaTablero
+    + getCasilla(posicion:int[]):casillaTablero
+    + setCasilla(n:int, m:int, casilla:casillaTablero)
+    + getNumeroCasillasN():int
+    + getNumeroCasillasM():int
+}
+@enduml
