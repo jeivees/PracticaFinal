@@ -1,57 +1,139 @@
 @startuml
 'https://plantuml.com/use-case-diagram
 
-class menuPrincipalApplication {}
-class menuPrincipalController {}
-class DataModel{}
-class DataProperties {}
+class menuPrincipalApplication {
+--
++start
+}
+class menuPrincipalController{
+-listaDeFicheros
+--
+# onBotonNuevoClick
+# onBotonCargarPartidaClick
+# onBotonVolverMenuClick
+# onBotonCargarFicheroClick
+- getNombreFicheros
++ initialize
+}
 class menuPrincipalvista{}
 class simuladorDeVida{}
-class menuConfiguracionController{}
+class menuConfiguracionController{
+--
+#updateGUIWithModel
+#initializeSpinners
+-añadirFiltroSpinner
+#onBotonGuardarClick
+-continuarJuego
+-empezarNuevoJuego
+#onBotonReiniciarClick
+#onBotonVolverClick
++initialize
+-initializeControllers
+}
 class menuConfiguracionInicioVista{}
 class menuConfiguracionPausaVista{}
-class tableroController{}
+class tableroController{
+- juegoActual: simuladorDeVida
+--
+# onBotonPausaClick
+# onBotonReanudarClick
+# onBotonPasarTurnoClick
+-avanzarJuego
+# onBotonConfiguracionClick
+#onBotonCerrarClick
+#onBotonPantallaCompletaClick
+#onBotonMinimizarClick
+#onBotonMenuPrincipalClick
+-volverAlMenuPrincipal
+#onBotonGuardarPartidaClick
+#onBotonGuardarComoClick
+#guardarPartida
+#guardarComo
+#mostrarElementosCasilla
+#crearTablero
+-crearGridTablero
+}
 class tableroVista{}
-class casillaController{}
+class casillaController{
+- casillaActual
+--
++añadirIndividuo
+-añadirIndividuoAux
++eliminarIndividuo
++añadirRecurso
+-añadirRecursoAux
++eliminarRecurso
+}
 class casillaVista{}
-class simuladorDeVida{}
-class tablero{}
-class bucleDeControl{}
-class casillaTablero{}
+class simuladorDeVida{
+-tablero
+-bucle
+--
++comenzar
+}
+class tablero{
+-casillas
+}
+class bucleDeControl{
+-tablero
+-individuos
+-recursos
+--
++run
+-ejecutarBucle
+}
+class casillaTablero{
+-tablero
+-individuos
+-recursos
+--
++addIndividuo
+-addIconoIndividuo
++delIndividuo
++addRecurso
+-addIconoRecurso
++delRecurso
++resetVisual
+}
 class individuos{}
 class recursos{}
-menuPrincipalApplication ---> DataModel
-menuPrincipalController ---> DataModel
-DataProperties ---> DataModel
+class cargarJuegoVista{}
+class elementoCasillaBoxVista{}
+menuPrincipalController-->cargarJuegoVista :onBotonCargarPartidaClick
+cargarJuegoVista-->menuPrincipalController: onBotonVolverMenuClick
+menuPrincipalApplication--->menuPrincipalController :start
+menuPrincipalController-->menuConfiguracionController :onBotonNuevoClick
 menuPrincipalController ---> menuPrincipalvista
 menuPrincipalvista--->menuPrincipalController
-DataModel --> menuPrincipalvista
-menuConfiguracionController-->DataModel
 menuConfiguracionInicioVista---> menuConfiguracionController
 menuConfiguracionController-->menuConfiguracionInicioVista
 menuConfiguracionController-->menuConfiguracionPausaVista
 menuConfiguracionPausaVista--->menuConfiguracionController
-DataModel-->menuConfiguracionPausaVista
-DataModel--->menuConfiguracionInicioVista
 tableroController--->simuladorDeVida
-tableroController--->DataModel
 tableroVista--->tableroController
 tableroController-->tableroVista
-DataModel-->tableroVista
 casillaController-->casillaVista
 casillaVista-->casillaController
-DataModel--->casillaVista
-casillaController-->DataModel
 simuladorDeVida-->tablero
-simuladorDeVida-->DataModel
 simuladorDeVida-->bucleDeControl
 bucleDeControl-->tablero
-bucleDeControl--->DataModel
 tablero-->casillaTablero
 casillaTablero-->tablero
 casillaTablero--->individuos
 casillaTablero-->recursos
-DataModel-->individuos
-DataModel-->recursos
-casillaTablero-->model
+menuConfiguracionController-->tableroController :onBotonGuardarClick
+tableroController-->menuConfiguracionController: onBotonConfiguracionClick
+tableroController-->casillaController :mostrarElementosCasilla
+casillaController-->tableroController
+casillaTablero-->elementoCasillaBoxVista
+elementoCasillaBoxVista-->casillaTablero
+casillaVista-->elementoCasillaBoxVista
+menuPrincipalController--> tableroController : onBotonCargarFicheroClick
+menuConfiguracionController-->menuPrincipalController: onBotonVolverClick
+tableroController-->menuPrincipalController: #onBotonMenuPrincipalClick
+casillaController-->casillaTablero
+casillaController-->individuos
+casillaController-->recursos
+bucleDeControl-->individuos
+bucleDeControl-->recursos
 @enduml

@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class Datamodel{}
+class DataModelProperties{}
+class vistas{
+    --
+    cargarJuego-vista
+    casilla-vista
+    elementoCasillasBox-vista
+    menuConfiguracionInicio-vista
+    menuConfiguracionPausa-vista
+    tablero-vista
+}
+class controladores{
+    casillaController
+    menuConfiguracionController
+    menuPrincipalController
+    tableroController
+}
+class menuPrincipalApplication{}
+DataModelProperties-->Datamodel
+controladores-->Datamodel
+Datamodel-->vistas
+vistas-->controladores
+controladores-->vistas
+menuPrincipalApplication-->Datamodel
+@enduml

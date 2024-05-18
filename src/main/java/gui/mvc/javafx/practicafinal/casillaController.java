@@ -118,7 +118,7 @@ public class casillaController implements Initializable {
         }
     }
 
-    public <T extends individuo> void añadirIndividuoAux (Class<?> individuoClase, boolean nuevoIndividuo, individuo individuoToAdd) {
+    private <T extends individuo> void añadirIndividuoAux (Class<?> individuoClase, boolean nuevoIndividuo, individuo individuoToAdd) {
         try {
             T individuo;
             if (nuevoIndividuo) {
