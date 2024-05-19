@@ -10,7 +10,7 @@ class individuoNormalTest {
 
     @Test
     void getTipo() {
-        individuoNormal i = new individuoNormal(2,2,2,2,2);
+        individuoNormal i = new individuoNormal(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.getTipo());
         assertEquals(i.getClass(), i.getTipo());
     }

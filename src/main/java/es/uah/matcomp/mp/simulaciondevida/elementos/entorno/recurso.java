@@ -126,7 +126,7 @@ public abstract class recurso {
         return false;
     }
 
-    public abstract void aplicarMejora (individuo individuo, casillaTablero casillaActual);
+    public abstract void aplicarMejora (individuo individuo, casillaTablero casillaActual, int turnoActual);
 
     public int getId() {
         return id;

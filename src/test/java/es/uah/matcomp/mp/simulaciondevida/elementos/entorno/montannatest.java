@@ -27,7 +27,7 @@ class montañaTest {
 
     @Test
     void aplicarMejora() {
-        individuoBasico i = new individuoBasico(2,2,3,2,2);
+        individuoBasico i = new individuoBasico(2,2,3,2,2, 1);
         montaña m = new montaña();
         m.setIncrementoTV(2);
         DataModel model = new DataModel(
@@ -38,7 +38,7 @@ class montañaTest {
         tablero tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
 
         casillaTablero casilla = new casillaTablero(i.getPosicionX(), i.getPosicionY(), model, tablero);
-        assertDoesNotThrow(()->m.aplicarMejora(i, casilla));
+        assertDoesNotThrow(()->m.aplicarMejora(i, casilla, 1));
         assertEquals(1, i.getTiempoDeVida(), "El incremento no es correcto");
     }
 }

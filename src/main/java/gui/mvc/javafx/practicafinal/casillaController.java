@@ -122,7 +122,7 @@ public class casillaController implements Initializable {
         try {
             T individuo;
             if (nuevoIndividuo) {
-                Constructor<?> constructor = individuoClase.getConstructor(int.class, int.class, int.class, float.class, float.class);
+                Constructor<?> constructor = individuoClase.getConstructor(int.class, int.class, int.class, float.class, float.class, int.class);
 
                 int id;
                 if (model.getHistorialIndividuos().isVacia()) {
@@ -131,8 +131,8 @@ public class casillaController implements Initializable {
                     id = model.getHistorialIndividuos().getUltimo().getData().getId() + 1;
                 }
                 individuo = (T) constructor.newInstance(
-                        id, model.getTurno(),
-                        model.getTurnosVidaIniciales(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
+                        id, 1, model.getTurnosVidaIniciales(),
+                        model.getProbReproIndividuo(), model.getProbClonIndividuo(), model.getTurno());
 
                 casillaActual.addIndividuo(individuo, true);
             } else {

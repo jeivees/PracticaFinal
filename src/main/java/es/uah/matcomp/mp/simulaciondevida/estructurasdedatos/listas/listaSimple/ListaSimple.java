@@ -10,7 +10,7 @@ public class ListaSimple<T> {
     }
 
     public Boolean isVacia() {
-        return this.datos[0] == null;
+        return this.datos == null;
     }
 
     public void vaciar() {

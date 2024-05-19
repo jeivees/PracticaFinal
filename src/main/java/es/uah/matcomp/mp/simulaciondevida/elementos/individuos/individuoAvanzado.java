@@ -17,11 +17,11 @@ public class individuoAvanzado extends individuo {
     public individuoAvanzado () {
         super();
     }
-    public individuoAvanzado(int I, int G, int TV, float PR, float PC) {
-        super(I, G, TV, PR, PC);
+    public individuoAvanzado(int I, int G, int TV, float PR, float PC, int T) {
+        super(I, G, TV, PR, PC, T);
     }
-    public individuoAvanzado(int I, int PX, int PY, int G, int TV, float PR, float PC) {
-        super(I, PX, PY, G, TV, PR, PC);
+    public individuoAvanzado(int I, int PX, int PY, int G, int TV, float PR, float PC, int T) {
+        super(I, PX, PY, G, TV, PR, PC, T);
     }
     public individuoAvanzado(individuo individuo) {
         super(individuo);
@@ -42,7 +42,7 @@ public class individuoAvanzado extends individuo {
         }
 
         if (recursosDeseables.isVacia()) {
-            this.moverAleatorio(tablero);
+            this.moverAleatorio(tablero, model.getTurno());
         } else {
             Grafo<casillaTablero> grafoTablero = getGrafoTablero(model, tablero);
 
@@ -63,6 +63,9 @@ public class individuoAvanzado extends individuo {
 
             casillaTablero casillaDestino = caminoMinimo.getCamino().getElemento(1).getData().getDato();
             cambiarPosicion(casillaDestino.getPosicionX(), casillaDestino.getPosicionY(), tablero);
+
+            this.getAcciones().add(STR."Acción: moverse (\{casillaDestino.getPosicionX()}, \{casillaDestino.getPosicionY()}), turno: \{model.getTurno()}");
+            log.debug(STR."El individuo se ha movido a \{casillaDestino.getPosicionX()}, \{casillaDestino.getPosicionY()}");
         }
     }
 

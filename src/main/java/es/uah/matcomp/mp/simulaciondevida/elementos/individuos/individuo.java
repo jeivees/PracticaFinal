@@ -2,6 +2,8 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 import com.google.gson.annotations.Expose;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.cola.Cola;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaSimple.ListaSimple;
 import excepciones.arrayTamañoInvalidoException;
 import excepciones.probabilidadInvalidaException;
 import gui.mvc.javafx.practicafinal.DataModel;
@@ -15,6 +17,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
 public abstract class individuo {
+    @Expose
+    private Cola<String> acciones = new Cola<>();
+    @Expose
+    private ListaSimple<individuo> padres = new ListaSimple<>(1);
     @Expose
     private int posicionX;
     @Expose
@@ -39,18 +45,20 @@ public abstract class individuo {
     private static final Logger log = LogManager.getLogger();
 
     public individuo () {}
-    public individuo(int I, int G, int T, float PR, float PC) {
-        this.id = I;
-        this.generacion = G;
-        this.tiempoDeVida = T;
+    public individuo(int id, int generacion, int tiempoDeVida, float probReproduccion, float probClonacion, int turnoActual) {
+        this.id = id;
+        this.generacion = generacion;
+        this.tiempoDeVida = tiempoDeVida;
         updateTiempoDeVidaProperty();
-        if (PR < 0 || PR > 100 || PC < 0 || PC > 100) throw new probabilidadInvalidaException();
-        this.probReproduccion = PR;
-        this.probClonacion = PC;
-        this.probMuerte = 1 - PR;
+        if (probReproduccion < 0 || probReproduccion > 100 || probClonacion < 0 || probClonacion > 100) throw new probabilidadInvalidaException();
+        this.probReproduccion = probReproduccion;
+        this.probClonacion = probClonacion;
+        this.probMuerte = 1 - probReproduccion;
+        acciones.add(STR."Acción: nacer, turno: \{turnoActual}");
+        log.debug(STR."Ha nacido el individuo \{id}");
     }
 
-    public individuo(int id, int posicionX, int posicionY, int generacion, int tiempoDeVida, float probReproduccion, float probClonacion) {
+    public individuo(int id, int posicionX, int posicionY, int generacion, int tiempoDeVida, float probReproduccion, float probClonacion, int turnoActual) {
         this.id = id;
         this.posicionX = posicionX;
         this.posicionY = posicionY;
@@ -60,6 +68,8 @@ public abstract class individuo {
         this.probReproduccion = probReproduccion;
         this.probClonacion = probClonacion;
         this.probMuerte = 1 - probReproduccion;
+        acciones.add(STR."Acción: nacer, turno: \{turnoActual}");
+        log.debug(STR."Ha nacido el individuo \{id}");
     }
 
     public individuo(individuo individuo) {
@@ -73,6 +83,8 @@ public abstract class individuo {
         this.probClonacion = individuo.getProbClonacion();
         this.probMuerte = 1 - probReproduccion;
         this.isVivo = individuo.isVivo();
+        this.acciones = individuo.getAcciones();
+        log.debug(STR."Se ha creado una copia del individuo \{id}");
     }
 
     public int getPosicionX() {
@@ -108,13 +120,13 @@ public abstract class individuo {
         }
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-        log.info("Id modificado");
+        log.debug("Id modificado");
     }
 
     public int getGeneracion() {
@@ -123,20 +135,21 @@ public abstract class individuo {
 
     public void setGeneracion(int generacion) {
         this.generacion = generacion;
-        log.info("Generación modificada");
+        log.debug("Generación modificada");
     }
 
     public int getTiempoDeVida() {
         return tiempoDeVida;
     }
 
-    public void setTiempoDeVida(int tiempoDeVida) {
+    public void setTiempoDeVida(int tiempoDeVida, int turnoActual) {
         this.tiempoDeVida = tiempoDeVida;
         updateTiempoDeVidaProperty();
-        log.info("Tiempo de vida modificado");
+        acciones.add(STR."Acción: actualizarTV (\{getTiempoDeVida()}), turno: \{turnoActual}");
+        log.debug("Tiempo de vida modificado");
     }
 
-    public void updateTiempoDeVidaProperty () {
+    private void updateTiempoDeVidaProperty () {
         tiempoDeVidaProperty.set(tiempoDeVida);
     }
 
@@ -147,21 +160,23 @@ public abstract class individuo {
         return probReproduccion;
     }
 
-    public void setProbReproduccion(float probReproduccion) {
+    public void setProbReproduccion(float probReproduccion, int turnoActual) {
         if (probReproduccion < 0 || probReproduccion > 100) throw new probabilidadInvalidaException();
         this.probReproduccion = probReproduccion;
         this.probMuerte = 100 - probReproduccion;
-        log.info("Probabilidad de reproducción modificada");
+        acciones.add(STR."Acción: actualizarPR (\{getProbReproduccion()}), turno: \{turnoActual}");
+        log.debug("Probabilidad de reproducción modificada");
     }
 
     public float getProbClonacion() {
         return probClonacion;
     }
 
-    public void setProbClonacion(float probClonacion) {
+    public void setProbClonacion(float probClonacion, int turnoActual) {
         if (probClonacion < 0 || probClonacion > 100) throw new probabilidadInvalidaException();
         this.probClonacion = probClonacion;
-        log.info("Probabilidad de clonación modificada");
+        acciones.add(STR."Acción: actualizarPC (\{getProbClonacion()}), turno: \{turnoActual}");
+        log.debug("Probabilidad de clonación modificada");
     }
 
     public float getProbMuerte() {
@@ -188,7 +203,7 @@ public abstract class individuo {
         return grado;
     }
 
-    public <T extends individuo> boolean reproducirse (individuo pareja, DataModel model, casillaTablero casillaActual) {
+    public <T extends individuo> boolean reproducirse (individuo pareja, DataModel model, casillaTablero casillaActual, int turnoActual) {
         int gradoThis = getGradoTipo();
         int gradoPareja = pareja.getGradoTipo();
 
@@ -220,10 +235,13 @@ public abstract class individuo {
                 hijoTipo = individuoInferior.getTipo();
             }
             try {
-                Constructor<?> constructor = hijoTipo.getConstructor(int.class, int.class, int.class, float.class, float.class);
+                Constructor<?> constructor = hijoTipo.getConstructor(int.class, int.class, int.class, int.class, int.class, float.class, float.class, int.class);
                 int id = model.getHistorialIndividuos().getUltimo().getData().getId() + 1;
-                T hijo = (T) constructor.newInstance(id, getPosicionX(), getPosicionY(), model.getProbReproIndividuo(), model.getProbClonIndividuo());
+                T hijo = (T) constructor.newInstance(id, getPosicionX(), getPosicionY(), this.getGeneracion() + 1, model.getTurnosVidaIniciales(), model.getProbReproIndividuo(), model.getProbClonIndividuo(), model.getTurno());
+                hijo.setPadres(this, pareja);
                 hijo.añadir(model, casillaActual);
+                acciones.add(STR."Acción: reproducirse (con individuo\{pareja.getId()}), turno: \{turnoActual}");
+                log.debug(STR."El individuo \{this} se ha reproducido con el individuo \{pareja.getId()}");
                 return false; // mueren? no
             } catch (Exception e) {
                 log.error("No se ha podido crear una instancia para el individuo hijo");
@@ -253,7 +271,14 @@ public abstract class individuo {
         try {
             Constructor<? extends individuo> constructor = getClass().getConstructor(individuo.class);
             individuo copia = constructor.newInstance(this);
+            copia.setId(model.getHistorialIndividuos().getUltimo().getData().getId() + 1);
+
+            acciones.add(STR."Acción: clonarse, turno: \{model.getTurno()}");
+            log.debug(STR."El individuo \{this.getId()} se ha clonado");
+
             copia.añadir(model, casillaActual);
+            copia.getAcciones().add(STR."Acción: nacer, turno: \{model.getTurno()}");
+            log.debug(STR."El individuo \{copia.getId()} ha nacido");
         } catch (Exception e) {
             log.error("No se ha podido crear una copia del individuo");
         }
@@ -276,16 +301,26 @@ public abstract class individuo {
         casillaActual.getIndividuos().del(this);
         model.getIndividuos().del(this);
         isVivo = false;
+        acciones.add(STR."Acción: morir, turno: \{model.getTurno()}");
+        log.debug(STR."El individuo \{this.getId()} ha muerto");
     }
 
     public boolean isVivo () {
         return isVivo;
     }
 
-    public boolean actualizarTV (casillaTablero casillaActual) {
+    public boolean actualizarTV (casillaTablero casillaActual, int turnoActual) {
         tiempoDeVida -= 1;
         updateTiempoDeVidaProperty();
-        log.info("Tiempo de vida actualizado");
+
+        probReproduccion -= 10;
+        if (probReproduccion < 0) probReproduccion = 0;
+
+        probClonacion -= 10;
+        if (probClonacion < 0) probClonacion = 0;
+
+        acciones.add(STR."Acción: actualizarTV (\{getTiempoDeVida()}), turno: \{turnoActual}");
+        log.debug("Tiempo de vida actualizado");
         if (tiempoDeVida <= 0) {
             casillaActual.delIndividuo(this);
             return true;
@@ -295,8 +330,7 @@ public abstract class individuo {
 
     public abstract void mover(DataModel model, tablero tablero);
 
-    protected void moverAleatorio(tablero tablero) {
-        log.info("Inicio de movimiento aleatorio");
+    protected void moverAleatorio(tablero tablero, int turnoActual) {
         Random r = new Random();
         int movimiento = r.nextInt(1,8);
         try {
@@ -328,8 +362,10 @@ public abstract class individuo {
                 default:
                     log.error("Se ha intentado hacer un movimiento aleatorio inválido (numero generado < 1 o > 8)");
             }
+            this.getAcciones().add(STR."Acción: moverse (\{getPosicionX()}, \{getPosicionY()}), turno: \{turnoActual}");
+            log.debug(STR."El individuo se ha movido a \{getPosicionX()}, \{getPosicionY()}");
         } catch (IndexOutOfBoundsException e) {
-            moverAleatorio(tablero);
+            moverAleatorio(tablero, turnoActual);
         }
     }
 
@@ -345,5 +381,26 @@ public abstract class individuo {
 
         nuevaCasilla.getIndividuos().add(this);
         nuevaCasilla.resetVisual();
+    }
+
+    public Cola<String> getAcciones() {
+        return acciones;
+    }
+
+    public void setAcciones(Cola<String> acciones) {
+        this.acciones = acciones;
+    }
+
+    public void addAccion (String accion) {
+        acciones.add(accion);
+    }
+
+    public ListaSimple<individuo> getPadres() {
+        return padres;
+    }
+
+    public void setPadres(individuo padre1, individuo padre2) {
+        this.padres.setElemento(0, padre1);
+        this.padres.setElemento(1, padre2);
     }
 }

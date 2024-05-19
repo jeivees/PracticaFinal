@@ -4,8 +4,11 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.incrementoInvalidoException;
 import gui.mvc.javafx.practicafinal.DataModel;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class montaña extends recurso {
+    private static final Logger log = LogManager.getLogger();
     private int incrementoTV;
 
     public montaña () {}
@@ -28,8 +31,10 @@ public class montaña extends recurso {
     }
 
     @Override
-    public void aplicarMejora (individuo individuo, casillaTablero casillaActual) {
-        individuo.setTiempoDeVida(individuo.getTiempoDeVida() - incrementoTV);
+    public void aplicarMejora (individuo individuo, casillaTablero casillaActual, int turnoActual) {
+        individuo.getAcciones().add(STR."Acción: montaña recibir efecto, turno: \{turnoActual}");
+        log.debug(STR."Efecto de montaña aplicado a \{individuo.getId()}");
+        individuo.setTiempoDeVida(individuo.getTiempoDeVida() - incrementoTV, turnoActual);
         if (individuo.getTiempoDeVida() <= 0) {
             casillaActual.delIndividuo(individuo);
         }

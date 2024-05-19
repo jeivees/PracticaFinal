@@ -30,7 +30,7 @@ class bibliotecaTest {
 
     @Test
     void aplicarMejora() {
-        individuoBasico i = new individuoBasico(2,2,2,2,85);
+        individuoBasico i = new individuoBasico(2,2,2,2,85, 1);
         biblioteca b = new biblioteca();
         b.setIncrementoProbClonacion(10);
         DataModel model = new DataModel(
@@ -42,10 +42,10 @@ class bibliotecaTest {
 
         casillaTablero casilla = new casillaTablero(i.getPosicionX(), i.getPosicionY(), model, tablero);
 
-        assertDoesNotThrow(()->b.aplicarMejora(i, casilla));
+        assertDoesNotThrow(()->b.aplicarMejora(i, casilla, 1));
         assertEquals(95, i.getProbClonacion(), "El incremento no es correcto");
         assertEquals("individuoBasico", i.getTipo(), "El tipo no es correcto");
-        assertDoesNotThrow(()->b.aplicarMejora(i, casilla));
+        assertDoesNotThrow(()->b.aplicarMejora(i, casilla, 1));
         assertEquals(100, i.getProbClonacion(), "El incremento no es correcto");
         assertEquals("individuoBasico", i.getTipo(), "EL tipo no es correcto");
     }

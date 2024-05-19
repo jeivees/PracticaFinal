@@ -1,0 +1,919 @@
+{
+  "individuos": {
+    "primero": {
+      "data": {
+        "tipo": "individuoBasico",
+        "propiedades": {
+          "acciones": {},
+          "padres": {},
+          "posicionX": 5,
+          "posicionY": 1,
+          "id": 3,
+          "generacion": 1,
+          "tiempoDeVida": 3,
+          "probReproduccion": 0.0,
+          "probClonacion": 0.0,
+          "probMuerte": -49.0,
+          "isVivo": true
+        }
+      },
+      "siguiente": {
+        "data": {
+          "tipo": "individuoNormal",
+          "propiedades": {
+            "acciones": {},
+            "padres": {},
+            "posicionX": 6,
+            "posicionY": 3,
+            "id": 8,
+            "generacion": 1,
+            "tiempoDeVida": 7,
+            "probReproduccion": 20.0,
+            "probClonacion": 0.0,
+            "probMuerte": -49.0,
+            "isVivo": true
+          }
+        },
+        "siguiente": {
+          "data": {
+            "tipo": "individuoAvanzado",
+            "propiedades": {
+              "acciones": {},
+              "padres": {},
+              "posicionX": 9,
+              "posicionY": 4,
+              "id": 9,
+              "generacion": 1,
+              "tiempoDeVida": 7,
+              "probReproduccion": 20.0,
+              "probClonacion": 10.0,
+              "probMuerte": 70.0,
+              "isVivo": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "recursos": {
+    "primero": {
+      "data": {
+        "tipo": "agua",
+        "propiedades": {
+          "id": 2,
+          "posicionX": 8,
+          "posicionY": 1,
+          "tiempoDeAparicion": 9
+        }
+      },
+      "siguiente": {
+        "data": {
+          "tipo": "agua",
+          "propiedades": {
+            "id": 3,
+            "posicionX": 5,
+            "posicionY": 6,
+            "tiempoDeAparicion": 10
+          }
+        },
+        "siguiente": {
+          "data": {
+            "tipo": "agua",
+            "propiedades": {
+              "id": 5,
+              "posicionX": 8,
+              "posicionY": 3,
+              "tiempoDeAparicion": 10
+            }
+          },
+          "siguiente": {
+            "data": {
+              "tipo": "comida",
+              "propiedades": {
+                "id": 6,
+                "posicionX": 1,
+                "posicionY": 0,
+                "tiempoDeAparicion": 11
+              }
+            },
+            "siguiente": {
+              "data": {
+                "tipo": "agua",
+                "propiedades": {
+                  "id": 7,
+                  "posicionX": 3,
+                  "posicionY": 8,
+                  "tiempoDeAparicion": 11
+                }
+              },
+              "siguiente": {
+                "data": {
+                  "tipo": "tesoro",
+                  "propiedades": {
+                    "id": 8,
+                    "posicionX": 4,
+                    "posicionY": 7,
+                    "tiempoDeAparicion": 11
+                  }
+                },
+                "siguiente": {
+                  "data": {
+                    "tipo": "montaña",
+                    "propiedades": {
+                      "id": 9,
+                      "posicionX": 6,
+                      "posicionY": 5,
+                      "tiempoDeAparicion": 11
+                    }
+                  },
+                  "siguiente": {
+                    "data": {
+                      "tipo": "comida",
+                      "propiedades": {
+                        "id": 10,
+                        "posicionX": 6,
+                        "posicionY": 9,
+                        "tiempoDeAparicion": 11
+                      }
+                    },
+                    "siguiente": {
+                      "data": {
+                        "tipo": "tesoro",
+                        "propiedades": {
+                          "id": 11,
+                          "posicionX": 0,
+                          "posicionY": 3,
+                          "tiempoDeAparicion": 12
+                        }
+                      },
+                      "siguiente": {
+                        "data": {
+                          "tipo": "comida",
+                          "propiedades": {
+                            "id": 12,
+                            "posicionX": 0,
+                            "posicionY": 4,
+                            "tiempoDeAparicion": 12
+                          }
+                        },
+                        "siguiente": {
+                          "data": {
+                            "tipo": "comida",
+                            "propiedades": {
+                              "id": 13,
+                              "posicionX": 2,
+                              "posicionY": 3,
+                              "tiempoDeAparicion": 12
+                            }
+                          },
+                          "siguiente": {
+                            "data": {
+                              "tipo": "montaña",
+                              "propiedades": {
+                                "id": 14,
+                                "posicionX": 2,
+                                "posicionY": 4,
+                                "tiempoDeAparicion": 12
+                              }
+                            },
+                            "siguiente": {
+                              "data": {
+                                "tipo": "agua",
+                                "propiedades": {
+                                  "id": 16,
+                                  "posicionX": 4,
+                                  "posicionY": 2,
+                                  "tiempoDeAparicion": 12
+                                }
+                              },
+                              "siguiente": {
+                                "data": {
+                                  "tipo": "comida",
+                                  "propiedades": {
+                                    "id": 17,
+                                    "posicionX": 5,
+                                    "posicionY": 2,
+                                    "tiempoDeAparicion": 12
+                                  }
+                                },
+                                "siguiente": {
+                                  "data": {
+                                    "tipo": "tesoro",
+                                    "propiedades": {
+                                      "id": 18,
+                                      "posicionX": 2,
+                                      "posicionY": 6,
+                                      "tiempoDeAparicion": 13
+                                    }
+                                  },
+                                  "siguiente": {
+                                    "data": {
+                                      "tipo": "montaña",
+                                      "propiedades": {
+                                        "id": 19,
+                                        "posicionX": 2,
+                                        "posicionY": 9,
+                                        "tiempoDeAparicion": 13
+                                      }
+                                    },
+                                    "siguiente": {
+                                      "data": {
+                                        "tipo": "pozo",
+                                        "propiedades": {
+                                          "id": 20,
+                                          "posicionX": 3,
+                                          "posicionY": 3,
+                                          "tiempoDeAparicion": 13
+                                        }
+                                      },
+                                      "siguiente": {
+                                        "data": {
+                                          "tipo": "tesoro",
+                                          "propiedades": {
+                                            "id": 21,
+                                            "posicionX": 7,
+                                            "posicionY": 0,
+                                            "tiempoDeAparicion": 13
+                                          }
+                                        },
+                                        "siguiente": {
+                                          "data": {
+                                            "tipo": "agua",
+                                            "propiedades": {
+                                              "id": 23,
+                                              "posicionX": 0,
+                                              "posicionY": 3,
+                                              "tiempoDeAparicion": 14
+                                            }
+                                          },
+                                          "siguiente": {
+                                            "data": {
+                                              "tipo": "pozo",
+                                              "propiedades": {
+                                                "id": 24,
+                                                "posicionX": 1,
+                                                "posicionY": 0,
+                                                "tiempoDeAparicion": 14
+                                              }
+                                            },
+                                            "siguiente": {
+                                              "data": {
+                                                "tipo": "montaña",
+                                                "propiedades": {
+                                                  "id": 25,
+                                                  "posicionX": 3,
+                                                  "posicionY": 2,
+                                                  "tiempoDeAparicion": 14
+                                                }
+                                              },
+                                              "siguiente": {
+                                                "data": {
+                                                  "tipo": "tesoro",
+                                                  "propiedades": {
+                                                    "id": 26,
+                                                    "posicionX": 3,
+                                                    "posicionY": 3,
+                                                    "tiempoDeAparicion": 14
+                                                  }
+                                                },
+                                                "siguiente": {
+                                                  "data": {
+                                                    "tipo": "pozo",
+                                                    "propiedades": {
+                                                      "id": 27,
+                                                      "posicionX": 6,
+                                                      "posicionY": 7,
+                                                      "tiempoDeAparicion": 14
+                                                    }
+                                                  },
+                                                  "siguiente": {
+                                                    "data": {
+                                                      "tipo": "tesoro",
+                                                      "propiedades": {
+                                                        "id": 28,
+                                                        "posicionX": 9,
+                                                        "posicionY": 1,
+                                                        "tiempoDeAparicion": 14
+                                                      }
+                                                    },
+                                                    "siguiente": {
+                                                      "data": {
+                                                        "tipo": "agua",
+                                                        "propiedades": {
+                                                          "id": 30,
+                                                          "posicionX": 0,
+                                                          "posicionY": 4,
+                                                          "tiempoDeAparicion": 15
+                                                        }
+                                                      },
+                                                      "siguiente": {
+                                                        "data": {
+                                                          "tipo": "montaña",
+                                                          "propiedades": {
+                                                            "id": 31,
+                                                            "posicionX": 4,
+                                                            "posicionY": 5,
+                                                            "tiempoDeAparicion": 15
+                                                          }
+                                                        },
+                                                        "siguiente": {
+                                                          "data": {
+                                                            "tipo": "comida",
+                                                            "propiedades": {
+                                                              "id": 32,
+                                                              "posicionX": 5,
+                                                              "posicionY": 5,
+                                                              "tiempoDeAparicion": 15
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "HistorialIndividuos": {
+    "primero": {
+      "data": {
+        "tipo": "individuoNormal",
+        "propiedades": {
+          "acciones": {},
+          "padres": {},
+          "posicionX": 4,
+          "posicionY": 0,
+          "id": 1,
+          "generacion": 0,
+          "tiempoDeVida": 10,
+          "probReproduccion": 50.0,
+          "probClonacion": 10.0,
+          "probMuerte": -49.0,
+          "isVivo": true
+        }
+      },
+      "siguiente": {
+        "data": {
+          "tipo": "individuoAvanzado",
+          "propiedades": {
+            "acciones": {},
+            "padres": {},
+            "posicionX": 4,
+            "posicionY": 0,
+            "id": 2,
+            "generacion": 0,
+            "tiempoDeVida": 10,
+            "probReproduccion": 50.0,
+            "probClonacion": 10.0,
+            "probMuerte": -49.0,
+            "isVivo": true
+          }
+        },
+        "siguiente": {
+          "data": {
+            "tipo": "individuoBasico",
+            "propiedades": {
+              "acciones": {},
+              "padres": {},
+              "posicionX": 7,
+              "posicionY": 0,
+              "id": 3,
+              "generacion": 0,
+              "tiempoDeVida": 10,
+              "probReproduccion": 50.0,
+              "probClonacion": 10.0,
+              "probMuerte": -49.0,
+              "isVivo": true
+            }
+          },
+          "siguiente": {
+            "data": {
+              "tipo": "individuoNormal",
+              "propiedades": {
+                "acciones": {},
+                "padres": {},
+                "posicionX": 7,
+                "posicionY": 0,
+                "id": 4,
+                "generacion": 0,
+                "tiempoDeVida": 10,
+                "probReproduccion": 50.0,
+                "probClonacion": 10.0,
+                "probMuerte": -49.0,
+                "isVivo": true
+              }
+            },
+            "siguiente": {
+              "data": {
+                "tipo": "individuoNormal",
+                "propiedades": {
+                  "acciones": {},
+                  "padres": {},
+                  "posicionX": 7,
+                  "posicionY": 0,
+                  "id": 5,
+                  "generacion": 0,
+                  "tiempoDeVida": 10,
+                  "probReproduccion": 50.0,
+                  "probClonacion": 10.0,
+                  "probMuerte": -49.0,
+                  "isVivo": true
+                }
+              },
+              "siguiente": {
+                "data": {
+                  "tipo": "individuoNormal",
+                  "propiedades": {
+                    "acciones": {},
+                    "padres": {},
+                    "posicionX": 4,
+                    "posicionY": 0,
+                    "id": 6,
+                    "generacion": 0,
+                    "tiempoDeVida": 10,
+                    "probReproduccion": 50.0,
+                    "probClonacion": 10.0,
+                    "probMuerte": -49.0,
+                    "isVivo": true
+                  }
+                },
+                "siguiente": {
+                  "data": {
+                    "tipo": "individuoAvanzado",
+                    "propiedades": {
+                      "acciones": {},
+                      "padres": {},
+                      "posicionX": 4,
+                      "posicionY": 0,
+                      "id": 7,
+                      "generacion": 0,
+                      "tiempoDeVida": 10,
+                      "probReproduccion": 50.0,
+                      "probClonacion": 10.0,
+                      "probMuerte": -49.0,
+                      "isVivo": true
+                    }
+                  },
+                  "siguiente": {
+                    "data": {
+                      "tipo": "individuoNormal",
+                      "propiedades": {
+                        "acciones": {},
+                        "padres": {},
+                        "posicionX": 7,
+                        "posicionY": 0,
+                        "id": 8,
+                        "generacion": 0,
+                        "tiempoDeVida": 10,
+                        "probReproduccion": 50.0,
+                        "probClonacion": 10.0,
+                        "probMuerte": -49.0,
+                        "isVivo": true
+                      }
+                    },
+                    "siguiente": {
+                      "data": {
+                        "tipo": "individuoAvanzado",
+                        "propiedades": {
+                          "acciones": {},
+                          "padres": {},
+                          "posicionX": 7,
+                          "posicionY": 0,
+                          "id": 9,
+                          "generacion": 0,
+                          "tiempoDeVida": 10,
+                          "probReproduccion": 50.0,
+                          "probClonacion": 10.0,
+                          "probMuerte": -49.0,
+                          "isVivo": true
+                        }
+                      },
+                      "siguiente": {
+                        "data": {
+                          "tipo": "individuoBasico",
+                          "propiedades": {
+                            "acciones": {},
+                            "padres": {},
+                            "posicionX": 3,
+                            "posicionY": 0,
+                            "id": 10,
+                            "generacion": 0,
+                            "tiempoDeVida": 10,
+                            "probReproduccion": 50.0,
+                            "probClonacion": 10.0,
+                            "probMuerte": -49.0,
+                            "isVivo": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "HistorialRecursos": {
+    "primero": {
+      "data": {
+        "tipo": "comida",
+        "propiedades": {
+          "id": 1,
+          "posicionX": 7,
+          "posicionY": 3,
+          "tiempoDeAparicion": 15
+        }
+      },
+      "siguiente": {
+        "data": {
+          "tipo": "agua",
+          "propiedades": {
+            "id": 2,
+            "posicionX": 8,
+            "posicionY": 1,
+            "tiempoDeAparicion": 15
+          }
+        },
+        "siguiente": {
+          "data": {
+            "tipo": "agua",
+            "propiedades": {
+              "id": 3,
+              "posicionX": 5,
+              "posicionY": 6,
+              "tiempoDeAparicion": 15
+            }
+          },
+          "siguiente": {
+            "data": {
+              "tipo": "comida",
+              "propiedades": {
+                "id": 4,
+                "posicionX": 7,
+                "posicionY": 2,
+                "tiempoDeAparicion": 15
+              }
+            },
+            "siguiente": {
+              "data": {
+                "tipo": "agua",
+                "propiedades": {
+                  "id": 5,
+                  "posicionX": 8,
+                  "posicionY": 3,
+                  "tiempoDeAparicion": 15
+                }
+              },
+              "siguiente": {
+                "data": {
+                  "tipo": "comida",
+                  "propiedades": {
+                    "id": 6,
+                    "posicionX": 1,
+                    "posicionY": 0,
+                    "tiempoDeAparicion": 15
+                  }
+                },
+                "siguiente": {
+                  "data": {
+                    "tipo": "agua",
+                    "propiedades": {
+                      "id": 7,
+                      "posicionX": 3,
+                      "posicionY": 8,
+                      "tiempoDeAparicion": 15
+                    }
+                  },
+                  "siguiente": {
+                    "data": {
+                      "tipo": "tesoro",
+                      "propiedades": {
+                        "id": 8,
+                        "posicionX": 4,
+                        "posicionY": 7,
+                        "tiempoDeAparicion": 15
+                      }
+                    },
+                    "siguiente": {
+                      "data": {
+                        "tipo": "montaña",
+                        "propiedades": {
+                          "id": 9,
+                          "posicionX": 6,
+                          "posicionY": 5,
+                          "tiempoDeAparicion": 15
+                        }
+                      },
+                      "siguiente": {
+                        "data": {
+                          "tipo": "comida",
+                          "propiedades": {
+                            "id": 10,
+                            "posicionX": 6,
+                            "posicionY": 9,
+                            "tiempoDeAparicion": 15
+                          }
+                        },
+                        "siguiente": {
+                          "data": {
+                            "tipo": "tesoro",
+                            "propiedades": {
+                              "id": 11,
+                              "posicionX": 0,
+                              "posicionY": 3,
+                              "tiempoDeAparicion": 15
+                            }
+                          },
+                          "siguiente": {
+                            "data": {
+                              "tipo": "comida",
+                              "propiedades": {
+                                "id": 12,
+                                "posicionX": 0,
+                                "posicionY": 4,
+                                "tiempoDeAparicion": 15
+                              }
+                            },
+                            "siguiente": {
+                              "data": {
+                                "tipo": "comida",
+                                "propiedades": {
+                                  "id": 13,
+                                  "posicionX": 2,
+                                  "posicionY": 3,
+                                  "tiempoDeAparicion": 15
+                                }
+                              },
+                              "siguiente": {
+                                "data": {
+                                  "tipo": "montaña",
+                                  "propiedades": {
+                                    "id": 14,
+                                    "posicionX": 2,
+                                    "posicionY": 4,
+                                    "tiempoDeAparicion": 15
+                                  }
+                                },
+                                "siguiente": {
+                                  "data": {
+                                    "tipo": "montaña",
+                                    "propiedades": {
+                                      "id": 15,
+                                      "posicionX": 2,
+                                      "posicionY": 7,
+                                      "tiempoDeAparicion": 15
+                                    }
+                                  },
+                                  "siguiente": {
+                                    "data": {
+                                      "tipo": "agua",
+                                      "propiedades": {
+                                        "id": 16,
+                                        "posicionX": 4,
+                                        "posicionY": 2,
+                                        "tiempoDeAparicion": 15
+                                      }
+                                    },
+                                    "siguiente": {
+                                      "data": {
+                                        "tipo": "comida",
+                                        "propiedades": {
+                                          "id": 17,
+                                          "posicionX": 5,
+                                          "posicionY": 2,
+                                          "tiempoDeAparicion": 15
+                                        }
+                                      },
+                                      "siguiente": {
+                                        "data": {
+                                          "tipo": "tesoro",
+                                          "propiedades": {
+                                            "id": 18,
+                                            "posicionX": 2,
+                                            "posicionY": 6,
+                                            "tiempoDeAparicion": 15
+                                          }
+                                        },
+                                        "siguiente": {
+                                          "data": {
+                                            "tipo": "montaña",
+                                            "propiedades": {
+                                              "id": 19,
+                                              "posicionX": 2,
+                                              "posicionY": 9,
+                                              "tiempoDeAparicion": 15
+                                            }
+                                          },
+                                          "siguiente": {
+                                            "data": {
+                                              "tipo": "pozo",
+                                              "propiedades": {
+                                                "id": 20,
+                                                "posicionX": 3,
+                                                "posicionY": 3,
+                                                "tiempoDeAparicion": 15
+                                              }
+                                            },
+                                            "siguiente": {
+                                              "data": {
+                                                "tipo": "tesoro",
+                                                "propiedades": {
+                                                  "id": 21,
+                                                  "posicionX": 7,
+                                                  "posicionY": 0,
+                                                  "tiempoDeAparicion": 15
+                                                }
+                                              },
+                                              "siguiente": {
+                                                "data": {
+                                                  "tipo": "tesoro",
+                                                  "propiedades": {
+                                                    "id": 22,
+                                                    "posicionX": 8,
+                                                    "posicionY": 4,
+                                                    "tiempoDeAparicion": 15
+                                                  }
+                                                },
+                                                "siguiente": {
+                                                  "data": {
+                                                    "tipo": "agua",
+                                                    "propiedades": {
+                                                      "id": 23,
+                                                      "posicionX": 0,
+                                                      "posicionY": 3,
+                                                      "tiempoDeAparicion": 15
+                                                    }
+                                                  },
+                                                  "siguiente": {
+                                                    "data": {
+                                                      "tipo": "pozo",
+                                                      "propiedades": {
+                                                        "id": 24,
+                                                        "posicionX": 1,
+                                                        "posicionY": 0,
+                                                        "tiempoDeAparicion": 15
+                                                      }
+                                                    },
+                                                    "siguiente": {
+                                                      "data": {
+                                                        "tipo": "montaña",
+                                                        "propiedades": {
+                                                          "id": 25,
+                                                          "posicionX": 3,
+                                                          "posicionY": 2,
+                                                          "tiempoDeAparicion": 15
+                                                        }
+                                                      },
+                                                      "siguiente": {
+                                                        "data": {
+                                                          "tipo": "tesoro",
+                                                          "propiedades": {
+                                                            "id": 26,
+                                                            "posicionX": 3,
+                                                            "posicionY": 3,
+                                                            "tiempoDeAparicion": 15
+                                                          }
+                                                        },
+                                                        "siguiente": {
+                                                          "data": {
+                                                            "tipo": "pozo",
+                                                            "propiedades": {
+                                                              "id": 27,
+                                                              "posicionX": 6,
+                                                              "posicionY": 7,
+                                                              "tiempoDeAparicion": 15
+                                                            }
+                                                          },
+                                                          "siguiente": {
+                                                            "data": {
+                                                              "tipo": "tesoro",
+                                                              "propiedades": {
+                                                                "id": 28,
+                                                                "posicionX": 9,
+                                                                "posicionY": 1,
+                                                                "tiempoDeAparicion": 15
+                                                              }
+                                                            },
+                                                            "siguiente": {
+                                                              "data": {
+                                                                "tipo": "biblioteca",
+                                                                "propiedades": {
+                                                                  "id": 29,
+                                                                  "posicionX": 9,
+                                                                  "posicionY": 4,
+                                                                  "tiempoDeAparicion": 15
+                                                                }
+                                                              },
+                                                              "siguiente": {
+                                                                "data": {
+                                                                  "tipo": "agua",
+                                                                  "propiedades": {
+                                                                    "id": 30,
+                                                                    "posicionX": 0,
+                                                                    "posicionY": 4,
+                                                                    "tiempoDeAparicion": 15
+                                                                  }
+                                                                },
+                                                                "siguiente": {
+                                                                  "data": {
+                                                                    "tipo": "montaña",
+                                                                    "propiedades": {
+                                                                      "id": 31,
+                                                                      "posicionX": 4,
+                                                                      "posicionY": 5,
+                                                                      "tiempoDeAparicion": 15
+                                                                    }
+                                                                  },
+                                                                  "siguiente": {
+                                                                    "data": {
+                                                                      "tipo": "comida",
+                                                                      "propiedades": {
+                                                                        "id": 32,
+                                                                        "posicionX": 5,
+                                                                        "posicionY": 5,
+                                                                        "tiempoDeAparicion": 15
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "isPausado": true,
+  "isGuardado": true,
+  "nombreArchivo": "PartidaPruebaGenealogico",
+  "turnoActual": 7,
+  "IndividuosMaximosPorCelda": 3,
+  "RecursosMaximosPorCelda": 3,
+  "FilasTablero": 10,
+  "ColumnasTablero": 10,
+  "TurnosVidaIniciales": 10,
+  "ProbReproIndividuo": 50,
+  "ProbClonIndividuo": 10,
+  "ProbMejoraToNormal": 50,
+  "ProbMejoraToAvanzado": 25,
+  "ProbAparRecurso": 5,
+  "TurnosInicialesRecurso": 15,
+  "ProbAparAgua": 20,
+  "ProbAparComida": 20,
+  "ProbAparMontaña": 20,
+  "ProbAparTesoro": 10,
+  "ProbAparBiblioteca": 10,
+  "ProbAparPozo": 10,
+  "IncrementoTurnosAgua": 3,
+  "IncrementoTurnosComida": 5,
+  "IncrementoTurnosMontaña": 7,
+  "IncrementoProbRepro": 25,
+  "IncrementoProbClon": 10
+}

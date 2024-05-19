@@ -7,11 +7,11 @@ public class individuoBasico extends individuo {
     public individuoBasico(){
         super();
     }
-    public individuoBasico(int I, int G, int T, float PR, float PC) {
-        super(I, G, T, PR, PC);
+    public individuoBasico(int I, int G, int TV, float PR, float PC, int T) {
+        super(I, G, TV, PR, PC, T);
     }
-    public individuoBasico(int I, int PX, int PY, int G, int TV, float PR, float PC) {
-        super(I, PX, PY, G, TV, PR, PC);
+    public individuoBasico(int I, int PX, int PY, int G, int TV, float PR, float PC, int T) {
+        super(I, PX, PY, G, TV, PR, PC, T);
     }
 
     public individuoBasico(individuo individuo) {
@@ -25,6 +25,6 @@ public class individuoBasico extends individuo {
 
     @Override
     public void mover(DataModel model, tablero tablero) {
-        this.moverAleatorio(tablero);
+        this.moverAleatorio(tablero, model.getTurno());
     }
 }

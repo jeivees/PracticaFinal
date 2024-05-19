@@ -39,7 +39,7 @@ public class Grafo<T> {
             }
             throw new datoNoExistenteException();
         } catch (datoNoExistenteException e) {
-            log.warn("Se ha intentado encontrar un nodo que no existe en el grafo");
+            log.trace("Se ha intentado encontrar un nodo que no existe en el grafo");
             return null;
         }
     }
@@ -51,7 +51,7 @@ public class Grafo<T> {
             }
             throw new datoNoExistenteException();
         } catch (datoNoExistenteException e) {
-            log.warn("Se ha intentado encontrar un arco que no existe en el grafo");
+            log.trace("Se ha intentado encontrar un arco que no existe en el grafo");
             return null;
         }
     }
@@ -63,6 +63,11 @@ public class Grafo<T> {
 
     public void addNodo (Nodo<T> nodo) {
         nodos.add(nodo);
+    }
+
+    public void addNodo (Nodo<T> nodo, Nodo<T> nodoAConectar, double pesoArco) {
+        nodos.add(nodo);
+        addArco(pesoArco, nodo, nodoAConectar);
     }
 
     public void addArco (double peso, T datoInicial, T datoFinal, String etiqueta) {

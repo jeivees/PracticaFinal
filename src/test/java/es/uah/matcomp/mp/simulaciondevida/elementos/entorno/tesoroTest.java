@@ -30,7 +30,7 @@ class tesoroTest {
 
     @Test
     void aplicarMejora() {
-        individuoBasico i = new individuoBasico(2,2,2,85,2);
+        individuoBasico i = new individuoBasico(2,2,2,85,2, 1);
         tesoro t = new tesoro();
         t.setIncrementoProbReproduccion(10);
 
@@ -42,10 +42,10 @@ class tesoroTest {
         tablero tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
 
         casillaTablero casilla = new casillaTablero(i.getPosicionX(), i.getPosicionY(), model, tablero);
-        assertDoesNotThrow(()->t.aplicarMejora(i, casilla));
+        assertDoesNotThrow(()->t.aplicarMejora(i, casilla, 1));
         assertEquals(95, i.getProbReproduccion(), "El incremento no es correcto");
         assertEquals("individuoBasico", i.getTipo(), "El tipo no es correcto");
-        assertDoesNotThrow(()->t.aplicarMejora(i, casilla));
+        assertDoesNotThrow(()->t.aplicarMejora(i, casilla, 1));
         assertEquals(100, i.getProbReproduccion(), "El incremento no es correcto");
         assertEquals("individuoBasico", i.getTipo(), "EL tipo no es correcto");
     }

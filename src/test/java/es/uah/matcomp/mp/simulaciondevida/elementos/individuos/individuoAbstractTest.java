@@ -9,7 +9,7 @@ class individuoAbstractTest {
 
     @Test
     void getPosicionX() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         i.setPosicionX(2);
         assertDoesNotThrow(()->i.getPosicionX());
         assertEquals(2, i.getPosicionX(), "El parámetro no es correcto");
@@ -17,14 +17,14 @@ class individuoAbstractTest {
 
     @Test
     void setPosicionX() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.setPosicionX(3));
         assertEquals(3, i.getPosicionX(), "El parámetro no es correcto");
     }
 
     @Test
     void getPosicionY() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         i.setPosicionY(2);
         assertDoesNotThrow(()->i.getPosicionY());
         assertEquals(2, i.getPosicionY(), "El parámetro no es correcto");
@@ -32,14 +32,14 @@ class individuoAbstractTest {
 
     @Test
     void setPosicionY() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.setPosicionY(3));
         assertEquals(3, i.getPosicionY(), "El parámetro no es correcto");
     }
 
     @Test
     void getPosicion() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         i.setPosicionX(4);
         i.setPosicionY(5);
         int [] a= new int[2];
@@ -51,43 +51,43 @@ class individuoAbstractTest {
 
     @Test
     void getId() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.getId());
         assertEquals(2, i.getId(), "El parámetro no es correcto");
     }
 
     @Test
     void setId() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.setId(3));
         assertEquals(3, i.getId(), "El parámetro no es correcto");
     }
 
     @Test
     void getGeneracion() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.getGeneracion());
         assertEquals(2, i.getGeneracion(), "El parámetro no es correcto");
     }
 
     @Test
     void setGeneracion() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.setGeneracion(3));
         assertEquals(3, i.getGeneracion(), "El parámetro no es correcto");
     }
 
     @Test
     void getTiempoDeVida() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.getTiempoDeVida());
         assertEquals(2, i.getTiempoDeVida(), "El parámetro no es correcto");
     }
 
     @Test
     void setTiempoDeVida() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
-        assertDoesNotThrow(()->i.setTiempoDeVida(3));
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
+        assertDoesNotThrow(()->i.setTiempoDeVida(3, 1));
         assertEquals(3, i.getTiempoDeVida(), "El parámetro no es correcto");
     }
 /**
@@ -101,33 +101,33 @@ class individuoAbstractTest {
 **/
     @Test
     void setProbReproduccion() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
-        assertDoesNotThrow(()->i.setProbReproduccion(3));
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
+        assertDoesNotThrow(()->i.setProbReproduccion(3, 1));
         assertEquals(3, i.getProbReproduccion(), "El parámetro no es correcto");
-        assertThrows(probabilidadInvalidaException.class, ()->i.setProbReproduccion(-1));
-        assertThrows(probabilidadInvalidaException.class, ()->i.setProbReproduccion(101));
+        assertThrows(probabilidadInvalidaException.class, ()->i.setProbReproduccion(-1, 1));
+        assertThrows(probabilidadInvalidaException.class, ()->i.setProbReproduccion(101, 1));
     }
 
     @Test
     void getProbClonacion() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.getProbClonacion());
         assertEquals(2, i.getProbClonacion(), "El parámetro no es correcto");
     }
 
     @Test
     void setProbClonacion() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
-        assertDoesNotThrow(()->i.setProbClonacion(3));
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
+        assertDoesNotThrow(()->i.setProbClonacion(3, 1));
         assertEquals(3, i.getProbClonacion(), "El parámetro no es correcto");
-        assertThrows(probabilidadInvalidaException.class, ()->i.setProbClonacion(-1));
-        assertThrows(probabilidadInvalidaException.class, ()->i.setProbClonacion(101));
+        assertThrows(probabilidadInvalidaException.class, ()->i.setProbClonacion(-1, 1));
+        assertThrows(probabilidadInvalidaException.class, ()->i.setProbClonacion(101, 1));
     }
 
     @Test
     void getProbMuerte() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
-        assertDoesNotThrow(()->i.setProbReproduccion(20));
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
+        assertDoesNotThrow(()->i.setProbReproduccion(20, 1));
         assertEquals(80, i.getProbMuerte(), "El parámetro no es correcto");
     }
 

@@ -1,5 +1,6 @@
 package gui.mvc.javafx.practicafinal;
 
+import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.*;
 import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
@@ -35,6 +36,8 @@ public class tableroController {
     @FXML
     private Label turnoLabel = new Label();
 
+    @FXML
+    private TreeTableView<String> vistaGanadores = new TreeTableView<>();
 
 
     public tableroController () {}
@@ -129,7 +132,8 @@ public class tableroController {
     protected void onBotonMenuPrincipalClick (ActionEvent event) {
         casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
         model = casilla00.getModel();
-        if (!getModel().isGuardado()) {
+        if (!getModel().isGuardado() && model.isPausado()) {
+            if (Window.getWindows().size() > 1) ((Stage) Window.getWindows().get(1)).close();
             Alert confirmacion = new Alert(Alert.AlertType.CONFIRMATION);
             confirmacion.initOwner(Stage.getWindows().getFirst());
             confirmacion.setTitle("Volver al menú principal");
@@ -221,6 +225,40 @@ public class tableroController {
         model.guardar(nombreArchivo);
     }
 
+    @FXML
+    protected void onBotonFinalizarPartidaClick (ActionEvent event) {
+        casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
+        model = casilla00.getModel();
+        juegoActual = new simuladorDeVida(model);
+
+        juegoActual.finalizarPartida();
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(menuPrincipalApplication.class.getResource("finalizarPartida-vista.fxml"));
+
+            int numeroGanadores = model.getIndividuos().getNumeroElementos();
+            for (int i = 0; i != numeroGanadores; i ++) {
+                individuo individuoActual = model.getIndividuos().getElemento(i).getData();
+                TreeTableColumn<?, ?> columnaActual = new TreeTableColumn<>(individuoActual.getTipo() + " Id: " +individuoActual.getId().toString());
+                vistaGanadores.getChildrenUnmodifiable();
+            }
+
+            if (Window.getWindows().size() > 1) ((Stage) Window.getWindows().get(1)).close();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setScene(scene);
+            stage.setFullScreen(true);
+            stage.show();
+        } catch (IOException e) {
+            log.error("No se ha encontrado la vista del menú principal");
+        }
+    }
+
+    @FXML
+    protected void onBotonSalirClick (ActionEvent event) {
+        volverAlMenuPrincipal(event);
+    }
+
     protected void mostrarElementosCasilla (casillaTablero casilla) {
         try {
             if (model.isPausado()) {
@@ -292,6 +330,7 @@ public class tableroController {
         stage.setResizable(false);
         stage.setFullScreen(true);
         stage.setAlwaysOnTop(true);
+        stage.setIconified(true);
         stage.show();
 
         model.setPausado(true);
@@ -301,6 +340,13 @@ public class tableroController {
             casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicion());
             casillaActual.addIndividuo(individuoActual, false);
             casillaActual.getIndividuos().add(individuoActual);
+        }
+        int numeroRecursos = model.getRecursos().getNumeroElementos();
+        for (int k=0; k != numeroRecursos; k++) {
+            recurso recursoActual = model.getRecursos().getElemento(k).getData();
+            casillaTablero casillaActual = tablero.getCasilla(recursoActual.getPosicion());
+            casillaActual.addRecurso(recursoActual, false);
+            casillaActual.getRecursos().add(recursoActual);
         }
     }
 

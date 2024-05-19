@@ -71,7 +71,7 @@ public class bucleDeControl implements Runnable{
             for (int i = 0; i != individuos.getNumeroElementos(); i++) {
                 individuo individuoActual = individuos.getElemento(i).getData();
                 casillaTablero casilla = tablero.getCasilla(individuoActual.getPosicion());
-                boolean muere = individuoActual.actualizarTV(casilla);
+                boolean muere = individuoActual.actualizarTV(casilla, getTurnoProperty().get());
                 if (muere) {
                     log.info("El individuo " + individuoActual + " ha muerto");
                     i -= 1;
@@ -115,7 +115,7 @@ public class bucleDeControl implements Runnable{
                     for (int j = 0; j != numeroRecursos; j++) {
                         recurso recursoActual = casillaActual.getRecursos().getPrimero().getData();
                         if (individuoActual.isVivo()) {
-                            recursoActual.aplicarMejora(individuoActual, casillaActual);
+                            recursoActual.aplicarMejora(individuoActual, casillaActual, turnoProperty.get());
                             if (!individuoActual.isVivo()) i -= 1;
                         }
                         casillaActual.delRecurso(recursoActual);
@@ -138,8 +138,8 @@ public class bucleDeControl implements Runnable{
                             individuo individuoActual = individuos.getElemento(k - 1).getData();
                             individuo pareja = individuos.getElemento(k).getData();
 
-                            boolean mueren1 = individuoActual.reproducirse(pareja, model, casillaActual);
-                            boolean mueren2 = pareja.reproducirse(individuoActual, model, casillaActual);
+                            boolean mueren1 = individuoActual.reproducirse(pareja, model, casillaActual, turnoProperty.get());
+                            boolean mueren2 = pareja.reproducirse(individuoActual, model, casillaActual, turnoProperty.get());
                             if (mueren1 || mueren2) {
                                 casillaActual.delIndividuo(individuoActual);
                                 casillaActual.delIndividuo(pareja);
@@ -206,7 +206,8 @@ public class bucleDeControl implements Runnable{
                         }
 
                         Random s = new Random();
-                        int p = s.nextInt(1, 100);
+                        int p = s.nextInt(1, model.getProbAparAgua() + model.getProbAparComida() + model.getProbAparMontaña() +
+                                model.getProbAparBiblioteca() + model.getProbAparTesoro() + model.getProbAparPozo());
 
                         if (p <= model.getProbAparAgua()) {
                            casillaMejorable.addRecurso(new agua(idNuevoRecurso, model), true);

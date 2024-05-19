@@ -6,9 +6,12 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.gsonAdapterIndividuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.cola.Cola;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.cola.gsonAdapterCola;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 
 import com.google.gson.Gson;
+import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -30,7 +33,9 @@ public class DataModel {
     @Expose
     private ListaEnlazada<recurso> HistorialRecursos = new ListaEnlazada<>();
 
+
     // datos generales
+    private simuladorDeVida juegoActual;
     @Expose
     private boolean isPausado = false;
     @Expose
@@ -124,6 +129,7 @@ public class DataModel {
         Gson gson = new GsonBuilder()
                 .registerTypeAdapter(individuo.class, new gsonAdapterIndividuo())
                 .registerTypeAdapter(recurso.class, new gsonAdapterRecurso())
+                .registerTypeAdapter(Cola.class, new gsonAdapterCola())
                 .excludeFieldsWithoutExposeAnnotation()
                 .excludeFieldsWithModifiers(Modifier.STATIC)
                 .setPrettyPrinting()
@@ -140,12 +146,14 @@ public class DataModel {
         Gson gson = new GsonBuilder()
                 .registerTypeAdapter(individuo.class, new gsonAdapterIndividuo())
                 .registerTypeAdapter(recurso.class, new gsonAdapterRecurso())
+                .registerTypeAdapter(Cola.class, new gsonAdapterCola())
                 .excludeFieldsWithoutExposeAnnotation()
                 .excludeFieldsWithModifiers(Modifier.STATIC)
                 .setPrettyPrinting()
                 .create();
         try (FileReader reader = new FileReader(STR."archivosDePartida/\{nombreArchivo}")) {
-            return gson.fromJson(reader, DataModel.class);
+            DataModel model = gson.fromJson(reader, DataModel.class);
+            return model;
         } catch (IOException e) {
             log.error("La ruta para cargar el archivo no existe");
             return null;
@@ -416,5 +424,13 @@ public class DataModel {
 
     public void setNombreArchivo(String nombreArchivo) {
         this.nombreArchivo = nombreArchivo;
+    }
+
+    public simuladorDeVida getJuegoActual() {
+        return juegoActual;
+    }
+
+    public void setJuegoActual(simuladorDeVida juegoActual) {
+        this.juegoActual = juegoActual;
     }
 }

@@ -8,7 +8,7 @@ class individuoAvanzadoTest {
 
     @Test
     void getTipo() {
-        individuoAvanzado i = new individuoAvanzado(2,2,2,2,2);
+        individuoAvanzado i = new individuoAvanzado(2,2,2,2,2, 1);
         assertDoesNotThrow(()->i.getTipo());
         assertEquals("individuoAvanzado", i.getTipo());
     }

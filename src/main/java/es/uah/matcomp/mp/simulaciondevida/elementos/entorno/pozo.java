@@ -3,8 +3,11 @@ package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import gui.mvc.javafx.practicafinal.DataModel;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class pozo extends recurso {
+    private static final Logger log = LogManager.getLogger();
     public pozo () {}
     public pozo (int id,  DataModel model) {
         super (id, model);
@@ -14,7 +17,9 @@ public class pozo extends recurso {
     }
 
     @Override
-    public void aplicarMejora (individuo individuo, casillaTablero casillaActual) {
+    public void aplicarMejora (individuo individuo, casillaTablero casillaActual, int turnoActual) {
+        individuo.getAcciones().add(STR."Acción: biblioteca recibir efecto, turno: \{turnoActual}");
+        log.debug(STR."Efecto de biblioteca aplicado a \{individuo.getId()}");
         casillaActual.delIndividuo(individuo);
     }
 

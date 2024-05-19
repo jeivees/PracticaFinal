@@ -14,11 +14,11 @@ public class individuoNormal extends individuo {
     public individuoNormal () {
         super();
     }
-    public individuoNormal(int I, int G, int T, float PR, float PC) {
-        super(I, G, T, PR, PC);
+    public individuoNormal(int I, int G, int TV, float PR, float PC, int T) {
+        super(I, G, TV, PR, PC, T);
     }
-    public individuoNormal(int I, int PX, int PY, int G, int TV, float PR, float PC) {
-        super(I, PX, PY, G, TV, PR, PC);
+    public individuoNormal(int I, int PX, int PY, int G, int TV, float PR, float PC, int T) {
+        super(I, PX, PY, G, TV, PR, PC, T);
     }
     public individuoNormal(individuo individuo) {
         super(individuo);
@@ -30,7 +30,7 @@ public class individuoNormal extends individuo {
 
     public void mover(DataModel model, tablero tablero) throws recursosNoConsumidosException{
         if (model.getRecursos().isVacia()) {
-            moverAleatorio(tablero);
+            moverAleatorio(tablero, model.getTurno());
         } else {
             Random r = new Random();
             int numAleatorio = r.nextInt(model.getRecursos().getNumeroElementos());
@@ -54,6 +54,8 @@ public class individuoNormal extends individuo {
                 coordenadaYDestino += 1;
             }
             cambiarPosicion(coordenadaXDestino, coordenadaYDestino, tablero);
+            this.getAcciones().add(STR."Acción: moverse (\{coordenadaXDestino}, \{coordenadaYDestino}), turno: \{model.getTurno()}");
+            log.debug(STR."El individuo se ha movido a \{coordenadaXDestino}, \{coordenadaYDestino}");
         }
     }
 }

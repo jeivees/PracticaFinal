@@ -7,8 +7,11 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import excepciones.probabilidadInvalidaException;
 import gui.mvc.javafx.practicafinal.DataModel;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class biblioteca extends recurso {
+    private static final Logger log = LogManager.getLogger();
     private float incrementoProbClonacion;
 
     public biblioteca () {}
@@ -31,18 +34,24 @@ public class biblioteca extends recurso {
     }
 
     @Override
-    public void aplicarMejora (individuo individuo, casillaTablero casillaActual) {
+    public void aplicarMejora (individuo individuo, casillaTablero casillaActual, int turnoActual) {
+        individuo.getAcciones().add(STR."Acción: biblioteca recibir efecto, turno: \{turnoActual}");
+        log.debug(STR."Efecto de biblioteca aplicado a \{individuo.getId()}");
         if (individuo.getProbClonacion() + incrementoProbClonacion > 100) {
-            individuo.setProbClonacion(100);
+            individuo.setProbClonacion(100, turnoActual);
         } else {
-            individuo.setProbClonacion(individuo.getProbClonacion() + incrementoProbClonacion);
+            individuo.setProbClonacion(individuo.getProbClonacion() + incrementoProbClonacion, turnoActual);
         }
         if (individuo.getTipo() == individuoBasico.class) {
             casillaActual.addIndividuo(new individuoNormal(individuo), true);
             casillaActual.delIndividuo(individuo);
+            individuo.getAcciones().add(STR."Acción: evolucionar, turno: \{turnoActual}");
+            log.debug(STR."Efecto de biblioteca aplicado a \{individuo.getId()}");
         } else if (individuo.getTipo() == individuoNormal.class) {
             casillaActual.addIndividuo(new individuoAvanzado(individuo), true);
             casillaActual.delIndividuo(individuo);
+            individuo.getAcciones().add(STR."Acción: biblioteca recibir efecto, turno: \{turnoActual}");
+            log.debug(STR."Efecto de biblioteca aplicado a \{individuo.getId()}");
         }
     }
 

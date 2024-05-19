@@ -11,7 +11,7 @@ public class gsonAdapterIndividuo implements JsonSerializer<individuo>, JsonDese
     private static final Logger log = LogManager.getLogger();
     @Override
     public JsonElement serialize(individuo src, Type typeOfSrc, JsonSerializationContext context) {
-        log.debug(STR."Empezando serialización de individuo \{src.getTipo().getSimpleName()} a Json");
+        log.trace(STR."Empezando serialización de individuo \{src.getTipo().getSimpleName()} a Json");
         JsonObject individuo = new JsonObject();
         individuo.addProperty("tipo", src.getTipo().getSimpleName());
         individuo.add("propiedades", context.serialize(src));
@@ -20,7 +20,7 @@ public class gsonAdapterIndividuo implements JsonSerializer<individuo>, JsonDese
 
     @Override
     public individuo deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
-        log.debug(STR."Empezando deserialización de individuo \{json.getAsJsonObject().get("tipo").getAsString()} a Json");
+        log.trace(STR."Empezando deserialización de individuo \{json.getAsJsonObject().get("tipo").getAsString()} a Json");
         JsonObject jsonIndividuo = json.getAsJsonObject();
 
         String tipo = jsonIndividuo.get("tipo").getAsString();

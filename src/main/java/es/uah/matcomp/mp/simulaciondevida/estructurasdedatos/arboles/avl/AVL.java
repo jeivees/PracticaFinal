@@ -6,7 +6,7 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDobleme
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class AVL<T> extends ArbolBinarioDeBusqueda<T> {
+public class AVL<T> extends ArbolBinario<T> {
     private static final Logger log = LogManager.getLogger();
     private nodoAVL<T> raiz;
     public AVL () {

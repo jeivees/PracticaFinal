@@ -27,7 +27,7 @@ class comidaTest {
 
     @Test
     void aplicarMejora() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
+        individuoBasico i = new individuoBasico(2,2,2,2,2, 1);
         comida c = new comida();
         c.setIncrementoTV(10);
         DataModel model = new DataModel(
@@ -38,7 +38,7 @@ class comidaTest {
         tablero tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
 
         casillaTablero casilla = new casillaTablero(i.getPosicionX(), i.getPosicionY(), model, tablero);
-        assertDoesNotThrow(()->c.aplicarMejora(i, casilla));
+        assertDoesNotThrow(()->c.aplicarMejora(i, casilla, 1));
         assertEquals(12, i.getTiempoDeVida(), "El incremento no es correcto");
     }
 }
