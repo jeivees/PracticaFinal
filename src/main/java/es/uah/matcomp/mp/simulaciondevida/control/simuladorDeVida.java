@@ -112,6 +112,7 @@ public class simuladorDeVida {
             for (int i = 0; i != totalIndividuos; i++) {
                 individuo individuoActual = model.getHistorialIndividuos().getElemento(i).getData();
                 Nodo<String> nodoIndividuo = new Nodo<>(STR."Individuo \{individuoActual.getId()}");
+                grafoAcciones.addNodo(nodoIndividuo);
                 grafoAcciones.addArco(1, nodoIndividuo, nodoIndividuos);
                 Cola<String> accionesIndividuo = individuoActual.getAcciones();
                 int numeroAcciones = accionesIndividuo.getNumeroElementos();
@@ -121,6 +122,7 @@ public class simuladorDeVida {
                     colaAux.add(accionActual);
                     Nodo<String> nodoAccion = new Nodo<>(accionActual);
 
+                    grafoAcciones.addNodo(nodoAccion);
                     grafoAcciones.addArco(1, nodoAccion, nodoIndividuo); // añadir arco de la accion al individuo
 
                     int indexOfFinAccion = Math.min(accionActual.indexOf(","), accionActual.substring(8).indexOf(" ") + 8);

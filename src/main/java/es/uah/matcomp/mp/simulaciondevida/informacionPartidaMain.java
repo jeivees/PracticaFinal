@@ -22,7 +22,7 @@ public class informacionPartidaMain {
 
             System.out.print("Individuo más longevo: ");
             individuo individuoLongevo = getIndividuoLongevo(model, grafoAcciones);
-            System.out.println(individuoLongevo);
+            System.out.println(STR."Individuo \{individuoLongevo.getId()}");
 
             System.out.println("Acciones que ha realizado:");
             System.out.println(individuoLongevo.getAcciones());
@@ -42,7 +42,7 @@ public class informacionPartidaMain {
             System.out.print("Individuo que ha bebido más agua: ");
             System.out.println(STR."Individuo \{getIndividuoMasAccion(model, grafoAcciones, "agua").getId()}");
 
-            System.out.print("Individuo con más reproducciones: ");
+            System.out.print("Individuo con máximo tiempo de vida: ");
             individuo individuoTVMaximo = getIndividuoTVMaximo(model, grafoAcciones);
             System.out.println(STR."Individuo \{individuoTVMaximo.getId()}, ha llegado a tener \{getTVMaximoIndividuo(grafoAcciones, individuoTVMaximo)} TV");
             if (individuoLongevo == individuoTVMaximo) {
@@ -69,19 +69,23 @@ public class informacionPartidaMain {
             int turnoMuerte = model.getTurno();
             for (int j = 0; j != accionesIndividuo; j++) {
                 String stringAccion = nodoIndividuoActual.getArcosSalida().getElemento(j).getData().getOtroVertice(nodoIndividuoActual).getDato();
-                int indexOfFinalAccion = Math.min(stringAccion.substring(8).indexOf(" "), stringAccion.indexOf(","));
-                String accionReducida = stringAccion.substring(8, indexOfFinalAccion);
-                if (accionReducida.equals("nacer")) {
-                    int indexOfInicioTurno = stringAccion.indexOf("turno:") + 7;
-                    turnoNacimiento = Integer.parseInt(stringAccion.substring(indexOfInicioTurno));
-                } else if (accionReducida.equals("morir")) {
-                    int indexOfInicioTurno = stringAccion.indexOf("turno:") + 7;
-                    turnoMuerte = Integer.parseInt(stringAccion.substring(indexOfInicioTurno));
+                if (!stringAccion.equals("individuos")) {
+                    int indexOfFinalAccion = Math.min(stringAccion.substring(8).indexOf(" ") + 8, stringAccion.indexOf(","));
+                    String accionReducida = stringAccion.substring(8, indexOfFinalAccion);
+                    if (accionReducida.equals("nacer")) {
+                        int indexOfInicioTurno = stringAccion.indexOf("turno:") + 7;
+                        turnoNacimiento = Integer.parseInt(stringAccion.substring(indexOfInicioTurno));
+                    } else if (accionReducida.equals("morir")) {
+                        int indexOfInicioTurno = stringAccion.indexOf("turno:") + 7;
+                        turnoMuerte = Integer.parseInt(stringAccion.substring(indexOfInicioTurno));
+                    }
+                }
+                if (turnoMuerte - turnoNacimiento > turnosIndividuoLongevo) {
+                    turnosIndividuoLongevo = turnoMuerte - turnoNacimiento;
+                    idIndividuoLongevo = Integer.parseInt(nodoIndividuoActual.getDato().substring(10));
                 }
             }
-            if (turnoMuerte - turnoNacimiento > turnosIndividuoLongevo) {
-                idIndividuoLongevo = Integer.parseInt(nodoIndividuoActual.getDato().substring(10));
-            }
+
         }
 
         individuo individuoLongevo = null;
@@ -140,14 +144,16 @@ public class informacionPartidaMain {
             int accionesIndividuo = nodoIndividuoActual.getArcosSalida().getNumeroElementos();
             for (int j = 0; j != accionesIndividuo; j ++) {
                 String accionActual = nodoIndividuoActual.getArcosSalida().getElemento(j).getData().getOtroVertice(nodoIndividuoActual).getDato();
-                int indexOfFinalAccion = Math.min(accionActual.substring(8).indexOf(" "), accionActual.indexOf(","));
-                String accionReducida = accionActual.substring(8, indexOfFinalAccion);
-                if (accionReducida.equals("actualizarTV")) {
-                    int indexOfInicioTV = accionActual.indexOf("(") + 1;
-                    int indexOfFinalTV = accionActual.indexOf(")");
-                    int TVAccion = Integer.parseInt(accionActual.substring(indexOfInicioTV, indexOfFinalTV));
-                    if (TVAccion > TVMaximo) {
-                        idIndividuoTVMaximo = Integer.parseInt(nodoIndividuoActual.getDato().substring(10));
+                if (!accionActual.equals("individuos")) {
+                    int indexOfFinalAccion = Math.min(accionActual.substring(8).indexOf(" ") + 8, accionActual.indexOf(","));
+                    String accionReducida = accionActual.substring(8, indexOfFinalAccion);
+                    if (accionReducida.equals("actualizarTV")) {
+                        int indexOfInicioTV = accionActual.indexOf("(") + 1;
+                        int indexOfFinalTV = accionActual.indexOf(")");
+                        int TVAccion = Integer.parseInt(accionActual.substring(indexOfInicioTV, indexOfFinalTV));
+                        if (TVAccion > TVMaximo) {
+                            idIndividuoTVMaximo = Integer.parseInt(nodoIndividuoActual.getDato().substring(10));
+                        }
                     }
                 }
             }
@@ -168,14 +174,16 @@ public class informacionPartidaMain {
         int accionesIndividuo = nodoIndividuoTVMaximo.getArcosSalida().getNumeroElementos();
         for (int j = 0; j != accionesIndividuo; j ++) {
             String accionActual = nodoIndividuoTVMaximo.getArcosSalida().getElemento(j).getData().getOtroVertice(nodoIndividuoTVMaximo).getDato();
-            int indexOfFinalAccion = Math.min(accionActual.substring(8).indexOf(" "), accionActual.indexOf(","));
-            String accionReducida = accionActual.substring(8, indexOfFinalAccion);
-            if (accionReducida.equals("actualizarTV")) {
-                int indexOfInicioTV = accionActual.indexOf("(") + 1;
-                int indexOfFinalTV = accionActual.indexOf(")");
-                int TVAccion = Integer.parseInt(accionActual.substring(indexOfInicioTV, indexOfFinalTV));
-                if (TVAccion > TVMaximo) {
-                    TVMaximo = TVAccion;
+            if (!accionActual.equals("individuos")) {
+                int indexOfFinalAccion = Math.min(accionActual.substring(8).indexOf(" ") + 8, accionActual.indexOf(","));
+                String accionReducida = accionActual.substring(8, indexOfFinalAccion);
+                if (accionReducida.equals("actualizarTV")) {
+                    int indexOfInicioTV = accionActual.indexOf("(") + 1;
+                    int indexOfFinalTV = accionActual.indexOf(")");
+                    int TVAccion = Integer.parseInt(accionActual.substring(indexOfInicioTV, indexOfFinalTV));
+                    if (TVAccion > TVMaximo) {
+                        TVMaximo = TVAccion;
+                    }
                 }
             }
         }

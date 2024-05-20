@@ -8408,3 +8408,1273 @@
 2024-05-20 16:05:12.701 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
 2024-05-20 16:05:12.701 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
 2024-05-20 16:05:12.701 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:34:49.489 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 1
+2024-05-20 17:34:49.490 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 1
+2024-05-20 17:34:50.378 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 2
+2024-05-20 17:34:50.378 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 2
+2024-05-20 17:34:52.116 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 3
+2024-05-20 17:34:52.116 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 3
+2024-05-20 17:34:52.940 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 4
+2024-05-20 17:34:52.941 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 4
+2024-05-20 17:34:53.835 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:34:53.835 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:34:53.835 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:34:53.835 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:34:53.845 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 3, 2
+2024-05-20 17:34:53.849 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 5, 2
+2024-05-20 17:34:53.856 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 5, 5
+2024-05-20 17:34:53.863 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 5, 5
+2024-05-20 17:34:53.865 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 5
+2024-05-20 17:34:53.865 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 5
+2024-05-20 17:34:53.865 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@48f88c9e se ha reproducido con el individuo 4
+2024-05-20 17:34:53.865 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 3 ha muerto
+2024-05-20 17:34:53.872 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 4 ha muerto
+2024-05-20 17:34:55.335 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:34:55.335 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:34:55.335 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:34:55.340 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 4, 3
+2024-05-20 17:34:55.565 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 3
+2024-05-20 17:34:55.776 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 4
+2024-05-20 17:34:55.776 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 5
+2024-05-20 17:34:55.776 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:34:55.780 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 1 ha muerto
+2024-05-20 17:34:55.783 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 2 ha muerto
+2024-05-20 17:34:56.836 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:34:57.342 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 3
+2024-05-20 17:34:57.342 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 5
+2024-05-20 17:34:57.342 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:34:58.337 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:34:59.064 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 2
+2024-05-20 17:34:59.065 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 5
+2024-05-20 17:34:59.065 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:34:59.838 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:00.894 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 1
+2024-05-20 17:35:00.895 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 5
+2024-05-20 17:35:00.896 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:35:00.903 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 5
+2024-05-20 17:35:00.903 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:35:01.338 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:02.667 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 2
+2024-05-20 17:35:02.667 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 5
+2024-05-20 17:35:02.667 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:35:02.838 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:04.541 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 1
+2024-05-20 17:35:04.541 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 5
+2024-05-20 17:35:04.541 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:35:04.607 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:06.628 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 0
+2024-05-20 17:35:06.628 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.tesoro - Efecto de tesoro aplicado a 5
+2024-05-20 17:35:06.628 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de reproducción modificada
+2024-05-20 17:35:06.635 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 5
+2024-05-20 17:35:06.635 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:35:06.707 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:09.327 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 1
+2024-05-20 17:35:09.328 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 5
+2024-05-20 17:35:09.328 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:35:09.370 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:12.151 - WARN  - es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo - El nodo es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@200e24bd (casillaTablero@157df11f) no existe o es inaccesible desde es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo@200e24bd (casillaTablero@157df11f)
+2024-05-20 17:35:12.152 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 5
+2024-05-20 17:35:12.152 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:35:12.193 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:15.778 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 2
+2024-05-20 17:35:15.779 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.tesoro - Efecto de tesoro aplicado a 5
+2024-05-20 17:35:15.779 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de reproducción modificada
+2024-05-20 17:35:15.846 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:19.178 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 1
+2024-05-20 17:35:19.220 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:23.545 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 0
+2024-05-20 17:35:23.545 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 5
+2024-05-20 17:35:23.545 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:35:23.549 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 5
+2024-05-20 17:35:23.549 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:35:23.549 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 5 se ha clonado
+2024-05-20 17:35:23.549 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 6
+2024-05-20 17:35:23.549 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 6 ha nacido
+2024-05-20 17:35:23.574 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:23.574 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:28.123 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 1
+2024-05-20 17:35:45.747 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 1
+2024-05-20 17:35:45.748 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 1
+2024-05-20 17:35:46.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 2
+2024-05-20 17:35:46.494 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 2
+2024-05-20 17:35:48.743 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 3
+2024-05-20 17:35:48.743 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 3
+2024-05-20 17:35:50.550 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 4
+2024-05-20 17:35:50.550 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 4
+2024-05-20 17:35:51.090 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:51.090 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:51.090 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:51.091 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:51.101 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 5, 2
+2024-05-20 17:35:51.104 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 5, 1
+2024-05-20 17:35:51.108 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 5, 5
+2024-05-20 17:35:51.112 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 2, 6
+2024-05-20 17:35:52.591 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:52.591 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:52.592 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:52.592 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:52.597 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 4, 3
+2024-05-20 17:35:52.665 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 1
+2024-05-20 17:35:52.669 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 4, 4
+2024-05-20 17:35:52.673 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 3, 5
+2024-05-20 17:35:54.092 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:54.092 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:54.093 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:54.093 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:54.098 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 5, 3
+2024-05-20 17:35:54.194 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 1
+2024-05-20 17:35:54.202 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo se ha movido a 3, 4
+2024-05-20 17:35:54.205 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 4, 6
+2024-05-20 17:35:54.206 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 2
+2024-05-20 17:35:54.206 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:35:54.210 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 3
+2024-05-20 17:35:54.210 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:35:54.210 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 3
+2024-05-20 17:35:54.210 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 3
+2024-05-20 17:35:54.214 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 3 ha muerto
+2024-05-20 17:35:54.221 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 3
+2024-05-20 17:35:55.592 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:55.593 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:55.593 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:55.593 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:55.598 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 6, 4
+2024-05-20 17:35:55.710 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 0
+2024-05-20 17:35:55.717 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 3, 5
+2024-05-20 17:35:55.721 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 4, 5
+2024-05-20 17:35:57.093 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:57.094 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:57.094 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:57.094 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:57.098 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 5, 4
+2024-05-20 17:35:57.277 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 0
+2024-05-20 17:35:57.280 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 4, 4
+2024-05-20 17:35:57.284 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 5, 5
+2024-05-20 17:35:58.594 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:58.594 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:58.595 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:58.595 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:35:58.605 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 6, 5
+2024-05-20 17:35:58.840 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 1
+2024-05-20 17:35:58.847 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 5, 5
+2024-05-20 17:35:58.857 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 6, 6
+2024-05-20 17:35:58.857 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 1
+2024-05-20 17:35:58.857 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:35:58.857 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 1
+2024-05-20 17:35:58.857 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 1
+2024-05-20 17:35:58.860 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 1 ha muerto
+2024-05-20 17:35:58.868 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 1
+2024-05-20 17:35:58.872 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 2
+2024-05-20 17:35:58.872 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:35:58.875 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 3
+2024-05-20 17:35:58.875 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:00.094 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:00.094 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:00.094 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:00.094 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:00.380 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 6, 0
+2024-05-20 17:36:00.388 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 6, 4
+2024-05-20 17:36:00.394 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 7, 5
+2024-05-20 17:36:00.666 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 5
+2024-05-20 17:36:00.666 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.tesoro - Efecto de tesoro aplicado a 2
+2024-05-20 17:36:00.666 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de reproducción modificada
+2024-05-20 17:36:00.670 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 3
+2024-05-20 17:36:00.670 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:00.673 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 1
+2024-05-20 17:36:00.673 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:36:00.677 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 1
+2024-05-20 17:36:00.677 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:36:00.677 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 1 se ha clonado
+2024-05-20 17:36:00.677 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 2
+2024-05-20 17:36:00.678 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 2 ha nacido
+2024-05-20 17:36:06.734 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:06.734 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:06.734 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:06.734 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:06.734 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:06.998 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 6, 1
+2024-05-20 17:36:07.002 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 5, 3
+2024-05-20 17:36:07.005 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 6, 4
+2024-05-20 17:36:07.272 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 4
+2024-05-20 17:36:07.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 4
+2024-05-20 17:36:07.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 1 ha muerto
+2024-05-20 17:36:07.542 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 2 ha muerto
+2024-05-20 17:36:08.234 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:08.234 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:08.234 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:08.508 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 7, 2
+2024-05-20 17:36:08.515 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 6, 3
+2024-05-20 17:36:08.518 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 5, 3
+2024-05-20 17:36:08.518 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 4
+2024-05-20 17:36:08.519 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:09.735 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:09.735 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:09.735 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:10.014 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 8, 3
+2024-05-20 17:36:10.022 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 7, 4
+2024-05-20 17:36:10.025 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 6, 4
+2024-05-20 17:36:10.025 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 2
+2024-05-20 17:36:10.025 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:11.235 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:11.235 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:11.236 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:11.511 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 8, 2
+2024-05-20 17:36:11.518 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 6, 3
+2024-05-20 17:36:11.521 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 5, 3
+2024-05-20 17:36:11.522 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.montaña - Efecto de montaña aplicado a 4
+2024-05-20 17:36:11.522 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:11.522 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 4 ha muerto
+2024-05-20 17:36:12.736 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:12.736 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:13.121 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 8, 1
+2024-05-20 17:36:13.127 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 4, 3
+2024-05-20 17:36:13.128 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 3
+2024-05-20 17:36:13.128 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:14.237 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:14.237 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:14.573 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 8, 0
+2024-05-20 17:36:14.576 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 3, 3
+2024-05-20 17:36:14.576 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 2
+2024-05-20 17:36:14.576 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:15.737 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:15.737 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:16.118 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 7, 1
+2024-05-20 17:36:16.122 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 2, 2
+2024-05-20 17:36:17.238 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:17.238 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:17.647 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 6, 2
+2024-05-20 17:36:17.650 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 3, 3
+2024-05-20 17:36:23.984 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:23.984 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:24.371 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 3
+2024-05-20 17:36:24.378 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 4, 4
+2024-05-20 17:36:25.486 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:25.486 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:25.920 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 6, 2
+2024-05-20 17:36:25.923 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 3, 5
+2024-05-20 17:36:25.923 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 2
+2024-05-20 17:36:25.923 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:26.986 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:26.986 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:27.369 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 3
+2024-05-20 17:36:27.373 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 2, 4
+2024-05-20 17:36:28.486 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:28.486 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:28.868 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 3
+2024-05-20 17:36:28.872 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 3, 5
+2024-05-20 17:36:28.872 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 2
+2024-05-20 17:36:28.872 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:28.878 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 2
+2024-05-20 17:36:28.878 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:29.987 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:29.987 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:30.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 4
+2024-05-20 17:36:30.368 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 2, 4
+2024-05-20 17:36:30.368 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 2
+2024-05-20 17:36:30.368 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:31.487 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:31.487 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:31.785 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 5
+2024-05-20 17:36:31.789 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 3, 5
+2024-05-20 17:36:31.789 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 2
+2024-05-20 17:36:31.789 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:31.796 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 2
+2024-05-20 17:36:31.796 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:32.987 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:32.987 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:33.245 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 6
+2024-05-20 17:36:33.252 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoNormal - El individuo se ha movido a 2, 4
+2024-05-20 17:36:33.252 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 2
+2024-05-20 17:36:33.252 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:34.488 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:34.489 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:34.489 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 3 ha muerto
+2024-05-20 17:36:34.754 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 2, 7
+2024-05-20 17:36:34.757 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 2
+2024-05-20 17:36:34.757 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:36:35.988 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:36.243 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 8
+2024-05-20 17:36:36.243 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 2
+2024-05-20 17:36:36.243 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:36:37.489 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:37.720 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 9
+2024-05-20 17:36:37.720 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.tesoro - Efecto de tesoro aplicado a 2
+2024-05-20 17:36:37.720 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de reproducción modificada
+2024-05-20 17:36:38.990 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:36:39.181 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 8
+2024-05-20 17:36:44.550 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:36:44.552 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - No se ha encontrado el nodo correcto al que conectar la acción
+2024-05-20 17:37:24.367 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:24.578 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 7
+2024-05-20 17:37:25.869 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:26.116 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 6
+2024-05-20 17:37:26.116 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 2
+2024-05-20 17:37:26.117 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:37:27.369 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:27.617 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 7
+2024-05-20 17:37:40.472 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 3
+2024-05-20 17:37:40.472 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 3
+2024-05-20 17:37:41.117 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:41.117 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:41.393 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 6, 8
+2024-05-20 17:37:41.686 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 6, 4
+2024-05-20 17:37:41.686 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.tesoro - Efecto de tesoro aplicado a 2
+2024-05-20 17:37:41.686 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de reproducción modificada
+2024-05-20 17:37:41.692 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 3
+2024-05-20 17:37:41.692 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:41.692 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 3 se ha clonado
+2024-05-20 17:37:41.692 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 4
+2024-05-20 17:37:41.692 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 4 ha nacido
+2024-05-20 17:37:42.618 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:42.619 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:42.619 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:42.940 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 6, 9
+2024-05-20 17:37:43.238 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 3
+2024-05-20 17:37:43.534 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 5, 3
+2024-05-20 17:37:43.534 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.tesoro - Efecto de tesoro aplicado a 2
+2024-05-20 17:37:43.534 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de reproducción modificada
+2024-05-20 17:37:43.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 5
+2024-05-20 17:37:43.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 5
+2024-05-20 17:37:43.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@1ae5e904 se ha reproducido con el individuo 4
+2024-05-20 17:37:43.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 6
+2024-05-20 17:37:43.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 6
+2024-05-20 17:37:43.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@5f0cbb0e se ha reproducido con el individuo 3
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 3
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 3 se ha clonado
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 7
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 7 ha nacido
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 4
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 4 se ha clonado
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 8
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 8 ha nacido
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 5
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 5 se ha clonado
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 9
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 9 ha nacido
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 6
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 6 se ha clonado
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 10
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 10 ha nacido
+2024-05-20 17:37:43.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 3 ha muerto
+2024-05-20 17:37:43.563 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 4 ha muerto
+2024-05-20 17:37:43.583 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 7 ha muerto
+2024-05-20 17:37:43.600 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 8 ha muerto
+2024-05-20 17:37:43.614 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 5 ha muerto
+2024-05-20 17:37:44.118 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:44.118 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:44.118 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:44.118 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:44.420 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 7, 9
+2024-05-20 17:37:44.730 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 2
+2024-05-20 17:37:45.043 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 2
+2024-05-20 17:37:45.353 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 2
+2024-05-20 17:37:45.353 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.tesoro - Efecto de tesoro aplicado a 6
+2024-05-20 17:37:45.353 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de reproducción modificada
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 11
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 11
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@3b37f97f se ha reproducido con el individuo 9
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 12
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 12
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@2b424439 se ha reproducido con el individuo 6
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 6
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 6 se ha clonado
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 13
+2024-05-20 17:37:45.363 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 13 ha nacido
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 9
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 9 se ha clonado
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 14
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 14 ha nacido
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 10
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 10 se ha clonado
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 15
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 15 ha nacido
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 11
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 11 se ha clonado
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 16
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 16 ha nacido
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 12
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 12 se ha clonado
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 17
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 17 ha nacido
+2024-05-20 17:37:45.364 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 6 ha muerto
+2024-05-20 17:37:45.394 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 9 ha muerto
+2024-05-20 17:37:45.421 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 10 ha muerto
+2024-05-20 17:37:45.444 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 13 ha muerto
+2024-05-20 17:37:45.464 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 14 ha muerto
+2024-05-20 17:37:45.480 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 15 ha muerto
+2024-05-20 17:37:45.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 11 ha muerto
+2024-05-20 17:37:45.618 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:45.618 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:45.618 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:45.618 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:45.945 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 8, 8
+2024-05-20 17:37:46.286 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 1
+2024-05-20 17:37:46.626 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 1
+2024-05-20 17:37:46.963 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 1
+2024-05-20 17:37:46.963 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 2
+2024-05-20 17:37:46.964 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:37:46.967 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 18
+2024-05-20 17:37:46.967 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 18
+2024-05-20 17:37:46.967 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@36fcfbb2 se ha reproducido con el individuo 16
+2024-05-20 17:37:46.967 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 19
+2024-05-20 17:37:46.967 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 19
+2024-05-20 17:37:46.967 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@74309d4e se ha reproducido con el individuo 12
+2024-05-20 17:37:46.967 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 12
+2024-05-20 17:37:46.967 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:46.967 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 12 se ha clonado
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 20
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 20 ha nacido
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 16
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 16 se ha clonado
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 21
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 21 ha nacido
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 17
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 17 se ha clonado
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 22
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 22 ha nacido
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 18
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 18 se ha clonado
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 23
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 23 ha nacido
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 19
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 19 se ha clonado
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 24
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 24 ha nacido
+2024-05-20 17:37:46.968 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 12 ha muerto
+2024-05-20 17:37:46.997 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 16 ha muerto
+2024-05-20 17:37:47.024 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 17 ha muerto
+2024-05-20 17:37:47.048 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 20 ha muerto
+2024-05-20 17:37:47.068 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 21 ha muerto
+2024-05-20 17:37:47.086 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 22 ha muerto
+2024-05-20 17:37:47.100 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 18 ha muerto
+2024-05-20 17:37:47.121 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:47.121 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:47.121 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:47.121 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:47.439 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 9, 9
+2024-05-20 17:37:47.779 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 0
+2024-05-20 17:37:48.112 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 0
+2024-05-20 17:37:48.452 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 4, 0
+2024-05-20 17:37:48.452 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 2
+2024-05-20 17:37:48.453 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:37:48.456 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 19
+2024-05-20 17:37:48.456 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:37:48.465 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 25
+2024-05-20 17:37:48.465 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 25
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@306195fb se ha reproducido con el individuo 23
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 26
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 26
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@64baa469 se ha reproducido con el individuo 19
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 19
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 19 se ha clonado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 27
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 27 ha nacido
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 23
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 23 se ha clonado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 28
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 28 ha nacido
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 24
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 24 se ha clonado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 29
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 29 ha nacido
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 25
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 25 se ha clonado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 30
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 30 ha nacido
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 26
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 26 se ha clonado
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 31
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 31 ha nacido
+2024-05-20 17:37:48.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 23 ha muerto
+2024-05-20 17:37:48.495 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 24 ha muerto
+2024-05-20 17:37:48.521 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 28 ha muerto
+2024-05-20 17:37:48.543 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 29 ha muerto
+2024-05-20 17:37:48.562 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 25 ha muerto
+2024-05-20 17:37:48.578 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 26 ha muerto
+2024-05-20 17:37:48.591 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 30 ha muerto
+2024-05-20 17:37:48.619 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:48.619 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:48.619 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:48.619 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:48.963 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 9, 8
+2024-05-20 17:37:49.299 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 1
+2024-05-20 17:37:49.636 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 1
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 3, 1
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 32
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 32
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@306195fb se ha reproducido con el individuo 27
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 33
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 33
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@1101b3ea se ha reproducido con el individuo 19
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 19
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 19 se ha clonado
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 34
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 34 ha nacido
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 27
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 27 se ha clonado
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 35
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 35 ha nacido
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 31
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:49.974 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 31 se ha clonado
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 36
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 36 ha nacido
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 32
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 32 se ha clonado
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 37
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 37 ha nacido
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 33
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 33 se ha clonado
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 38
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 38 ha nacido
+2024-05-20 17:37:49.975 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 31 ha muerto
+2024-05-20 17:37:50.004 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 36 ha muerto
+2024-05-20 17:37:50.030 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 32 ha muerto
+2024-05-20 17:37:50.053 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 33 ha muerto
+2024-05-20 17:37:50.073 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 37 ha muerto
+2024-05-20 17:37:50.090 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 38 ha muerto
+2024-05-20 17:37:50.103 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 19 ha muerto
+2024-05-20 17:37:50.142 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:50.142 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:50.142 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:50.142 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:50.568 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 8, 7
+2024-05-20 17:37:51.002 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 2, 2
+2024-05-20 17:37:51.434 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 2, 2
+2024-05-20 17:37:51.864 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 2, 2
+2024-05-20 17:37:51.864 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 27
+2024-05-20 17:37:51.864 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:37:51.878 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 39
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 39
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@1101b3ea se ha reproducido con el individuo 34
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Ha nacido el individuo 40
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 40
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado@69d7e36c se ha reproducido con el individuo 27
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 27
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 27 se ha clonado
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 41
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 41 ha nacido
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 34
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 34 se ha clonado
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 42
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 42 ha nacido
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 39
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 39 se ha clonado
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 43
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 43 ha nacido
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 40
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 40 se ha clonado
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 44
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 44 ha nacido
+2024-05-20 17:37:51.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 27 ha muerto
+2024-05-20 17:37:51.917 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 34 ha muerto
+2024-05-20 17:37:51.952 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 35 ha muerto
+2024-05-20 17:37:51.981 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 39 ha muerto
+2024-05-20 17:37:52.006 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 40 ha muerto
+2024-05-20 17:37:52.019 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 41 ha muerto
+2024-05-20 17:37:52.048 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:52.048 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:52.048 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:52.048 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida actualizado
+2024-05-20 17:37:52.492 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 7, 6
+2024-05-20 17:37:52.955 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 1, 3
+2024-05-20 17:37:53.411 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 1, 3
+2024-05-20 17:37:53.868 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuoAvanzado - El individuo se ha movido a 1, 3
+2024-05-20 17:37:53.868 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.comida - Efecto de comida aplicado a 2
+2024-05-20 17:37:53.868 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:37:53.875 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.biblioteca - Efecto de biblioteca aplicado a 2
+2024-05-20 17:37:53.876 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Probabilidad de clonación modificada
+2024-05-20 17:37:53.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.agua - Efecto de agua aplicado a 42
+2024-05-20 17:37:53.879 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Tiempo de vida modificado
+2024-05-20 17:37:53.889 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 42 ha muerto
+2024-05-20 17:37:53.895 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 43 ha muerto
+2024-05-20 17:37:53.898 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 44
+2024-05-20 17:37:53.898 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Id modificado
+2024-05-20 17:37:53.898 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 44 se ha clonado
+2024-05-20 17:37:53.898 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - Se ha creado una copia del individuo 45
+2024-05-20 17:37:53.898 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo - El individuo 45 ha nacido
+2024-05-20 17:44:53.902 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.906 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:44:53.907 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.908 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.908 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:44:53.909 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:44:53.909 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.909 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:44:53.910 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:44:53.910 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:44:53.910 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:44:53.911 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.912 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.913 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.913 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:44:53.913 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.913 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.914 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:44:53.914 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:44:53.914 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:53.914 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:44:53.914 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:44:53.914 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:44:53.915 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:44:53.915 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:44:59.141 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:44:59.142 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:44:59.142 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:44:59.142 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:44:59.143 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:45:13.420 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.425 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:45:13.426 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.426 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.427 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:45:13.428 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:45:13.428 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.428 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:45:13.430 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:45:13.430 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:45:13.430 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:45:13.431 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.433 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.433 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.433 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:45:13.434 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.434 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.434 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:45:13.434 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:45:13.435 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:13.435 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:45:13.435 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:45:13.435 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:45:13.436 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:45:13.436 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:45:16.113 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:45:16.114 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:45:16.114 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:45:16.115 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:45:16.115 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:50:37.379 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.383 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:50:37.385 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.385 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.385 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:50:37.386 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:50:37.387 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.387 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:50:37.388 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:50:37.388 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:50:37.389 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:50:37.389 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.390 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.391 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.391 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:50:37.391 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.391 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.391 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:50:37.392 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:50:37.392 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.392 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:50:37.392 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:50:37.392 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:50:37.393 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:50:37.393 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:50:37.401 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:50:37.401 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:50:37.402 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:50:37.402 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:50:37.402 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:55:31.615 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.618 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:55:31.620 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.620 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.620 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:55:31.621 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:55:31.621 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.622 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:55:31.623 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:55:31.623 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:55:31.623 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:55:31.624 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.625 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.626 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.626 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:55:31.626 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.626 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.626 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:55:31.627 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:55:31.627 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.627 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:55:31.627 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:55:31.627 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:55:31.627 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:55:31.627 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:55:31.635 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:55:31.636 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:55:31.636 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:55:31.637 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:55:31.637 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:12.462 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.466 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:12.467 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.468 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.468 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:12.469 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:12.470 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.470 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:12.472 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:12.472 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:12.472 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:12.473 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.475 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.475 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.475 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:12.476 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.476 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.476 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:12.476 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:12.476 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.476 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:12.476 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:12.477 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:12.477 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:12.477 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:12.485 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:12.485 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:12.486 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:12.487 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:12.487 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:22.526 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.530 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:22.531 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.532 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.532 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:22.533 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:22.533 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.533 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:22.534 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:22.535 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:22.535 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:22.535 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.537 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.537 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.537 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:22.537 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.538 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.538 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:22.538 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:22.538 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.538 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:22.538 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:22.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:22.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:22.539 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:22.546 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:22.547 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:22.548 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:22.548 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:22.548 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:53.007 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.011 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:53.013 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.013 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.013 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:53.014 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:53.015 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.015 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:53.016 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:53.016 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:53.016 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:53.017 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.019 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.019 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.019 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:53.019 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.019 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.019 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:53.020 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:53.020 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.020 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:53.020 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:56:53.020 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:56:53.021 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:56:53.021 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:56:53.028 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:53.029 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:53.030 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:53.030 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:56:53.030 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:10.898 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.902 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:10.903 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.903 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.904 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:10.905 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:10.905 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.905 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:10.907 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:10.907 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:10.907 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:10.907 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.909 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.909 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.909 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:10.909 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.910 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.910 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:10.910 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:10.910 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.910 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:10.911 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:10.911 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:10.911 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:10.911 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:10.919 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:10.919 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:10.919 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:10.920 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:10.920 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:21.699 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.703 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:21.704 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.704 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.705 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:21.706 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:21.706 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.706 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:21.707 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:21.708 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:21.708 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:21.708 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.710 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.710 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.710 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:21.711 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.711 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.711 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:21.711 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:21.711 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.712 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:21.712 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:21.712 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:21.712 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:21.712 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:21.730 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:21.730 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:21.731 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:21.731 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:21.731 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:54.197 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.200 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:54.202 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.202 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.202 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:54.204 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:54.204 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.204 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:54.206 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:54.206 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:54.206 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:54.206 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.208 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.208 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.208 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:54.208 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.208 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.209 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:54.209 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:54.209 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.209 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:54.209 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 17:58:54.210 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 17:58:54.210 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 17:58:54.210 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 17:58:54.217 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:54.218 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:54.218 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:54.218 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 17:58:54.219 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:29:39.527 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.532 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:29:39.535 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.535 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.535 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:29:39.537 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:29:39.538 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.538 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:29:39.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:29:39.540 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:29:39.541 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:29:39.541 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.543 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.543 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.543 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:29:39.543 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.543 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.544 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:29:39.544 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:29:39.544 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.544 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:29:39.544 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:29:39.545 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:29:39.545 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:29:39.545 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:29:39.558 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:29:39.559 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:29:39.560 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:29:39.560 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:29:39.560 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:10.219 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.223 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:10.224 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.225 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.225 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:10.226 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:10.226 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.227 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:10.228 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:10.228 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:10.228 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:10.229 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.230 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.230 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.231 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:10.231 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.231 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.231 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:10.231 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:10.231 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.232 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:10.232 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:10.232 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:10.232 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:10.232 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:10.242 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:10.242 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:10.243 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:10.243 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:10.243 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:25.767 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.771 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:25.773 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.773 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.773 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:25.775 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:25.776 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.776 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:25.778 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:25.779 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:25.779 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:25.779 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.781 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.782 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.782 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:25.782 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.782 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.782 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:25.783 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:25.783 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.783 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:25.783 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:25.783 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:25.783 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:25.784 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:25.793 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:25.794 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:25.795 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:25.795 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:25.795 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:36.755 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.759 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:36.761 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.761 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.761 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:36.763 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:36.763 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.763 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:36.764 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:36.764 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:36.764 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:36.765 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.766 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.766 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.767 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:36.767 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.767 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.767 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:36.767 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:36.768 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.768 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:36.768 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:32:36.768 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:32:36.768 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:32:36.768 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:32:36.779 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:36.780 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:36.780 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:36.781 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:32:36.781 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:33:51.481 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.485 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:33:51.486 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.487 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.487 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:33:51.488 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:33:51.488 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.489 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:33:51.490 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:33:51.490 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:33:51.490 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:33:51.490 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.492 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:33:51.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:33:51.493 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:33:51.494 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.494 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:33:51.494 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:33:51.494 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:33:51.494 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:33:51.495 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:33:51.507 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:33:51.507 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:33:51.508 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:33:51.508 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:33:51.508 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:37:56.380 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.385 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:37:56.387 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.388 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.388 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:37:56.391 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:37:56.391 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.392 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:37:56.393 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:37:56.394 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:37:56.394 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:37:56.394 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.396 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.396 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.396 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:37:56.396 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.397 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.397 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:37:56.397 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:37:56.397 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.397 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:37:56.398 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:37:56.398 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:37:56.398 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:37:56.398 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:37:56.415 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:37:56.415 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:37:56.417 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:37:56.417 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:37:56.417 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:53:50.574 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.578 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:53:50.579 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.579 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.580 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:53:50.581 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:53:50.581 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.581 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:53:50.582 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:53:50.582 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:53:50.583 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:53:50.583 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.584 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:53:50.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:53:50.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:53:50.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:53:50.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:53:50.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:53:50.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:53:50.587 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:53:50.595 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:53:50.595 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:53:50.596 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:53:50.596 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:53:50.596 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:08.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.590 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:08.591 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.591 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.592 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:54:08.593 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:08.593 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.594 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:54:08.595 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:54:08.595 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:54:08.595 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:08.595 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.597 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.597 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.598 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:08.598 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.598 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.598 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:54:08.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:08.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:54:08.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:54:08.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:54:08.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:08.600 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:08.609 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:08.609 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:08.610 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:08.610 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:08.610 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:20.120 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.123 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:20.124 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.124 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.124 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:54:20.125 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:20.126 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.126 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:54:20.127 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:54:20.127 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:54:20.128 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:20.128 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.130 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.130 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.130 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:20.130 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.130 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.130 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:54:20.131 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:20.131 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.131 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:54:20.131 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:54:20.131 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:54:20.131 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:54:20.132 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:54:20.139 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:20.139 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:20.140 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:20.140 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:54:20.140 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:55:46.574 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.578 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:55:46.579 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.579 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.579 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:55:46.580 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:55:46.581 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.581 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:55:46.582 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:55:46.582 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:55:46.582 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:55:46.582 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.584 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.584 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:55:46.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:55:46.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:55:46.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:55:46.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:55:46.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:55:46.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:55:46.586 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:55:46.595 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:55:46.595 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:55:46.596 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:55:46.596 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:55:46.596 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:56:20.585 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.590 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:56:20.592 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.593 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.593 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:56:20.594 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:56:20.595 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.595 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:56:20.596 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:56:20.597 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:56:20.597 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:56:20.597 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:56:20.599 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.600 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.600 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:56:20.600 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:56:20.600 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.600 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:56:20.600 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:56:20.601 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:56:20.601 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:56:20.601 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:56:20.609 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:56:20.609 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:56:20.610 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:56:20.611 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:56:20.611 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:57:00.778 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.782 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:57:00.784 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.785 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.785 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:57:00.786 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:57:00.786 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.786 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:57:00.787 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:57:00.788 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:57:00.788 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:57:00.788 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.790 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.790 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.790 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:57:00.790 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.790 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.791 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:57:00.791 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:57:00.791 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.791 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:57:00.791 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso comida a Json
+2024-05-20 20:57:00.792 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso montaña a Json
+2024-05-20 20:57:00.792 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso tesoro a Json
+2024-05-20 20:57:00.792 - DEBUG - es.uah.matcomp.mp.simulaciondevida.elementos.entorno.gsonAdapterRecurso - Empezando deserialización de recurso agua a Json
+2024-05-20 20:57:00.799 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:57:00.799 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:57:00.799 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:57:00.800 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2
+2024-05-20 20:57:00.800 - ERROR - es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida - El número de padres no es 2

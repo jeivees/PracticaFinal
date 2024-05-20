@@ -7,7 +7,6 @@ import es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.arboles.bst.ArbolBinario;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.arboles.bst.nodoBST;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.HashMap;
-import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
