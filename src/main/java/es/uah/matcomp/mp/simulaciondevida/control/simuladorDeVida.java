@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.simulaciondevida;
+package es.uah.matcomp.mp.simulaciondevida.control;
 
 import es.uah.matcomp.mp.simulaciondevida.control.bucleDeControl;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
@@ -46,7 +46,7 @@ public class simuladorDeVida {
         threadBucle.start();
     }
 
-    public void finalizarPartida () {
+    public void crearInfoPartida () {
         arbolesGenealogicos = crearArbolesGenealogicos();
         grafoAcciones = crearGrafoAcciones();
     }
@@ -82,44 +82,48 @@ public class simuladorDeVida {
 
     private Grafo<String> crearGrafoAcciones () {
         Grafo<String> grafoAcciones = new Grafo<>(false);
-        Nodo<String> accion = new Nodo<>("accion");
-        grafoAcciones.addNodo(accion);
 
-        grafoAcciones.addNodo(new Nodo<>("nacer"), accion, 1);
-        grafoAcciones.addNodo(new Nodo<>("morir"), accion, 1);
+        grafoAcciones.addNodo(new Nodo<>("nacer"));
+        grafoAcciones.addNodo(new Nodo<>("morir"));
 
-        Nodo<String> aplicarRecurso = new Nodo<>("aplicarRecurso");
-        grafoAcciones.addNodo(aplicarRecurso, accion, 1);
-        grafoAcciones.addNodo(new Nodo<>("agua"), aplicarRecurso, 1);
-        grafoAcciones.addNodo(new Nodo<>("comida"), aplicarRecurso, 1);
-        grafoAcciones.addNodo(new Nodo<>("montaña"), aplicarRecurso, 1);
-        grafoAcciones.addNodo(new Nodo<>("actualizarTV"), accion, 1);
-        grafoAcciones.addNodo(new Nodo<>("tesoro"), aplicarRecurso, 1);
-        grafoAcciones.addNodo(new Nodo<>("actualizarPR"), accion, 1);
-        grafoAcciones.addNodo(new Nodo<>("biblioteca"), aplicarRecurso, 1);
-        grafoAcciones.addNodo(new Nodo<>("actualizarPC"), accion, 1);
-        grafoAcciones.addNodo(new Nodo<>("pozo"), aplicarRecurso, 1);
+        grafoAcciones.addNodo(new Nodo<>("agua"));
+        grafoAcciones.addNodo(new Nodo<>("comida"));
+        grafoAcciones.addNodo(new Nodo<>("montaña"));
+        grafoAcciones.addNodo(new Nodo<>("actualizarTV"));
 
-        grafoAcciones.addNodo(new Nodo<>("moverse"), accion, 1);
+        grafoAcciones.addNodo(new Nodo<>("tesoro"));
+        grafoAcciones.addNodo(new Nodo<>("actualizarPR"));
 
-        grafoAcciones.addNodo(new Nodo<>("reproducirse"), accion, 1);
-        grafoAcciones.addNodo(new Nodo<>("clonarse"), accion, 1);
+        grafoAcciones.addNodo(new Nodo<>("biblioteca"));
+        grafoAcciones.addNodo(new Nodo<>("actualizarPC"));
 
+        grafoAcciones.addNodo(new Nodo<>("pozo"));
+
+        grafoAcciones.addNodo(new Nodo<>("moverse"));
+
+        grafoAcciones.addNodo(new Nodo<>("reproducirse"));
+        grafoAcciones.addNodo(new Nodo<>("clonarse"));
+
+        Nodo<String> nodoIndividuos = new Nodo<>("individuos");
+        grafoAcciones.addNodo(nodoIndividuos);
 
         try {
             int totalIndividuos = model.getHistorialIndividuos().getNumeroElementos();
             for (int i = 0; i != totalIndividuos; i++) {
                 individuo individuoActual = model.getHistorialIndividuos().getElemento(i).getData();
                 Nodo<String> nodoIndividuo = new Nodo<>(STR."Individuo \{individuoActual.getId()}");
+                grafoAcciones.addArco(1, nodoIndividuo, nodoIndividuos);
                 Cola<String> accionesIndividuo = individuoActual.getAcciones();
                 int numeroAcciones = accionesIndividuo.getNumeroElementos();
+                Cola<String> colaAux = new Cola<>();
                 for (int j = 0; j != numeroAcciones; j++) {
                     String accionActual = accionesIndividuo.poll();
+                    colaAux.add(accionActual);
                     Nodo<String> nodoAccion = new Nodo<>(accionActual);
 
                     grafoAcciones.addArco(1, nodoAccion, nodoIndividuo); // añadir arco de la accion al individuo
 
-                    int indexOfFinAccion = accionActual.indexOf(",");
+                    int indexOfFinAccion = Math.min(accionActual.indexOf(","), accionActual.substring(8).indexOf(" ") + 8);
                     String accionReducida = accionActual.substring(8, indexOfFinAccion);
                     grafoAcciones.addArco(1, nodoAccion, grafoAcciones.getNodo(accionReducida)); // añadir arco de la accion al tipo de la acción
 
@@ -131,6 +135,9 @@ public class simuladorDeVida {
                     } else {
                         grafoAcciones.addArco(1, nodoAccion, nodoTurno); // añadir arco de la accion al turno
                     }
+                }
+                for (int k = 0; k != numeroAcciones; k++) {
+                    accionesIndividuo.add(colaAux.poll());
                 }
             }
         } catch (Exception e) {
@@ -166,5 +173,9 @@ public class simuladorDeVida {
 
     public HashMap<individuo, ArbolBinario<individuo>> getArbolesGenealogicos() {
         return arbolesGenealogicos;
+    }
+
+    public Grafo<String> getGrafoAcciones() {
+        return grafoAcciones;
     }
 }

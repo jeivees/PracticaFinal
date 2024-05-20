@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class menuPrincipalApplication extends Application {
+public class mainApplication extends Application {
     /**
      * verificar que la suma de las probabilidades de los recursos no sea mayor que 100
      * añadir boton salir del juego menú principal
@@ -20,7 +20,7 @@ public class menuPrincipalApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(menuPrincipalApplication.class.getResource("menuPrincipal-vista.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(mainApplication.class.getResource("menuPrincipal-vista.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setTitle("Simulador de Vida");
         stage.setScene(scene);
