@@ -35,7 +35,7 @@ public class Grafo<T> {
     public Nodo<T> getNodo (T dato) {
         try {
             for (int i = 0; i != nodos.getNumeroElementos(); i++) {
-                if (nodos.getElemento(i).getData().getDato() == dato) return nodos.getElemento(i).getData();
+                if (nodos.getElemento(i).getData().getDato().equals(dato)) return nodos.getElemento(i).getData();
             }
             throw new datoNoExistenteException();
         } catch (datoNoExistenteException e) {

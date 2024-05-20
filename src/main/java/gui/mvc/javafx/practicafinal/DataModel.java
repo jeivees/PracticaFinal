@@ -11,7 +11,7 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.cola.gsonAdapterCol
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada.ListaEnlazada;
 
 import com.google.gson.Gson;
-import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
+import es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -156,6 +156,7 @@ public class DataModel {
             return model;
         } catch (IOException e) {
             log.error("La ruta para cargar el archivo no existe");
+            System.out.println("La ruta al archivo especificado no existe");
             return null;
         }
     }

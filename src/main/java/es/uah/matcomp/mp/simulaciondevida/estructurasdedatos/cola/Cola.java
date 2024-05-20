@@ -35,4 +35,9 @@ public class Cola<T> {
     protected void setElementos (ListaEnlazada<T> elementos) {
         this.elementos = elementos;
     }
+
+    @Override
+    public String toString() {
+        return elementos.toString();
+    }
 }

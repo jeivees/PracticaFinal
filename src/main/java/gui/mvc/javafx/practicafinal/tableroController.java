@@ -3,7 +3,7 @@ package gui.mvc.javafx.practicafinal;
 import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.*;
-import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
+import es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -162,7 +162,7 @@ public class tableroController {
 
     private void volverAlMenuPrincipal (ActionEvent event) {
         try {
-        FXMLLoader fxmlLoader = new FXMLLoader(menuPrincipalApplication.class.getResource("menuPrincipal-vista.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(mainApplication.class.getResource("menuPrincipal-vista.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Simulador de Vida");
@@ -231,10 +231,10 @@ public class tableroController {
         model = casilla00.getModel();
         juegoActual = new simuladorDeVida(model);
 
-        juegoActual.finalizarPartida();
+        juegoActual.crearInfoPartida();
 
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(menuPrincipalApplication.class.getResource("finalizarPartida-vista.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(mainApplication.class.getResource("finalizarPartida-vista.fxml"));
 
             int numeroGanadores = model.getIndividuos().getNumeroElementos();
             for (int i = 0; i != numeroGanadores; i ++) {

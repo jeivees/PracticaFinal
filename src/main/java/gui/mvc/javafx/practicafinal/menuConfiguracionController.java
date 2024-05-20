@@ -1,6 +1,6 @@
 package gui.mvc.javafx.practicafinal;
 
-import es.uah.matcomp.mp.simulaciondevida.*;
+import es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

@@ -1,6 +1,6 @@
 package gui.mvc.javafx.practicafinal;
 
-import es.uah.matcomp.mp.simulaciondevida.simuladorDeVida;
+import es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida;
 import excepciones.sinFicherosDePartidaException;
 import javafx.event.ActionEvent;
 import javafx.fxml.*;
