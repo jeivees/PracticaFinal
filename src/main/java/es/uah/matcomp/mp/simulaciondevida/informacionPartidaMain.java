@@ -13,8 +13,8 @@ public class informacionPartidaMain {
     public static void main(String[] args) { // Acción syntax: [Acción: <accion> <optional:(extraData)>, turno: <turno>]
         try {
             if (args.length != 1) throw new argumentosInvalidosException();
-            DataModel model = DataModel.cargar(STR."archivosDePartida/\{args[0]}.json");
-            simuladorDeVida juegoActual = new simuladorDeVida(model);
+            DataModel model = DataModel.cargar(STR."\{args[0]}.json");
+            simuladorDeVida juegoActual = new simuladorDeVida(model, true);
 
             juegoActual.crearInfoPartida();
             HashMap<individuo, ArbolBinario<individuo>> arbolesGenealogicos = juegoActual.getArbolesGenealogicos();

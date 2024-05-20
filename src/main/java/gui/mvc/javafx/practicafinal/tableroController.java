@@ -4,6 +4,10 @@ import es.uah.matcomp.mp.simulaciondevida.elementos.entorno.recurso;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.*;
 import es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.arboles.bst.ArbolBinario;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.arboles.bst.nodoBST;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.HashMap;
+import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,10 +17,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
+import javafx.scene.text.Font;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.Window;
@@ -37,7 +39,7 @@ public class tableroController {
     private Label turnoLabel = new Label();
 
     @FXML
-    private TreeTableView<String> vistaGanadores = new TreeTableView<>();
+    private HBox paneGanadores = new HBox();
 
 
     public tableroController () {}
@@ -229,28 +231,89 @@ public class tableroController {
     protected void onBotonFinalizarPartidaClick (ActionEvent event) {
         casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
         model = casilla00.getModel();
-        juegoActual = new simuladorDeVida(model);
+        finalizarPartida(event);
+    }
 
+    public void finalizarPartida (ActionEvent event) {
+        juegoActual = new simuladorDeVida(model, true);
         juegoActual.crearInfoPartida();
 
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(mainApplication.class.getResource("finalizarPartida-vista.fxml"));
+            Parent root = fxmlLoader.load();
+            paneGanadores = (HBox) ((AnchorPane) ((ScrollPane) ((VBox) root).getChildren().get(2)).getContent()).getChildren().getFirst();
+
+            HBox.setHgrow(paneGanadores, Priority.ALWAYS);
+            AnchorPane.setTopAnchor(paneGanadores, 0.0);
+            AnchorPane.setBottomAnchor(paneGanadores, 0.0);
+            AnchorPane.setLeftAnchor(paneGanadores, 0.0);
+            AnchorPane.setRightAnchor(paneGanadores, 0.0);
+
+            HashMap<individuo, ArbolBinario<individuo>> arbolesGenealogicos = juegoActual.getArbolesGenealogicos();
 
             int numeroGanadores = model.getIndividuos().getNumeroElementos();
             for (int i = 0; i != numeroGanadores; i ++) {
                 individuo individuoActual = model.getIndividuos().getElemento(i).getData();
-                TreeTableColumn<?, ?> columnaActual = new TreeTableColumn<>(individuoActual.getTipo() + " Id: " +individuoActual.getId().toString());
-                vistaGanadores.getChildrenUnmodifiable();
+                ArbolBinario<individuo> arbolActual = arbolesGenealogicos.get(individuoActual);
+
+                TreeView<individuo> vistaGanadores = new TreeView<>();
+
+                TreeItem<individuo> raiz = new TreeItem<>();
+                raiz.getChildren().add(crearArbolVista(arbolActual));
+                vistaGanadores.setRoot(raiz);
+                vistaGanadores.setShowRoot(false);
+                vistaGanadores.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
+                vistaGanadores.setCellFactory(_ -> new TreeCell<>() {
+                    @Override
+                    protected void updateItem(individuo individuo, boolean empty) {
+                        super.updateItem(individuo, empty);
+                        if (empty) {
+                            setGraphic(null);
+                            setText(null);
+                        } else {
+                            if (individuo != null) {
+                                setText(STR."Individuo \{individuo.getId()}");
+                                setFont(new Font("Bookman Old Style", 18));
+                            }
+                        }
+                    }
+                });
+
+                paneGanadores.getChildren().add(vistaGanadores);
+                HBox.setHgrow(vistaGanadores, Priority.ALWAYS);
             }
 
-            if (Window.getWindows().size() > 1) ((Stage) Window.getWindows().get(1)).close();
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(fxmlLoader.load());
+
+            while (Window.getWindows().size() > 1) {
+                ((Stage) Window.getWindows().get(1)).close();
+            };
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.setIconified(false);
             stage.setFullScreen(true);
             stage.show();
         } catch (IOException e) {
             log.error("No se ha encontrado la vista del menú principal");
+        }
+    }
+
+    private TreeItem<individuo> crearArbolVista (ArbolBinario<individuo> arbol) {
+        TreeItem<individuo> itemRaiz = new TreeItem<>(arbol.getRaiz().getDato());
+        if (arbol.getAltura() > 1) {
+            crearArbolVistaAux(arbol.getRaiz().getDerecha(), itemRaiz);
+            crearArbolVistaAux(arbol.getRaiz().getIzquierda(), itemRaiz);
+        }
+        return itemRaiz;
+    }
+
+    private void crearArbolVistaAux (nodoBST<individuo> nodo, TreeItem<individuo> itemRaiz) {
+        TreeItem<individuo> item = new TreeItem<>(nodo.getDato());
+        itemRaiz.getChildren().add(item);
+
+        if (nodo.getDerecha() != null & nodo.getIzquierda() != null) {
+            crearArbolVistaAux(nodo.getDerecha(), item);
+            crearArbolVistaAux(nodo.getIzquierda(), item);
         }
     }
 
@@ -330,7 +393,6 @@ public class tableroController {
         stage.setResizable(false);
         stage.setFullScreen(true);
         stage.setAlwaysOnTop(true);
-        stage.setIconified(true);
         stage.show();
 
         model.setPausado(true);

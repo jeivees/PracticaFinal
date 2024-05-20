@@ -1,6 +1,8 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.individuos;
 
 import com.google.gson.*;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaSimple.ElementoLS;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaSimple.ListaSimple;
 import excepciones.tipoInvalidoException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,6 +15,14 @@ public class gsonAdapterIndividuo implements JsonSerializer<individuo>, JsonDese
     public JsonElement serialize(individuo src, Type typeOfSrc, JsonSerializationContext context) {
         log.trace(STR."Empezando serialización de individuo \{src.getTipo().getSimpleName()} a Json");
         JsonObject individuo = new JsonObject();
+        ListaSimple<individuo> padres = src.getPadres();
+        if (padres.getPrimero() != null) {
+            JsonArray padresJson = new JsonArray(2);
+            padresJson.add(serialize(padres.getPrimero().getData(), typeOfSrc, context));
+            padresJson.add(serialize(padres.getElemento(1).getData(), typeOfSrc, context));
+            individuo.add("padres", padresJson);
+        }
+
         individuo.addProperty("tipo", src.getTipo().getSimpleName());
         individuo.add("propiedades", context.serialize(src));
         return individuo;
@@ -25,14 +35,25 @@ public class gsonAdapterIndividuo implements JsonSerializer<individuo>, JsonDese
 
         String tipo = jsonIndividuo.get("tipo").getAsString();
 
-        return switch (tipo) {
-            case "individuoBasico" ->
-                    context.deserialize(jsonIndividuo.get("propiedades").getAsJsonObject(), individuoBasico.class);
-            case "individuoNormal" ->
-                    context.deserialize(jsonIndividuo.get("propiedades").getAsJsonObject(), individuoNormal.class);
-            case "individuoAvanzado" ->
-                    context.deserialize(jsonIndividuo.get("propiedades").getAsJsonObject(), individuoAvanzado.class);
+        Class<?> individuoClase = switch (tipo) {
+            case "individuoBasico" -> individuoBasico.class;
+            case "individuoNormal" -> individuoNormal.class;
+            case "individuoAvanzado" -> individuoAvanzado.class;
             default -> throw new tipoInvalidoException(individuo.class.getSimpleName(), tipo);
         };
+
+        individuo individuo = context.deserialize(jsonIndividuo.get("propiedades").getAsJsonObject(), individuoClase);
+        ListaSimple<individuo> lista = new ListaSimple<>(2);
+
+        if (jsonIndividuo.has("padres")) {
+            JsonArray padres = jsonIndividuo.get("padres").getAsJsonArray();
+            for (int i = 0; i != 2; i++) {
+                individuo padre = deserialize(padres.get(i).getAsJsonObject(), typeOfT, context);
+                ElementoLS<individuo> elementoLS = new ElementoLS<>(padre);
+                lista.add(elementoLS);
+            }
+            individuo.setPadres(lista);
+        }
+        return individuo;
     }
 }

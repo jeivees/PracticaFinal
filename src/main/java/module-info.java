@@ -16,6 +16,7 @@ module PracticaFinal {
     opens gui.mvc.javafx.practicafinal to javafx.fxml, com.google.gson;
     opens es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazada to com.google.gson;
     opens es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.cola to com.google.gson;
+    opens es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaSimple to com.google.gson;
     opens es.uah.matcomp.mp.simulaciondevida.elementos.individuos to com.google.gson;
     opens es.uah.matcomp.mp.simulaciondevida.elementos.entorno to com.google.gson;
     exports gui.mvc.javafx.practicafinal;

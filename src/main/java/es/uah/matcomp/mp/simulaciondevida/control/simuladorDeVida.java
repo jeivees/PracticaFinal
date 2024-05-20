@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.simulaciondevida.control;
 
-import es.uah.matcomp.mp.simulaciondevida.control.bucleDeControl;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.arboles.bst.ArbolBinario;
@@ -8,7 +7,6 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.arboles.bst.nodoBST
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.cola.Cola;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.*;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.HashMap;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaDoblementeEnlazada.ListaDE;
 import excepciones.numeroPadresInvalidoException;
 import gui.mvc.javafx.practicafinal.DataModel;
 import org.apache.logging.log4j.LogManager;
@@ -23,11 +21,13 @@ public class simuladorDeVida {
     private HashMap<individuo, ArbolBinario<individuo>> arbolesGenealogicos = new HashMap<>();
     private Grafo<String> grafoAcciones = new Grafo<>();
 
-    public simuladorDeVida (DataModel model) {
+    public simuladorDeVida (DataModel model, boolean soloInfo) {
         this.model = model;
         model.setJuegoActual(this);
-        tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
-        bucle = new bucleDeControl(tablero, model);
+        if (!soloInfo) {
+            tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
+            bucle = new bucleDeControl(tablero, model);
+        }
     }
 
     public simuladorDeVida (DataModel model, tablero tablero) {
@@ -67,7 +67,7 @@ public class simuladorDeVida {
 
     private void añadirPadres (nodoBST<individuo> hijo) {
         try {
-            if (!hijo.getDato().getPadres().isVacia()) {
+            if (hijo.getDato().getPadres() != null) {
                 if (hijo.getDato().getPadres().getNumeroElementos() != 2) throw new numeroPadresInvalidoException();
                 hijo.setDerecha(new nodoBST<>(hijo.getDato().getPadres().getPrimero().getData()));
                 hijo.setIzquierda(new nodoBST<>(hijo.getDato().getPadres().getElemento(1).getData()));

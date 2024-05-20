@@ -17,7 +17,7 @@ public class ListaSimple<T> {
         this.datos = new ElementoLS[maximo];
     }
 
-    protected int add(ElementoLS<T> el) {
+    public int add(ElementoLS<T> el) {
         int pos = 0;
         for (int i = 0; this.datos[i] != null; i++) {
             pos += 1;
@@ -92,5 +92,21 @@ public class ListaSimple<T> {
     public void setElemento(int posicion, T elemento) {
         ElementoLS<T> e = new ElementoLS<>(elemento);
         datos[posicion] = e;
+    }
+
+    protected ElementoLS<T>[] getDatos() {
+        return datos;
+    }
+
+    protected void setDatos(ElementoLS<T>[] datos) {
+        this.datos = datos;
+    }
+
+    public int getMaximo() {
+        return maximo;
+    }
+
+    public void setMaximo(int maximo) {
+        this.maximo = maximo;
     }
 }

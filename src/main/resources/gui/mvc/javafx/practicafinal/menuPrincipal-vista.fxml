@@ -12,8 +12,14 @@
 
   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="240.0" prefWidth="502.0" text="Simulador de Vida" textFill="#310cc4e0">
       <font>
-         <Font name="Book Antiqua Bold" size="33.0" />
+         <Font name="Book Antiqua Bold" size="52.0" />
       </font></Label>
-  <Button onAction="#onBotonNuevoClick" prefHeight="84.0" prefWidth="239.0" text="Nuevo juego" />
-   <Button onAction="#onBotonCargarPartidaClick" prefHeight="60.0" prefWidth="194.0" text="Cargar juego" />
+  <Button onAction="#onBotonNuevoClick" prefHeight="84.0" prefWidth="239.0" text="Nuevo juego">
+      <font>
+         <Font name="Bookman Old Style" size="28.0" />
+      </font></Button>
+   <Button onAction="#onBotonCargarPartidaClick" prefHeight="60.0" prefWidth="194.0" text="Cargar juego">
+      <font>
+         <Font name="Bookman Old Style" size="22.0" />
+      </font></Button>
 </VBox>

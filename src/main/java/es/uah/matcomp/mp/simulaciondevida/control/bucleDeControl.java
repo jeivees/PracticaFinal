@@ -173,8 +173,7 @@ public class bucleDeControl implements Runnable{
                 casillaTablero casillaActual = tablero.getCasilla(individuoActual.getPosicion());
                 int k = 1;
                 while (casillaActual.getIndividuos().getNumeroElementos() > model.getIndividuosMaximosPorCelda()) {
-                    int numeroIndividuosCasilla = casillaActual.getIndividuos().getNumeroElementos();
-                    for (int l = 0; l != numeroIndividuosCasilla; l++) {
+                    for (int l = 0; l != casillaActual.getIndividuos().getNumeroElementos(); l++) {
                         individuo individuoSobrante = casillaActual.getIndividuos().getElemento(l).getData();
                         if (casillaActual.getIndividuos().getNumeroElementos() > model.getIndividuosMaximosPorCelda() &&
                                 individuoSobrante.getTiempoDeVida() == k) {

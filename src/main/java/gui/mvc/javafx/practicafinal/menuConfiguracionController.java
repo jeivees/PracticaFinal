@@ -210,7 +210,7 @@ public class menuConfiguracionController implements Initializable {
 
     private void empezarNuevoJuego () throws IOException {
         model.setTurno(0);
-        simuladorDeVida juegoActual = new simuladorDeVida(model);
+        simuladorDeVida juegoActual = new simuladorDeVida(model, false);
         tableroController controladorTablero = new tableroController(model, juegoActual);
         controladorTablero.crearTablero(juegoActual.getTablero());
         model.setPausado(true);

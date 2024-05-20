@@ -48,7 +48,7 @@ public class menuPrincipalController implements Initializable {
                 stageActual.close();
                 String archivo = listaDeFicheros.getSelectionModel().getSelectedItem();
                 DataModel model = DataModel.cargar(archivo);
-                simuladorDeVida juegoActual = new simuladorDeVida(model);
+                simuladorDeVida juegoActual = new simuladorDeVida(model, false);
                 tableroController controladorTablero = new tableroController(model, juegoActual);
                 controladorTablero.crearTablero(juegoActual.getTablero());
             }

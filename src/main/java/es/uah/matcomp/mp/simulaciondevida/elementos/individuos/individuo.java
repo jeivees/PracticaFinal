@@ -19,8 +19,8 @@ import java.util.Random;
 public abstract class individuo {
     @Expose
     private Cola<String> acciones = new Cola<>();
-    @Expose
-    private ListaSimple<individuo> padres = new ListaSimple<>(1);
+    @Expose (serialize = false)
+    private ListaSimple<individuo> padres = new ListaSimple<>(2);
     @Expose
     private int posicionX;
     @Expose
@@ -53,7 +53,7 @@ public abstract class individuo {
         if (probReproduccion < 0 || probReproduccion > 100 || probClonacion < 0 || probClonacion > 100) throw new probabilidadInvalidaException();
         this.probReproduccion = probReproduccion;
         this.probClonacion = probClonacion;
-        this.probMuerte = 1 - probReproduccion;
+        this.probMuerte = 100 - probReproduccion;
         acciones.add(STR."Acción: nacer, turno: \{turnoActual}");
         log.debug(STR."Ha nacido el individuo \{id}");
     }
@@ -67,7 +67,7 @@ public abstract class individuo {
         updateTiempoDeVidaProperty();
         this.probReproduccion = probReproduccion;
         this.probClonacion = probClonacion;
-        this.probMuerte = 1 - probReproduccion;
+        this.probMuerte = 100 - probReproduccion;
         acciones.add(STR."Acción: nacer, turno: \{turnoActual}");
         log.debug(STR."Ha nacido el individuo \{id}");
     }
@@ -81,7 +81,7 @@ public abstract class individuo {
         updateTiempoDeVidaProperty();
         this.probReproduccion = individuo.getProbReproduccion();
         this.probClonacion = individuo.getProbClonacion();
-        this.probMuerte = 1 - probReproduccion;
+        this.probMuerte = 100 - probReproduccion;
         this.isVivo = individuo.isVivo();
         this.acciones = individuo.getAcciones();
         log.debug(STR."Se ha creado una copia del individuo \{id}");
@@ -402,5 +402,9 @@ public abstract class individuo {
     public void setPadres(individuo padre1, individuo padre2) {
         this.padres.setElemento(0, padre1);
         this.padres.setElemento(1, padre2);
+    }
+
+    protected void setPadres(ListaSimple<individuo> padres) {
+        this.padres = padres;
     }
 }
