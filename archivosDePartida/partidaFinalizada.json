@@ -1,0 +1,2537 @@
+{
+  "individuos": {
+    "primero": {
+      "data": {
+        "tipo": "individuoBasico",
+        "propiedades": {
+          "acciones": {
+            "primero": {
+              "data": "Acción: nacer, turno: 4",
+              "siguiente": {
+                "data": "Acción: clonarse, turno: 4",
+                "siguiente": {
+                  "data": "Acción: nacer, turno: 4",
+                  "siguiente": {
+                    "data": "Acción: actualizarTV (9), turno: 5",
+                    "siguiente": {
+                      "data": "Acción: actualizarTV (9), turno: 5",
+                      "siguiente": {
+                        "data": "Acción: moverse (1, 6), turno: 5",
+                        "siguiente": {
+                          "data": "Acción: moverse (3, 5), turno: 5",
+                          "siguiente": {
+                            "data": "Acción: morir, turno: 5",
+                            "siguiente": {
+                              "data": "Acción: clonarse, turno: 5",
+                              "siguiente": {
+                                "data": "Acción: nacer, turno: 5",
+                                "siguiente": {
+                                  "data": "Acción: actualizarTV (8), turno: 6",
+                                  "siguiente": {
+                                    "data": "Acción: actualizarTV (8), turno: 6",
+                                    "siguiente": {
+                                      "data": "Acción: moverse (2, 5), turno: 6",
+                                      "siguiente": {
+                                        "data": "Acción: moverse (4, 5), turno: 6",
+                                        "siguiente": {
+                                          "data": "Acción: clonarse, turno: 6",
+                                          "siguiente": {
+                                            "data": "Acción: nacer, turno: 6",
+                                            "siguiente": {
+                                              "data": "Acción: actualizarTV (7), turno: 7",
+                                              "siguiente": {
+                                                "data": "Acción: actualizarTV (7), turno: 7",
+                                                "siguiente": {
+                                                  "data": "Acción: actualizarTV (7), turno: 7",
+                                                  "siguiente": {
+                                                    "data": "Acción: moverse (3, 5), turno: 7",
+                                                    "siguiente": {
+                                                      "data": "Acción: moverse (4, 4), turno: 7",
+                                                      "siguiente": {
+                                                        "data": "Acción: moverse (4, 4), turno: 7",
+                                                        "siguiente": {
+                                                          "data": "Acción: morir, turno: 7",
+                                                          "siguiente": {
+                                                            "data": "Acción: morir, turno: 7",
+                                                            "siguiente": {
+                                                              "data": "Acción: clonarse, turno: 7",
+                                                              "siguiente": {
+                                                                "data": "Acción: nacer, turno: 7",
+                                                                "siguiente": {
+                                                                  "data": "Acción: actualizarTV (6), turno: 8",
+                                                                  "siguiente": {
+                                                                    "data": "Acción: actualizarTV (6), turno: 8",
+                                                                    "siguiente": {
+                                                                      "data": "Acción: moverse (2, 4), turno: 8",
+                                                                      "siguiente": {
+                                                                        "data": "Acción: moverse (4, 5), turno: 8",
+                                                                        "siguiente": {
+                                                                          "data": "Acción: montaña recibir efecto, turno: 8",
+                                                                          "siguiente": {
+                                                                            "data": "Acción: actualizarTV (-1), turno: 8",
+                                                                            "siguiente": {
+                                                                              "data": "Acción: morir, turno: 8",
+                                                                              "siguiente": {
+                                                                                "data": "Acción: actualizarTV (5), turno: 9",
+                                                                                "siguiente": {
+                                                                                  "data": "Acción: moverse (3, 6), turno: 9"
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "posicionX": 3,
+          "posicionY": 6,
+          "id": 18,
+          "generacion": 0,
+          "tiempoDeVida": 5,
+          "probReproduccion": 0.0,
+          "probClonacion": 0.0,
+          "probMuerte": 80.0,
+          "isVivo": true
+        }
+      }
+    }
+  },
+  "recursos": {
+    "primero": {
+      "data": {
+        "tipo": "tesoro",
+        "propiedades": {
+          "id": 2,
+          "posicionX": 7,
+          "posicionY": 5,
+          "tiempoDeAparicion": 7
+        }
+      },
+      "siguiente": {
+        "data": {
+          "tipo": "montaña",
+          "propiedades": {
+            "id": 3,
+            "posicionX": 9,
+            "posicionY": 2,
+            "tiempoDeAparicion": 7
+          }
+        },
+        "siguiente": {
+          "data": {
+            "tipo": "comida",
+            "propiedades": {
+              "id": 4,
+              "posicionX": 1,
+              "posicionY": 1,
+              "tiempoDeAparicion": 8
+            }
+          },
+          "siguiente": {
+            "data": {
+              "tipo": "tesoro",
+              "propiedades": {
+                "id": 6,
+                "posicionX": 1,
+                "posicionY": 9,
+                "tiempoDeAparicion": 8
+              }
+            },
+            "siguiente": {
+              "data": {
+                "tipo": "montaña",
+                "propiedades": {
+                  "id": 8,
+                  "posicionX": 8,
+                  "posicionY": 8,
+                  "tiempoDeAparicion": 8
+                }
+              },
+              "siguiente": {
+                "data": {
+                  "tipo": "agua",
+                  "propiedades": {
+                    "id": 10,
+                    "posicionX": 6,
+                    "posicionY": 7,
+                    "tiempoDeAparicion": 9
+                  }
+                },
+                "siguiente": {
+                  "data": {
+                    "tipo": "biblioteca",
+                    "propiedades": {
+                      "id": 11,
+                      "posicionX": 6,
+                      "posicionY": 9,
+                      "tiempoDeAparicion": 9
+                    }
+                  },
+                  "siguiente": {
+                    "data": {
+                      "tipo": "pozo",
+                      "propiedades": {
+                        "id": 12,
+                        "posicionX": 0,
+                        "posicionY": 7,
+                        "tiempoDeAparicion": 10
+                      }
+                    },
+                    "siguiente": {
+                      "data": {
+                        "tipo": "comida",
+                        "propiedades": {
+                          "id": 13,
+                          "posicionX": 1,
+                          "posicionY": 3,
+                          "tiempoDeAparicion": 10
+                        }
+                      },
+                      "siguiente": {
+                        "data": {
+                          "tipo": "comida",
+                          "propiedades": {
+                            "id": 14,
+                            "posicionX": 3,
+                            "posicionY": 2,
+                            "tiempoDeAparicion": 10
+                          }
+                        },
+                        "siguiente": {
+                          "data": {
+                            "tipo": "montaña",
+                            "propiedades": {
+                              "id": 16,
+                              "posicionX": 5,
+                              "posicionY": 0,
+                              "tiempoDeAparicion": 10
+                            }
+                          },
+                          "siguiente": {
+                            "data": {
+                              "tipo": "montaña",
+                              "propiedades": {
+                                "id": 17,
+                                "posicionX": 6,
+                                "posicionY": 2,
+                                "tiempoDeAparicion": 10
+                              }
+                            },
+                            "siguiente": {
+                              "data": {
+                                "tipo": "montaña",
+                                "propiedades": {
+                                  "id": 18,
+                                  "posicionX": 8,
+                                  "posicionY": 3,
+                                  "tiempoDeAparicion": 10
+                                }
+                              },
+                              "siguiente": {
+                                "data": {
+                                  "tipo": "tesoro",
+                                  "propiedades": {
+                                    "id": 19,
+                                    "posicionX": 0,
+                                    "posicionY": 0,
+                                    "tiempoDeAparicion": 11
+                                  }
+                                },
+                                "siguiente": {
+                                  "data": {
+                                    "tipo": "biblioteca",
+                                    "propiedades": {
+                                      "id": 20,
+                                      "posicionX": 0,
+                                      "posicionY": 6,
+                                      "tiempoDeAparicion": 11
+                                    }
+                                  },
+                                  "siguiente": {
+                                    "data": {
+                                      "tipo": "montaña",
+                                      "propiedades": {
+                                        "id": 21,
+                                        "posicionX": 1,
+                                        "posicionY": 2,
+                                        "tiempoDeAparicion": 11
+                                      }
+                                    },
+                                    "siguiente": {
+                                      "data": {
+                                        "tipo": "comida",
+                                        "propiedades": {
+                                          "id": 22,
+                                          "posicionX": 3,
+                                          "posicionY": 8,
+                                          "tiempoDeAparicion": 11
+                                        }
+                                      },
+                                      "siguiente": {
+                                        "data": {
+                                          "tipo": "biblioteca",
+                                          "propiedades": {
+                                            "id": 23,
+                                            "posicionX": 9,
+                                            "posicionY": 9,
+                                            "tiempoDeAparicion": 11
+                                          }
+                                        },
+                                        "siguiente": {
+                                          "data": {
+                                            "tipo": "montaña",
+                                            "propiedades": {
+                                              "id": 24,
+                                              "posicionX": 0,
+                                              "posicionY": 6,
+                                              "tiempoDeAparicion": 12
+                                            }
+                                          },
+                                          "siguiente": {
+                                            "data": {
+                                              "tipo": "tesoro",
+                                              "propiedades": {
+                                                "id": 26,
+                                                "posicionX": 3,
+                                                "posicionY": 1,
+                                                "tiempoDeAparicion": 12
+                                              }
+                                            },
+                                            "siguiente": {
+                                              "data": {
+                                                "tipo": "pozo",
+                                                "propiedades": {
+                                                  "id": 27,
+                                                  "posicionX": 3,
+                                                  "posicionY": 4,
+                                                  "tiempoDeAparicion": 12
+                                                }
+                                              },
+                                              "siguiente": {
+                                                "data": {
+                                                  "tipo": "comida",
+                                                  "propiedades": {
+                                                    "id": 29,
+                                                    "posicionX": 4,
+                                                    "posicionY": 6,
+                                                    "tiempoDeAparicion": 12
+                                                  }
+                                                },
+                                                "siguiente": {
+                                                  "data": {
+                                                    "tipo": "montaña",
+                                                    "propiedades": {
+                                                      "id": 30,
+                                                      "posicionX": 4,
+                                                      "posicionY": 8,
+                                                      "tiempoDeAparicion": 12
+                                                    }
+                                                  },
+                                                  "siguiente": {
+                                                    "data": {
+                                                      "tipo": "biblioteca",
+                                                      "propiedades": {
+                                                        "id": 32,
+                                                        "posicionX": 7,
+                                                        "posicionY": 2,
+                                                        "tiempoDeAparicion": 12
+                                                      }
+                                                    },
+                                                    "siguiente": {
+                                                      "data": {
+                                                        "tipo": "agua",
+                                                        "propiedades": {
+                                                          "id": 33,
+                                                          "posicionX": 7,
+                                                          "posicionY": 9,
+                                                          "tiempoDeAparicion": 12
+                                                        }
+                                                      },
+                                                      "siguiente": {
+                                                        "data": {
+                                                          "tipo": "comida",
+                                                          "propiedades": {
+                                                            "id": 34,
+                                                            "posicionX": 1,
+                                                            "posicionY": 3,
+                                                            "tiempoDeAparicion": 13
+                                                          }
+                                                        },
+                                                        "siguiente": {
+                                                          "data": {
+                                                            "tipo": "comida",
+                                                            "propiedades": {
+                                                              "id": 35,
+                                                              "posicionX": 2,
+                                                              "posicionY": 6,
+                                                              "tiempoDeAparicion": 14
+                                                            }
+                                                          },
+                                                          "siguiente": {
+                                                            "data": {
+                                                              "tipo": "pozo",
+                                                              "propiedades": {
+                                                                "id": 36,
+                                                                "posicionX": 3,
+                                                                "posicionY": 8,
+                                                                "tiempoDeAparicion": 14
+                                                              }
+                                                            },
+                                                            "siguiente": {
+                                                              "data": {
+                                                                "tipo": "agua",
+                                                                "propiedades": {
+                                                                  "id": 37,
+                                                                  "posicionX": 7,
+                                                                  "posicionY": 5,
+                                                                  "tiempoDeAparicion": 14
+                                                                }
+                                                              },
+                                                              "siguiente": {
+                                                                "data": {
+                                                                  "tipo": "biblioteca",
+                                                                  "propiedades": {
+                                                                    "id": 38,
+                                                                    "posicionX": 9,
+                                                                    "posicionY": 9,
+                                                                    "tiempoDeAparicion": 14
+                                                                  }
+                                                                },
+                                                                "siguiente": {
+                                                                  "data": {
+                                                                    "tipo": "montaña",
+                                                                    "propiedades": {
+                                                                      "id": 39,
+                                                                      "posicionX": 0,
+                                                                      "posicionY": 0,
+                                                                      "tiempoDeAparicion": 15
+                                                                    }
+                                                                  },
+                                                                  "siguiente": {
+                                                                    "data": {
+                                                                      "tipo": "comida",
+                                                                      "propiedades": {
+                                                                        "id": 40,
+                                                                        "posicionX": 3,
+                                                                        "posicionY": 0,
+                                                                        "tiempoDeAparicion": 15
+                                                                      }
+                                                                    },
+                                                                    "siguiente": {
+                                                                      "data": {
+                                                                        "tipo": "tesoro",
+                                                                        "propiedades": {
+                                                                          "id": 41,
+                                                                          "posicionX": 4,
+                                                                          "posicionY": 2,
+                                                                          "tiempoDeAparicion": 15
+                                                                        }
+                                                                      },
+                                                                      "siguiente": {
+                                                                        "data": {
+                                                                          "tipo": "montaña",
+                                                                          "propiedades": {
+                                                                            "id": 42,
+                                                                            "posicionX": 5,
+                                                                            "posicionY": 3,
+                                                                            "tiempoDeAparicion": 15
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "HistorialIndividuos": {
+    "primero": {
+      "data": {
+        "tipo": "individuoAvanzado",
+        "propiedades": {
+          "acciones": {
+            "primero": {
+              "data": "Acción: nacer, turno: 0",
+              "siguiente": {
+                "data": "Acción: actualizarTV (9), turno: 1",
+                "siguiente": {
+                  "data": "Acción: moverse (3, 4), turno: 1",
+                  "siguiente": {
+                    "data": "Acción: morir, turno: 1"
+                  }
+                }
+              }
+            }
+          },
+          "posicionX": 4,
+          "posicionY": 0,
+          "id": 1,
+          "generacion": 0,
+          "tiempoDeVida": 10,
+          "probReproduccion": 50.0,
+          "probClonacion": 50.0,
+          "probMuerte": 50.0,
+          "isVivo": true
+        }
+      },
+      "siguiente": {
+        "data": {
+          "tipo": "individuoBasico",
+          "propiedades": {
+            "acciones": {
+              "primero": {
+                "data": "Acción: nacer, turno: 0",
+                "siguiente": {
+                  "data": "Acción: actualizarTV (9), turno: 1",
+                  "siguiente": {
+                    "data": "Acción: moverse (3, 4), turno: 1",
+                    "siguiente": {
+                      "data": "Acción: reproducirse (con individuo1), turno: 1",
+                      "siguiente": {
+                        "data": "Acción: morir, turno: 1"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "posicionX": 4,
+            "posicionY": 0,
+            "id": 2,
+            "generacion": 0,
+            "tiempoDeVida": 10,
+            "probReproduccion": 50.0,
+            "probClonacion": 50.0,
+            "probMuerte": 50.0,
+            "isVivo": true
+          }
+        },
+        "siguiente": {
+          "data": {
+            "tipo": "individuoNormal",
+            "propiedades": {
+              "acciones": {
+                "primero": {
+                  "data": "Acción: nacer, turno: 0",
+                  "siguiente": {
+                    "data": "Acción: actualizarTV (9), turno: 1",
+                    "siguiente": {
+                      "data": "Acción: moverse (3, 2), turno: 1",
+                      "siguiente": {
+                        "data": "Acción: clonarse, turno: 1",
+                        "siguiente": {
+                          "data": "Acción: nacer, turno: 1",
+                          "siguiente": {
+                            "data": "Acción: actualizarTV (8), turno: 2",
+                            "siguiente": {
+                              "data": "Acción: actualizarTV (8), turno: 2",
+                              "siguiente": {
+                                "data": "Acción: moverse (4, 3), turno: 2",
+                                "siguiente": {
+                                  "data": "Acción: actualizarTV (7), turno: 3",
+                                  "siguiente": {
+                                    "data": "Acción: actualizarTV (7), turno: 3",
+                                    "siguiente": {
+                                      "data": "Acción: moverse (3, 2), turno: 3",
+                                      "siguiente": {
+                                        "data": "Acción: moverse (2, 3), turno: 3",
+                                        "siguiente": {
+                                          "data": "Acción: actualizarTV (6), turno: 4",
+                                          "siguiente": {
+                                            "data": "Acción: actualizarTV (6), turno: 4",
+                                            "siguiente": {
+                                              "data": "Acción: moverse (4, 3), turno: 4",
+                                              "siguiente": {
+                                                "data": "Acción: moverse (3, 4), turno: 4",
+                                                "siguiente": {
+                                                  "data": "Acción: clonarse, turno: 4",
+                                                  "siguiente": {
+                                                    "data": "Acción: nacer, turno: 4",
+                                                    "siguiente": {
+                                                      "data": "Acción: actualizarTV (5), turno: 5",
+                                                      "siguiente": {
+                                                        "data": "Acción: actualizarTV (5), turno: 5",
+                                                        "siguiente": {
+                                                          "data": "Acción: actualizarTV (5), turno: 5",
+                                                          "siguiente": {
+                                                            "data": "Acción: moverse (3, 4), turno: 5",
+                                                            "siguiente": {
+                                                              "data": "Acción: moverse (2, 5), turno: 5",
+                                                              "siguiente": {
+                                                                "data": "Acción: moverse (5, 2), turno: 5",
+                                                                "siguiente": {
+                                                                  "data": "Acción: agua recibir efecto, turno: 5",
+                                                                  "siguiente": {
+                                                                    "data": "Acción: actualizarTV (8), turno: 5",
+                                                                    "siguiente": {
+                                                                      "data": "Acción: morir, turno: 5",
+                                                                      "siguiente": {
+                                                                        "data": "Acción: actualizarTV (4), turno: 6",
+                                                                        "siguiente": {
+                                                                          "data": "Acción: actualizarTV (7), turno: 6",
+                                                                          "siguiente": {
+                                                                            "data": "Acción: moverse (3, 4), turno: 6",
+                                                                            "siguiente": {
+                                                                              "data": "Acción: moverse (4, 3), turno: 6",
+                                                                              "siguiente": {
+                                                                                "data": "Acción: actualizarTV (3), turno: 7",
+                                                                                "siguiente": {
+                                                                                  "data": "Acción: actualizarTV (6), turno: 7",
+                                                                                  "siguiente": {
+                                                                                    "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                    "siguiente": {
+                                                                                      "data": "Acción: moverse (5, 4), turno: 7",
+                                                                                      "siguiente": {
+                                                                                        "data": "Acción: biblioteca recibir efecto, turno: 7",
+                                                                                        "siguiente": {
+                                                                                          "data": "Acción: morir, turno: 7",
+                                                                                          "siguiente": {
+                                                                                            "data": "Acción: montaña recibir efecto, turno: 7",
+                                                                                            "siguiente": {
+                                                                                              "data": "Acción: actualizarTV (-1), turno: 7",
+                                                                                              "siguiente": {
+                                                                                                "data": "Acción: morir, turno: 7"
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "posicionX": 4,
+              "posicionY": 0,
+              "id": 3,
+              "generacion": 0,
+              "tiempoDeVida": 10,
+              "probReproduccion": 50.0,
+              "probClonacion": 50.0,
+              "probMuerte": 50.0,
+              "isVivo": true
+            }
+          },
+          "siguiente": {
+            "data": {
+              "tipo": "individuoAvanzado",
+              "propiedades": {
+                "acciones": {
+                  "primero": {
+                    "data": "Acción: nacer, turno: 0",
+                    "siguiente": {
+                      "data": "Acción: actualizarTV (9), turno: 1",
+                      "siguiente": {
+                        "data": "Acción: moverse (2, 5), turno: 1",
+                        "siguiente": {
+                          "data": "Acción: clonarse, turno: 1",
+                          "siguiente": {
+                            "data": "Acción: nacer, turno: 1",
+                            "siguiente": {
+                              "data": "Acción: actualizarTV (8), turno: 2",
+                              "siguiente": {
+                                "data": "Acción: actualizarTV (8), turno: 2",
+                                "siguiente": {
+                                  "data": "Acción: comida recibir efecto, turno: 2",
+                                  "siguiente": {
+                                    "data": "Acción: actualizarTV (13), turno: 2",
+                                    "siguiente": {
+                                      "data": "Acción: morir, turno: 2",
+                                      "siguiente": {
+                                        "data": "Acción: morir, turno: 2"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "posicionX": 3,
+                "posicionY": 0,
+                "id": 4,
+                "generacion": 0,
+                "tiempoDeVida": 10,
+                "probReproduccion": 50.0,
+                "probClonacion": 50.0,
+                "probMuerte": 50.0,
+                "isVivo": true
+              }
+            },
+            "siguiente": {
+              "data": {
+                "tipo": "individuoBasico",
+                "propiedades": {
+                  "acciones": {
+                    "primero": {
+                      "data": "Acción: nacer, turno: 0",
+                      "siguiente": {
+                        "data": "Acción: actualizarTV (9), turno: 1",
+                        "siguiente": {
+                          "data": "Acción: moverse (2, 6), turno: 1",
+                          "siguiente": {
+                            "data": "Acción: actualizarTV (8), turno: 2",
+                            "siguiente": {
+                              "data": "Acción: actualizarTV (7), turno: 3",
+                              "siguiente": {
+                                "data": "Acción: moverse (3, 5), turno: 3",
+                                "siguiente": {
+                                  "data": "Acción: clonarse, turno: 3",
+                                  "siguiente": {
+                                    "data": "Acción: nacer, turno: 3",
+                                    "siguiente": {
+                                      "data": "Acción: actualizarTV (6), turno: 4",
+                                      "siguiente": {
+                                        "data": "Acción: actualizarTV (6), turno: 4",
+                                        "siguiente": {
+                                          "data": "Acción: moverse (2, 6), turno: 4",
+                                          "siguiente": {
+                                            "data": "Acción: moverse (2, 5), turno: 4",
+                                            "siguiente": {
+                                              "data": "Acción: morir, turno: 4",
+                                              "siguiente": {
+                                                "data": "Acción: actualizarTV (5), turno: 5",
+                                                "siguiente": {
+                                                  "data": "Acción: moverse (3, 4), turno: 5",
+                                                  "siguiente": {
+                                                    "data": "Acción: morir, turno: 5"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "posicionX": 3,
+                  "posicionY": 0,
+                  "id": 5,
+                  "generacion": 0,
+                  "tiempoDeVida": 10,
+                  "probReproduccion": 50.0,
+                  "probClonacion": 50.0,
+                  "probMuerte": 50.0,
+                  "isVivo": true
+                }
+              },
+              "siguiente": {
+                "data": {
+                  "tipo": "individuoBasico",
+                  "propiedades": {
+                    "acciones": {
+                      "primero": {
+                        "data": "Acción: nacer, turno: 1",
+                        "siguiente": {
+                          "data": "Acción: clonarse, turno: 1",
+                          "siguiente": {
+                            "data": "Acción: nacer, turno: 1",
+                            "siguiente": {
+                              "data": "Acción: actualizarTV (9), turno: 2",
+                              "siguiente": {
+                                "data": "Acción: actualizarTV (9), turno: 2",
+                                "siguiente": {
+                                  "data": "Acción: reproducirse (con individuo9), turno: 2",
+                                  "siguiente": {
+                                    "data": "Acción: morir, turno: 2",
+                                    "siguiente": {
+                                      "data": "Acción: morir, turno: 2"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "posicionX": 3,
+                    "posicionY": 0,
+                    "id": 6,
+                    "generacion": 0,
+                    "tiempoDeVida": 10,
+                    "probReproduccion": 50.0,
+                    "probClonacion": 50.0,
+                    "probMuerte": 50.0,
+                    "isVivo": true
+                  }
+                },
+                "siguiente": {
+                  "data": {
+                    "tipo": "individuoNormal",
+                    "propiedades": {
+                      "acciones": {
+                        "primero": {
+                          "data": "Acción: nacer, turno: 0",
+                          "siguiente": {
+                            "data": "Acción: actualizarTV (9), turno: 1",
+                            "siguiente": {
+                              "data": "Acción: moverse (3, 2), turno: 1",
+                              "siguiente": {
+                                "data": "Acción: clonarse, turno: 1",
+                                "siguiente": {
+                                  "data": "Acción: nacer, turno: 1",
+                                  "siguiente": {
+                                    "data": "Acción: actualizarTV (8), turno: 2",
+                                    "siguiente": {
+                                      "data": "Acción: actualizarTV (8), turno: 2",
+                                      "siguiente": {
+                                        "data": "Acción: moverse (4, 3), turno: 2",
+                                        "siguiente": {
+                                          "data": "Acción: actualizarTV (7), turno: 3",
+                                          "siguiente": {
+                                            "data": "Acción: actualizarTV (7), turno: 3",
+                                            "siguiente": {
+                                              "data": "Acción: moverse (3, 2), turno: 3",
+                                              "siguiente": {
+                                                "data": "Acción: moverse (2, 3), turno: 3",
+                                                "siguiente": {
+                                                  "data": "Acción: actualizarTV (6), turno: 4",
+                                                  "siguiente": {
+                                                    "data": "Acción: actualizarTV (6), turno: 4",
+                                                    "siguiente": {
+                                                      "data": "Acción: moverse (4, 3), turno: 4",
+                                                      "siguiente": {
+                                                        "data": "Acción: moverse (3, 4), turno: 4",
+                                                        "siguiente": {
+                                                          "data": "Acción: clonarse, turno: 4",
+                                                          "siguiente": {
+                                                            "data": "Acción: nacer, turno: 4",
+                                                            "siguiente": {
+                                                              "data": "Acción: actualizarTV (5), turno: 5",
+                                                              "siguiente": {
+                                                                "data": "Acción: actualizarTV (5), turno: 5",
+                                                                "siguiente": {
+                                                                  "data": "Acción: actualizarTV (5), turno: 5",
+                                                                  "siguiente": {
+                                                                    "data": "Acción: moverse (3, 4), turno: 5",
+                                                                    "siguiente": {
+                                                                      "data": "Acción: moverse (2, 5), turno: 5",
+                                                                      "siguiente": {
+                                                                        "data": "Acción: moverse (5, 2), turno: 5",
+                                                                        "siguiente": {
+                                                                          "data": "Acción: agua recibir efecto, turno: 5",
+                                                                          "siguiente": {
+                                                                            "data": "Acción: actualizarTV (8), turno: 5",
+                                                                            "siguiente": {
+                                                                              "data": "Acción: morir, turno: 5",
+                                                                              "siguiente": {
+                                                                                "data": "Acción: actualizarTV (4), turno: 6",
+                                                                                "siguiente": {
+                                                                                  "data": "Acción: actualizarTV (7), turno: 6",
+                                                                                  "siguiente": {
+                                                                                    "data": "Acción: moverse (3, 4), turno: 6",
+                                                                                    "siguiente": {
+                                                                                      "data": "Acción: moverse (4, 3), turno: 6",
+                                                                                      "siguiente": {
+                                                                                        "data": "Acción: actualizarTV (3), turno: 7",
+                                                                                        "siguiente": {
+                                                                                          "data": "Acción: actualizarTV (6), turno: 7",
+                                                                                          "siguiente": {
+                                                                                            "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                            "siguiente": {
+                                                                                              "data": "Acción: moverse (5, 4), turno: 7",
+                                                                                              "siguiente": {
+                                                                                                "data": "Acción: biblioteca recibir efecto, turno: 7",
+                                                                                                "siguiente": {
+                                                                                                  "data": "Acción: morir, turno: 7",
+                                                                                                  "siguiente": {
+                                                                                                    "data": "Acción: montaña recibir efecto, turno: 7",
+                                                                                                    "siguiente": {
+                                                                                                      "data": "Acción: actualizarTV (-1), turno: 7",
+                                                                                                      "siguiente": {
+                                                                                                        "data": "Acción: morir, turno: 7"
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "posicionX": 3,
+                      "posicionY": 0,
+                      "id": 7,
+                      "generacion": 0,
+                      "tiempoDeVida": 9,
+                      "probReproduccion": 40.0,
+                      "probClonacion": 40.0,
+                      "probMuerte": 60.0,
+                      "isVivo": true
+                    }
+                  },
+                  "siguiente": {
+                    "data": {
+                      "tipo": "individuoAvanzado",
+                      "propiedades": {
+                        "acciones": {
+                          "primero": {
+                            "data": "Acción: nacer, turno: 0",
+                            "siguiente": {
+                              "data": "Acción: actualizarTV (9), turno: 1",
+                              "siguiente": {
+                                "data": "Acción: moverse (2, 5), turno: 1",
+                                "siguiente": {
+                                  "data": "Acción: clonarse, turno: 1",
+                                  "siguiente": {
+                                    "data": "Acción: nacer, turno: 1",
+                                    "siguiente": {
+                                      "data": "Acción: actualizarTV (8), turno: 2",
+                                      "siguiente": {
+                                        "data": "Acción: actualizarTV (8), turno: 2",
+                                        "siguiente": {
+                                          "data": "Acción: comida recibir efecto, turno: 2",
+                                          "siguiente": {
+                                            "data": "Acción: actualizarTV (13), turno: 2",
+                                            "siguiente": {
+                                              "data": "Acción: morir, turno: 2",
+                                              "siguiente": {
+                                                "data": "Acción: morir, turno: 2"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "posicionX": 2,
+                        "posicionY": 0,
+                        "id": 8,
+                        "generacion": 0,
+                        "tiempoDeVida": 9,
+                        "probReproduccion": 40.0,
+                        "probClonacion": 40.0,
+                        "probMuerte": 60.0,
+                        "isVivo": true
+                      }
+                    },
+                    "siguiente": {
+                      "data": {
+                        "tipo": "individuoBasico",
+                        "propiedades": {
+                          "acciones": {
+                            "primero": {
+                              "data": "Acción: nacer, turno: 1",
+                              "siguiente": {
+                                "data": "Acción: clonarse, turno: 1",
+                                "siguiente": {
+                                  "data": "Acción: nacer, turno: 1",
+                                  "siguiente": {
+                                    "data": "Acción: actualizarTV (9), turno: 2",
+                                    "siguiente": {
+                                      "data": "Acción: actualizarTV (9), turno: 2",
+                                      "siguiente": {
+                                        "data": "Acción: reproducirse (con individuo9), turno: 2",
+                                        "siguiente": {
+                                          "data": "Acción: morir, turno: 2",
+                                          "siguiente": {
+                                            "data": "Acción: morir, turno: 2"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "posicionX": 3,
+                          "posicionY": 0,
+                          "id": 9,
+                          "generacion": 0,
+                          "tiempoDeVida": 10,
+                          "probReproduccion": 50.0,
+                          "probClonacion": 50.0,
+                          "probMuerte": 50.0,
+                          "isVivo": true
+                        }
+                      },
+                      "siguiente": {
+                        "data": {
+                          "tipo": "individuoBasico",
+                          "propiedades": {
+                            "acciones": {
+                              "primero": {
+                                "data": "Acción: nacer, turno: 2",
+                                "siguiente": {
+                                  "data": "Acción: actualizarTV (9), turno: 3",
+                                  "siguiente": {
+                                    "data": "Acción: moverse (2, 5), turno: 3",
+                                    "siguiente": {
+                                      "data": "Acción: clonarse, turno: 3",
+                                      "siguiente": {
+                                        "data": "Acción: nacer, turno: 3",
+                                        "siguiente": {
+                                          "data": "Acción: actualizarTV (8), turno: 4",
+                                          "siguiente": {
+                                            "data": "Acción: actualizarTV (8), turno: 4",
+                                            "siguiente": {
+                                              "data": "Acción: moverse (2, 6), turno: 4",
+                                              "siguiente": {
+                                                "data": "Acción: moverse (1, 5), turno: 4",
+                                                "siguiente": {
+                                                  "data": "Acción: comida recibir efecto, turno: 4",
+                                                  "siguiente": {
+                                                    "data": "Acción: actualizarTV (13), turno: 4",
+                                                    "siguiente": {
+                                                      "data": "Acción: reproducirse (con individuo5), turno: 4",
+                                                      "siguiente": {
+                                                        "data": "Acción: morir, turno: 4",
+                                                        "siguiente": {
+                                                          "data": "Acción: actualizarTV (12), turno: 5",
+                                                          "siguiente": {
+                                                            "data": "Acción: moverse (1, 6), turno: 5",
+                                                            "siguiente": {
+                                                              "data": "Acción: morir, turno: 5"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "posicionX": 3,
+                            "posicionY": 0,
+                            "id": 10,
+                            "generacion": 0,
+                            "tiempoDeVida": 10,
+                            "probReproduccion": 50.0,
+                            "probClonacion": 50.0,
+                            "probMuerte": 50.0,
+                            "isVivo": true
+                          }
+                        },
+                        "siguiente": {
+                          "data": {
+                            "tipo": "individuoBasico",
+                            "propiedades": {
+                              "acciones": {
+                                "primero": {
+                                  "data": "Acción: nacer, turno: 0",
+                                  "siguiente": {
+                                    "data": "Acción: actualizarTV (9), turno: 1",
+                                    "siguiente": {
+                                      "data": "Acción: moverse (2, 6), turno: 1",
+                                      "siguiente": {
+                                        "data": "Acción: actualizarTV (8), turno: 2",
+                                        "siguiente": {
+                                          "data": "Acción: actualizarTV (7), turno: 3",
+                                          "siguiente": {
+                                            "data": "Acción: moverse (3, 5), turno: 3",
+                                            "siguiente": {
+                                              "data": "Acción: clonarse, turno: 3",
+                                              "siguiente": {
+                                                "data": "Acción: nacer, turno: 3",
+                                                "siguiente": {
+                                                  "data": "Acción: actualizarTV (6), turno: 4",
+                                                  "siguiente": {
+                                                    "data": "Acción: actualizarTV (6), turno: 4",
+                                                    "siguiente": {
+                                                      "data": "Acción: moverse (2, 6), turno: 4",
+                                                      "siguiente": {
+                                                        "data": "Acción: moverse (2, 5), turno: 4",
+                                                        "siguiente": {
+                                                          "data": "Acción: morir, turno: 4",
+                                                          "siguiente": {
+                                                            "data": "Acción: actualizarTV (5), turno: 5",
+                                                            "siguiente": {
+                                                              "data": "Acción: moverse (3, 4), turno: 5",
+                                                              "siguiente": {
+                                                                "data": "Acción: morir, turno: 5"
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "posicionX": 3,
+                              "posicionY": 0,
+                              "id": 11,
+                              "generacion": 0,
+                              "tiempoDeVida": 7,
+                              "probReproduccion": 20.0,
+                              "probClonacion": 20.0,
+                              "probMuerte": 80.0,
+                              "isVivo": true
+                            }
+                          },
+                          "siguiente": {
+                            "data": {
+                              "tipo": "individuoBasico",
+                              "propiedades": {
+                                "acciones": {
+                                  "primero": {
+                                    "data": "Acción: nacer, turno: 2",
+                                    "siguiente": {
+                                      "data": "Acción: actualizarTV (9), turno: 3",
+                                      "siguiente": {
+                                        "data": "Acción: moverse (2, 5), turno: 3",
+                                        "siguiente": {
+                                          "data": "Acción: clonarse, turno: 3",
+                                          "siguiente": {
+                                            "data": "Acción: nacer, turno: 3",
+                                            "siguiente": {
+                                              "data": "Acción: actualizarTV (8), turno: 4",
+                                              "siguiente": {
+                                                "data": "Acción: actualizarTV (8), turno: 4",
+                                                "siguiente": {
+                                                  "data": "Acción: moverse (2, 6), turno: 4",
+                                                  "siguiente": {
+                                                    "data": "Acción: moverse (1, 5), turno: 4",
+                                                    "siguiente": {
+                                                      "data": "Acción: comida recibir efecto, turno: 4",
+                                                      "siguiente": {
+                                                        "data": "Acción: actualizarTV (13), turno: 4",
+                                                        "siguiente": {
+                                                          "data": "Acción: reproducirse (con individuo5), turno: 4",
+                                                          "siguiente": {
+                                                            "data": "Acción: morir, turno: 4",
+                                                            "siguiente": {
+                                                              "data": "Acción: actualizarTV (12), turno: 5",
+                                                              "siguiente": {
+                                                                "data": "Acción: moverse (1, 6), turno: 5",
+                                                                "siguiente": {
+                                                                  "data": "Acción: morir, turno: 5"
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "posicionX": 2,
+                                "posicionY": 0,
+                                "id": 12,
+                                "generacion": 0,
+                                "tiempoDeVida": 9,
+                                "probReproduccion": 40.0,
+                                "probClonacion": 40.0,
+                                "probMuerte": 60.0,
+                                "isVivo": true
+                              }
+                            },
+                            "siguiente": {
+                              "data": {
+                                "tipo": "individuoBasico",
+                                "propiedades": {
+                                  "acciones": {
+                                    "primero": {
+                                      "data": "Acción: nacer, turno: 4",
+                                      "siguiente": {
+                                        "data": "Acción: clonarse, turno: 4",
+                                        "siguiente": {
+                                          "data": "Acción: nacer, turno: 4",
+                                          "siguiente": {
+                                            "data": "Acción: actualizarTV (9), turno: 5",
+                                            "siguiente": {
+                                              "data": "Acción: actualizarTV (9), turno: 5",
+                                              "siguiente": {
+                                                "data": "Acción: moverse (1, 6), turno: 5",
+                                                "siguiente": {
+                                                  "data": "Acción: moverse (3, 5), turno: 5",
+                                                  "siguiente": {
+                                                    "data": "Acción: morir, turno: 5",
+                                                    "siguiente": {
+                                                      "data": "Acción: clonarse, turno: 5",
+                                                      "siguiente": {
+                                                        "data": "Acción: nacer, turno: 5",
+                                                        "siguiente": {
+                                                          "data": "Acción: actualizarTV (8), turno: 6",
+                                                          "siguiente": {
+                                                            "data": "Acción: actualizarTV (8), turno: 6",
+                                                            "siguiente": {
+                                                              "data": "Acción: moverse (2, 5), turno: 6",
+                                                              "siguiente": {
+                                                                "data": "Acción: moverse (4, 5), turno: 6",
+                                                                "siguiente": {
+                                                                  "data": "Acción: clonarse, turno: 6",
+                                                                  "siguiente": {
+                                                                    "data": "Acción: nacer, turno: 6",
+                                                                    "siguiente": {
+                                                                      "data": "Acción: actualizarTV (7), turno: 7",
+                                                                      "siguiente": {
+                                                                        "data": "Acción: actualizarTV (7), turno: 7",
+                                                                        "siguiente": {
+                                                                          "data": "Acción: actualizarTV (7), turno: 7",
+                                                                          "siguiente": {
+                                                                            "data": "Acción: moverse (3, 5), turno: 7",
+                                                                            "siguiente": {
+                                                                              "data": "Acción: moverse (4, 4), turno: 7",
+                                                                              "siguiente": {
+                                                                                "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                "siguiente": {
+                                                                                  "data": "Acción: morir, turno: 7",
+                                                                                  "siguiente": {
+                                                                                    "data": "Acción: morir, turno: 7",
+                                                                                    "siguiente": {
+                                                                                      "data": "Acción: clonarse, turno: 7",
+                                                                                      "siguiente": {
+                                                                                        "data": "Acción: nacer, turno: 7",
+                                                                                        "siguiente": {
+                                                                                          "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                          "siguiente": {
+                                                                                            "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                            "siguiente": {
+                                                                                              "data": "Acción: moverse (2, 4), turno: 8",
+                                                                                              "siguiente": {
+                                                                                                "data": "Acción: moverse (4, 5), turno: 8",
+                                                                                                "siguiente": {
+                                                                                                  "data": "Acción: montaña recibir efecto, turno: 8",
+                                                                                                  "siguiente": {
+                                                                                                    "data": "Acción: actualizarTV (-1), turno: 8",
+                                                                                                    "siguiente": {
+                                                                                                      "data": "Acción: morir, turno: 8",
+                                                                                                      "siguiente": {
+                                                                                                        "data": "Acción: actualizarTV (5), turno: 9",
+                                                                                                        "siguiente": {
+                                                                                                          "data": "Acción: moverse (3, 6), turno: 9"
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "posicionX": 2,
+                                  "posicionY": 0,
+                                  "id": 13,
+                                  "generacion": 0,
+                                  "tiempoDeVida": 10,
+                                  "probReproduccion": 50.0,
+                                  "probClonacion": 50.0,
+                                  "probMuerte": 50.0,
+                                  "isVivo": true
+                                }
+                              },
+                              "siguiente": {
+                                "data": {
+                                  "tipo": "individuoNormal",
+                                  "propiedades": {
+                                    "acciones": {
+                                      "primero": {
+                                        "data": "Acción: nacer, turno: 0",
+                                        "siguiente": {
+                                          "data": "Acción: actualizarTV (9), turno: 1",
+                                          "siguiente": {
+                                            "data": "Acción: moverse (3, 2), turno: 1",
+                                            "siguiente": {
+                                              "data": "Acción: clonarse, turno: 1",
+                                              "siguiente": {
+                                                "data": "Acción: nacer, turno: 1",
+                                                "siguiente": {
+                                                  "data": "Acción: actualizarTV (8), turno: 2",
+                                                  "siguiente": {
+                                                    "data": "Acción: actualizarTV (8), turno: 2",
+                                                    "siguiente": {
+                                                      "data": "Acción: moverse (4, 3), turno: 2",
+                                                      "siguiente": {
+                                                        "data": "Acción: actualizarTV (7), turno: 3",
+                                                        "siguiente": {
+                                                          "data": "Acción: actualizarTV (7), turno: 3",
+                                                          "siguiente": {
+                                                            "data": "Acción: moverse (3, 2), turno: 3",
+                                                            "siguiente": {
+                                                              "data": "Acción: moverse (2, 3), turno: 3",
+                                                              "siguiente": {
+                                                                "data": "Acción: actualizarTV (6), turno: 4",
+                                                                "siguiente": {
+                                                                  "data": "Acción: actualizarTV (6), turno: 4",
+                                                                  "siguiente": {
+                                                                    "data": "Acción: moverse (4, 3), turno: 4",
+                                                                    "siguiente": {
+                                                                      "data": "Acción: moverse (3, 4), turno: 4",
+                                                                      "siguiente": {
+                                                                        "data": "Acción: clonarse, turno: 4",
+                                                                        "siguiente": {
+                                                                          "data": "Acción: nacer, turno: 4",
+                                                                          "siguiente": {
+                                                                            "data": "Acción: actualizarTV (5), turno: 5",
+                                                                            "siguiente": {
+                                                                              "data": "Acción: actualizarTV (5), turno: 5",
+                                                                              "siguiente": {
+                                                                                "data": "Acción: actualizarTV (5), turno: 5",
+                                                                                "siguiente": {
+                                                                                  "data": "Acción: moverse (3, 4), turno: 5",
+                                                                                  "siguiente": {
+                                                                                    "data": "Acción: moverse (2, 5), turno: 5",
+                                                                                    "siguiente": {
+                                                                                      "data": "Acción: moverse (5, 2), turno: 5",
+                                                                                      "siguiente": {
+                                                                                        "data": "Acción: agua recibir efecto, turno: 5",
+                                                                                        "siguiente": {
+                                                                                          "data": "Acción: actualizarTV (8), turno: 5",
+                                                                                          "siguiente": {
+                                                                                            "data": "Acción: morir, turno: 5",
+                                                                                            "siguiente": {
+                                                                                              "data": "Acción: actualizarTV (4), turno: 6",
+                                                                                              "siguiente": {
+                                                                                                "data": "Acción: actualizarTV (7), turno: 6",
+                                                                                                "siguiente": {
+                                                                                                  "data": "Acción: moverse (3, 4), turno: 6",
+                                                                                                  "siguiente": {
+                                                                                                    "data": "Acción: moverse (4, 3), turno: 6",
+                                                                                                    "siguiente": {
+                                                                                                      "data": "Acción: actualizarTV (3), turno: 7",
+                                                                                                      "siguiente": {
+                                                                                                        "data": "Acción: actualizarTV (6), turno: 7",
+                                                                                                        "siguiente": {
+                                                                                                          "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                                          "siguiente": {
+                                                                                                            "data": "Acción: moverse (5, 4), turno: 7",
+                                                                                                            "siguiente": {
+                                                                                                              "data": "Acción: biblioteca recibir efecto, turno: 7",
+                                                                                                              "siguiente": {
+                                                                                                                "data": "Acción: morir, turno: 7",
+                                                                                                                "siguiente": {
+                                                                                                                  "data": "Acción: montaña recibir efecto, turno: 7",
+                                                                                                                  "siguiente": {
+                                                                                                                    "data": "Acción: actualizarTV (-1), turno: 7",
+                                                                                                                    "siguiente": {
+                                                                                                                      "data": "Acción: morir, turno: 7"
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "posicionX": 4,
+                                    "posicionY": 0,
+                                    "id": 14,
+                                    "generacion": 0,
+                                    "tiempoDeVida": 6,
+                                    "probReproduccion": 10.0,
+                                    "probClonacion": 10.0,
+                                    "probMuerte": 90.0,
+                                    "isVivo": true
+                                  }
+                                },
+                                "siguiente": {
+                                  "data": {
+                                    "tipo": "individuoBasico",
+                                    "propiedades": {
+                                      "acciones": {
+                                        "primero": {
+                                          "data": "Acción: nacer, turno: 4",
+                                          "siguiente": {
+                                            "data": "Acción: clonarse, turno: 4",
+                                            "siguiente": {
+                                              "data": "Acción: nacer, turno: 4",
+                                              "siguiente": {
+                                                "data": "Acción: actualizarTV (9), turno: 5",
+                                                "siguiente": {
+                                                  "data": "Acción: actualizarTV (9), turno: 5",
+                                                  "siguiente": {
+                                                    "data": "Acción: moverse (1, 6), turno: 5",
+                                                    "siguiente": {
+                                                      "data": "Acción: moverse (3, 5), turno: 5",
+                                                      "siguiente": {
+                                                        "data": "Acción: morir, turno: 5",
+                                                        "siguiente": {
+                                                          "data": "Acción: clonarse, turno: 5",
+                                                          "siguiente": {
+                                                            "data": "Acción: nacer, turno: 5",
+                                                            "siguiente": {
+                                                              "data": "Acción: actualizarTV (8), turno: 6",
+                                                              "siguiente": {
+                                                                "data": "Acción: actualizarTV (8), turno: 6",
+                                                                "siguiente": {
+                                                                  "data": "Acción: moverse (2, 5), turno: 6",
+                                                                  "siguiente": {
+                                                                    "data": "Acción: moverse (4, 5), turno: 6",
+                                                                    "siguiente": {
+                                                                      "data": "Acción: clonarse, turno: 6",
+                                                                      "siguiente": {
+                                                                        "data": "Acción: nacer, turno: 6",
+                                                                        "siguiente": {
+                                                                          "data": "Acción: actualizarTV (7), turno: 7",
+                                                                          "siguiente": {
+                                                                            "data": "Acción: actualizarTV (7), turno: 7",
+                                                                            "siguiente": {
+                                                                              "data": "Acción: actualizarTV (7), turno: 7",
+                                                                              "siguiente": {
+                                                                                "data": "Acción: moverse (3, 5), turno: 7",
+                                                                                "siguiente": {
+                                                                                  "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                  "siguiente": {
+                                                                                    "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                    "siguiente": {
+                                                                                      "data": "Acción: morir, turno: 7",
+                                                                                      "siguiente": {
+                                                                                        "data": "Acción: morir, turno: 7",
+                                                                                        "siguiente": {
+                                                                                          "data": "Acción: clonarse, turno: 7",
+                                                                                          "siguiente": {
+                                                                                            "data": "Acción: nacer, turno: 7",
+                                                                                            "siguiente": {
+                                                                                              "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                              "siguiente": {
+                                                                                                "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                                "siguiente": {
+                                                                                                  "data": "Acción: moverse (2, 4), turno: 8",
+                                                                                                  "siguiente": {
+                                                                                                    "data": "Acción: moverse (4, 5), turno: 8",
+                                                                                                    "siguiente": {
+                                                                                                      "data": "Acción: montaña recibir efecto, turno: 8",
+                                                                                                      "siguiente": {
+                                                                                                        "data": "Acción: actualizarTV (-1), turno: 8",
+                                                                                                        "siguiente": {
+                                                                                                          "data": "Acción: morir, turno: 8",
+                                                                                                          "siguiente": {
+                                                                                                            "data": "Acción: actualizarTV (5), turno: 9",
+                                                                                                            "siguiente": {
+                                                                                                              "data": "Acción: moverse (3, 6), turno: 9"
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "posicionX": 2,
+                                      "posicionY": 0,
+                                      "id": 15,
+                                      "generacion": 0,
+                                      "tiempoDeVida": 10,
+                                      "probReproduccion": 50.0,
+                                      "probClonacion": 50.0,
+                                      "probMuerte": 50.0,
+                                      "isVivo": true
+                                    }
+                                  },
+                                  "siguiente": {
+                                    "data": {
+                                      "tipo": "individuoBasico",
+                                      "propiedades": {
+                                        "acciones": {
+                                          "primero": {
+                                            "data": "Acción: nacer, turno: 4",
+                                            "siguiente": {
+                                              "data": "Acción: clonarse, turno: 4",
+                                              "siguiente": {
+                                                "data": "Acción: nacer, turno: 4",
+                                                "siguiente": {
+                                                  "data": "Acción: actualizarTV (9), turno: 5",
+                                                  "siguiente": {
+                                                    "data": "Acción: actualizarTV (9), turno: 5",
+                                                    "siguiente": {
+                                                      "data": "Acción: moverse (1, 6), turno: 5",
+                                                      "siguiente": {
+                                                        "data": "Acción: moverse (3, 5), turno: 5",
+                                                        "siguiente": {
+                                                          "data": "Acción: morir, turno: 5",
+                                                          "siguiente": {
+                                                            "data": "Acción: clonarse, turno: 5",
+                                                            "siguiente": {
+                                                              "data": "Acción: nacer, turno: 5",
+                                                              "siguiente": {
+                                                                "data": "Acción: actualizarTV (8), turno: 6",
+                                                                "siguiente": {
+                                                                  "data": "Acción: actualizarTV (8), turno: 6",
+                                                                  "siguiente": {
+                                                                    "data": "Acción: moverse (2, 5), turno: 6",
+                                                                    "siguiente": {
+                                                                      "data": "Acción: moverse (4, 5), turno: 6",
+                                                                      "siguiente": {
+                                                                        "data": "Acción: clonarse, turno: 6",
+                                                                        "siguiente": {
+                                                                          "data": "Acción: nacer, turno: 6",
+                                                                          "siguiente": {
+                                                                            "data": "Acción: actualizarTV (7), turno: 7",
+                                                                            "siguiente": {
+                                                                              "data": "Acción: actualizarTV (7), turno: 7",
+                                                                              "siguiente": {
+                                                                                "data": "Acción: actualizarTV (7), turno: 7",
+                                                                                "siguiente": {
+                                                                                  "data": "Acción: moverse (3, 5), turno: 7",
+                                                                                  "siguiente": {
+                                                                                    "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                    "siguiente": {
+                                                                                      "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                      "siguiente": {
+                                                                                        "data": "Acción: morir, turno: 7",
+                                                                                        "siguiente": {
+                                                                                          "data": "Acción: morir, turno: 7",
+                                                                                          "siguiente": {
+                                                                                            "data": "Acción: clonarse, turno: 7",
+                                                                                            "siguiente": {
+                                                                                              "data": "Acción: nacer, turno: 7",
+                                                                                              "siguiente": {
+                                                                                                "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                                "siguiente": {
+                                                                                                  "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                                  "siguiente": {
+                                                                                                    "data": "Acción: moverse (2, 4), turno: 8",
+                                                                                                    "siguiente": {
+                                                                                                      "data": "Acción: moverse (4, 5), turno: 8",
+                                                                                                      "siguiente": {
+                                                                                                        "data": "Acción: montaña recibir efecto, turno: 8",
+                                                                                                        "siguiente": {
+                                                                                                          "data": "Acción: actualizarTV (-1), turno: 8",
+                                                                                                          "siguiente": {
+                                                                                                            "data": "Acción: morir, turno: 8",
+                                                                                                            "siguiente": {
+                                                                                                              "data": "Acción: actualizarTV (5), turno: 9",
+                                                                                                              "siguiente": {
+                                                                                                                "data": "Acción: moverse (3, 6), turno: 9"
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "posicionX": 3,
+                                        "posicionY": 0,
+                                        "id": 16,
+                                        "generacion": 0,
+                                        "tiempoDeVida": 9,
+                                        "probReproduccion": 40.0,
+                                        "probClonacion": 40.0,
+                                        "probMuerte": 60.0,
+                                        "isVivo": true
+                                      }
+                                    },
+                                    "siguiente": {
+                                      "data": {
+                                        "tipo": "individuoBasico",
+                                        "propiedades": {
+                                          "acciones": {
+                                            "primero": {
+                                              "data": "Acción: nacer, turno: 4",
+                                              "siguiente": {
+                                                "data": "Acción: clonarse, turno: 4",
+                                                "siguiente": {
+                                                  "data": "Acción: nacer, turno: 4",
+                                                  "siguiente": {
+                                                    "data": "Acción: actualizarTV (9), turno: 5",
+                                                    "siguiente": {
+                                                      "data": "Acción: actualizarTV (9), turno: 5",
+                                                      "siguiente": {
+                                                        "data": "Acción: moverse (1, 6), turno: 5",
+                                                        "siguiente": {
+                                                          "data": "Acción: moverse (3, 5), turno: 5",
+                                                          "siguiente": {
+                                                            "data": "Acción: morir, turno: 5",
+                                                            "siguiente": {
+                                                              "data": "Acción: clonarse, turno: 5",
+                                                              "siguiente": {
+                                                                "data": "Acción: nacer, turno: 5",
+                                                                "siguiente": {
+                                                                  "data": "Acción: actualizarTV (8), turno: 6",
+                                                                  "siguiente": {
+                                                                    "data": "Acción: actualizarTV (8), turno: 6",
+                                                                    "siguiente": {
+                                                                      "data": "Acción: moverse (2, 5), turno: 6",
+                                                                      "siguiente": {
+                                                                        "data": "Acción: moverse (4, 5), turno: 6",
+                                                                        "siguiente": {
+                                                                          "data": "Acción: clonarse, turno: 6",
+                                                                          "siguiente": {
+                                                                            "data": "Acción: nacer, turno: 6",
+                                                                            "siguiente": {
+                                                                              "data": "Acción: actualizarTV (7), turno: 7",
+                                                                              "siguiente": {
+                                                                                "data": "Acción: actualizarTV (7), turno: 7",
+                                                                                "siguiente": {
+                                                                                  "data": "Acción: actualizarTV (7), turno: 7",
+                                                                                  "siguiente": {
+                                                                                    "data": "Acción: moverse (3, 5), turno: 7",
+                                                                                    "siguiente": {
+                                                                                      "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                      "siguiente": {
+                                                                                        "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                        "siguiente": {
+                                                                                          "data": "Acción: morir, turno: 7",
+                                                                                          "siguiente": {
+                                                                                            "data": "Acción: morir, turno: 7",
+                                                                                            "siguiente": {
+                                                                                              "data": "Acción: clonarse, turno: 7",
+                                                                                              "siguiente": {
+                                                                                                "data": "Acción: nacer, turno: 7",
+                                                                                                "siguiente": {
+                                                                                                  "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                                  "siguiente": {
+                                                                                                    "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                                    "siguiente": {
+                                                                                                      "data": "Acción: moverse (2, 4), turno: 8",
+                                                                                                      "siguiente": {
+                                                                                                        "data": "Acción: moverse (4, 5), turno: 8",
+                                                                                                        "siguiente": {
+                                                                                                          "data": "Acción: montaña recibir efecto, turno: 8",
+                                                                                                          "siguiente": {
+                                                                                                            "data": "Acción: actualizarTV (-1), turno: 8",
+                                                                                                            "siguiente": {
+                                                                                                              "data": "Acción: morir, turno: 8",
+                                                                                                              "siguiente": {
+                                                                                                                "data": "Acción: actualizarTV (5), turno: 9",
+                                                                                                                "siguiente": {
+                                                                                                                  "data": "Acción: moverse (3, 6), turno: 9"
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "posicionX": 4,
+                                          "posicionY": 0,
+                                          "id": 17,
+                                          "generacion": 0,
+                                          "tiempoDeVida": 8,
+                                          "probReproduccion": 30.0,
+                                          "probClonacion": 30.0,
+                                          "probMuerte": 70.0,
+                                          "isVivo": true
+                                        }
+                                      },
+                                      "siguiente": {
+                                        "data": {
+                                          "tipo": "individuoBasico",
+                                          "propiedades": {
+                                            "acciones": {
+                                              "primero": {
+                                                "data": "Acción: nacer, turno: 4",
+                                                "siguiente": {
+                                                  "data": "Acción: clonarse, turno: 4",
+                                                  "siguiente": {
+                                                    "data": "Acción: nacer, turno: 4",
+                                                    "siguiente": {
+                                                      "data": "Acción: actualizarTV (9), turno: 5",
+                                                      "siguiente": {
+                                                        "data": "Acción: actualizarTV (9), turno: 5",
+                                                        "siguiente": {
+                                                          "data": "Acción: moverse (1, 6), turno: 5",
+                                                          "siguiente": {
+                                                            "data": "Acción: moverse (3, 5), turno: 5",
+                                                            "siguiente": {
+                                                              "data": "Acción: morir, turno: 5",
+                                                              "siguiente": {
+                                                                "data": "Acción: clonarse, turno: 5",
+                                                                "siguiente": {
+                                                                  "data": "Acción: nacer, turno: 5",
+                                                                  "siguiente": {
+                                                                    "data": "Acción: actualizarTV (8), turno: 6",
+                                                                    "siguiente": {
+                                                                      "data": "Acción: actualizarTV (8), turno: 6",
+                                                                      "siguiente": {
+                                                                        "data": "Acción: moverse (2, 5), turno: 6",
+                                                                        "siguiente": {
+                                                                          "data": "Acción: moverse (4, 5), turno: 6",
+                                                                          "siguiente": {
+                                                                            "data": "Acción: clonarse, turno: 6",
+                                                                            "siguiente": {
+                                                                              "data": "Acción: nacer, turno: 6",
+                                                                              "siguiente": {
+                                                                                "data": "Acción: actualizarTV (7), turno: 7",
+                                                                                "siguiente": {
+                                                                                  "data": "Acción: actualizarTV (7), turno: 7",
+                                                                                  "siguiente": {
+                                                                                    "data": "Acción: actualizarTV (7), turno: 7",
+                                                                                    "siguiente": {
+                                                                                      "data": "Acción: moverse (3, 5), turno: 7",
+                                                                                      "siguiente": {
+                                                                                        "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                        "siguiente": {
+                                                                                          "data": "Acción: moverse (4, 4), turno: 7",
+                                                                                          "siguiente": {
+                                                                                            "data": "Acción: morir, turno: 7",
+                                                                                            "siguiente": {
+                                                                                              "data": "Acción: morir, turno: 7",
+                                                                                              "siguiente": {
+                                                                                                "data": "Acción: clonarse, turno: 7",
+                                                                                                "siguiente": {
+                                                                                                  "data": "Acción: nacer, turno: 7",
+                                                                                                  "siguiente": {
+                                                                                                    "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                                    "siguiente": {
+                                                                                                      "data": "Acción: actualizarTV (6), turno: 8",
+                                                                                                      "siguiente": {
+                                                                                                        "data": "Acción: moverse (2, 4), turno: 8",
+                                                                                                        "siguiente": {
+                                                                                                          "data": "Acción: moverse (4, 5), turno: 8",
+                                                                                                          "siguiente": {
+                                                                                                            "data": "Acción: montaña recibir efecto, turno: 8",
+                                                                                                            "siguiente": {
+                                                                                                              "data": "Acción: actualizarTV (-1), turno: 8",
+                                                                                                              "siguiente": {
+                                                                                                                "data": "Acción: morir, turno: 8",
+                                                                                                                "siguiente": {
+                                                                                                                  "data": "Acción: actualizarTV (5), turno: 9",
+                                                                                                                  "siguiente": {
+                                                                                                                    "data": "Acción: moverse (3, 6), turno: 9"
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "posicionX": 3,
+                                            "posicionY": 0,
+                                            "id": 18,
+                                            "generacion": 0,
+                                            "tiempoDeVida": 7,
+                                            "probReproduccion": 20.0,
+                                            "probClonacion": 20.0,
+                                            "probMuerte": 80.0,
+                                            "isVivo": true
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "HistorialRecursos": {
+    "primero": {
+      "data": {
+        "tipo": "comida",
+        "propiedades": {
+          "id": 1,
+          "posicionX": 2,
+          "posicionY": 5,
+          "tiempoDeAparicion": 15
+        }
+      },
+      "siguiente": {
+        "data": {
+          "tipo": "tesoro",
+          "propiedades": {
+            "id": 2,
+            "posicionX": 7,
+            "posicionY": 5,
+            "tiempoDeAparicion": 15
+          }
+        },
+        "siguiente": {
+          "data": {
+            "tipo": "montaña",
+            "propiedades": {
+              "id": 3,
+              "posicionX": 9,
+              "posicionY": 2,
+              "tiempoDeAparicion": 15
+            }
+          },
+          "siguiente": {
+            "data": {
+              "tipo": "comida",
+              "propiedades": {
+                "id": 4,
+                "posicionX": 1,
+                "posicionY": 1,
+                "tiempoDeAparicion": 15
+              }
+            },
+            "siguiente": {
+              "data": {
+                "tipo": "comida",
+                "propiedades": {
+                  "id": 5,
+                  "posicionX": 1,
+                  "posicionY": 5,
+                  "tiempoDeAparicion": 15
+                }
+              },
+              "siguiente": {
+                "data": {
+                  "tipo": "tesoro",
+                  "propiedades": {
+                    "id": 6,
+                    "posicionX": 1,
+                    "posicionY": 9,
+                    "tiempoDeAparicion": 15
+                  }
+                },
+                "siguiente": {
+                  "data": {
+                    "tipo": "agua",
+                    "propiedades": {
+                      "id": 7,
+                      "posicionX": 5,
+                      "posicionY": 2,
+                      "tiempoDeAparicion": 15
+                    }
+                  },
+                  "siguiente": {
+                    "data": {
+                      "tipo": "montaña",
+                      "propiedades": {
+                        "id": 8,
+                        "posicionX": 8,
+                        "posicionY": 8,
+                        "tiempoDeAparicion": 15
+                      }
+                    },
+                    "siguiente": {
+                      "data": {
+                        "tipo": "pozo",
+                        "propiedades": {
+                          "id": 9,
+                          "posicionX": 4,
+                          "posicionY": 4,
+                          "tiempoDeAparicion": 15
+                        }
+                      },
+                      "siguiente": {
+                        "data": {
+                          "tipo": "agua",
+                          "propiedades": {
+                            "id": 10,
+                            "posicionX": 6,
+                            "posicionY": 7,
+                            "tiempoDeAparicion": 15
+                          }
+                        },
+                        "siguiente": {
+                          "data": {
+                            "tipo": "biblioteca",
+                            "propiedades": {
+                              "id": 11,
+                              "posicionX": 6,
+                              "posicionY": 9,
+                              "tiempoDeAparicion": 15
+                            }
+                          },
+                          "siguiente": {
+                            "data": {
+                              "tipo": "pozo",
+                              "propiedades": {
+                                "id": 12,
+                                "posicionX": 0,
+                                "posicionY": 7,
+                                "tiempoDeAparicion": 15
+                              }
+                            },
+                            "siguiente": {
+                              "data": {
+                                "tipo": "comida",
+                                "propiedades": {
+                                  "id": 13,
+                                  "posicionX": 1,
+                                  "posicionY": 3,
+                                  "tiempoDeAparicion": 15
+                                }
+                              },
+                              "siguiente": {
+                                "data": {
+                                  "tipo": "comida",
+                                  "propiedades": {
+                                    "id": 14,
+                                    "posicionX": 3,
+                                    "posicionY": 2,
+                                    "tiempoDeAparicion": 15
+                                  }
+                                },
+                                "siguiente": {
+                                  "data": {
+                                    "tipo": "pozo",
+                                    "propiedades": {
+                                      "id": 15,
+                                      "posicionX": 4,
+                                      "posicionY": 4,
+                                      "tiempoDeAparicion": 15
+                                    }
+                                  },
+                                  "siguiente": {
+                                    "data": {
+                                      "tipo": "montaña",
+                                      "propiedades": {
+                                        "id": 16,
+                                        "posicionX": 5,
+                                        "posicionY": 0,
+                                        "tiempoDeAparicion": 15
+                                      }
+                                    },
+                                    "siguiente": {
+                                      "data": {
+                                        "tipo": "montaña",
+                                        "propiedades": {
+                                          "id": 17,
+                                          "posicionX": 6,
+                                          "posicionY": 2,
+                                          "tiempoDeAparicion": 15
+                                        }
+                                      },
+                                      "siguiente": {
+                                        "data": {
+                                          "tipo": "montaña",
+                                          "propiedades": {
+                                            "id": 18,
+                                            "posicionX": 8,
+                                            "posicionY": 3,
+                                            "tiempoDeAparicion": 15
+                                          }
+                                        },
+                                        "siguiente": {
+                                          "data": {
+                                            "tipo": "tesoro",
+                                            "propiedades": {
+                                              "id": 19,
+                                              "posicionX": 0,
+                                              "posicionY": 0,
+                                              "tiempoDeAparicion": 15
+                                            }
+                                          },
+                                          "siguiente": {
+                                            "data": {
+                                              "tipo": "biblioteca",
+                                              "propiedades": {
+                                                "id": 20,
+                                                "posicionX": 0,
+                                                "posicionY": 6,
+                                                "tiempoDeAparicion": 15
+                                              }
+                                            },
+                                            "siguiente": {
+                                              "data": {
+                                                "tipo": "montaña",
+                                                "propiedades": {
+                                                  "id": 21,
+                                                  "posicionX": 1,
+                                                  "posicionY": 2,
+                                                  "tiempoDeAparicion": 15
+                                                }
+                                              },
+                                              "siguiente": {
+                                                "data": {
+                                                  "tipo": "comida",
+                                                  "propiedades": {
+                                                    "id": 22,
+                                                    "posicionX": 3,
+                                                    "posicionY": 8,
+                                                    "tiempoDeAparicion": 15
+                                                  }
+                                                },
+                                                "siguiente": {
+                                                  "data": {
+                                                    "tipo": "biblioteca",
+                                                    "propiedades": {
+                                                      "id": 23,
+                                                      "posicionX": 9,
+                                                      "posicionY": 9,
+                                                      "tiempoDeAparicion": 15
+                                                    }
+                                                  },
+                                                  "siguiente": {
+                                                    "data": {
+                                                      "tipo": "montaña",
+                                                      "propiedades": {
+                                                        "id": 24,
+                                                        "posicionX": 0,
+                                                        "posicionY": 6,
+                                                        "tiempoDeAparicion": 15
+                                                      }
+                                                    },
+                                                    "siguiente": {
+                                                      "data": {
+                                                        "tipo": "montaña",
+                                                        "propiedades": {
+                                                          "id": 25,
+                                                          "posicionX": 2,
+                                                          "posicionY": 4,
+                                                          "tiempoDeAparicion": 15
+                                                        }
+                                                      },
+                                                      "siguiente": {
+                                                        "data": {
+                                                          "tipo": "tesoro",
+                                                          "propiedades": {
+                                                            "id": 26,
+                                                            "posicionX": 3,
+                                                            "posicionY": 1,
+                                                            "tiempoDeAparicion": 15
+                                                          }
+                                                        },
+                                                        "siguiente": {
+                                                          "data": {
+                                                            "tipo": "pozo",
+                                                            "propiedades": {
+                                                              "id": 27,
+                                                              "posicionX": 3,
+                                                              "posicionY": 4,
+                                                              "tiempoDeAparicion": 15
+                                                            }
+                                                          },
+                                                          "siguiente": {
+                                                            "data": {
+                                                              "tipo": "agua",
+                                                              "propiedades": {
+                                                                "id": 28,
+                                                                "posicionX": 4,
+                                                                "posicionY": 4,
+                                                                "tiempoDeAparicion": 15
+                                                              }
+                                                            },
+                                                            "siguiente": {
+                                                              "data": {
+                                                                "tipo": "comida",
+                                                                "propiedades": {
+                                                                  "id": 29,
+                                                                  "posicionX": 4,
+                                                                  "posicionY": 6,
+                                                                  "tiempoDeAparicion": 15
+                                                                }
+                                                              },
+                                                              "siguiente": {
+                                                                "data": {
+                                                                  "tipo": "montaña",
+                                                                  "propiedades": {
+                                                                    "id": 30,
+                                                                    "posicionX": 4,
+                                                                    "posicionY": 8,
+                                                                    "tiempoDeAparicion": 15
+                                                                  }
+                                                                },
+                                                                "siguiente": {
+                                                                  "data": {
+                                                                    "tipo": "montaña",
+                                                                    "propiedades": {
+                                                                      "id": 31,
+                                                                      "posicionX": 5,
+                                                                      "posicionY": 4,
+                                                                      "tiempoDeAparicion": 15
+                                                                    }
+                                                                  },
+                                                                  "siguiente": {
+                                                                    "data": {
+                                                                      "tipo": "biblioteca",
+                                                                      "propiedades": {
+                                                                        "id": 32,
+                                                                        "posicionX": 7,
+                                                                        "posicionY": 2,
+                                                                        "tiempoDeAparicion": 15
+                                                                      }
+                                                                    },
+                                                                    "siguiente": {
+                                                                      "data": {
+                                                                        "tipo": "agua",
+                                                                        "propiedades": {
+                                                                          "id": 33,
+                                                                          "posicionX": 7,
+                                                                          "posicionY": 9,
+                                                                          "tiempoDeAparicion": 15
+                                                                        }
+                                                                      },
+                                                                      "siguiente": {
+                                                                        "data": {
+                                                                          "tipo": "comida",
+                                                                          "propiedades": {
+                                                                            "id": 34,
+                                                                            "posicionX": 1,
+                                                                            "posicionY": 3,
+                                                                            "tiempoDeAparicion": 15
+                                                                          }
+                                                                        },
+                                                                        "siguiente": {
+                                                                          "data": {
+                                                                            "tipo": "comida",
+                                                                            "propiedades": {
+                                                                              "id": 35,
+                                                                              "posicionX": 2,
+                                                                              "posicionY": 6,
+                                                                              "tiempoDeAparicion": 15
+                                                                            }
+                                                                          },
+                                                                          "siguiente": {
+                                                                            "data": {
+                                                                              "tipo": "pozo",
+                                                                              "propiedades": {
+                                                                                "id": 36,
+                                                                                "posicionX": 3,
+                                                                                "posicionY": 8,
+                                                                                "tiempoDeAparicion": 15
+                                                                              }
+                                                                            },
+                                                                            "siguiente": {
+                                                                              "data": {
+                                                                                "tipo": "agua",
+                                                                                "propiedades": {
+                                                                                  "id": 37,
+                                                                                  "posicionX": 7,
+                                                                                  "posicionY": 5,
+                                                                                  "tiempoDeAparicion": 15
+                                                                                }
+                                                                              },
+                                                                              "siguiente": {
+                                                                                "data": {
+                                                                                  "tipo": "biblioteca",
+                                                                                  "propiedades": {
+                                                                                    "id": 38,
+                                                                                    "posicionX": 9,
+                                                                                    "posicionY": 9,
+                                                                                    "tiempoDeAparicion": 15
+                                                                                  }
+                                                                                },
+                                                                                "siguiente": {
+                                                                                  "data": {
+                                                                                    "tipo": "montaña",
+                                                                                    "propiedades": {
+                                                                                      "id": 39,
+                                                                                      "posicionX": 0,
+                                                                                      "posicionY": 0,
+                                                                                      "tiempoDeAparicion": 15
+                                                                                    }
+                                                                                  },
+                                                                                  "siguiente": {
+                                                                                    "data": {
+                                                                                      "tipo": "comida",
+                                                                                      "propiedades": {
+                                                                                        "id": 40,
+                                                                                        "posicionX": 3,
+                                                                                        "posicionY": 0,
+                                                                                        "tiempoDeAparicion": 15
+                                                                                      }
+                                                                                    },
+                                                                                    "siguiente": {
+                                                                                      "data": {
+                                                                                        "tipo": "tesoro",
+                                                                                        "propiedades": {
+                                                                                          "id": 41,
+                                                                                          "posicionX": 4,
+                                                                                          "posicionY": 2,
+                                                                                          "tiempoDeAparicion": 15
+                                                                                        }
+                                                                                      },
+                                                                                      "siguiente": {
+                                                                                        "data": {
+                                                                                          "tipo": "montaña",
+                                                                                          "propiedades": {
+                                                                                            "id": 42,
+                                                                                            "posicionX": 5,
+                                                                                            "posicionY": 3,
+                                                                                            "tiempoDeAparicion": 15
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "isPausado": true,
+  "isGuardado": true,
+  "nombreArchivo": "partidaFinalizada",
+  "turnoActual": 9,
+  "IndividuosMaximosPorCelda": 3,
+  "RecursosMaximosPorCelda": 3,
+  "FilasTablero": 10,
+  "ColumnasTablero": 10,
+  "TurnosVidaIniciales": 10,
+  "ProbReproIndividuo": 50,
+  "ProbClonIndividuo": 50,
+  "ProbMejoraToNormal": 50,
+  "ProbMejoraToAvanzado": 25,
+  "ProbAparRecurso": 5,
+  "TurnosInicialesRecurso": 15,
+  "ProbAparAgua": 20,
+  "ProbAparComida": 20,
+  "ProbAparMontaña": 20,
+  "ProbAparTesoro": 10,
+  "ProbAparBiblioteca": 10,
+  "ProbAparPozo": 10,
+  "IncrementoTurnosAgua": 3,
+  "IncrementoTurnosComida": 5,
+  "IncrementoTurnosMontaña": 7,
+  "IncrementoProbRepro": 25,
+  "IncrementoProbClon": 10
+}

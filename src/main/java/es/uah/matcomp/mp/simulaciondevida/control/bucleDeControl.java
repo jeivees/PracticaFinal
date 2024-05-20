@@ -8,6 +8,7 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazad
 import excepciones.recursosNoConsumidosException;
 import gui.mvc.javafx.practicafinal.DataModel;
 import gui.mvc.javafx.practicafinal.menuPrincipalController;
+import gui.mvc.javafx.practicafinal.tableroController;
 import javafx.application.Platform;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -41,8 +42,13 @@ public class bucleDeControl implements Runnable{
                 ejecutarBucle();
             } else {
                 while (!model.isPausado()) {
-                    ejecutarBucle();
-                    sleep(1500);
+                    if (model.getIndividuos().getNumeroElementos() <= 1) {
+                        model.setPausado(true);
+                        Platform.runLater(() -> tableroController.finalizarPartida(model));
+                    } else {
+                        ejecutarBucle();
+                        sleep(1500);
+                    }
                 }
             }
         } catch (Exception e) {
@@ -62,7 +68,7 @@ public class bucleDeControl implements Runnable{
             evaluarClonacion();
             evaluarDesaparicionIndividuos();
             evaluarAparicionDeRecursos();
-            log.debug("Ha pasado el turno " + turnoProperty.get());
+            log.debug(STR."Ha pasado el turno \{turnoProperty.get()}");
         });
     }
 

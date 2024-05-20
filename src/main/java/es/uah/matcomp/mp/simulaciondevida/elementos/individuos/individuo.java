@@ -276,7 +276,7 @@ public abstract class individuo {
             acciones.add(STR."Acción: clonarse, turno: \{model.getTurno()}");
             log.debug(STR."El individuo \{this.getId()} se ha clonado");
 
-            copia.añadir(model, casillaActual);
+            casillaActual.addIndividuo(copia, true);
             copia.getAcciones().add(STR."Acción: nacer, turno: \{model.getTurno()}");
             log.debug(STR."El individuo \{copia.getId()} ha nacido");
         } catch (Exception e) {

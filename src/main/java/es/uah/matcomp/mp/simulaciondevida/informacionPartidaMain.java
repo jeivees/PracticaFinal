@@ -13,64 +13,61 @@ import gui.mvc.javafx.practicafinal.DataModel;
 import java.io.File;
 
 public class informacionPartidaMain {
-    public static void main(String[] args) { // Acción syntax: [Acción: <accion> <optional:(extraData)>, turno: <turno>]
+    public static void main(String[] args) {
+        // Arguments: <nombreArchivo>
+        // Acción syntax: [Acción: <accion> <optional:(extraData)>, turno: <turno>]
         try {
             if (args.length != 1) throw new argumentosInvalidosException();
-            if (args[0].equals("-h")) {
-                System.out.println("Syntax: ");
-            } else {
-                DataModel model = DataModel.cargar(STR."\{args[0]}.json");
-                if (model == null) {
-                    System.out.println("El nombre del archivo no es válido, partidas existentes:");
+            DataModel model = DataModel.cargar(STR."\{args[0]}.json");
+            if (model == null) {
+                System.out.println("El nombre del archivo no es válido, partidas existentes:");
 
-                    File carpetaDeArchivos = new File("archivosDePartida");
-                    File[] archivos = carpetaDeArchivos.listFiles();
-                    if (archivos != null) {
-                        String[] nombresDeArchivos = new String[archivos.length];
-                        for (int i = 0; i != archivos.length; i++) {
-                            nombresDeArchivos[i] = archivos[i].getName();
-                        }
-                        System.out.println(nombresDeArchivos);
-                    } else {
-                        System.out.println("No existen partidas guardadas");
+                File carpetaDeArchivos = new File("archivosDePartida");
+                File[] archivos = carpetaDeArchivos.listFiles();
+                if (archivos != null) {
+                    String[] nombresDeArchivos = new String[archivos.length];
+                    for (int i = 0; i != archivos.length; i++) {
+                        nombresDeArchivos[i] = archivos[i].getName();
                     }
+                    System.out.println(nombresDeArchivos);
                 } else {
-                    simuladorDeVida juegoActual = new simuladorDeVida(model, true);
+                    System.out.println("No existen partidas guardadas");
+                }
+            } else {
+                simuladorDeVida juegoActual = new simuladorDeVida(model, true);
 
-                    juegoActual.crearInfoPartida();
-                    HashMap<individuo, ArbolBinario<individuo>> arbolesGenealogicos = juegoActual.getArbolesGenealogicos();
-                    Grafo<String> grafoAcciones = juegoActual.getGrafoAcciones();
+                juegoActual.crearInfoPartida();
+                Grafo<String> grafoAcciones = juegoActual.getGrafoAcciones();
 
-                    System.out.print("Individuo más longevo: ");
-                    individuo individuoLongevo = getIndividuoLongevo(model, grafoAcciones);
-                    System.out.println(STR."Individuo \{individuoLongevo.getId()}");
+                System.out.print("\nIndividuo más longevo: ");
+                individuo individuoLongevo = getIndividuoLongevo(model, grafoAcciones);
+                System.out.println(STR."Individuo \{individuoLongevo.getId()}");
 
-                    System.out.println("Acciones que ha realizado:");
-                    System.out.println(individuoLongevo.getAcciones());
+                System.out.println("Acciones que ha realizado:");
+                System.out.println(individuoLongevo.getAcciones());
 
-                    System.out.print("Clonaciones ocurridas: ");
-                    System.out.println(getNumeroAcciones(model, grafoAcciones, "clonarse"));
+                System.out.print("Clonaciones ocurridas: ");
+                System.out.println(getNumeroAcciones(model, grafoAcciones, "clonarse"));
 
-                    System.out.print("Reproducciones ocurridas: ");
-                    System.out.println(getNumeroAcciones(model, grafoAcciones, "reproducirse"));
+                System.out.print("Reproducciones ocurridas: ");
+                System.out.println(getNumeroAcciones(model, grafoAcciones, "reproducirse"));
 
-                    System.out.print("Individuo con más reproducciones: ");
-                    System.out.println(STR."Individuo \{getIndividuoMasAccion(model, grafoAcciones, "reproducirse").getId()}");
+                System.out.print("Individuo con más reproducciones: ");
+                System.out.println(STR."Individuo \{getIndividuoMasAccion(model, grafoAcciones, "reproducirse").getId()}");
 
-                    System.out.print("Individuo con más clonaciones: ");
-                    System.out.println(STR."Individuo \{getIndividuoMasAccion(model, grafoAcciones, "clonarse").getId()}");
+                System.out.print("Individuo con más clonaciones: ");
+                System.out.println(STR."Individuo \{getIndividuoMasAccion(model, grafoAcciones, "clonarse").getId()}");
 
-                    System.out.print("Individuo que ha bebido más agua: ");
-                    System.out.println(STR."Individuo \{getIndividuoMasAccion(model, grafoAcciones, "agua").getId()}");
+                System.out.print("Individuo que ha bebido más agua: ");
+                System.out.println(STR."Individuo \{getIndividuoMasAccion(model, grafoAcciones, "agua").getId()}");
 
-                    System.out.print("Individuo con máximo tiempo de vida: ");
-                    individuo individuoTVMaximo = getIndividuoTVMaximo(model, grafoAcciones);
-                    System.out.println(STR."Individuo \{individuoTVMaximo.getId()}, ha llegado a tener \{getTVMaximoIndividuo(grafoAcciones, individuoTVMaximo)} TV");
-                    if (individuoLongevo == individuoTVMaximo) {
-                        System.out.println("El individuo más longevo y el que ha llegado a tener un TV máximo coinciden");
-                    } else {
-                        System.out.println("El individuo más longevo y el que ha llegado a tener un TV máximo no coinciden");
-                    }
+                System.out.print("Individuo con máximo tiempo de vida: ");
+                individuo individuoTVMaximo = getIndividuoTVMaximo(model, grafoAcciones);
+                System.out.println(STR."Individuo \{individuoTVMaximo.getId()}, ha llegado a tener \{getTVMaximoIndividuo(grafoAcciones, individuoTVMaximo)} TV");
+                if (individuoLongevo == individuoTVMaximo) {
+                    System.out.println("El individuo más longevo y el que ha llegado a tener un TV máximo coinciden\n");
+                } else {
+                    System.out.println("El individuo más longevo y el que ha llegado a tener un TV máximo no coinciden\n");
                 }
             }
         } catch (argumentosInvalidosException e) {

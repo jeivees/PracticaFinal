@@ -46,6 +46,10 @@ public class simuladorDeVida {
         threadBucle.start();
     }
 
+    public void finalizar () {
+        crearInfoPartida();
+    }
+
     public void crearInfoPartida () {
         arbolesGenealogicos = crearArbolesGenealogicos();
         grafoAcciones = crearGrafoAcciones();
@@ -100,6 +104,7 @@ public class simuladorDeVida {
         grafoAcciones.addNodo(new Nodo<>("pozo"));
 
         grafoAcciones.addNodo(new Nodo<>("moverse"));
+        grafoAcciones.addNodo(new Nodo<>("evolucionar"));
 
         grafoAcciones.addNodo(new Nodo<>("reproducirse"));
         grafoAcciones.addNodo(new Nodo<>("clonarse"));

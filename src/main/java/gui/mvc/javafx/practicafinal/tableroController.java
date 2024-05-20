@@ -37,9 +37,6 @@ public class tableroController {
     @FXML
     private Label turnoLabel = new Label();
 
-    @FXML
-    private HBox paneGanadores = new HBox();
-
 
     public tableroController () {}
     public tableroController (DataModel model, simuladorDeVida juegoActual) {
@@ -230,17 +227,43 @@ public class tableroController {
     protected void onBotonFinalizarPartidaClick (ActionEvent event) {
         casillaTablero casilla00 = ((casillaTablero) ((GridPane) ((AnchorPane) ((Node) event.getSource()).getScene().getRoot().getChildrenUnmodifiable().get(1)).getChildrenUnmodifiable().getFirst()).getChildren().getFirst());
         model = casilla00.getModel();
-        finalizarPartida(event);
+        if (!getModel().isGuardado() && model.isPausado()) {
+            if (Window.getWindows().size() > 1) ((Stage) Window.getWindows().get(1)).close();
+            Alert confirmacion = new Alert(Alert.AlertType.CONFIRMATION);
+            confirmacion.initOwner(Stage.getWindows().getFirst());
+            confirmacion.setTitle("Finalizar partida");
+            confirmacion.setHeaderText("Estás a punto de finalizar la partida, perderás el progreso");
+            confirmacion.setContentText("¿Quieres guardar la partida antes de salir?");
+
+            ButtonType botonGuardar = new ButtonType("Guardar");
+            ButtonType botonNoGuardar = new ButtonType("No guardar");
+            ButtonType botonCancelar = new ButtonType("Cancelar");
+            confirmacion.getButtonTypes().setAll(botonGuardar, botonNoGuardar, botonCancelar);
+
+            confirmacion.showAndWait().ifPresent(respuesta -> {
+                if (respuesta == botonGuardar) {
+                    guardarPartida(event);
+                    finalizarPartida(model);
+                } else if (respuesta == botonNoGuardar) {
+                    finalizarPartida(model);
+                } else {
+                    confirmacion.close();
+                }
+            });
+        } else {
+            finalizarPartida(model);
+        }
     }
 
-    public void finalizarPartida (ActionEvent event) {
-        juegoActual = new simuladorDeVida(model, true);
-        juegoActual.crearInfoPartida();
+    public static void finalizarPartida (DataModel model) {
+        simuladorDeVida juegoActual = new simuladorDeVida(model, true);
+        juegoActual.finalizar();
+
 
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(mainApplication.class.getResource("finalizarPartida-vista.fxml"));
             Parent root = fxmlLoader.load();
-            paneGanadores = (HBox) ((AnchorPane) ((ScrollPane) ((VBox) root).getChildren().get(2)).getContent()).getChildren().getFirst();
+            HBox paneGanadores = (HBox) ((AnchorPane) ((ScrollPane) ((VBox) root).getChildren().get(2)).getContent()).getChildren().getFirst();
 
             HBox.setHgrow(paneGanadores, Priority.ALWAYS);
             AnchorPane.setTopAnchor(paneGanadores, 0.0);
@@ -283,8 +306,8 @@ public class tableroController {
             }
 
 
-            while (Window.getWindows().size() > 1) {
-                ((Stage) Window.getWindows().get(1)).close();
+            while (!Window.getWindows().isEmpty()) {
+                ((Stage) Window.getWindows().getFirst()).close();
             };
             Stage stage = new Stage();
             Scene scene = new Scene(root);
@@ -297,7 +320,7 @@ public class tableroController {
         }
     }
 
-    private TreeItem<individuo> crearArbolVista (ArbolBinario<individuo> arbol) {
+    private static TreeItem<individuo> crearArbolVista (ArbolBinario<individuo> arbol) {
         TreeItem<individuo> itemRaiz = new TreeItem<>(arbol.getRaiz().getDato());
         if (arbol.getAltura() > 1) {
             crearArbolVistaAux(arbol.getRaiz().getDerecha(), itemRaiz);
@@ -306,7 +329,7 @@ public class tableroController {
         return itemRaiz;
     }
 
-    private void crearArbolVistaAux (nodoBST<individuo> nodo, TreeItem<individuo> itemRaiz) {
+    private static void crearArbolVistaAux (nodoBST<individuo> nodo, TreeItem<individuo> itemRaiz) {
         TreeItem<individuo> item = new TreeItem<>(nodo.getDato());
         itemRaiz.getChildren().add(item);
 
