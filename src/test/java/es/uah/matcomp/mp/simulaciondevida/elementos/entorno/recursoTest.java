@@ -1,20 +1,13 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 
-import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
-import gui.mvc.javafx.practicafinal.DataModel;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class recursoTest {
-    public static void main(String[] args) {
-        
-    }
-
-
     @Test
-    public void getPosicionX() {
+    void getPosicionX() {
         agua a = new agua ();
         a.setPosicionX(2);
         Assertions.assertDoesNotThrow(()->a.getPosicionX());
@@ -82,19 +75,17 @@ class recursoTest {
     }
 
     @Test
-    void eliminar() {
+    void getId(){
+        agua a = new agua();
+        a.setId(3);
+        assertDoesNotThrow(()->a.getId());
+        assertEquals(3, a.getId());
+    }
+    @Test
+    void setId(){
+        agua a = new agua();
+        assertDoesNotThrow(()-> a.setId(3));
+        assertEquals(3, a.getId());
     }
 
-    @Test
-    void actualizarTA() {
-        DataModel model = new DataModel(10, 50, 10, 50,25,
-                5,15,20,20,20,
-                10,10,10,3,5,
-                7, 25, 10, 10, 10, 0);
-        tablero tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
-    }
-
-    @Test
-    void aplicarMejora() {
-    }
 }

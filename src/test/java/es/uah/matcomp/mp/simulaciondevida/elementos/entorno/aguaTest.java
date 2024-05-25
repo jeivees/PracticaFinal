@@ -20,13 +20,4 @@ class aguaTest {
         assertDoesNotThrow(()->a.setIncrementoTV(2));
         assertEquals(2, a.getIncrementoTV(), "El incremento no es correcto");
     }
-/**
-    @Test
-    void aplicarMejora() {
-        individuoBasico i = new individuoBasico(2,2,2,2,2);
-        agua a = new agua();
-        a.setIncrementoTV(2);
-        assertDoesNotThrow(()->a.aplicarMejora(i));
-        assertEquals(4, i.getTiempoDeVida(), "El incremento no es correcto");
-    }**/
 }
