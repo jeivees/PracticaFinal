@@ -8,15 +8,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class mainApplication extends Application {
-    /**
-     * verificar que la suma de las probabilidades de los recursos no sea mayor que 100
-     * añadir boton salir del juego menú principal
-     * en las alertas, confirmaciones setoncloserequest y en todas las pantallas setoncloserequest
-     * añadir boton eliminar partida menú carga
-     * arreglar esquivar montañas
-     * establecer generación correctamente
-     */
-
 
     @Override
     public void start(Stage stage) throws IOException {

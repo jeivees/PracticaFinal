@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.simulaciondevida.elementos.entorno;
 
-import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.casillaTablero;
 import es.uah.matcomp.mp.simulaciondevida.elementos.tablero.tablero;
 import gui.mvc.javafx.practicafinal.DataModel;
 import org.junit.jupiter.api.Assertions;
@@ -9,9 +8,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class recursoTest {
+    public static void main(String[] args) {
+        
+    }
+
 
     @Test
-    void getPosicionX() {
+    public void getPosicionX() {
         agua a = new agua ();
         a.setPosicionX(2);
         Assertions.assertDoesNotThrow(()->a.getPosicionX());

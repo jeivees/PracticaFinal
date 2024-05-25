@@ -13,7 +13,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
 public abstract class individuo {
@@ -241,7 +240,7 @@ public abstract class individuo {
                         model.getTurnosVidaIniciales(), model.getProbReproIndividuo(), model.getProbClonIndividuo(), model.getTurno());
                 hijo.setPadres(this, pareja);
                 hijo.añadir(model, casillaActual);
-                acciones.add(STR."Acción: reproducirse (con individuo\{pareja.getId()}), turno: \{turnoActual}");
+                acciones.add(STR."Acción: reproducirse (con individuo \{pareja.getId()}), turno: \{turnoActual}");
                 log.debug(STR."El individuo \{this} se ha reproducido con el individuo \{pareja.getId()}");
                 return false; // mueren? no
             } catch (Exception e) {

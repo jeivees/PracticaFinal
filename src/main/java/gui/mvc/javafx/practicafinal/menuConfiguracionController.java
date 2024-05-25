@@ -75,9 +75,9 @@ public class menuConfiguracionController implements Initializable {
 
     private DataModel model = new DataModel(
             10, 50, 10, 50,25,
-            5,15,20,20,20,
+            3,15,20,20,20,
             10,10,10,3,5,
-            7, 25, 10, 10, 10, 0);
+            7, 25, 8, 8, 10, 0);
     private DataModelProperties properties = new DataModelProperties(model);
 
     public menuConfiguracionController () {}
@@ -190,20 +190,15 @@ public class menuConfiguracionController implements Initializable {
     }
 
     private void continuarJuego(ActionEvent event) throws IOException {
+        properties.commit();
+
+        Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stageActual.close();
+
         if (!model.isPausado()) { // en caso de que sea una partida nueva
-            properties.commit();
-
-            Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stageActual.close();
-
             empezarNuevoJuego();
             log.debug("Se ha creado un nuevo juego");
         } else {
-            properties.commit();
-
-            Stage stageActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stageActual.close();
-
             log.debug("Se ha guardado la configuración");
         }
     }

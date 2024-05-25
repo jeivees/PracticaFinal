@@ -12,7 +12,7 @@ import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaEnlazad
 
 import com.google.gson.Gson;
 import es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaSimple.ElementoLS;
+import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaSimple.ListaSimple;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.listas.listaSimple.gsonAdapterListaSimple;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -132,7 +132,7 @@ public class DataModel {
                 .registerTypeAdapter(individuo.class, new gsonAdapterIndividuo())
                 .registerTypeAdapter(recurso.class, new gsonAdapterRecurso())
                 .registerTypeAdapter(Cola.class, new gsonAdapterCola())
-                .registerTypeAdapter(ElementoLS[].class, new gsonAdapterListaSimple())
+                .registerTypeAdapter(ListaSimple.class, new gsonAdapterListaSimple())
                 .excludeFieldsWithoutExposeAnnotation()
                 .excludeFieldsWithModifiers(Modifier.STATIC)
                 .setPrettyPrinting()
@@ -150,14 +150,13 @@ public class DataModel {
                 .registerTypeAdapter(individuo.class, new gsonAdapterIndividuo())
                 .registerTypeAdapter(recurso.class, new gsonAdapterRecurso())
                 .registerTypeAdapter(Cola.class, new gsonAdapterCola())
-                .registerTypeAdapter(ElementoLS[].class, new gsonAdapterListaSimple())
+                .registerTypeAdapter(ListaSimple.class, new gsonAdapterListaSimple())
                 .excludeFieldsWithoutExposeAnnotation()
                 .excludeFieldsWithModifiers(Modifier.STATIC)
                 .setPrettyPrinting()
                 .create();
         try (FileReader reader = new FileReader(STR."archivosDePartida/\{nombreArchivo}")) {
-            DataModel model = gson.fromJson(reader, DataModel.class);
-            return model;
+            return gson.fromJson(reader, DataModel.class);
         } catch (IOException e) {
             log.error("La ruta para cargar el archivo no existe");
             System.out.println("La ruta al archivo especificado no existe");

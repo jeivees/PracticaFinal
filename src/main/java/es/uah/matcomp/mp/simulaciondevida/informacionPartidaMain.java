@@ -2,12 +2,9 @@ package es.uah.matcomp.mp.simulaciondevida;
 
 import es.uah.matcomp.mp.simulaciondevida.control.simuladorDeVida;
 import es.uah.matcomp.mp.simulaciondevida.elementos.individuos.individuo;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.arboles.bst.ArbolBinario;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Grafo;
-import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.HashMap;
 import es.uah.matcomp.mp.simulaciondevida.estructurasdedatos.grafo.classes.Nodo;
 import excepciones.argumentosInvalidosException;
-import excepciones.sinFicherosDePartidaException;
 import gui.mvc.javafx.practicafinal.DataModel;
 
 import java.io.File;
@@ -47,10 +44,10 @@ public class informacionPartidaMain {
                 System.out.println(individuoLongevo.getAcciones());
 
                 System.out.print("Clonaciones ocurridas: ");
-                System.out.println(getNumeroAcciones(model, grafoAcciones, "clonarse"));
+                System.out.println(getNumeroAcciones(grafoAcciones, "clonarse"));
 
                 System.out.print("Reproducciones ocurridas: ");
-                System.out.println(getNumeroAcciones(model, grafoAcciones, "reproducirse"));
+                System.out.println(getNumeroAcciones(grafoAcciones, "reproducirse"));
 
                 System.out.print("Individuo con más reproducciones: ");
                 System.out.println(STR."Individuo \{getIndividuoMasAccion(model, grafoAcciones, "reproducirse").getId()}");
@@ -118,7 +115,7 @@ public class informacionPartidaMain {
         return individuoLongevo;
     }
 
-    private static int getNumeroAcciones (DataModel model, Grafo<String> grafoAcciones, String accion) {
+    private static int getNumeroAcciones (Grafo<String> grafoAcciones, String accion) {
         Nodo<String> nodoAccion = grafoAcciones.getNodo(accion);
         return nodoAccion.getArcosSalida().getNumeroElementos();
     }

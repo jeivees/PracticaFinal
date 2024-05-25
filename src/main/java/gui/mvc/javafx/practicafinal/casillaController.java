@@ -97,7 +97,7 @@ public class casillaController implements Initializable {
     public <T extends individuo> void añadirIndividuo (Class<T> individuoTipo) {
         try {
             isListenerEnabled = false;
-            if (casillaActual.getIndividuos().getNumeroElementos() >= 3) {
+            if (casillaActual.getIndividuos().getNumeroElementos() >= model.getIndividuosMaximosPorCelda()) {
                 alertaCasillaLabel.setText("¡Ya hay 3 individuos!");
                 PauseTransition pausa = new PauseTransition(Duration.millis(2500));
                 pausa.setOnFinished(_ -> alertaCasillaLabel.setText(STR."Casilla \{casillaActual.getPosicionX()}, \{casillaActual.getPosicionY()}"));
@@ -180,7 +180,7 @@ public class casillaController implements Initializable {
     public void añadirRecurso (String recursoTipo) {
         try {
             isListenerEnabled = false;
-            if (casillaActual.getRecursos().getNumeroElementos() >= 3) {
+            if (casillaActual.getRecursos().getNumeroElementos() >= model.getIndividuosMaximosPorCelda()) {
                 alertaCasillaLabel.setText("¡Ya hay 3 recursos!");
                 PauseTransition pausa = new PauseTransition(Duration.millis(2500));
                 pausa.setOnFinished(_ -> alertaCasillaLabel.setText("Casilla " + casillaActual.getPosicionX() + ", " + casillaActual.getPosicionY()));

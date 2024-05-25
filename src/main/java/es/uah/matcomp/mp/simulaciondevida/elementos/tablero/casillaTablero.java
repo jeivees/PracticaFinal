@@ -6,6 +6,7 @@ import excepciones.individuoNoExistenteException;
 import excepciones.recursoNoExistenteException;
 import gui.mvc.javafx.practicafinal.casillaController;
 import gui.mvc.javafx.practicafinal.DataModel;
+import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
@@ -18,11 +19,11 @@ public class casillaTablero extends AnchorPane {
     private int posicionX;
     private int posicionY;
     private DataModel model;
-     private tablero tablero;
+    private tablero tablero;
     private ListaEnlazada<individuo> individuos = new ListaEnlazada<>();
     private ListaEnlazada<recurso> recursos = new ListaEnlazada<>();
 
-    private Button botonCasilla = new Button();
+    @FXML
     private GridPane gridElementos = new GridPane();
 
     private static final Logger log = LogManager.getLogger(casillaTablero.class);
@@ -32,6 +33,7 @@ public class casillaTablero extends AnchorPane {
         posicionY = y;
         this.model = model;
         this.tablero = tablero;
+        Button botonCasilla = new Button();
         botonCasilla.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
         AnchorPane.setTopAnchor(botonCasilla, 0.0);
         AnchorPane.setRightAnchor(botonCasilla, 0.0);
@@ -74,20 +76,15 @@ public class casillaTablero extends AnchorPane {
         try {
             if (nuevoIndividuo) individuo.añadir(model, this);
 
-            ImageView vistaIcono;
-            switch (individuo.getClass().getSimpleName()) {
-                case "individuoBasico":
-                    vistaIcono = new ImageView(new Image(casillaController.class.getResource("images/elementos/caveman.png").toExternalForm()));
-                    break;
-                case "individuoNormal":
-                    vistaIcono = new ImageView(new Image(casillaController.class.getResource("images/elementos/man.png").toExternalForm()));
-                    break;
-                case "individuoAvanzado":
-                    vistaIcono = new ImageView(new Image(casillaController.class.getResource("images/elementos/futuristic-man.png").toExternalForm()));
-                    break;
-                default:
-                    throw new individuoNoExistenteException();
-            }
+            ImageView vistaIcono = switch (individuo.getClass().getSimpleName()) {
+                case "individuoBasico" ->
+                        new ImageView(new Image(casillaController.class.getResource("images/elementos/caveman.png").toExternalForm()));
+                case "individuoNormal" ->
+                        new ImageView(new Image(casillaController.class.getResource("images/elementos/man.png").toExternalForm()));
+                case "individuoAvanzado" ->
+                        new ImageView(new Image(casillaController.class.getResource("images/elementos/futuristic-man.png").toExternalForm()));
+                default -> throw new individuoNoExistenteException();
+            };
             addIconoIndividuo(vistaIcono);
         } catch (individuoNoExistenteException e) {
             log.error("Se ha tratado de añadir el icono de un tipo de individuo no existente");
@@ -120,29 +117,21 @@ public class casillaTablero extends AnchorPane {
         try {
             if (nuevoRecurso) recurso.añadir(model, this);
 
-            ImageView vistaIcono;
-            switch (recurso.getClass().getSimpleName()) {
-                case "agua":
-                    vistaIcono = new ImageView(new Image(casillaController.class.getResource("images/elementos/water-drop.png").toExternalForm()));
-                    break;
-                case "comida":
-                    vistaIcono = new ImageView(new Image(casillaController.class.getResource("images/elementos/apple.png").toExternalForm()));
-                    break;
-                case "montaña":
-                    vistaIcono = new ImageView(new Image(casillaController.class.getResource("images/elementos/mountain-range.png").toExternalForm()));
-                    break;
-                case "tesoro":
-                    vistaIcono = new ImageView(new Image(casillaController.class.getResource("images/elementos/treasure-chest.png").toExternalForm()));
-                    break;
-                case "biblioteca":
-                    vistaIcono = new ImageView(new Image(casillaController.class.getResource("images/elementos/books.png").toExternalForm()));
-                    break;
-                case "pozo":
-                    vistaIcono = new ImageView(new Image(casillaController.class.getResource("images/elementos/water-well.png").toExternalForm()));
-                    break;
-                default:
-                    throw new recursoNoExistenteException();
-            }
+            ImageView vistaIcono = switch (recurso.getClass().getSimpleName()) {
+                case "agua" ->
+                        new ImageView(new Image(casillaController.class.getResource("images/elementos/water-drop.png").toExternalForm()));
+                case "comida" ->
+                        new ImageView(new Image(casillaController.class.getResource("images/elementos/apple.png").toExternalForm()));
+                case "montaña" ->
+                        new ImageView(new Image(casillaController.class.getResource("images/elementos/mountain-range.png").toExternalForm()));
+                case "tesoro" ->
+                        new ImageView(new Image(casillaController.class.getResource("images/elementos/treasure-chest.png").toExternalForm()));
+                case "biblioteca" ->
+                        new ImageView(new Image(casillaController.class.getResource("images/elementos/books.png").toExternalForm()));
+                case "pozo" ->
+                        new ImageView(new Image(casillaController.class.getResource("images/elementos/water-well.png").toExternalForm()));
+                default -> throw new recursoNoExistenteException();
+            };
             addIconoRecurso(vistaIcono);
         } catch (recursoNoExistenteException e) {
             log.error("Se ha tratado de añadir el icono de un tipo de recurso no existente");

@@ -20,13 +20,14 @@ public class gsonAdapterListaSimple implements JsonSerializer<ListaSimple>, Json
     @Override
     public ListaSimple deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
         JsonObject jsonObject = json.getAsJsonObject();
+        int maximo = jsonObject.get("maximo").getAsInt();
         int i = 0;
         for (JsonElement elemento : jsonObject.get("datos").getAsJsonArray()) i++;
         ElementoLS[] arrayElementos = new ElementoLS[i];
         for (int j = 0; j != i; j ++) {
             arrayElementos[j] = context.deserialize(jsonObject.get("datos").getAsJsonArray().get(j), ElementoLS.class);
         }
-        ListaSimple listaSimple = new ListaSimple<>(i);
+        ListaSimple listaSimple = new ListaSimple<>(maximo);
         listaSimple.setDatos(arrayElementos);
         return listaSimple;
     }
