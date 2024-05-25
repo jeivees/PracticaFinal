@@ -100,7 +100,7 @@ public class casillaController implements Initializable {
             if (casillaActual.getIndividuos().getNumeroElementos() >= 3) {
                 alertaCasillaLabel.setText("¡Ya hay 3 individuos!");
                 PauseTransition pausa = new PauseTransition(Duration.millis(2500));
-                pausa.setOnFinished(_ -> alertaCasillaLabel.setText("Casilla " + casillaActual.getPosicionX() + ", " + casillaActual.getPosicionY()));
+                pausa.setOnFinished(_ -> alertaCasillaLabel.setText(STR."Casilla \{casillaActual.getPosicionX()}, \{casillaActual.getPosicionY()}"));
                 pausa.play();
                 log.debug("Se ha intentado crear un individuo cuando ya había 3 en la casilla");
             } else {
@@ -146,7 +146,7 @@ public class casillaController implements Initializable {
             labelIndividuo.setFont(font);
             String tipoIndividuo = individuoClase.getSimpleName().replace("individuo","");
             labelIndividuo.textProperty().bind(individuo.getTiempoDeVidaProperty().asString(
-                    tipoIndividuo + ": Vida: %d Id: " + individuo.getId() + " Gen: " + individuo.getGeneracion()));
+                    STR."\{tipoIndividuo}: Vida: %d Id: \{individuo.getId()} Gen: \{individuo.getGeneracion()}"));
 
             Button botonQuitar = (Button) ((AnchorPane) cajaIndividuo.getChildren().get(1)).getChildren().getFirst();
 

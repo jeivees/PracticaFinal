@@ -47,18 +47,6 @@ public class casillaTablero extends AnchorPane {
         getChildren().setAll(botonCasilla, gridElementos);
     }
 
-    private ColumnConstraints columnaConPorcentajes (double porcentaje) {
-        ColumnConstraints constraints = new ColumnConstraints();
-        constraints.setPercentWidth(porcentaje);
-        return constraints;
-    }
-
-    private RowConstraints filaConPorcentajes (double porcentaje) {
-        RowConstraints constraints = new RowConstraints();
-        constraints.setPercentHeight(porcentaje);
-        return constraints;
-    }
-
     public ListaEnlazada<individuo> getIndividuos() {
         return individuos;
     }
@@ -108,7 +96,8 @@ public class casillaTablero extends AnchorPane {
 
     private void addIconoIndividuo (ImageView vistaIcono) {
         vistaIcono.setPreserveRatio(true);
-        vistaIcono.setFitHeight(((GridPane) this.getParent()).getHeight()/(((GridPane) this.getParent()).getColumnCount() * 2));
+        vistaIcono.setFitHeight(((GridPane) this.getParent()).getHeight()/(((GridPane) this.getParent()).getRowCount() * 2));
+        vistaIcono.setFitWidth(((GridPane) this.getParent()).getWidth()/(((GridPane) this.getParent()).getColumnCount() * 3));
         int numeroIconosIndividuo = 0;
         for (Node node : gridElementos.getChildren() ) {
             if (GridPane.getRowIndex(node) == 0) numeroIconosIndividuo++;
@@ -162,8 +151,8 @@ public class casillaTablero extends AnchorPane {
 
     private void addIconoRecurso (ImageView vistaIcono) {
         vistaIcono.setPreserveRatio(true);
-        vistaIcono.setFitWidth(((GridPane) this.getParent()).getWidth()/(((GridPane) this.getParent()).getColumnCount() * 2));
-        vistaIcono.setFitHeight(((GridPane) this.getParent()).getHeight()/(((GridPane) this.getParent()).getColumnCount() * 3));
+        vistaIcono.setFitWidth(((GridPane) this.getParent()).getWidth()/(((GridPane) this.getParent()).getColumnCount() * 3));
+        vistaIcono.setFitHeight(((GridPane) this.getParent()).getHeight()/(((GridPane) this.getParent()).getRowCount() * 2));
         int numeroIconosRecurso = 0;
         for (Node node : gridElementos.getChildren() ) {
             if (GridPane.getRowIndex(node) == 1) numeroIconosRecurso++;
@@ -214,13 +203,6 @@ public class casillaTablero extends AnchorPane {
         return new int[]{posicionX, posicionY};
     }
 
-    public Button getBotonCasilla() {
-        return botonCasilla;
-    }
-
-    public GridPane getGridElementos() {
-        return gridElementos;
-    }
     public tablero getTablero() {
         return tablero;
     }

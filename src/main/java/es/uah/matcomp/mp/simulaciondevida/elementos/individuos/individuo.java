@@ -237,7 +237,8 @@ public abstract class individuo {
             try {
                 Constructor<?> constructor = hijoTipo.getConstructor(int.class, int.class, int.class, int.class, int.class, float.class, float.class, int.class);
                 int id = model.getHistorialIndividuos().getUltimo().getData().getId() + 1;
-                T hijo = (T) constructor.newInstance(id, getPosicionX(), getPosicionY(), this.getGeneracion() + 1, model.getTurnosVidaIniciales(), model.getProbReproIndividuo(), model.getProbClonIndividuo(), model.getTurno());
+                T hijo = (T) constructor.newInstance(id, getPosicionX(), getPosicionY(), this.getGeneracion() + 1,
+                        model.getTurnosVidaIniciales(), model.getProbReproIndividuo(), model.getProbClonIndividuo(), model.getTurno());
                 hijo.setPadres(this, pareja);
                 hijo.añadir(model, casillaActual);
                 acciones.add(STR."Acción: reproducirse (con individuo\{pareja.getId()}), turno: \{turnoActual}");
@@ -293,7 +294,7 @@ public abstract class individuo {
             Constructor<? extends individuo> constructor = getClass().getConstructor(individuo.class);
             model.getHistorialIndividuos().add(constructor.newInstance(this));
 
-        } catch (NoSuchMethodException | InvocationTargetException | InstantiationException | IllegalAccessException e) {
+        } catch (Exception e) {
             log.error("No se ha podido crear una nueva instancia de individuo para el historial de individuos");
         }
     }

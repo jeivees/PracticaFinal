@@ -7,7 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class tablero {
-    private static final Logger log = LogManager.getLogger("es.uah");
+    private static final Logger log = LogManager.getLogger();
     private ListaSimple<ListaSimple<casillaTablero>> casillas;
 
     public tablero (int n, int m, DataModel model) {
@@ -32,10 +32,6 @@ public class tablero {
             log.error("Se ha tratado de obtener la posicion de una casilla con array de tamaño distinto de 2");
             return null;
         }
-    }
-
-    public void setCasilla (int n, int m, casillaTablero casilla) {
-        casillas.getElemento(n).getData().setElemento(m, casilla);
     }
 
     public int getNumeroCasillasN () {
