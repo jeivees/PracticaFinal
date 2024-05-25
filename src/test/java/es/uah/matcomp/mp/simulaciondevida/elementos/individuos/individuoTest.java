@@ -227,18 +227,24 @@ class individuoTest {
     }
 
     @Test
-    void addAccion() {
-    }
-
-    @Test
     void getPadres() {
+        individuoBasico im = new individuoBasico();
+        individuoBasico ip = new individuoBasico();
+        individuoBasico i = new individuoBasico();
+        i.setPadres(im,ip);
+        assertDoesNotThrow(()->i.getPadres());
+        assertEquals(im, i.getPadres().getPrimero().getData());
+        assertEquals(ip, i.getPadres().getUltimo().getData());
     }
 
     @Test
     void setPadres() {
+        individuoBasico im = new individuoBasico();
+        individuoBasico ip = new individuoBasico();
+        individuoBasico i = new individuoBasico();
+        assertDoesNotThrow(()->i.setPadres(im,ip));
+        assertEquals(im, i.getPadres().getPrimero().getData());
+        assertEquals(ip, i.getPadres().getUltimo().getData());
     }
 
-    @Test
-    void testSetPadres() {
-    }
 }

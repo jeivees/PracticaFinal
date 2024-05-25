@@ -94,4 +94,19 @@ class recursoTest {
     @Test
     void aplicarMejora() {
     }
+
+    @Test
+    void getId(){
+        agua a = new agua();
+        a.setId(3);
+        assertDoesNotThrow(()->a.getId());
+        assertEquals(3, a.getId());
+    }
+    @Test
+    void setId(){
+        agua a = new agua();
+        assertDoesNotThrow(()-> a.setId(3));
+        assertEquals(3, a.getId());
+    }
+
 }
