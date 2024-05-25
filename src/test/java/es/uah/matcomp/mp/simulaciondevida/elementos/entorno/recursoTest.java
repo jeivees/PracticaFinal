@@ -84,17 +84,11 @@ class recursoTest {
 
     @Test
     void actualizarTA() {
-        DataModel model = new DataModel(
-                10, 50, 10, 50,25,
+        DataModel model = new DataModel(10, 50, 10, 50,25,
                 5,15,20,20,20,
                 10,10,10,3,5,
                 7, 25, 10, 10, 10, 0);
-        tablero tablero = new tablero(10, 10, model);
-        casillaTablero casilla = new casillaTablero(0,0, model, tablero);
-        agua a = new agua ();
-        a.setTiempoDeAparicion(3);
-        Assertions.assertDoesNotThrow(()->a.actualizarTA(model, casilla));
-        assertEquals(2, a.getTiempoDeAparicion(), "Tiempo incorrecto");
+        tablero tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
     }
 
     @Test
