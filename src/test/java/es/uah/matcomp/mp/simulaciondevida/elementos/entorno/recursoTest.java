@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class recursoTest {
-
     @Test
     void getPosicionX() {
         agua a = new agua ();
@@ -76,23 +75,6 @@ class recursoTest {
         agua a = new agua ();
         assertDoesNotThrow(()->a.setTiempoDeAparicion(3));
         assertEquals(3, a.getTiempoDeAparicion(), "Tiempo incorrecto");
-    }
-
-    @Test
-    void eliminar() {
-    }
-
-    @Test
-    void actualizarTA() {
-        DataModel model = new DataModel(10, 50, 10, 50,25,
-                5,15,20,20,20,
-                10,10,10,3,5,
-                7, 25, 10, 10, 10, 0);
-        tablero tablero = new tablero(model.getFilasTablero(), model.getColumnasTablero(), model);
-    }
-
-    @Test
-    void aplicarMejora() {
     }
 
     @Test

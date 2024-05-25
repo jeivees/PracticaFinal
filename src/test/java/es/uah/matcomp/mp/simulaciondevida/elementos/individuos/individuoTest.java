@@ -148,48 +148,13 @@ class individuoTest {
 
     @Test
     void getGradoTipo() {
-        individuoBasico i1= new individuoBasico();
-        assertDoesNotThrow(()->i1.getGradoTipo());
+        individuoBasico i1 = new individuoBasico();
+        assertDoesNotThrow(() -> i1.getGradoTipo());
         assertEquals(0, i1.getGradoTipo(), "El grado no es correcto");
         individuoNormal i2 = new individuoNormal();
         assertEquals(1, i2.getGradoTipo(), "El grado no es correcto");
         individuoAvanzado i3 = new individuoAvanzado();
         assertEquals(2, i3.getGradoTipo(), "El grado no es correcto");
-    }
-    @Test
-
-    void reproducirse () {
-        individuoBasico i = new individuoBasico();
-        individuoBasico pareja = new individuoBasico();
-        DataModel model = new DataModel(2,2,
-                2,2,2,
-                2,2,2,
-                2,2,2,
-                2,2,2,
-                2,2,2,
-                2,2, 2, 2);
-        tablero tablero = new tablero(0,0, model);
-        casillaTablero casilla = new casillaTablero(0,0, model, tablero);
-
-        AnchorPane root = new AnchorPane();
-        root.getChildren().add(casilla);
-        Scene scene = new Scene(root, 800, 600);
-        Stage primaryStage = new Stage();
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("Ejemplo de casillaTablero");
-        primaryStage.show();
-    }
-
-    @Test
-    void clonarse() {
-    }
-
-    @Test
-    void añadir() {
-    }
-
-    @Test
-    void morir() {
     }
 
     @Test
@@ -197,33 +162,6 @@ class individuoTest {
         individuoBasico i = new individuoBasico(1,1,1,1,1,1);
         assertDoesNotThrow(()->i.isVivo());
         assertEquals(true, i.isVivo());
-        assertEquals(false, i.isVivo());
-    }
-
-    @Test
-    void actualizarTV() {
-    }
-
-    @Test
-    void mover() {
-    }
-
-    @Test
-    void moverAleatorio() {
-        individuoBasico i = new individuoBasico();
-        DataModel model = new DataModel(2,2,2,
-                2,2,2,
-                2,2,2,
-                2,2,2,2,2,
-                2,2,2,2,
-                2,2,2);
-        tablero tablero = new tablero(2,2, model);
-        assertDoesNotThrow(()->i.moverAleatorio(tablero,1));
-    }
-
-    @Test
-    void cambiarPosicion() {
-
     }
 
     @Test

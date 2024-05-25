@@ -8,6 +8,7 @@ import gui.mvc.javafx.practicafinal.casillaController;
 import gui.mvc.javafx.practicafinal.DataModel;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonBase;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
@@ -210,6 +211,4 @@ public class casillaTablero extends AnchorPane {
     public void setTablero(tablero tablero) {
         this.tablero = tablero;
     }
-
-
 }
