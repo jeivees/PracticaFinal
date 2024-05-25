@@ -11,6 +11,7 @@ class vistas{
     menuConfiguracionInicio-vista
     menuConfiguracionPausa-vista
     tablero-vista
+    finalizarPartida-vista
 }
 class controladores{
     casillaController

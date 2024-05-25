@@ -69,4 +69,10 @@ class tesoro extends recurso{
     + aplicarMejora(individuo:individuo, casillaTablero:casillaActual)
     + getTipo(): Class<tesoro>
     }
+class gsonAdapterRecurso{
+    --
+    +serialize
+    +deserialize
+}
+gsonAdapterRecurso-->recurso
 @enduml

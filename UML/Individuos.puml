@@ -50,6 +50,11 @@ class individuoAvanzado extends individuo{
     + getTipo():Class<individuoNormal>
     + mover(model:configuracionDataModel, (tablero: tablero))
     }
-
+class gsonAdapterIndividuo{
+--
++serialize
++deserialize
+}
+gsonAdapterIndividuo-->individuo
 
 @enduml

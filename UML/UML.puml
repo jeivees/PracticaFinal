@@ -1,7 +1,7 @@
 @startuml
 'https://plantuml.com/use-case-diagram
 
-class menuPrincipalApplication {
+class mainAplication {
 --
 +start
 }
@@ -52,6 +52,9 @@ class tableroController{
 #mostrarElementosCasilla
 #crearTablero
 -crearGridTablero
+#onBotonFinalizarPartidaClick
++finalizarPartida
+-crearArbolVista
 }
 class tableroVista{}
 class casillaController{
@@ -101,7 +104,7 @@ class cargarJuegoVista{}
 class elementoCasillaBoxVista{}
 menuPrincipalController-->cargarJuegoVista :onBotonCargarPartidaClick
 cargarJuegoVista-->menuPrincipalController: onBotonVolverMenuClick
-menuPrincipalApplication--->menuPrincipalController :start
+mainAplication--->menuPrincipalController :start
 menuPrincipalController-->menuConfiguracionController :onBotonNuevoClick
 menuPrincipalController ---> menuPrincipalvista
 menuPrincipalvista--->menuPrincipalController
@@ -136,4 +139,5 @@ casillaController-->individuos
 casillaController-->recursos
 bucleDeControl-->individuos
 bucleDeControl-->recursos
+tableroController-->finalizarPartidaVista
 @enduml
